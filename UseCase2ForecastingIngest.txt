@@ -1,0 +1,34 @@
+%META:TOPICINFO{author="PeterGijsbers" date="1306444712" format="1.1" reprev="4" version="5"}%
+%META:TOPICPARENT{name="SurfacewaterInteroperabilityExperiment"}%
+
+
+-- Main.PeterGijsbers - 01 Jul 2010
+Objective
+Evaluate the WaterML2 encoded SOS as a data provision service for hydrological forecasting applicatiosn. Evaluation focusses on ability to efficiently facilitate frequent incremental data updates.
+
+Participants
+   * NOAA/NWS (John Halquist)
+   * Deltares (Peter Gijsbers)
+   * USGS (Nate Booth)
+   * CSIRO (Peter Fitch)
+   * BoM
+   * ASA (Eoin Howlett)
+   * Unidata (Ben Domenico)
+
+Telecons
+   *  [[August 9 2010]]
+
+
+Draft workplan
+   * [[%ATTACHURL%/workplan_v0.2_UC_forecasting_surfacewaterIE.doc][workplan_v0.2_UC_forecasting_surfacewaterIE.doc]]: Draft workplan (v0.2)
+
+   * [[%ATTACHURL%/workplan_v0.3_UC_forecasting_surfacewaterIE.doc][workplan_v0.3_UC_forecasting_surfacewaterIE.doc]]: draft workplan v0.3
+
+   * [[%ATTACHURL%/workplan_v0.4_UC2_forecasting_SWIE.doc][workplan_v0.4_UC2_forecasting_SWIE.doc]]: Deaft workplan v0.4, extended architecture section
+
+   * [[%ATTACHURL%/Gijsbers_WML2ingest_OpenWater2011.pdf][Gijsbers_WML2ingest_OpenWater2011.pdf]]: Presentation conducted at Open Water conference UNESCO-IHE, Delft, April 2011
+
+%META:FILEATTACHMENT{name="workplan_v0.2_UC_forecasting_surfacewaterIE.doc" attachment="workplan_v0.2_UC_forecasting_surfacewaterIE.doc" attr="" comment="Draft workplan (v0.2)" date="1278003968" path="workplan_v0.2_UC_forecasting_surfacewaterIE.doc" size="62976" stream="workplan_v0.2_UC_forecasting_surfacewaterIE.doc" tmpFilename="/tmp/zQtxHWTJwM" user="Main.PeterGijsbers" version="1"}%
+%META:FILEATTACHMENT{name="workplan_v0.3_UC_forecasting_surfacewaterIE.doc" attachment="workplan_v0.3_UC_forecasting_surfacewaterIE.doc" attr="" comment="draft workplan v0.3" date="1280871669" path="workplan_v0.3_UC_forecasting_surfacewaterIE.doc" size="68608" stream="workplan_v0.3_UC_forecasting_surfacewaterIE.doc" tmpFilename="/tmp/g7Oi1oehhC" user="Main.PeterGijsbers" version="1"}%
+%META:FILEATTACHMENT{name="workplan_v0.4_UC2_forecasting_SWIE.doc" attachment="workplan_v0.4_UC2_forecasting_SWIE.doc" attr="" comment="Deaft workplan v0.4, extended architecture section" date="1281541362" path="workplan_v0.4_UC2_forecasting_SWIE.doc" size="91136" stream="workplan_v0.4_UC2_forecasting_SWIE.doc" tmpFilename="/tmp/AqlxYej9Ej" user="Main.PeterGijsbers" version="1"}%
+%META:FILEATTACHMENT{name="Gijsbers_WML2ingest_OpenWater2011.pdf" attachment="Gijsbers_WML2ingest_OpenWater2011.pdf" attr="" comment="Presentation conducted at Open Water conference UNESCO-IHE, Delft, April 2011" date="1306444711" path="Gijsbers_WML2ingest_OpenWater2011.pdf" size="2429007" user="PeterGijsbers" version="1"}%

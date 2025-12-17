@@ -1,0 +1,33 @@
+%META:TOPICINFO{author="PaulSheahan" comment="save topic" date="1341560558" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---+ Involvement, motivation and constraints
+
+Develop a clear understanding of each organisation's motivation for involvement, ability to contribute and any constraints.
+
+*Bureau of Meteorology & CSIRO*
+
+WIRADA. Last year of operation. Project proposal for _June 2012-2013_. Discussions for further work in this area for following years. <br />National water information. Curator of data but not custodian. If changes are required. Managing corrections to data between agencies and a central repository. Not doing manual inspections, may be implementing auto QA down the track.<br />Full system synching is out of scope. E.g. Hydstra to Hydstra.<br />Committed to next year of work.
+
+<b>KISTERS (MN)<br /></b>Continuation of work in WaterML2.0 work. Impossible? From a users’ perspective may be useful. Ratings as part of a workflow -- large variances in actual usage. Harmonised development of rating curves within the UK (stage-discharge specific). What set of metadata is mandatory? <br />Cross sections, gaugings, field work. Issues within the practice itself, not just in the interchange of change.Rating curve editors: 2 editors (SKED, exports, data exchange). Around 12 different workflows for creating a rating.What are the constraints/limitations in using a rating? Curves, tables. Is the table a representation of the combined methods. Do we just focus on tables?<br />Representation of clients. More harmonisation is better for the customer.
+
+*CEH (Matt)*
+
+Manage the national river flow archive. Fit for purpose of data. Daily flows, but moving onto other sets. Don’t currently take on the curve at the moment. Receive descriptions of rating changes, metadata. Flood estimates. National method for estimating (regional analysis) flows based on related sites and stats. Objective quantification of uncertainty. Ongoing involvement. An active member of the HydroDWG. Involved where possible. Also deals with field metadata for downstream science - e.g. models.
+
+ <b>Aquatic Informatics (Stuart)</b>
+
+Looking at OGC compliance. Data ingestion and publication. Representing the domain expert. North American Stream Hydrographers - best practices for hydrometrics. Working group on data sharing. Quantification of uncertainty. Discharge not a direct measure, so consuming requires some understanding of the process. Fitness of purpose for different uses. Ratings without gaugings are nearly useless. Looking at transitions between curves.<br />Step towards quantifying uncertainty, this is a step in the right direction but the practice is a long way off.<br />Touraj also available to assist on the technical side. Can provide an end users perspective, data supplier. Make it easy to be OGC compliant. Who are the end users? Taking user types to profile for specific uses.
+
+ <b>CUAHSI (DV)<br /></b>Contributing the user side. User evaluation. Getting non timeseries data into ODM/HIS. Informing design of ODM2, analytical data. Stakeholder and feeding back into user community.
+
+ <b>USGS </b> *(Dave Blodgett)*
+
+Learn from DB2. Looking at a users perspective. Recent field work. National water census. US version of AWRA (Australian Water Resources Assessment. CIDA working on suite of services feeding into water census. Uncertainty for model users.
+
+ <b>USGS (</b> *Dave Briar)*
+
+Rating and gaugings schema for internal use. Geoff Chrisman developed the schema. Could provide a strawman, input into the process. Aquatic Informatics heavily involved in its use and deployment. Data provider. Consumers (e.g. NOAA) should access processed stream flow. NWIS produce their own ratings. Concept of uncertainty is a big driver for current tender for timeseries management software. Gaugings information not currently supplied but would be useful -- perhaps a higher priority for NWIS. No cross-sections currently delivered. Need to link to the end users are interested in the sub types of information. NOAA currently queries NWIS for a CSV style description of the shifted rating table.<br />NWIS may look at refactoring the CIDA OGC services for use in a larger context. Pending work on replacing parts of NWIS.<br />CIDA committed to the group. DB a conduit back into the CIDA group. 2-3 representatives to HydroDWG. Architecture for climate science centres -- advisor to this group.
+
+Dave Briar’s group has a mandate to provide high quality stream data.
+
+-- Main.PaulSheahan - 06 Jul 2012

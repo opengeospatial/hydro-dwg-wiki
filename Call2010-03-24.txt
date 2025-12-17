@@ -1,0 +1,19 @@
+%META:TOPICINFO{author="BoyanBrodaric" date="1269463884" format="1.1" version="1.2"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Call 2010-03-24*
+
+---++ Connection Details
+   * dates:  Wed Mar 24 (N.America), Thurs Mar 25 (AU)
+   * times:  5pm (Ottawa), 4pm CT (WI), 8am (AU)
+   * phone number: 218-862-1000 (USA)
+   * conference call code: 437712#
+   * webex: https://usgs.webex.com/usgs/j.php?ED=134335822 
+
+---++ Agenda
+   * Report and discussion: OGC TC meeting, Frascati
+   * Report and discussion: HDWG Workshop, Ispra
+
+---++Action Items
+
+
+---++Notes

@@ -1,0 +1,52 @@
+%META:TOPICINFO{author="PeterFitch" date="1274078273" format="1.1" reprev="1.1" version="1.1"}%
+%META:TOPICPARENT{name="SurfacewaterInteroperabilityExperiment"}%
+---++ Telecon 12 May 2pm UTC
+
+---+++ Agenda for the Telecon
+
+   1. Feedback from the OAB
+   1. Next steps prior to Silver Spring kick off.
+
+---++++Attendees
+Stefan Fuest, Simon Jirka, Ullrich Looser, Chris Michl, David Arctur, Peter Fitch
+Apologies: Sylvain Grellet, Nate Booth, Carsten Heidemann, Ulrich Looser, David Valentine.
+
+---+++ Notes
+
+---+++ Feedback from OAB - Carl Reed.
+No editorial or other comments. There are 2 related IE's. A short update on WaterML and the relationship to the work of the OGC. Version 1 of WaterML does not align well with OGC and ISO documents. There is some alignment, especially in the expression of geometry. This is a primary focus of the  IE's.
+
+Need to see of there is a connection between IE work and CIP water related scenarios.
+
+The OAB discussion is meant as input and guidance. Mostly coordination in this case.
+
+---+++ Next steps prior to Silver Spring
+
+   * Finalisation and release of the IE press release. David Arctur agreed to walk the press release through the process ensuring that all comments were included, that the initiators had agreed with the text and that is was release by May 14. This has since happened, well done to all involved especially David Arctur and Lance McKee from the OGC.
+   * Participants to sign the participants agreement with Peter to send the template around.
+   * Develop the kick off meeting agenda. At the kick off meetings a task will be to identify the IE technical lead. As well lead for the three use cases will also need to be identified.
+   * A slot for the IE kick off has been allocated on Wednesday 1 June at 8.00 am to 11am. You can see the tentative agenda at: http://www.opengeospatial.org/event/1006tcagenda
+
+---+++ Other Issues.
+   * We have had quite a few difficulties with the CSIRO meetingplace system coping with skype calls. Peter agreed to investigate alternative options prior to next telecon.
+   * Chris Michl would like the telecon at another time, perhaps moved 1 hr earlier, Peter agreed to look into.
+
+
+
+---+++ Next Meeting
+   * Wed 19 April 9pm UTC
+      
+  
+
+---+++Actions Summary
+   * Peter to finalise press release including all changes and send to OGC. Initiators to see final text.
+   * Peter to send out participant agreement to current initiators and participants.
+   * Peter to investigate alternative telecon systems for use  prior to next telecon
+   * David A to steer the press release through the process. 
+   * Initiators to check text from press release
+
+
+
+
+
+-- Main.PeterFitch - 17 May 2010

@@ -1,0 +1,83 @@
+%META:TOPICINFO{author="NateBooth" date="1284070388" format="1.1" reprev="1.2" version="1.2"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Call 2010-09-09*
+
+---++ Connection Details
+   * dates:  Thurs Sept 09 (N.America), Fri Sept 10 (AU)
+   * times:  5pm (Ottawa), 4pm CT (WI), 7am (AU)
+      * [[http://www.timeanddate.com/worldclock/fixedtime.html?month=9&day=9&year=2010&hour=17&min=0&sec=0&p1=188][CLICK HERE for times and dates for this meeting from around the world]]
+   * phone number: 218-862-1000 (USA)
+   * conference call code: 437712#
+   * webex: 
+
+---++ Agenda
+   * update on previous action items 
+   * update on services 
+   * update on clients  
+   * update on !WaterML 2
+   * update on Surface Water IE
+   * plans for Sept OGC TC meeting
+
+---++ Previous Action Items
+
+   * Send !WaterML2 schema to Yong Lui (Nate from Peter Taylor)
+   * Obtain update on clients--Kisters, 34North (Boyan)
+   * Implement proposed !GetCap and !WaterML 2 specs (All)
+
+---++ New Action Items
+
+
+
+---++ Notes
+
+
+---++ Services:
+- USGS has stood up new services. URLs to be distributed tomorrow via email.
+- USGS has changed lat/long ordering.  Reference http://www.ogcnetwork.net/node/491.  Tom will post a discussion section on this.  For report we will need to put a statement in our writeup that we did this.
+-- If this is an issue please correspond through TWIKI.
+
+- GSC: no changes
+-- Question whether we should switch to GML 3.2.  All: YES.  Officially this means we shouldnt use SOS1 but we still will.
+-- Not sure WHAT DO WE NEED TO DO TO DO THIS?
+
+- ILSCC
+-- Need to verify WaterML2 spec was sent to Yong Liu.
+-- no updates
+
+
+- 34N:
+- By October/November: will stand up WMS services from California Data Exchange Network
+- Still defining what services will be available (WMS, WFS for characteristics, SOS for levels)
+
+- SDSC: 
+-- catalog services: no update
+
+---++ Clients:
+34 N:
+- many improvements to the client.
+- Once new service endpoints sent, 34N will plug them in and distribute the client URL via email.
+
+Kisters:
+- Phil will get an update from Stephan
+- Boyan will send Phil questions 9/11.
+
+---++ WaterML2
+- Changes shouldn't change the IE.
+- Pete will let the group know if potential changes will impact GW IE.
+
+---++ SWIE update
+- See the page here for updates:
+http://external.opengis.org/twiki_public/bin/view/HydrologyDWG/SurfacewaterInteroperabilityExperiment
+
+---++ Toulouse
+- Nate will give GW IE update on WED: More data available, more coming, updated clients, report forthcoming.
+- Agenda is here: http://www.opengeospatial.org/event/1009tcagenda
+- Nate will distribute telecon info
+
+---++ Next calls:
+October 5 4:00 EDT
+Oct 19 4:00 EDT
+Nov 2 4:00 EDT
+
+Teleconference: (218) 862-1000 
+code: 437712#

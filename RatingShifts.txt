@@ -1,0 +1,27 @@
+%META:TOPICINFO{author="PaulSheahan" comment="reprev" date="1385075936" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+-- Main.PaulSheahan - 21 Nov 2013
+---+ Background
+
+At the Quebec workshop we talked about the implementation of ratings shifts in WML2.P2. The discussion was around reversing the reading requirement 'rgs-12'
+
+_"Scope decision : The ratings being communicated are the 'Active ratings'. The ratings that would be applied to determine ParameterTo value. It will have been shift corrected and will be the active rating at the time. Return should indicate the date and time for which the data applied"_
+
+The discussion was held within the context of existing reading requirement 'rgs-24'
+
+"<i>We supply conversion information that is able to be used in simple or complex conversion chains. Communication of information that defines the 'chain conversion process' or 'work flow' of simple or complex chain conversions in not in scope.</i>"
+
+The group took the decision to inclued the implementation of Ratings shifts within WaterML2.Part2.
+
+To impelment this decision work was undertakend to invistgate the concepts and how the might be applied in WML2.P2
+
+---+ Investigations
+   * <a href="RatingsShiftsQuebec" target="_blank"><span style="background-color: transparent; line-height: 22px;">Rating Shifts - understanding the concepts</span></a>
+   * <span style="background-color: transparent; line-height: 22px;"><a href="RatingShiftsImplementationOptions" target="_blank">Implementation options investigation </a></span>
+---+ Ratings shifts implementation method
+
+The HDWG met otwice to discuss rating shift implmetnation methods, 27 Set and 1 Nov 2014 AEST. In the novemeber meeting the group section implmentation option 3, the hybrid method, for implmenting shifts into WML2.P2.
+
+Following this the methods doco has been cleaned up, see link below. The two investigation documents provide for critical context infomation when trying to under stand the implmetnation rating shifts, the are required pre-reading - see the links above.
+
+<a href="WaterML2RatingShiftsImplementationConcepts" target="_blank">WaterML2 Rating Shifts Implementation</a>

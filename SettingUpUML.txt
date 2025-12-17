@@ -1,0 +1,40 @@
+%META:TOPICINFO{author="PeterTaylor" comment="save topic" date="1355873349" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---+ Setting up UML for RGS
+
+If you are using a vmware instanace, don't try to put things on virtual shared drives. Store things within the vm. Or odd lock-ups happen.
+
+Subversion is version dependent. If you check out a model using svn 1.6 and try to use svn 1.7 as the subversion exe path below, it won't work.
+
+It's not obvious from the HollowWorld page, but the subversion URL for ISO TC 211 is [[https://www.seegrid.csiro.au/mirrors/iso-harmonized-model/isotc211/][https://www.seegrid.csiro.au/mirrors/iso-harmonized-model]] check that out and set the isotc211 link to the base of the checkout. The HollowWorld model seems to expect a path of $base/isotc211/ISOTC211.xml for some reason.
+
+(SlikSvn) If you have a different user id/password to what's normal, the initial svn update may hang. You need to open a command line, go the the directory where you have stored the working copy and execute something like svn info --xml --incremental https://svn.sdsc.edu/repo/WaterML/WaterML2.0-part2/uml-model/ at that point, you will be prompted for a password. Just enter, you'll then be prompted for a username/password and that should get saved.
+---+ Ratings and gaugings model environment
+
+1. Setup the base HollowWorld environment according to https://www.seegrid.csiro.au/wiki/AppSchemas/ConfiguringUMLToolForHollowWorld. This will setup version control for HollowWorld template and ISO models. So there will be two models in the VC setup window:
+
+<img alt="" data-base-url="https://wiki.csiro.au" data-image-src="/download/attachments/545784490/VersionControl.png?version=1&modificationDate=1342058436390" data-linked-resource-container-id="545784490" data-linked-resource-default-alias="VersionControl.png" data-linked-resource-id="545947754" data-linked-resource-type="attachment" src="https://wiki.csiro.au/download/attachments/545784490/VersionControl.png?version=1&modificationDate=1342058436390" title='"WRON:' />
+
+2. Check out the RGS model from the SDSC SVN here: https://svn.sdsc.edu/repo/WaterML/WaterML2.0-part2/uml-model/ using an SVN client. SVN login details available from here: https://wiki.csiro.au/display/WaterML20/Infrastructure+Tools+-+Subversion+and+JIRA.
+
+3. In EA, configure a new package under version control (right click project -&gt; Package control -&gt; Version control settings...) that points to the local directory holding the checked out XMI file. This should look like this:
+
+<img alt="" data-base-url="https://wiki.csiro.au" data-image-src="/download/attachments/545784490/VCforRGS.png?version=1&modificationDate=1342058436347" data-linked-resource-container-id="545784490" data-linked-resource-default-alias="VCforRGS.png" data-linked-resource-id="545947755" data-linked-resource-type="attachment" src="https://wiki.csiro.au/download/attachments/545784490/VCforRGS.png?version=1&modificationDate=1342058436347" title='"WRON:' /> 
+
+4. From Package control -&gt; GetPackage, you will prompted with the XMI import:
+
+<img alt="" data-base-url="https://wiki.csiro.au" data-image-src="/download/attachments/545784490/EA_shot_svn.png?version=1&modificationDate=1344989393277" data-linked-resource-container-id="545784490" data-linked-resource-default-alias="EA_shot_svn.png" data-linked-resource-id="550962314" data-linked-resource-type="attachment" src="https://wiki.csiro.au/download/attachments/545784490/EA_shot_svn.png?version=1&modificationDate=1344989393277" title='"WRON:' /> ModelEnvironmentSetup &gt; EA_shot_svn.png" /&gt;
+
+The model you want is RGS-core-model.xml. The RGS-existing-models.xml may also be imported. This contains reverse engineered existing models (UGSS, WDTF, FEWS etc.). This will import the model into the selected package. You should end up with a base structure something like this:
+
+<img alt="" data-base-url="https://wiki.csiro.au" data-image-src="/download/attachments/545784490/model_strucure.png?version=1&modificationDate=1344989538960" data-linked-resource-container-id="545784490" data-linked-resource-default-alias="model_strucure.png" data-linked-resource-id="550962315" data-linked-resource-type="attachment" src="https://wiki.csiro.au/download/attachments/545784490/model_strucure.png?version=1&modificationDate=1344989538960" title='"WRON:' />
+
+The existing models are reversed engineered from the associated schema with some small manual adjustment.
+
+The ensure you have the dependent ISO/HollowWorld models, check the BaseModel::Gaugings::Gaugings model overview and you should be able to see the OM_Observation base type from GaugingObservation, e.g.
+
+<img alt="" data-base-url="https://wiki.csiro.au" data-image-src="/download/attachments/545784490/HWCheck.png?version=1&modificationDate=1342058436223" data-linked-resource-container-id="545784490" data-linked-resource-default-alias="HWCheck.png" data-linked-resource-id="545947763" data-linked-resource-type="attachment" src="https://wiki.csiro.au/download/attachments/545784490/HWCheck.png?version=1&modificationDate=1342058436223" title='"WRON:' /> 
+
+<img alt="(thumbs up)" border="0" data-emoticon-name="thumbs-up" src="https://wiki.csiro.au/s/en_GB/3391/c989735defd8798a9d5e69c058c254be2e5a762b.27/_/images/icons/emoticons/thumbs_up.png" title="(thumbs up)" /> You should be now good to go.
+
+-- Main.PeterTaylor - 18 Dec 2012

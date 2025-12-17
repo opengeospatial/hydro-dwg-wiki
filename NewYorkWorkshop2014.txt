@@ -1,0 +1,130 @@
+%META:TOPICINFO{author="FrederiqueMOJONLUMIER" comment="save topic" date="1441963491" format="1.1" reprev="71" version="72"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++ *Hydro DWG Workshop New York City 2014*
+   * *Dates:* 11 - 15 August 2014
+   * *Venue:* <a href="http://hic2014.org/venue" target="_blank">CCNY</a>
+   * <strong style="background-color: transparent;">Purpose: </strong><span style="background-color: transparent;">This meeting will be the fifth workshop of the WMO/OGC Hydrology Domain Working Group. </span>
+---++ Agenda
+| *Date* | *Session Topic* | *Discussant* | *Time* |
+| *%RED%August 11%ENDCOLOR%* | *%RED%Monday: introduction, HDWG activities, WMO feedback, vision discussion<br />%ENDCOLOR%* |||
+| 13:00 | Welcome, Introductions, Agenda, Logistics, Welcome from hosts | Ilya Zaslavsky, Tony Boston | 30 min |
+| 13:30 | Summary of HDWG activities since the Quebec workshop. [[%ATTACHURL%/HDWG2013-14_Activities.ppt][Presentation]] | Ilya Zaslavsky, Tony Boston | 30 min |
+| 14:00 | WMO feedback. [[%ATTACHURL%/HDWG-workshop-WMO-feedback.pptx][Presentation]] | Tony Boston | 30 min |
+| 14:30 | Suite of Standards for Water Information | Irina Dornblut | 30 min |
+| 15:00 | <span style="color: #228b22;">Break</span> |||
+| 15:30 | _HDWG vision discussion: where we are, what is next, general plans, projects to leverage and groups to connect with_ | David Maidment | 1.5 hr |
+| 17:00 | Observable properties ontology – alignment and usability. [[%ATTACHURL%/HDWG-Cox-vocabulary.pptx][Presentation]] | Simon Cox (remotely) | 30 min |
+| 17:30 | Close | | |
+| | |||
+| *%RED%August 12%ENDCOLOR%* | *%RED%Tuesday: water quality, large-scale water data sharing projects and experiences%ENDCOLOR%* |||
+| 09:00 | EPA requirements and approaches to water quality data exchange | Tod Dabolt | 1 hr |
+| 10:00 | Observations Data Model v2 UML | David Valentine | 1 hr |
+| 11:00 | _Discussion about exchanging sample information, LIMS integration, vocabularies_ | | 30 mins |
+| 11:30 | %GREEN%Break%ENDCOLOR% | | |
+| 11:45 | Global water data sharing initiatives - World Water Online | David Maidment | 1 hr |
+| 12:45 | %GREEN%Lunch%ENDCOLOR% | | |
+| 13:45 | Hydrology Interoperability Initiatives and Open Water Data | Lew Leinenweber | 45 min |
+| 14:30 | EU hydrological observatories network proposal | Matt Fry, Sylvain Grellet | 45 min |
+| 15:15 | HY_Features in support of geographic Water information | Irina Dornblut | 30 min |
+| 15:45 | %GREEN%Break%ENDCOLOR% | | |
+| 16:00 | Linked data and vocabularies | Nick Car, Rob Atkinson (remotely) | 30 min |
+| 16:30 | _Discussion_ | | 30 min |
+| 17:00 | Close | | |
+| 18:00 | %GREEN%Dinner/beer?%ENDCOLOR% | | |
+| | |||
+| *%RED%August 13%ENDCOLOR%* | *%RED%Wednesday: RGS progress; Flood management; Excursion%ENDCOLOR%* |||
+| 09:00 | <p>Ratings, Gaugings and Sections IE</p> <p>IE presentation, Engineering report.</p> | Paul Sheahan, Peter Taylor (remotely),<br /><span style="line-height: 22px; background-color: transparent;">Brian Gouge, Matt Fry,<br /></span><span style="line-height: 22px; background-color: transparent;">Dave Briar, Michael Natschke</span> | 2 hrs |
+| 11:00 | %GREEN%Break%ENDCOLOR% | | |
+| 11:15 | NWS National Flood Interoperability Experiment. | Ed Clark | 45 min |
+| 12:00 | RiverML - Harmonization and Prototype schema | Stephen Jackson | 45 min |
+| 12:45 | %GREEN%Lunch%ENDCOLOR% | | |
+| 14:30 | <p>Visit to NY City Hall, NYC Mayor's Office of Recovery and Resiliency<i>. </i></p> <p> _PlaNYC: A Stronger, More Resilient New York_ </p> <p> _Level 8, 253 Broadway, opposite City Hall_ </p> <p>Get the 'A' or 'C' subway at 125th street, get off at Chambers street. Two blocks to City Hall from the Chambers station.</p> | Katherine Greig | 2.5 hrs |
+| 17:00 | night on the town - [[%ATTACHURL%/UlyssesFolkHouse-Michael%2cBecky%2cMatt%2cPaul%2cIrina%2cTony%2cDave%2cDavid.JPG][one group at Ulysses pub on Stone St]] | | |
+| | |||
+| *%RED%August 14%ENDCOLOR%* | *%RED%Thursday: Project updates, requirements and inititatives<br />%ENDCOLOR%* |||
+| 09:00 | TimeseriesML. [[%ATTACHURL%/TimeSeriesML_HydroDWG20140811.pptx][Presentation]] | Dominic Lowe, Peter Taylor (remotely), Tony Boston | 1 hr |
+| 10:00 | Open Water Data Initiative and ACWI - <a href="http://external.opengis.org/twiki_public/pub/HydrologyDWG/NewYorkWorkshop2014/HDWG_OWDI_NHD_Rea20140814.pptx" target="_blank">Presentation</a> | Al Rea | 1 hr |
+| 11:00 | _Discussion (<a href="http://external.opengis.org/twiki_public/pub/HydrologyDWG/NewYorkWorkshop2014/DRM-ConcludingThoughts.pptx" target="_blank">David Maidment comments</a>)_ | | 15 min |
+| 11:15 | %GREEN%Break%ENDCOLOR% | | |
+| 11:30 | GRDC Metadata - Status Report | Irina Dornblut | 15 min |
+| 11:45 | HY_Features - Status and next steps | Irina Dornblut | 15 min |
+| 12:00 | _Discussion_ | | 15 min |
+| 12:15 | Groundwater IE 2 | Boyan Brodaric | 30-45 min |
+| 13:00 | %GREEN%Lunch%ENDCOLOR% | | 1 hr |
+| 14:00 | Requirements from NWS operations (and discussion). [[%ATTACHURL%/IWRSS_IDS_for_HDWG.pptx][Presentation]] | Ed Clark | 1 hr |
+| 15:00 | NetCDF -DSG for WaterML2, progress and future. <a href="http://external.opengis.org/twiki_public/pub/HydrologyDWG/NewYorkWorkshop2014/Arctur-DisConBB.pptx" target="_blank">Presentation</a> | David Blodgett, David Arctur | 1 hr |
+| 16:00 | Break | | |
+| 16:15 | Offline Activity : WML2 Part2 - Standards Working Group formation meeting | Paul Sheahan | 1 hr |
+| 17:15 | Close | | |
+| 18:00 | <p>Workshop drinks/dinner - TBC</p> <p>Dinosaur Bar-B-Que</p> <p>700 W 125th St (212) 694-1777</p> | | |
+| | | | |
+| *%RED%August 15%ENDCOLOR%* | *%RED%Friday: Implementations, RiverML, preparation for HDWG tutorial, HDWG futures%ENDCOLOR%* |||
+| 09:30 | OccViz | Saurav Kumar | 30 min |
+| 10:00 | Hydro data & flood mapping in GEOSS, and GEOSS water services. <a href="http://external.opengis.org/twiki_public/pub/HydrologyDWG/NewYorkWorkshop2014/Arctur-GEOSS_AIP.pdf" target="_blank">Presentation</a> | David Arctur | 1 hr |
+| 11:00 | %GREEN%Break%ENDCOLOR% | | |
+| 11:15 | OGC Testbed 10 CCI - Hydro Model Interoperability <a href="http://external.opengis.org/twiki_public/pub/HydrologyDWG/NewYorkWorkshop2014/14-048_OGC_Testbed_10_CCI_Hydro_Model_Interoperability_Engineering_Report.pdf" target="_blank">Public Engineering Report (14-048)</a> (<a href="http://external.opengis.org/twiki_public/pub/HydrologyDWG/NewYorkWorkshop2014/OWS10-hydro_slides-20140326.ppt" target="_blank">OWS10 slides</a>) <br />(<a href="http://external.opengis.org/twiki_public/pub/HydrologyDWG/NewYorkWorkshop2014/Arctur-OGC4Hydro.ppt" target="_blank">list of key projects</a> for development of WaterML2 standards and practices) | David Arctur | 1 hr |
+| 12:15 | %GREEN%Lunch%ENDCOLOR% | | |
+| 13:15 | Preparations for the Saturday HDWG outreach event/tutorial | Tony Boston, Ilya Zaslavsky | 1.5 hr |
+| 14:45 | %GREEN%Break%ENDCOLOR% | | |
+| 15:00 | <i>Revisit HDWG vision discussion. [[%ATTACHURL%/HDWG-futures.pptx][HDWG futures]]<br /></i> | Nate Booth, Irina Dornblut | 1 hr |
+| 16:00 | _Final discussions, way forward and closing_ | All | 1 hr |
+| 17:00 | Close | | |
+| | Note: MoMA is free on Fridays 4-8pm: http://freemuseumday.org/nyc.html | | |
+| | | | |
+| | Unallocated: SOS, DataAvailability, services model, IWRSS, forecasting IE | | |
+| | | | |
+---++ Notes
+
+[[https://docs.google.com/document/d/1UI5MnTPegvTh1U16d_yXf9t6FUyZ9VGZvXp25ak6JCU/edit?usp=sharing]]
+
+Breakout room (T-105) schedule:
+
+8/12: 9-2; 8/13: 12-3; 8/14: 9-5; 8/15: 9-5
+
+---++ Attendance and Logistics
+
+Please read about logistics and confirm attendance on [[HydroDWGNewYorkAttendees]]
+
+---++ *Related Activities*
+
+[[HDWGWorkshopAtHIC2014][HDWG Workshop, offered as part of HIC'2014, August 16, 2014]]
+
+-- Main.IlyaZaslavsky - 25 Oct 2013
+---++ Remote Access details
+
+<span style="background-color: transparent;">Below is the information needed for today’s seminar as requested.</span>
+
+Browser plugin : http://bluejeans.com/downloads
+
+To join the Meeting: https://bluejeans.com/306690466 <br />To join via Browser: https://bluejeans.com/306690466/browser <br />To join with Lync: https://bluejeans.com/306690466/lync <br />To join via Cisco Jabber Video: https://bluejeans.com/306690466/jabber
+
+To join via Room System:<br />Video Conferencing System: bjn.vc -or- 199.48.152.152<br />Meeting ID: 306690466<br /><br />To join via Phone: <br />1) Dial:<br />   +1 408 740 7256<br />   +1 888 240 2560 (US or Canada only)<br />   (see all numbers - http://bluejeans.com/numbers)<br />2) Enter Conference ID: 306690466<br /> [[tel:+14087407256,,#306690466#,#][Direct-dial with my iPhone]]
+
+*Attachments*
+
+   * [[%ATTACHURL%/OccViz_OGCMeeting.pptx][OccViz_OGCMeeting.pptx]]: OccViz presentation by Saurav Kumar @ Aug 15,2014 - 9:30
+
+%META:FILEATTACHMENT{name="HDWG2013-14_Activities.ppt" attachment="HDWG2013-14_Activities.ppt" attr="" comment="HDWG activities since the Quebec Workshop" date="1407365836" path="HDWG2013-14_Activities.ppt" size="4557824" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="RiverML_Harmonization_August_2014.pdf" attachment="RiverML_Harmonization_August_2014.pdf" attr="" comment="Hydraulic Language Harmonization and Description of RiverML 0.2" date="1407707877" path="RiverML_Harmonization_August_2014.pdf" size="4199434" user="StephenJackson" version="1"}%
+%META:FILEATTACHMENT{name="HDWG-workshop-WMO-feedback.pptx" attachment="HDWG-workshop-WMO-feedback.pptx" attr="" comment="WMO feedback" date="1407776052" path="HDWG-workshop-WMO-feedback.pptx" size="5331185" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="2014_HDWG_NY_WaterSuites.pptx" attachment="2014_HDWG_NY_WaterSuites.pptx" attr="" comment="towards a suite of standards for water information" date="1407779634" path="2014_HDWG_NY_WaterSuites.pptx" size="736564" user="IrinaDornblut" version="2"}%
+%META:FILEATTACHMENT{name="HDWG-Cox-vocabulary.pptx" attachment="HDWG-Cox-vocabulary.pptx" attr="" comment="Observable properties ontology – alignment and usability" date="1407855324" path="HDWG-Cox-vocabulary.pptx" size="3333038" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="HWDG14Aug.pdf" attachment="HWDG14Aug.pdf" attr="" comment="World Water Online - David Maidment" date="1407859525" path="HWDG14Aug.pdf" size="7100278" user="IlyaZaslavsky" version="1"}%
+%META:FILEATTACHMENT{name="Hydro_Interoperability_Initiatives_-_CHISP,_Testbed_10_and_Testbed_11_(planned)_-_draft_v1.pptx" attachment="Hydro_Interoperability_Initiatives_-_CHISP,_Testbed_10_and_Testbed_11_(planned)_-_draft_v1.pptx" attr="" comment="Hydro Interoperability Initiatives - CHISP, Testbed 10 and Plans for Testbed 11" date="1407865297" path="Hydro Interoperability Initiatives - CHISP, Testbed 10 and Testbed 11 (planned) - draft v1.pptx" size="10537166" user="LewisLeinenweber" version="2"}%
+%META:FILEATTACHMENT{name="TimeSeriesML_HydroDWG20140811.pptx" attachment="TimeSeriesML_HydroDWG20140811.pptx" attr="" comment="" date="1408024796" path="TimeSeriesML_HydroDWG20140811.pptx" size="928111" user="TonyBoston" version="2"}%
+%META:FILEATTACHMENT{name="OGC_NewYork_RiverML_15August2014_2.pptx" attachment="OGC_NewYork_RiverML_15August2014_2.pptx" attr="" comment="RiverML Update Presentation" date="1407942556" path="OGC_NewYork_RiverML_15August2014_2.pptx" size="8652049" user="StephenJackson" version="1"}%
+%META:FILEATTACHMENT{name="2014_OGC_HDWG_RGS_IE_report.pptx" attachment="2014_OGC_HDWG_RGS_IE_report.pptx" attr="" comment="" date="1407944568" path="2014 OGC HDWG RGS IE report.pptx" size="7329151" user="PaulSheahan" version="1"}%
+%META:FILEATTACHMENT{name="Arctur-DisConBB.pptx" attachment="Arctur-DisConBB.pptx" attr="" comment="About US NSF EarthCube Building Block project for Integrating Discrete & Continuous Data" date="1407985375" path="Arctur-DisConBB.pptx" size="1581746" user="DavidArctur" version="1"}%
+%META:FILEATTACHMENT{name="UlyssesFolkHouse-Michael,Becky,Matt,Paul,Irina,Tony,Dave,David.JPG" attachment="UlyssesFolkHouse-Michael,Becky,Matt,Paul,Irina,Tony,Dave,David.JPG" attr="" comment="Wed evening group at Ulysses pub on Stone St." date="1407987798" path="UlyssesFolkHouse-Michael,Becky,Matt,Paul,Irina,Tony,Dave,David.JPG" size="938309" user="DavidArctur" version="1"}%
+%META:FILEATTACHMENT{name="subwaymap.pdf" attachment="subwaymap.pdf" attr="" comment="" date="1408016636" path="subwaymap.pdf" size="493510" user="PaulSheahan" version="1"}%
+%META:FILEATTACHMENT{name="2014_HDWG_NY_GRDC_Metadata_Progress.pptx" attachment="2014_HDWG_NY_GRDC_Metadata_Progress.pptx" attr="" comment="status and next steps" date="1408022249" path="2014_HDWG_NY_GRDC_Metadata_Progress.pptx" size="700060" user="IrinaDornblut" version="1"}%
+%META:FILEATTACHMENT{name="2014_HDWG_NY_HY_Features_Progress.pptx" attachment="2014_HDWG_NY_HY_Features_Progress.pptx" attr="" comment="status and next steps" date="1408022296" path="2014_HDWG_NY_HY_Features_Progress.pptx" size="708353" user="IrinaDornblut" version="1"}%
+%META:FILEATTACHMENT{name="HDWG_OWDI_NHD_Rea20140814.pptx" attachment="HDWG_OWDI_NHD_Rea20140814.pptx" attr="" comment="Presentation on NHD and OWDI by Al Rea" date="1408023880" path="HDWG_OWDI_NHD_Rea20140814.pptx" size="10391921" user="AlRea" version="1"}%
+%META:FILEATTACHMENT{name="Arctur-GEOSS_AIP.pdf" attachment="Arctur-GEOSS_AIP.pdf" attr="" comment="GEOSS water project review" date="1408024588" path="Arctur-GEOSS AIP.pdf" size="16937041" user="DavidArctur" version="1"}%
+%META:FILEATTACHMENT{name="DRM-ConcludingThoughts.pptx" attachment="DRM-ConcludingThoughts.pptx" attr="" comment="David Maidment's synthesis on a US hydrology data framework" date="1408032097" path="DRM-ConcludingThoughts.pptx" size="434806" user="DavidArctur" version="1"}%
+%META:FILEATTACHMENT{name="OWS10-hydro_slides-20140326.ppt" attachment="OWS10-hydro_slides-20140326.ppt" attr="" comment="Report on OWS10-Hydro task from March 2014 OGC meeting, DC" date="1408100440" path="OWS10-hydro_slides-20140326.ppt" size="2285568" user="DavidArctur" version="2"}%
+%META:FILEATTACHMENT{name="14-048_OGC_Testbed_10_CCI_Hydro_Model_Interoperability_Engineering_Report.pdf" attachment="14-048_OGC_Testbed_10_CCI_Hydro_Model_Interoperability_Engineering_Report.pdf" attr="" comment="Public Engineering Report released 2014-07-16" date="1408034944" path="14-048_OGC_Testbed_10_CCI_Hydro_Model_Interoperability_Engineering_Report.pdf" size="3346731" user="DavidArctur" version="1"}%
+%META:FILEATTACHMENT{name="IWRSS_IDS_for_HDWG.pptx" attachment="IWRSS_IDS_for_HDWG.pptx" attr="" comment="Ed Clark: requirements for system interoperability and data synchronization" date="1408044489" path="IWRSS_IDS_for_HDWG.pptx" size="6094457" user="IlyaZaslavsky" version="1"}%
+%META:FILEATTACHMENT{name="Arctur-OGC4Hydro.ppt" attachment="Arctur-OGC4Hydro.ppt" attr="" comment="List of key OGC projects in developing WaterML standards and practices, 2010-2014" date="1408078243" path="Arctur-OGC4Hydro.ppt" size="305664" user="DavidArctur" version="1"}%
+%META:FILEATTACHMENT{name="OccViz_OGCMeeting.pptx" attachment="OccViz_OGCMeeting.pptx" attr="" comment="OccViz presentation by Saurav Kumar @ Aug 15,2014 - 9:30" date="1408108208" path="OccViz_OGCMeeting.pptx" size="1948425" user="SauravKumar" version="1"}%
+%META:FILEATTACHMENT{name="HDWG-futures.pptx" attachment="HDWG-futures.pptx" attr="" comment="" date="1408198593" path="HDWG-futures.pptx" size="422587" user="TonyBoston" version="2"}%

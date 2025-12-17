@@ -1,0 +1,97 @@
+%META:TOPICINFO{author="DavidLemon" date="1278377377" format="1.1" reprev="1.19" version="1.19"}%
+%META:TOPICPARENT{name="WorkingGroupMeetings"}%
+---++ Announcement
+
+*Dates:*      15 - 18 March, 2010 (Formal component on 16th and 17th)
+
+*Venue:*    JRC, Ispra, Italy
+
+*Purpose:*
+
+This meeting will be the first workshop of the Hydrology Domain Working Group. It is open to any member of the working group.
+
+The kind folk at JRC in Ispra (Italy) have offered to host us in March in the week following the Frascati meeting of the OGC Technical Committee meeting. That is, the week starting March 15. The main meeting will be held on the 16th and 17th with side meetings on the 15th and 18th.
+
+The workshop represents an excellent opportunity for the Hydro DWG to get some real work done. In particular, it presents a great opportunity to have a gathering for those interested in the development of a water data exchange format (along the lines proposed in the CSIRO/CUAHSI Harmonisation report) as well as those involved in the current Groundwater and proposed Surface Water IEs.
+
+
+---++ Agenda
+
+
+|*Date*|*Time*|*Session*|*Presenters*|
+|Monday 15th|9:00 - 17:00|WaterML 2.0 Development Team|Peter Taylor and others|
+|^|15:00 - 18:00|Groundwater IE|Boyan and Nate|
+|Tuesday 16th|9:30|Welcome%BR% - Expectations of this meeting%BR% - Update on WMO Relationship%BR% - Update from Frascati TC|David, Ulrich and Ilya|
+|^|10:30|The INSPIRE Context|JRC|
+|^|11:00|_Break_||
+|^|11:30|IE Updates%BR% - Current status and what's next for Groundwater IE%BR% - Current proposal for Surface Water IEs|Boyan or Nate, Peter Fitch|
+|^|12:30|_Lunch_||
+|^|14:00|Public Session%BR% - What, Why and How of the OGC\WMO Hydrology DWG|David|
+|^|15:00|_Break_||
+|^|15:30|Model Integration%BR% - Presentations on OpenMI, FEWS and others on the problems associated with and the need for standards in this space|Peter Gijsbers, Andrea and Ann|
+|^|18:00|Close||
+|Wednesday 17th|9:00|Real World Use Cases%BR% - examples of where our work will be needed|Ulrich, Jakob, Paul|
+|^|10:00|Information Modelling%BR% - WaterML 2.0 update, metadata models, ontologies.%BR% What's happening and what do we need to be doing|All%BR%Peter Taylor, Irina|
+|^|11:00|_Break_||
+|^|11:30|Revision of Hydro DWG Workplan|David, Ulrich and Ilya|
+|^|12:30|_Lunch_||
+|^|14:00|High Bandwidth Comms||
+|^|15:30|_Break_||
+|^|16:00|High Bandwidth Comms cont||
+|^|18:00|Close||
+|Thursday 18th|9:00|WaterML 2.0 Development Team|Peter Taylor et al|
+|^|9:00|Surface Water IE Meeting||
+|^|12:30|_Lunch_||
+
+
+---++ Logistics
+
+_Registration_
+
+Registration is now closed!!
+
+Changes to your registration can be made through the JRC website [[https://jrc-meeting-registration.jrc.ec.europa.eu/][Registration]].
+
+
+_Accommodation_
+
+Through the registration website you can also book a hotel room, if needed. The hotel will be automatically notified.
+The cost of the single room in Hotel Europa is 55¤/night, breakfast included. If you need to cancel, you can update the hotel booking until 07/03/2010.
+ 
+_Transportation_
+
+Unfortunately all attendees will be responsible for their own transport. JRC recommend hiring a car from the airport rather than taxis as these can be quite expensive. There is no public transport in the area.
+
+_Workshop Dinner_
+
+A social dinner has been organised at Hotel Europa on March 16th. 
+The cost of the dinner is 30¤/person.
+Confirmation of your attendance can be done through the website.
+
+-- Main.DavidLemon - 14 Jan 2010
+
+This page was previously named JRCWkShop2009. 
+
+-- Main.SimonCox - 25 Feb 2010
+
+   * [[%ATTACHURL%/20100305_CCIP-2_Overview.ppt][20100305_CCIP-2_Overview.ppt]]: Climate Challenge Interoperability Pilot - Call for Sponsors
+
+   * [[%ATTACHURL%/Surface_Water_IE.pptx][Surface_Water_IE.pptx]]: Surface Water IE Update and Planning
+
+%META:FILEATTACHMENT{name="Lemon_-_OGC_Hydro_DWG_Workshop_Ispra_2010.pptx" attachment="Lemon_-_OGC_Hydro_DWG_Workshop_Ispra_2010.pptx" attr="" comment="What Why and How of Hydrology DWG" date="1268822782" path="C:\Documents and Settings\lem029\My Documents\Presentations\Lemon - OGC Hydro DWG Workshop Ispra 2010.pptx" size="8577853" stream="C:\Documents and Settings\lem029\My Documents\Presentations\Lemon - OGC Hydro DWG Workshop Ispra 2010.pptx" tmpFilename="/tmp/yKHeB9zZ2d" user="Main.DavidLemon" version="1"}%
+%META:FILEATTACHMENT{name="Rizzoli_-_JRC_HydroDWG.pdf" attachment="Rizzoli_-_JRC_HydroDWG.pdf" attr="" comment="AI and Model Integration" date="1268823359" path="C:\Documents and Settings\lem029\Desktop\Rizzoli - JRC HydroDWG.pdf" size="8073349" stream="C:\Documents and Settings\lem029\Desktop\Rizzoli - JRC HydroDWG.pdf" tmpFilename="/tmp/qnB3G0rF0x" user="Main.DavidLemon" version="1"}%
+%META:FILEATTACHMENT{name="WaterML2_Update.pdf" attachment="WaterML2_Update.pdf" attr="" comment="An update on the current scope and plan for waterml2 development" date="1268831569" path="WaterML2 Update.pdf" size="273991" stream="WaterML2 Update.pdf" tmpFilename="/tmp/AH6k64gdDA" user="Main.PeterTaylor" version="1"}%
+%META:FILEATTACHMENT{name="WaterML2_WorkshopIntro_withNotes.pdf" attachment="WaterML2_WorkshopIntro_withNotes.pdf" attr="" comment="Introduction to waterml2 and notes from day 1 discussion" date="1268831610" path="WaterML2_WorkshopIntro_withNotes.pdf" size="486033" stream="WaterML2_WorkshopIntro_withNotes.pdf" tmpFilename="/tmp/LjlafTvHgS" user="Main.PeterTaylor" version="1"}%
+%META:FILEATTACHMENT{name="20100305_CCIP-2_Overview.ppt" attachment="20100305_CCIP-2_Overview.ppt" attr="" comment="Climate Challenge Interoperability Pilot - Call for Sponsors" date="1268831969" path="20100305_CCIP-2_Overview.ppt" size="935424" stream="20100305_CCIP-2_Overview.ppt" tmpFilename="/tmp/4tJz2Yf61R" user="Main.DavidArctur" version="1"}%
+%META:FILEATTACHMENT{name="WaterWebServices_2010_hdwg.pptx" attachment="WaterWebServices_2010_hdwg.pptx" attr="" comment="WaterML 2 is the language. What are the services needed" date="1268832014" path="WaterWebServices_2010_hdwg.pptx" size="964247" stream="WaterWebServices_2010_hdwg.pptx" tmpFilename="/tmp/pqh0gRkC5V" user="Main.DavidValentine" version="1"}%
+%META:FILEATTACHMENT{name="WaterWebServices_2010_dv.docx" attachment="WaterWebServices_2010_dv.docx" attr="" comment="Early Draft Document on Water Services from CUAHSI Perspective" date="1268832152" path="WaterWebServices_2010_dv.docx" size="75908" stream="WaterWebServices_2010_dv.docx" tmpFilename="/tmp/4t0UYYMHvq" user="Main.DavidValentine" version="1"}%
+%META:FILEATTACHMENT{name="DataExchangeExampleHDWG-Ispra.ppt" attachment="DataExchangeExampleHDWG-Ispra.ppt" attr="" comment="Uli's GRDC Presentation" date="1268839225" path="C:\Documents and Settings\lem029\Desktop\DataExchangeExampleHDWG-Ispra.ppt" size="1261056" stream="C:\Documents and Settings\lem029\Desktop\DataExchangeExampleHDWG-Ispra.ppt" tmpFilename="/tmp/1mcz5DDdFV" user="Main.DavidLemon" version="1"}%
+%META:FILEATTACHMENT{name="FEWS_and_Standards.ppt" attachment="FEWS_and_Standards.ppt" attr="" comment="Peter's FEWS Presentation" date="1268839296" path="C:\Documents and Settings\lem029\Desktop\FEWS_and_Standards.ppt" size="1655808" stream="C:\Documents and Settings\lem029\Desktop\FEWS_and_Standards.ppt" tmpFilename="/tmp/BfjOOsdurU" user="Main.DavidLemon" version="1"}%
+%META:FILEATTACHMENT{name="OpenMI_for_DWGHydro.ppt" attachment="OpenMI_for_DWGHydro.ppt" attr="" comment="Peter's OpenMI Paper" date="1268839425" path="C:\Documents and Settings\lem029\Desktop\OpenMI_for_DWGHydro.ppt" size="2277888" stream="C:\Documents and Settings\lem029\Desktop\OpenMI_for_DWGHydro.ppt" tmpFilename="/tmp/rYyCGxGJud" user="Main.DavidLemon" version="1"}%
+%META:FILEATTACHMENT{name="WMO_Meeting_feedback_at_JRC.ppt" attachment="WMO_Meeting_feedback_at_JRC.ppt" attr="" comment="" date="1268839456" path="C:\Documents and Settings\lem029\Desktop\WMO Meeting feedback at JRC.ppt" size="764928" stream="C:\Documents and Settings\lem029\Desktop\WMO Meeting feedback at JRC.ppt" tmpFilename="/tmp/LZ1FFUS1or" user="Main.DavidLemon" version="1"}%
+%META:FILEATTACHMENT{name="swedish_standard_for_watersystem.ppt" attachment="swedish_standard_for_watersystem.ppt" attr="" comment="presentation on the swedish feature model for water" date="1269124026" path="swedish_standard_for_watersystem.ppt" size="3446272" stream="swedish_standard_for_watersystem.ppt" tmpFilename="/tmp/qEzhKFPJ7W" user="Main.JakobNisell" version="1"}%
+%META:FILEATTACHMENT{name="Surface_Water_IE.pptx" attachment="Surface_Water_IE.pptx" attr="" comment="Surface Water IE Update and Planning" date="1269384795" path="Surface Water IE.pptx" size="321327" stream="Surface Water IE.pptx" tmpFilename="/tmp/0tWhf8vOs0" user="Main.PeterFitch" version="1"}%
+%META:FILEATTACHMENT{name="HydrologicMetadata_Ispra20100315.pdf" attachment="HydrologicMetadata_Ispra20100315.pdf" attr="" comment="Irina's Presentation" date="1278377186" path="C:\Documents and Settings\lem029\Desktop\HydrologicMetadata_Ispra20100315.pdf" size="451441" stream="C:\Documents and Settings\lem029\Desktop\HydrologicMetadata_Ispra20100315.pdf" tmpFilename="/tmp/8Jj24HgEKj" user="Main.DavidLemon" version="1"}%
+%META:FILEATTACHMENT{name="vanGriensven-OGC-meeting-Ispra2010.pdf" attachment="vanGriensven-OGC-meeting-Ispra2010.pdf" attr="" comment="Ann's Presentation" date="1278377235" path="C:\Documents and Settings\lem029\Desktop\vanGriensven-OGC-meeting-Ispra2010.pdf" size="3292844" stream="C:\Documents and Settings\lem029\Desktop\vanGriensven-OGC-meeting-Ispra2010.pdf" tmpFilename="/tmp/V3xC9Tqlnk" user="Main.DavidLemon" version="1"}%
+%META:FILEATTACHMENT{name="INSPIRE_DS_Introduction.ppt" attachment="INSPIRE_DS_Introduction.ppt" attr="" comment="Martin's Presentation" date="1278377303" path="C:\Documents and Settings\lem029\Desktop\INSPIRE_DS_Introduction.ppt" size="5872128" stream="C:\Documents and Settings\lem029\Desktop\INSPIRE_DS_Introduction.ppt" tmpFilename="/tmp/Qo51B5VhJE" user="Main.DavidLemon" version="1"}%
+%META:TOPICMOVED{by="SimonCox" date="1267089963" from="HydrologyDWG.JRCWkShop2009" to="HydrologyDWG.JRCWkShop2010"}%

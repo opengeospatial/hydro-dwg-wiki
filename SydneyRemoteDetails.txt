@@ -1,0 +1,51 @@
+%META:TOPICINFO{author="DavidLemon" date="1290980144" format="1.1" reprev="1.2" version="1.2"}%
+%META:TOPICPARENT{name="SydneyTc2010"}%
+Topic: Hydro DWG 
+
+Date: Wednesday, 1. December 2010 
+
+Time: 8:00, Australia Eastern Daylight Time (Sydney, GMT+11:00) 
+
+Meeting Number: 793 932 470 
+
+Meeting Password: OGCogc1 
+
+Telephone: +1 512 225 3050 passcode:36429#
+
+
+To join the online meeting (Now from the Apple iPhone (R) too!) 
+
+   1. Go to [[https://opengeospatial.webex.com/opengeospatial/j.php?ED=148171932&UID=1142762517&PW=NM2U3ZmVlMzk3&RT=OCM1NQ%3D%3D]]
+   1. If requested, enter your name and email address. 
+   1. If a password is required, enter the meeting password: OGCogc1 
+   1. Click "Join". 
+
+To view in other time zones or languages, please click the link: 
+[[https://opengeospatial.webex.com/opengeospatial/j.php?ED=148171932&UID=1142762517&PW=NM2U3ZmVlMzk3&ORT=OCM1NQ%3D%3D]]
+
+
+For assistance 
+
+   1. Go to [[https://opengeospatial.webex.com/opengeospatial/mc]] 
+   1. On the left navigation bar, click "Support". 
+
+
+You can contact me at: 
+gbuehler@opengeospatial.org 
+1-812 334 0601 
+
+To update this meeting to your calendar program (for example Microsoft Outlook), click this link: 
+[[https://opengeospatial.webex.com/opengeospatial/j.php?ED=148171932&UID=1142762517&ICS=MRS2&LD=1&RD=8&ST=1&SHA2=FeuVu6cCHtCOhm0CGeD-k8TwdHa-9goaZdNhcDLLWFo=&RT=OCM1NQ%3D%3D]]
+
+
+WebEx will automatically setup Meeting Manager for Windows the first time you join a meeting. To save time, you can setup prior to the meeting by clicking this link: 
+[[https://opengeospatial.webex.com/opengeospatial/meetingcenter/mcsetup.php]]
+
+
+The playback of UCF (Universal Communications Format) rich media files requires appropriate players. To view this type of rich media files in the meeting, please check whether you have the players installed on your computer by going to [[https://opengeospatial.webex.com/opengeospatial/systemdiagnosis.php]] 
+
+
+
+
+
+-- Main.DavidLemon - 17 Nov 2010

@@ -1,0 +1,47 @@
+%META:TOPICINFO{author="PeterFitch" date="1270685727" format="1.1" reprev="1.1" version="1.1"}%
+%META:TOPICPARENT{name="SurfacewaterInteroperabilityExperiment"}%
+---++ Telecon 7 April 2pm UTC
+
+---+++ Agenda for the Telecon
+For discussion
+   * Feedback from OAB on current proposal.
+   * Feedback and update from all on current status 
+
+---++++Attendees
+John Halquist, Dharhas Pothina, Carsten Heidemann Sylvain Grellet, Peter Fitch
+
+---+++ Notes
+
+---+++ Feedback from Carl Reed OAB
+"Nicely done!
+Please post to pending documents I will schedule for OAB discussion."
+
+---++++ Carsten and Sylvain on cross border experiment
+Carsten is organising a telecon to plan in a litltle more detail the experiment (See link on the surfacewater IE page). At this stage both IOW-Sandre and disy are happy with the general text in the IE plan. 
+
+---++++ Jon Halquist (NOAA)
+   * There has been an ongoing email discussion over the last few weeks, following the Ispra workshop in which NOAA/NWS are trying to understand the best way to contribute to the development of WaterML2.0. Peter Gjisbers and John H. both feel that their interests are best served by committing to an IE which focusses on forecasting in its own right. The current surface water IE may be the first step in working with WaterML2.0 but at this stage John is unable to say. John is hopeful that he will be able to confirm NOAA/NWS/Delft interest to the surface water IE by next week. In either case, it is likely that Peter G and John will work up a proposal for a separate IE focussing on forecasting.
+
+---++++ Dharhas Pathino - Texas Water Board
+Dharhas is interested in working out the best way to participate in the development of WaterML2.0 and is keen for it to handle data not currently supported in WaterML1.0. The example given was vector data from ADV instruments.  Peter will brief Dharhas on the IE background in a separate phone call in the next couple of days.
+
+---+++General Notes
+   * Peter will be circulating the template for initiators of the IE to get signed by an appropriate person within their organisation.
+   * At this stage we are on plan to submit to OGC by 23 April but need to have answers for:
+      * NOAA/NWS interest  in the forecasting usecase
+      * GRDC's commitment to the runoff use case.
+
+
+---+++ Next Meeting
+   * Wed 14 April 2pm UTC
+      
+  
+
+---+++Actions Summary
+   1. Peter to circulate the initator agreement.
+   1. Peter to call Dharhas to update on OGC processes and the background to the IE.
+
+
+
+
+-- Main.PeterFitch - 07 Apr 2010

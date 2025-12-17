@@ -1,0 +1,12 @@
+%META:TOPICINFO{author="BoyanBrodaric" comment="reprev" date="1446660703" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="WebHome"}%
+---+ *GroundWater Standards Working Group* (GW SWG)
+
+The GW SWG aims to:
+   * Develop a data exchange standard for the groundwater domain. The standard is to be known as !GroundWater Markup Language 2 (!GWML2) and will consist of conceptual and logical information models, as well as language specific implementations, which initially minimally include a GML-XML encoding specification.
+   * Maintain and update the standard once established.
+
+---++ *Charter*
+   * To view the proposed charter click... [[%ATTACHURL%/Groundwater_SWG_Charter--GWML2.pdf][here]]
+
+%META:FILEATTACHMENT{name="Groundwater_SWG_Charter--GWML2.pdf" attachment="Groundwater_SWG_Charter--GWML2.pdf" attr="" comment="GW SWG Charter" date="1446660437" path="Groundwater SWG Charter--GWML2.pdf" size="33601" user="BoyanBrodaric" version="1"}%

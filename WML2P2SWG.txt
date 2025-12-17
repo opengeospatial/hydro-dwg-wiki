@@ -1,0 +1,27 @@
+%META:TOPICINFO{author="TonyBoston" comment="save topic" date="1435642719" format="1.1" reprev="3" version="3"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---++ WaterML2 Part 2 - Standards Working Group
+
+| Primary Editor  | Peter Taylor | CSIRO Australia |
+| Chair  | Paul Sheahan | BOM Australia |
+%TOC%
+---+++ Formation / First meeting
+
+Following advertising of the SWG's charter and receiving comments the SWG held its first meeting on Thursday 14 August anf the Hydrology Domain Working Group, CCNY.
+
+Nominations were received and accepted as below:
+
+Chair : Paul Sheahan, BOM Australia
+
+Primary Editor : Peter Taylor, CSIRO Australia
+
+Attendees: Matt Fry, Brian Gouge, Michael Natschke, Paul Sheahan.
+   1 The SWG reviewed the activity schedule, understanding that : SWG prepares candidate standard for vote for public release. 2014 December
+   1 Discussion on the use of range values and equations.
+      1 Paul to write up issue for SWG to consider
+   1 Meetings to be held as required via telecon.
+      1 Depending on the issues, a whole of SWG meeting may be held or the topic may be discussed in time zone sympathetic groups.
+   1 A SWG issues and decisions register will be established.
+-- Main.PaulSheahan - 14 Aug 2014
+
+%META:FILEATTACHMENT{name="Screen_Shot_2015-06-30_at_3.17.12_pm.png" attachment="Screen_Shot_2015-06-30_at_3.17.12_pm.png" attr="" comment="WaterML2: Part 2 - OGC Voting statistics as at 30 June 2015" date="1435641856" path="Screen Shot 2015-06-30 at 3.17.12 pm.png" size="179613" user="TonyBoston" version="1"}%

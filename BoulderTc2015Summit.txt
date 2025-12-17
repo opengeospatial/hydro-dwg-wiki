@@ -1,0 +1,38 @@
+%META:TOPICINFO{author="DavidArctur" comment="reprev" date="1433724000" format="1.1" reprev="2" version="2"}%
+<h1 dir="ltr">Water Data Summit at OGC TC, Boulder Colorado USA, June 3, 2015</h1> <h2 dir="ltr">Open Water Data Initiative (OWDI) and National Flood Interoperability Experiment (NFIE): Flood Forecasting at National & Global Scale</h2>
+
+<strong><span style="background-color: transparent;">Center Green (CG-1), Room 1214 (North Auditorium) </span></strong>
+
+<blockquote>
+
+<strong><span style="color: #333333; font-size: 24.7000007629395px; line-height: 1.1em; background-color: transparent;">Agenda</span></strong>
+<p dir="ltr">8:00 - Session 1 - Introductions</p> <p dir="ltr">8:15 - Overview of National Flood Interoperability Experiment (David Maidment) [<a href="https://portal.opengeospatial.org/files/?artifact_id=63999" target="_blank">powerpoint slides, 88mb</a>]</p> <p dir="ltr">9:15 - Visualizing the integration of discrete and continuous data (Jeff Weber) [<em>live demo of Unidata IDV; not downloadable</em>]</p> <p dir="ltr"> _9:45 - Break_ </p> <p dir="ltr">10:15 - Session 2 - Introductions</p> <p dir="ltr">10:30 - Global Flood Forecasting for GEOSS (David Arctur) [<a href="https://portal.opengeospatial.org/files/?artifact_id=64005" target="_blank">powerpoint slides, 43mb</a>]</p> <p dir="ltr">11:15 - Standards and interoperability for cross-domain science; advances in netCDF/CF (Ethan Davis) [<a href="https://portal.opengeospatial.org/files/?artifact_id=64006" target="_blank">powerpoint slides, 1.3mb</a>]</p> <p dir="ltr">11:45 - Closing remarks (David Maidment)</p> <p dir="ltr"> _12:00 - Adjourn_ </p> </blockquote> <h3 dir="ltr"> </h3> <h3 dir="ltr">Related Links</h3>
+   * <a href="http://www.opengeospatial.org/event/1506tc" target="_blank"><span style="background-color: transparent;">OGC TC Boulder meeting info</span></a>
+   * <span style="background-color: transparent;"><a href="http://www.opengeospatial.org/pressroom/pressreleases/2228" target="_blank">OGC Press Release</a> (meeting announcement)</span>
+   * <span style="background-color: transparent;"><a href="https://portal.opengeospatial.org/files/?artifact_id=63998" target="_blank">Water Data Summit Agenda and Overview</a> (brochure pdf, 3 pgs)</span>
+   * <a href="https://portal.opengeospatial.org/index.php?m=projects&a=view&project_id=82&tab=2&artifact_id=62968" target="_blank">Meeting presentations folder</a><span style="background-color: transparent;"> (OGC portal login may be required)</span>
+   * <a href="https://portal.opengeospatial.org/public_ogc/register/1506water_view.php" target="_blank">Roster of attendees</a>
+   * <strong style="background-color: transparent;"><a href="https://www.cuahsi.org/NFIE" target="_blank">NFIE Home at CUAHSI.org</a> - Webinars, Summer Institute 2015, and other resources</strong>
+
+---++ Organizing Committee
+   * <span style="background-color: transparent;">David Arctur, UT Austin</span>
+   * <span style="background-color: transparent;">David Maidment, UT Austin</span>
+   * <span style="background-color: transparent;">Tony Boston, Australia Bureau of Meteorology</span>
+   * <span style="background-color: transparent;">Ilya Zaslavsky, SDSC</span><span style="background-color: transparent;"> * </span><span style="background-color: transparent;">Silvano Pecora, ISPRA/ARPA/WMO</span>
+   * <span style="background-color: transparent;">Chris Little, UK Met Office</span>
+
+---++ Goals and Objectives
+<p dir="ltr">The overall goal of this OWDI Summit is to stimulate engagement in development of tools and policies for the U.S. Open Water Data Initiative. Similar initiatives are being pursued in Europe, Australia, New Zealand, and other regions. The main objective of this particular event is to acquaint the OGC community and the broader geoscience community in the central Colorado region with recent advancements in high-resolution forecasting of precipitation, runoff, streamflow, and flooding across the continental U.S. in near-real time. This represents the first time that surface water flows have been modeled and studied at the national scale. Similar data and tools from the European Center for Medium-Range Weather Forecasting (ECMWF) in UK and the Joint Research Centre (JRC) in Italy are being applied on a global scale, through the GEOSS Architecture Implementation Pilot. The integrative framework, data and models being developed are enabling a major shift in the kinds of questions and issues scientists, meteorologists, and emergency response teams can start to address.</p>
+
+---++ Target Audience
+<p dir="ltr">This research and development will be of interest to geoscientists in atmospheric and hydrological domains, as well as to operational meteorologists and even local-level public safety officials such as fire and police departments responsible for emergency response. The latter are among the key beneficiaries of this work.</p> <p dir="ltr"> </p> <h1 dir="ltr">National Flood Interoperability Experiment (NFIE) Overview</h1> <h3 dir="ltr">Atmospheric-Hydrologic Models and Outputs</h3> <p dir="ltr"><img alt="NFIE-Hydro models.png" height="387px;" src="https://lh3.googleusercontent.com/CuQdnd1Vo7O9pKSKgvCT2kvLbquxNVliEgJkTg4u9yR_GB0BRxVxG--9DUrJUSOkyvzgn553Ym74J_H5cvq5fs7a0jZfklNLJBS_DiDalex6hqRxAHuIS2icov4r677FKG00rzQ" width="554px;" /></p> <h3 dir="ltr">Transformative for the Nation</h3>
+
+*Forecasts produced by:*
+   * <b><span style="background-color: transparent;">Current system</span></b><span style="background-color: transparent;">: 3600 locations (excludes coastal and many other areas)</span>
+   * <b><span style="background-color: transparent;">Proposed system</span></b><span style="background-color: transparent;">: 2.67 million locations (complete US river network at ~3km resolution)</span>
+      * <span style="background-color: transparent;">US NWS (15 hr forecast, every 3 hr); ECMWF (10-15 days, every 12 hr)</span>
+<p dir="ltr"><img alt="NFIE coverage map.png" height="252px;" src="https://lh5.googleusercontent.com/3FkGqfIBwZA3O5AwCvMdY01T3S434l2sQZnFbo3SO2ZW0YRMhifbkn2hzCkfq07ksVIfX05AvYGbsuJtnyf_OmP_ZpBb7FaxQIPZ9BlysJdm88fngambFCVL9FJ9hxyr4jrh6S8" width="662px;" /></p>
+---+++ <br /><br />This approach is being adapted for probabilistic global forecasts
+<h3 dir="ltr"><img alt="GFIE-Magdalena.png" height="371px;" src="https://lh4.googleusercontent.com/0B0d1BoOEa9OGFEcVZXgumt8dHF-clSK2s3x2rB7YtP-eiVG2hPa_MXdNhjOV3u-6zw9cjUnaI2CWmfAoa-iDWT-JJ_HmDXS9x5IPOHdaPo0kdurgPmSsLLXUgcT0pYCxKTafeo" width="575px;" /></h3> <p dir="ltr"> *Come and learn how we’re doing this.* </p>
+
+-- Main.DavidArctur - 07 Jun 2015

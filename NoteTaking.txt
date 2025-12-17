@@ -1,0 +1,9 @@
+%META:TOPICINFO{author="PeterTaylor" date="1339133162" format="1.1" version="1"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---++ Google docs
+
+Google docs is up there in terms of functionality and most people have a good accound of some sort. 
+
+Please go here: https://docs.google.com/document/d/1645wCqVV5Ttut14FURzLVUyW4wTpF1Jwk4IDGj_oq4A/edit and drop a comment in. 
+
+-- Main.PeterTaylor - 08 Jun 2012

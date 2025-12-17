@@ -1,0 +1,10 @@
+%META:TOPICINFO{author="BruceSimons" comment="save topic" date="1432176245" format="1.1" reprev="2" version="2"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *Use Case 5 Implementation*
+---++ Mapping between NGIS and GWML2
+
+GWML2NGISMapping
+
+-- Main.BruceSimons - 21 May 2015
+
+-- Main.BoyanBrodaric - 26 Oct 2012

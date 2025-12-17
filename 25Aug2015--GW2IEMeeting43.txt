@@ -1,0 +1,87 @@
+%META:TOPICINFO{author="BoyanBrodaric" comment="reprev" date="1440515283" format="1.1" reprev="6" version="6"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *GW2IE Meeting 43 -- Tues 25 August 2015*
+
+---++ *Agenda*
+   * Meetings update:
+      * OGC TC Sept Nottingham: draft agenda... [[NottinghamTC2015][here]]
+      * HDWG Orleans: RDA registration fee waiver for guests?
+   * Server update
+   * LM / Schema update: !ManagementArea, definitions, ...
+   * Instances update: see issues below
+   * Report update:
+      * Conceptual / logical model: reviews, references
+      * Requirements / conformance classes: see issues below
+      * Use-cases: see SVN... [[https://xp-dev.com/svn/gwml2/Documents/][here]]
+
+---++ *Results*
+   * Meetings update:
+      * OGC TC Sept Nottingham: will defer motion to accept report to HDWG Orleans.
+   * LM / Schema update:
+      * LM defs compiled and migration to schema in progress
+   * Instances update: see issues below
+   * Report update:
+      * Conceptual / logical model: see timeline below
+      * Requirements / conformance classes: see issues and timeline below
+      * Use-cases: see timeline below
+   * Timeline
+      * Tues Aug 25: top section of report completed in SVN (*Boyan*)
+      * Wed Aug 26: use-cases completed in SVN (*Peter*, *Jessica*)
+      * Thurs Aug 27: requirements/conformance sections completed (*Eric*, *Bruce*)
+      * Fri Aug 28: full report posted to SVN for final review (*Boyan*)
+      * Mon Sept 31: final review due (*All*)
+      * Tues Sept 1: final report circulated to HDWG (*Boyan*)
+
+---+++ Instance Issues
+   * !ManagementArea:
+      * &lt;gwml2:gwAreaType&gt;
+         * Alex has populated with " Groundwater Management Zone ". I think this should be "water" from http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/, based on the UML notes: "owl:sameAs environmentalDomain in INSPIRE AM v3.0."
+            * RESOLUTION: all vocabs are equally valid, because none are canonical
+      * &lt;gwml2:gwAreaYield&gt;
+         * Documentation has "Type of yields (of the aquifer or management area): e.g. specific yield, safe yield, license yield etc. but excludes well yield. TBD". I can't see how this relates to the cardinality (0..1) or the data type (OM_Measurement). What is gwml2:gwAreaYield used for and how do we distinguish the various yield types?
+            * RESOLUTION: OM property = type of yield; cardinality of gwAreaYield changed to 0...*
+      * Relationship between &lt;gwml2:gwAreaWaterBudget&gt; and &lt;gwml2:gwAreaYield&gt; The gwml2:gwAreaWaterBudget property has no documentation so I'm unclear its relationship to gwml2:gwAreaYield
+         * I want to be able to populate values for values of 'unallocated groundwater' (% and/or ML), 'current entitlement' (% and/or ML), 'entitlement limit' (ML). Do I put these all into gwml2:gwAreaWaterBudget (it has cardinality of 0..*), and then use 'gwml2f:gwBudgetAmount/om:OM_Observation/om:observedProperty' to distinguish the different entitlements (seems like a hack)?
+            * RESOLUTION: Not handled by the model; deferred to SWG
+
+---+++ Requirements / Conformance Issues
+   * 9.8 (/req/gwml2-well-gu/log-category) how to name observedProperty (use the identifier of the clause to document the intend or use the identifier of a formal swe definition of the property - I've used the former for NamedValue - not sure about the rest):
+      * RESOLUTION: remove any constrains on use of HTTP URI and propose that this should be handled in community profiles. Add statement in issues.
+   * 10.5 (/req/xsd-gwml-well/waterwell-CRS-uom) : it says that the uom of the CRS of the elevation must match the uom of the shape. Isn't the unit part of the CRS definition (and then clause 10.5.1 saying that Z CRS of elevation must match Z of shape saying the same thing ?) (ditto monitoring) :
+      * RESOLUTION: Rephrase to specify that UOM and datum shall be the same.
+   * /conf/gwml2-core/observed-property (A.2.1) : Says that all Observation's observedProperty must be GWML 2.1 properties. (I don't think I wrote this because I always been against the idea in O&M). It's a conformance test but there are no requirement matching it.
+      * RESOLUTION: same as 9.8
+   * /req/gwml2-core listed in conformance classes (while not in requirement) - discussions started by email : needs conclusion.
+      * RESOLUTION: core conformance moved to core.
+   * Started a discussion about FOI (sampling feature or domain feature) - which has ramifications
+      * RESOLUTION: add a Observation parameter and SamplingFeature parameter to identify the geometry for relative location.
+         * Navigation issues (specially when we have many to many)
+         * when we need to identify the reference geometry for OM located along a well (located relative to well path). Spec said FOI would identify the well. Probably a bad idea anyway, so we started discussion the idea of adding another !NameValue. Did not conclude. -- Main.EricBoisvert - 25 Aug 2015
+
+---++ *Participants*
+   * Click here for the [[http://doodle.com/s57cqeksr2ndgrge][Doodle Poll]]
+
+---++ *Connection Instructions*
+
+| *Ottawa*  | *Madison* | *London* | *Paris* | *Melbourne* | *Auckland* |
+| 8:00 | 7:00 | 13:00 | 14:00 | 22:00 | 23:59 |
+
+   * Screen sharing (Webex):
+      * pass: ogc
+      * url: https://pwgsc-nh.webex.com/pwgsc-nh/j.php?MTID=m9835bd58c57c475f11f5c5ef7dc43b3d
+
+   * Teleconference:
+      * Dial local number (see below) and passcode = *616269*
+
+| *Country*  | *Conference Number* |
+| Australia  | +61 (0) 3 8672 0180 |
+| Austria  | +43 (0) 1 2650500 |
+| Belgium  | +32 (0) 3 294 11 60 |
+| Canada  | +1 559-546-1300 |
+| France  | +33 (0) 1 80 14 11 00 |
+| Germany  | +49 (0) 228 5343020 |
+| Italy  | +39 055 464 0570 |
+| Netherlands  | +31 (0) 20 322 3000 |
+| Poland  | +48 22 116 80 20 |
+| United Kingdom  | +44 (0) 330 606 0182 |
+| United States  | +1 760-569-7100 |

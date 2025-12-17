@@ -1,0 +1,27 @@
+%META:TOPICINFO{author="BoyanBrodaric" date="1261581840" format="1.1" reprev="1.2" version="1.2"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+AGU 2009 Fall Meeting 
+
+---++ Attendees
+   * *NRCan* (CAN): Main.BoyanBrodaric
+   * *USGS* (USA): Main.NateBooth
+   * *CSIRO* (AU): Main.PeterFitch
+   * *UCSD* (USA): Main.IlyaZaslavsky, Main.DavidValentine
+
+---++Activities
+
+   * *Oral Presentation*
+      * Title: An OGC Hydrology and Hydrogeology Interoperability Experiment Paper
+      * Number: !IN33F-09
+      * Date: Dec 16, 2009
+      * Time: 3:16pm
+      * Room: 102 Moscone South
+
+---++Notes
+   * *Actions*
+      * Create !WaterML 2 Design Team consisting of:
+         * Main.PeterTaylor (CSIRO)
+         * Main.DavidValentine (SDSC/CUAHSI)
+         * Main.EricBoisvert (GSC)
+         * Main.ILinKuo (USGS)
+      * Plan organizing meeting at March OGC TC

@@ -1,0 +1,35 @@
+%META:TOPICINFO{author="PaulSheahan" comment="reprev" date="1340167900" format="1.1" reprev="3" version="4"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---+ Ratings, Gaugings and Section workshop agenda
+---++ Timings
+
+Start 09:00 - Catch 08:30 bus from infront of the Ibis
+---++ Involvement, motivation and constraints
+
+Develop a clear understanding of each organisations motivation for involvement, ability to contribute and any constraints.
+---++ Workshop output
+
+Agreeing on a workshop note taking method and output objectives.
+---++ Governance
+
+Consider the activities objectives for the following year and defining logical phases of development with the objective of minimising rework though.<br />Would include, locking down requirements and methods for changing requirements.
+---++ Organisation Objectives
+
+Review, understand and summarise the RGS objectives of the organisations involved. [[http://external.opengis.org/twiki_public/HydrologyDWG/OrganisationObjectives][Organisation Objectives]]
+---++ Domain topics
+
+This is where all the time will go. For each of the domain topic apply the development methodology
+   * Ratings
+   * Ga(u)gings
+   * Sections
+The objective for each topic is the have a level of defintion on the Scope and a strawman model. The topics are listed in a time prioirty order.
+---++ Development Methodology
+   * Articulate organisation topic requirements
+   * Sharing of organisation models
+   * review of requirements to define scope
+   * Identify common elements from organisation inputs, consider how these can be used to meet the scope requirements
+   * identify core components v componets for local extension
+   * Straw man modelling with EA and white board
+- Main.PaulSheahan - 06 Jun 2012
+
+%META:FILEATTACHMENT{name="WiFi_Networking__ESSC.PDF" attachment="WiFi_Networking__ESSC.PDF" attr="" comment="RGS workshop WIFI details" date="1339020418" path="c:\temp\WiFi Networking @ ESSC.PDF" size="73468" user="PaulSheahan" version="1"}%

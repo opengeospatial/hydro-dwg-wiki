@@ -1,0 +1,79 @@
+%META:TOPICINFO{author="NateBooth" date="1267140130" format="1.1" reprev="1.3" version="1.3"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Call 2010-02-25*
+
+---++ Connection Details
+   * dates:  Thurs Feb 25 (N.America), Fri Feb 26 (AU)
+   * times:  5pm (Ottawa), 4pm CT (WI), 8am (AU)
+   * phone number: 218-862-1000 (USA)
+   * conference call code: 437712#
+
+---++ Agenda
+   * Status update: 34North client deployment
+   * Status update: !WaterML2 schema progress
+   * Status update: web services progress (all)
+   * OGC TC (Frascati, IT) / HDWG (Ispra, IT)
+      * presentations
+      * attendance
+
+---++Notes & Action Items (AI)
+
+Roll call:
+NRCan: Boyan, Eric B
+USGS: Nate, Tom, I-Lin
+34N: Ayme, Dave, Nathan
+CUAHSI: Dave Valentine
+- Pete
+- IL: Yong, Alejandro; ISWS: Al , Greg
+- Dave Briar
+
+---+++ Updates - web services and clients
+
+32N (Ayme and Nathan)
+  * 1 week away from implementing things from last call. 
+  * AI: Tom K and Nathan will exchange scenario that results in empty XML document
+  * AI: 32N will send client URL
+
+NRCan (Eric B)
+  * Ottawa database will be offline next week on and off
+
+USGS (Nate)
+  * WFS initially implemented and demoed
+  * AI: Nate to send getCapabilities URL out
+
+IL (Yong)
+  * several 1000 GW water level time series from IL Water Survey will be made available
+  * well characteristics exists but will not be available yet
+  * OGC SOS compliant tool for serving these data in a generic SOS document form
+  * Team will point IL to WaterML2 and GWML
+
+CUAHSI
+  * Catalog services update? none
+
+SOS2 (Eric B and Pete T)
+  * SOS1- no way to advertise a large set of sensors
+  * SOS2- getCapabilities offerings: 1 offering=1 sensor *or* 1 sensor system
+  * SOS2 specifies a standard search parameter for geographic parameter that for a sensor system will be entire extent
+  * for us, we will likely advertise a sensor system and individual sensors can be searched for and returned via getObservations header.
+  * AI: monitor progress within SOS SWE and discuss among HydroWG a way to bring water concerns into that discussion
+
+---+++ WaterML2 (Pete T)
+  * Ispra will define a workplan to roll in harmonization comments and other concepts into WaterML2
+
+---+++ Italy meetings
+* Updates from GW IE
+* Updates on WaterML2
+* 34N client can be shown and offers to provide other materials as need be
+* IL services may not be ready by Italy timeframe but will update group if demoable
+
+---+++ Next call
+* 3/24@5p ET
+https://usgs.webex.com/usgs/j.php?ED=134335822
+
+Teleconference: The phone number is
+(218) 862-1000
+Guest: 437712#
+
+
+
+

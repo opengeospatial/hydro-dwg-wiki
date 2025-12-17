@@ -1,0 +1,48 @@
+%META:TOPICINFO{author="PaulSheahan" comment="reprev" date="1385090625" format="1.1" reprev="2" version="2"}%
+%META:TOPICPARENT{name="RatingShifts"}%
+%TOC%
+---+ WaterML2 implementation of USGS Rating Shifts
+
+---+ <span style="background-color: transparent; line-height: 22px;">Pre-reading links</span>
+   * <a href="RatingsShiftsQuebec" target="_blank">Rating Shifts - understanding the concepts</a>
+   * <a href="RatingShiftsImplementationOptions" target="_blank">Implementation options investigation</a>
+   * <a href="ClassDefinitionsAndGlossary" target="_blank">Glossary of terms</a>
+---+ A WaterML2 Conversion is used to define a rating.
+
+WaterML2 stream discharge rating tables though a generalised 'conversion'. Below is a diagram of the conversion concept.
+
+The conversion/ratings concept is quite straight forward:
+   * Rating tables enable the conversion from an observed property to a derived property.
+   * <span style="background-color: transparent; line-height: 22px;">A rating curve is a curvilinear relationship defined by nodes with linear interpolation between nodes</span>
+   * Conversion have a start date of application.
+The are more complex requirements that are also implemented, but the above points are the core concept.
+
+<img alt="RGS.Conversion.png" height="300" src="%ATTACHURL%/RGS.Conversion.png" title="RGS.Conversion.png" width="494" />
+
+---+ USGS Rating shifts are a form of WaterML2 conversion
+
+In its simplest form, the USGS method of calculating flow involves adjusting the river level data prior to converting into derived flow. This is illustrated in the conversion chain diagram below.
+
+<img alt="Conversion.Shift.Flow.png" height="300" src="%ATTACHURL%/Conversion.Shift.Flow.png" title="Conversion.Shift.Flow.png" width="311" />
+
+A WaterML2 conversion can be used for implementing both the Rating Shift and the Discharge rating.
+   * <span style="background-color: transparent; line-height: 22px;">For more information on how a WaterML2 conversion can be applied to complete a rating shift see the document RatingsShiftsQuebec </span>
+   * <span style="background-color: transparent; line-height: 22px;">The definition of the work flow described above is not in scope for WML2.P2</span>
+
+<span style="background-color: transparent; color: #333333; font-size: 24.44444465637207px; line-height: 1.1em;">WaterML2 Implementing multiple conversions</span>
+
+It is common practice in information systems to define a single conversion period for each <a href="bin.edit.HydrologyDWG.ParamterFrom?topicparent=HydrologyDWG.WaterML2RatingShiftsImplementationConcepts" title="Create this topic">ParamterFrom</a> and <a href="bin.edit.HydrologyDWG.ParameterTo?topicparent=HydrologyDWG.WaterML2RatingShiftsImplementationConcepts" title="Create this topic">ParameterTo</a> (<a href="bin.edit.HydrologyDWG.FromTo?topicparent=HydrologyDWG.WaterML2RatingShiftsImplementationConcepts" title="Create this topic">FromTo</a>) combinations for an monitoring point. The HDWG RGS group decided that this convention would not be followed for WML2.P2 ratings, see <a href="RatingShiftsImplementationOptions" target="_blank">Implementation options investigation</a> for alternatives.
+
+The WML2.P2 implementation will allow a <a href="bin.edit.HydrologyDWG.ConversionPeriod?topicparent=HydrologyDWG.WaterML2RatingShiftsImplementationConcepts" title="Create this topic">ConversionPeriod</a> to define the period of application for multiple <a href="bin.edit.HydrologyDWG.FromTo?topicparent=HydrologyDWG.WaterML2RatingShiftsImplementationConcepts" title="Create this topic">FromTo</a> combinations. This approach has been taken to simplify the usage of WML2.P2 document in the application to USGS rating shifts methods.
+
+Points to note:
+   * A WaterML2.P2 Conversion period with multiple <a href="bin.edit.HydrologyDWG.FromTo?topicparent=HydrologyDWG.WaterML2RatingShiftsImplementationConcepts" title="Create this topic">FromTo</a> combinations can always be disaggregated to enable storage into system that do not support multiple combinations.
+   * Where a work flow required knowledge of several conversions concurrently, (e.g. USGS Rating shifts) this method supports concise delivery of the data with the ability to understand all conversions in data order without having to traverse multiple data structures.
+   * The is Nil impact on a the use of a single <a href="bin.edit.HydrologyDWG.FromTo?topicparent=HydrologyDWG.WaterML2RatingShiftsImplementationConcepts" title="Create this topic">FromTo</a> combination
+<img alt="ConversionGroup.TwoConversions.png" src="%ATTACHURL%/ConversionGroup.TwoConversions.png" style="background-color: transparent; line-height: 22px;" title="ConversionGroup.TwoConversions.png" />
+
+-- Main.PaulSheahan - 21 Nov 2013
+
+%META:FILEATTACHMENT{name="RGS.Conversion.png" attachment="RGS.Conversion.png" attr="" comment="" date="1385082728" path="RGS.Conversion.png" size="54443" user="PaulSheahan" version="1"}%
+%META:FILEATTACHMENT{name="Conversion.Shift.Flow.png" attachment="Conversion.Shift.Flow.png" attr="" comment="" date="1385084160" path="Conversion.Shift.Flow.png" size="108178" user="PaulSheahan" version="1"}%
+%META:FILEATTACHMENT{name="ConversionGroup.TwoConversions.png" attachment="ConversionGroup.TwoConversions.png" attr="" comment="" date="1385090256" path="ConversionGroup.TwoConversions.png" size="83251" user="PaulSheahan" version="1"}%

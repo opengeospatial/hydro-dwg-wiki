@@ -1,0 +1,39 @@
+%META:TOPICINFO{author="DavidBlodgett" comment="save topic" date="1561834306" format="1.1" reprev="5" version="7"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++ Hydrology Domain Working Group
+---++ Meeting details at Leuven TC, 24 - 27 December, 2019
+
+Venue: KU Leuven, Hexagon, Informatie Vlaanderen, and Merkator, Leuven Belgium
+
+Time: Wednesday 26 June 2019, 4:30 PM - 6:00 PM [10:30 AM - 12:00 PM (EDT - US/Eastern)]
+
+Link to [[http://ogcmeet.org/#about][Leuven TC meeting details]]
+---+++ *Meeting Agenda and Outcomes*
+
+1. Quick report on status of each each WaterML2 standard: 5-10 min + short discussion.  
+
+–Will submit some change requests to HY_Features based on experience using the spec.
+
+–GWML2 is on track to WMO adoption this winter.
+
+<span style="background-color: transparent;">2. Report on WMO submission process + next steps.</span>  
+
+<a href="https://external.opengeospatial.org/twiki_public/pub/HydrologyDWG/LeuvenTC2019/OGC_TC_Leuven_HDWG.pptx" target="_blank">See slides for overview.</a>
+
+<span style="background-color: transparent;">3. Planning for HDWG group annual meeting in Florence.</span>   
+
+–Will hold remote mixed participation sessions instead of a face to face annual meeting.
+
+<span style="background-color: transparent;">4. Discussion of potential HDWG future work.</span>  
+
+–Need to continue work on publishing feature models as simple OWL ontologies.
+
+–Interest in pushing forward on shared environmental domain query building blocks for OGC API
+
+*GotoMeeting Recording: https://transcripts.gotomeeting.com/#/s/d48169db72745432c72a9192b499cf678b4f0293fd93e4f13e8e5a90eb3a4864*
+
+-- [[Main.TonyBoston][Main ]]- 10 Apr 2019
+
+%META:FILEATTACHMENT{name="HDWG_Leuven.pptx" attachment="HDWG_Leuven.pptx" attr="" comment="agenda" date="1561555387" path="HDWG_Leuven.pptx" size="1004882" user="DavidBlodgett" version="1"}%
+%META:FILEATTACHMENT{name="HDWG_Leuven_HY_Features.pptx.zip" attachment="HDWG_Leuven_HY_Features.pptx.zip" attr="" comment="" date="1561558993" path="HDWG_Leuven_HY_Features.pptx.zip" size="11340266" user="DavidBlodgett" version="1"}%
+%META:FILEATTACHMENT{name="OGC_TC_Leuven_HDWG.pptx" attachment="OGC_TC_Leuven_HDWG.pptx" attr="" comment="" date="1561559416" path="OGC_TC_Leuven_HDWG.pptx" size="12718487" user="DavidBlodgett" version="1"}%

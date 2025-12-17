@@ -1,0 +1,29 @@
+%META:TOPICINFO{author="CarstenHeidmann" date="1277886014" format="1.1" version="1.4"}%
+%META:TOPICPARENT{name="UseCase1CrossborderDataExchange"}%
+%BLACK%
+---+ European Cross-Border Surface Water IE%ENDCOLOR%
+%BLACK%
+---++ Telco 20100412, 11:00 - 11:30%ENDCOLOR%
+%BLACK%Participants%ENDCOLOR%
+   * %BLACK%Carsten Heidmann%ENDCOLOR%
+   * %BLACK%Simon Jirka%ENDCOLOR%
+   * %BLACK%Stefan Fuest%ENDCOLOR%
+%BLACK%Agenda%ENDCOLOR%
+   * %BLACK%action items for the IE proposal%ENDCOLOR%
+   * %BLACK%roadmap and responsibilities for this IE%ENDCOLOR%
+%BLACK%
+---++ Results%ENDCOLOR%
+|%BLACK%# %ENDCOLOR%|%BLACK%Topic%ENDCOLOR%|%BLACK%Action%ENDCOLOR%|%BLACK%Who%ENDCOLOR%|%BLACK%When%ENDCOLOR%|
+|%BLACK%1%ENDCOLOR%|%BLACK%finish proposal text%ENDCOLOR%|%BLACK%add missing participants to proposal%ENDCOLOR%|%BLACK%all%ENDCOLOR%|%BLACK%16.04%ENDCOLOR%|
+|%BLACK%2%ENDCOLOR%|%BLACK%finish proposal text%ENDCOLOR%|%BLACK%extend description for the European IE%ENDCOLOR% %BR%  %BR% %BLACK%text is in the TWiki: http://external.opengis.org/twiki_public/bin/view/HydrologyDWG/UseCase1CrossborderDataExchange%ENDCOLOR%|%BLACK%all%ENDCOLOR%|%BLACK%16.04. %ENDCOLOR%|
+|%BLACK%3%ENDCOLOR%|%BLACK%finish proposal text%ENDCOLOR%|%BLACK%review requirements for participation in IE%ENDCOLOR%|%BLACK%all%ENDCOLOR%|%BLACK%16.04%ENDCOLOR%|
+|%BLACK%4%ENDCOLOR%|%BLACK%french involvement%ENDCOLOR%|%BLACK%update IOW-Sandre on decisions of this telco%ENDCOLOR%|%BLACK%Carsten%ENDCOLOR%|%BLACK%12.04. %ENDCOLOR%|
+|%BLACK%5%ENDCOLOR%|%BLACK%involvement of DLZ-IT%ENDCOLOR%|%BLACK%update Dietmar Mothes on decisions of this telco%ENDCOLOR%|%BLACK%Carsten%ENDCOLOR%|%BLACK%12.04. %ENDCOLOR%|
+%BLACK%
+---++ Next Telco%ENDCOLOR%
+%BLACK%Not fixed yet, but since we put a deadline on the 16th, there may be a telco on April, 19th at short notice.%ENDCOLOR% %BR% 
+
+%BLACK%%ENDCOLOR%
+
+
+-- Main.CarstenHeidmann - 12 Apr 2010

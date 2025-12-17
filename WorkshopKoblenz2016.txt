@@ -1,0 +1,84 @@
+%META:TOPICINFO{author="IrinaDornblut" comment="save topic" date="1466261566" format="1.1" reprev="30" version="31"}%
+%META:TOPICPARENT{name="WebHome"}%
+---+ %GREEN%Hydro DWG Workshop Koblenz 2016%ENDCOLOR%
+   * *When:* 13 - 17 June 2016
+   * *Where:* Federal Institute of Hydrology (BfG), <a href="https://www.google.de/maps/place/Bundesanstalt+f%C3%BCr+Gew%C3%A4sserkunde/@50.3535415,7.5980198,18z/data=!4m2!3m1!1s0x0000000000000000:0x3e4b7cf1d45cbb5c?hl=en" target="_blank">Am Mainzer Tor 1, Koblenz, Germany</a>, Conference Rooms on Second Floor
+   * *Purpose:* This meeting will be the Seventh Workshop of the WMO/OGC Hydrology Domain Working Group
+   * *Contact:* Uli Looser at [[mailto:Looser@bafg.de][Looser@bafg.de]] or Irina Dornblut at [[mailto:Dornblut@bafg.de][Dornblut@bafg.de]]
+---+ %GREEN%Attendance%ENDCOLOR%
+---+++++ *%BLACK%Please confirm attendance on%ENDCOLOR% [[KoblenzHDWG2016Attendees][list of attendees]]*
+---+ %GREEN%Draft Agenda (might change during the workshop)%ENDCOLOR%
+
+---+++++ %BLACK%
+---+++ *GoToMeeting joining details:*
+---+++ <b><a href="GoToMeetingMonday" target="_blank">*Monday* </a></b>
+---+++ <b><a href="WorkshopKoblenz2016?topic=GoToMeetingTuesday" target="_blank">*Tuesday* </a></b>
+---+++ <b><a href="WorkshopKoblenz2016?topic=GoToMeetingWednesday" target="_blank">*Wednesday* </a></b>
+---+++ <b><a href="WorkshopKoblenz2016?topic=GoToMeetingThursday" target="_blank">*Thursday* </a></b>
+---+++ <b><a href="GoToMeetingFriday" target="_blank">*Friday* </a></b>
+---+++ %ENDCOLOR%
+
+<b>*All times on Agenda in CEST (UTC +2)*</b>
+
+<table border="1" cellpadding="0" cellspacing="1" style="height: 454px; width: 760px;"> <tbody> <tr> <td style="width: 70px;">
+---++++++ *Time*
+</td> <td style="width: 350px;">
+---++++++ *Session Topic*
+</td> <td style="width: 300px;">
+---++++++ *Discussant*
+</td> <td style="width: 70px;">
+---++++++ *Time*
+</td> </tr> <tr> <td style="width: 70px;">
+---++++++ 
+</td> <td colspan="2" style="width: 350px;">
+---+++++ Monday: 13 June 2016 <a href="https://www4.gotomeeting.com/join/440133797" target="_blank">https://www4.gotomeeting.com/join/440133797</a>
+</td> <td style="width: 70px;">
+---++++++ 
+</td> </tr> <tr> <td>10:00</td> <td>Welcome, Introduction, Logistics</td> <td>Local Hosts</td> <td> </td> </tr> <tr> <td> </td> <td>BfG activities in Geomatics</td> <td>Sven-Hendrik Kleber</td> <td> </td> </tr> <tr> <td> </td> <td>Feedback from WMO CHy</td> <td>Silvano Pecora</td> <td> </td> </tr> <tr> <td>12:30-13:30</td> <td>Lunch break (BfG Cafeteria on own account)</td> <td> </td> <td> </td> </tr> <tr> <td>13:30-14:30</td> <td>General Discussion</td> <td>All</td> <td> </td> </tr> <tr> <td>14:30-15:00</td> <td>Experiences Data Exchange, Sava Commission</td> <td>Mirza Sara&#x10D;</td> <td> </td> </tr> <tr> <td>15:00-15:30</td> <td>Hydrological data sharing in the La Plata Basin</td> <td>Juan Borús and Juan Bianchi</td> <td> </td> </tr> <tr> <td>15:30-16:00</td> <td>Heath Break and Coffee/Tea</td> <td> </td> <td> </td> </tr> <tr> <td>
+
+16:00-17:00
+</td> <td>
+
+Hydrological data sharing in Latin/South America
+
+</td> <td>Jim Nelson</td> <td> </td> </tr> <tr> <td> </td> <td colspan="2">
+---++++ Tuesday: 14 June 2016 <a href="https://www4.gotomeeting.com/join/254756757" target="_blank">https://www4.gotomeeting.com/join/254756757</a>
+</td> <td> </td> </tr> <tr> <td>09:00</td> <td>SOS 2.0 Hydrology Profile (further development)</td> <td>Simon Jirka</td> <td> </td> </tr> <tr> <td> </td> <td>Kisters experiences with open standards</td> <td>Michael Natschke</td> <td> </td> </tr> <tr> <td> </td> <td>Deltares experiences with WaterML 2.0 and SOS Hydro Profile</td> <td>Erik de Rooij</td> <td> </td> </tr> <tr> <td> </td> <td>
+
+<span style="line-height: 22px;">INSPIRE O&M & SWE profile </span> [[%ATTACHURL%/20160614_Inspire_OM_SWE_requirements_Grellet.pptx][20160614_Inspire_OM_SWE_requirements_Grellet.pptx]]
+</td> <td>Sylvain Grellet</td> <td> </td> </tr> <tr> <td> </td> <td>WaterML 2.0 & SOS Hydro Profile General Discussion</td> <td>All</td> <td> </td> </tr> <tr> <td>12:30-13:30</td> <td>Lunch break (BfG Cafeteria on own account)</td> <td> </td> <td> </td> </tr> <tr> <td>13:30-14:30</td> <td>WaterML 2.0 & SOS Hydro Profile General Discussion</td> <td>All</td> <td> </td> </tr> <tr> <td>14:30-17:00</td> <td>Hydrologic Features (HYF) Catchment Topology Presentation and Discussion</td> <td>Irina Dornblut, Dave Blodgett, Rob Atkinson, All</td> <td> </td> </tr> <tr> <td> </td> <td colspan="2">
+---++++ Wednesday: 15 June 2016 <a href="https://www4.gotomeeting.com/join/438970341" target="_blank">https://www4.gotomeeting.com/join/438970341</a>
+</td> <td> </td> </tr> <tr> <td>09:00-12:30</td> <td>Hydrologic-Features SWG Work</td> <td>HYF SWG Members</td> <td> </td> </tr> <tr> <td>12:30-13:30</td> <td>Lunch break (BfG Cafeteria on own account)</td> <td> </td> <td> </td> </tr> <tr> <td>13:30- 15:00</td> <td>Water Quality Presentation and Discussion</td> <td>Philipp Saile</td> <td> </td> </tr> <tr> <td>15:00-17:00</td> <td>General Discussion</td> <td>All</td> <td> </td> </tr> <tr> <td> </td> <td colspan="2">
+---++++ Thursday: 16 June 2016 <a href="https://www4.gotomeeting.com/join/797555205" target="_blank">https://www4.gotomeeting.com/join/797555205</a>
+</td> <td> </td> </tr> <tr> <td>09:00-10:00</td> <td>Hydrological data sharing, New Zealand experiences</td> <td>Sean Hodges</td> <td> </td> </tr> <tr> <td>10:00-12:30</td> <td>Hydrologic-Features SWG Work</td> <td>HYF-SWG Members</td> <td> </td> </tr> <tr> <td>12:30-13:30</td> <td>Lunch break (BfG Cafeteria on own account)</td> <td> </td> <td> </td> </tr> <tr> <td>13:30-15:00</td> <td>General Discussion</td> <td> </td> <td> </td> </tr> <tr> <td>15:00-16:00</td> <td>GroundWater ML2 Status, Presentation & Discussion</td> <td>Boyan Brodaric, All</td> <td> </td> </tr> <tr> <td>16:00-17:00</td> <td>General Discussion and Issues arising at workshop</td> <td>
+
+All
+</td> <td> </td> </tr> <tr> <td> </td> <td colspan="2">
+---++++ Friday: 17 June 2016 <a href="https://www4.gotomeeting.com/join/262566165" target="_blank">https://www4.gotomeeting.com/join/262566165</a>
+</td> <td> </td> </tr> <tr> <td>09:00</td> <td>
+
+Developments in QGIS and GDAL/OGR in support of GML complex features
+
+[[%ATTACHURL%/20160616_QGIS_GDAL_OGR__complex_feature_Grellet.pptx][20160616_QGIS_GDAL_OGR__complex_feature_Grellet.pptx]]
+</td> <td>Sylvain Grellet</td> <td> </td> </tr> <tr> <td>09:30</td> <td>Strategy discussion including preparation for 15th WMO CHy Session in December 2016</td> <td>All</td> <td> </td> </tr> <tr> <td> </td> <td>Progress and status of HYF to plenary</td> <td>HYF SWG Members</td> <td> </td> </tr> <tr> <td>12:30-13:30</td> <td>Lunch break (BfG Cafeteria on own account)</td> <td> </td> <td> </td> </tr> <tr> <td>13:30-???</td> <td>General Discussion and Issues arising at workshop</td> <td>All</td> <td> </td> </tr> </tbody> </table>
+---+ 
+---+ *%GREEN%Logistics%ENDCOLOR%*
+---+++++ *%BLACK%Information on accommodation, meeting location etc. <a href="WorkshopLogistics" target="_self">is given here</a>%ENDCOLOR%:*
+
+-- Main.UlrichLooser - 02 Mar 2016
+
+%META:FILEATTACHMENT{name="Invitiation_2016_HDWG_Workshop.ppt" attachment="Invitiation_2016_HDWG_Workshop.ppt" attr="" comment="Workshop Invitation" date="1456991309" path="Invitiation_2016_HDWG_Workshop.ppt" size="563200" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="ANR-Bild-03MH.jpg" attachment="ANR-Bild-03MH.jpg" attr="h" comment="" date="1457343362" path="ANR-Bild-03MH.jpg" size="387358" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="BfG-Intro-HDWG-2016.pptx" attachment="BfG-Intro-HDWG-2016.pptx" attr="" comment="Intro to the hosting organisation Federal Institute of Hydrology (BfG)" date="1465796657" path="BfG-Intro-HDWG-2016.pptx" size="8568776" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="Kleber_WasserBLIcK_HDWG_2016.ppt" attachment="Kleber_WasserBLIcK_HDWG_2016.ppt" attr="" comment="BfG activities in Geomatics" date="1465796867" path="Kleber_WasserBLIcK_HDWG_2016.ppt" size="4930048" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="20160614_Inspire_OM_SWE_requirements_Grellet.pptx" attachment="20160614_Inspire_OM_SWE_requirements_Grellet.pptx" attr="" comment="INSPIRE O&M & SWE profile" date="1465909909" path="20160614_Inspire_OM_SWE_requirements_Grellet.pptx" size="1751955" user="SylvainGrellet" version="3"}%
+%META:FILEATTACHMENT{name="La-Plata_JAB-HDWG-2016.ppt" attachment="La-Plata_JAB-HDWG-2016.ppt" attr="" comment="Hydrological data sharing in the La Plata Basin" date="1465901403" path="La-Plata_JAB-HDWG-2016.ppt" size="8116224" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="OGC_WMO_Workshop_Koblenz_13_Jun_2016_SavaGISHIS_Overview.pdf" attachment="OGC_WMO_Workshop_Koblenz_13_Jun_2016_SavaGISHIS_Overview.pdf" attr="" comment="Experiences Data Exchange, Sava Commission" date="1465901644" path="OGC_WMO Workshop_Koblenz 13 Jun 2016_SavaGIS&HIS_Overview.pdf" size="4970554" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="Deltares_experiences_with_WaterML_2.pptx" attachment="Deltares_experiences_with_WaterML_2.pptx" attr="" comment="Deltares experiences with WaterML 2.0 and SOS Hydro Profile" date="1465901857" path="Deltares experiences with WaterML 2.pptx" size="3019351" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="Präsentation_-_SOS_2.0_Hydrology_Profile_(Further_Development).pptx" attachment="Präsentation_-_SOS_2.0_Hydrology_Profile_(Further_Development).pptx" attr="" comment="SOS 2.0 Hydrology Profile" date="1465901918" path="Präsentation - SOS 2.0 Hydrology Profile (Further Development).pptx" size="535848" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="KISTERS_Experiences_with_open_standards.pdf" attachment="KISTERS_Experiences_with_open_standards.pdf" attr="" comment="Kisters experiences with open standards" date="1465903312" path="KISTERS Experiences with open standards.pdf" size="4146868" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="HydroDWG-WS-Koblenz.jpg" attachment="HydroDWG-WS-Koblenz.jpg" attr="" comment="GRoup Photo Hydro DWG 2016 in Koblenz" date="1465906022" path="HydroDWG-WS-Koblenz.jpg" size="2583697" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="Brodaric_GWML2_HDWG2016.pdf" attachment="Brodaric_GWML2_HDWG2016.pdf" attr="" comment="GW SWG - GWML2 progress report" date="1466028620" path="Brodaric_GWML2_HDWG2016.pdf" size="1131855" user="BoyanBrodaric" version="1"}%
+%META:FILEATTACHMENT{name="Hydrological_data_sharing_-_The_NZ_experience.pdf" attachment="Hydrological_data_sharing_-_The_NZ_experience.pdf" attr="" comment="Hydrological data sharing - the NZ Experience" date="1466053844" path="Hydrological data sharing - The NZ experience.pdf" size="1038606" user="SeanHodges" version="1"}%
+%META:FILEATTACHMENT{name="20160616_QGIS_GDAL_OGR__complex_feature_Grellet.pptx" attachment="20160616_QGIS_GDAL_OGR__complex_feature_Grellet.pptx" attr="" comment="ProofOfConcept exercise to add support of GML application schema compliant complex features in QGIS and beyond" date="1466156908" path="20160616_QGIS_GDAL_OGR__complex_feature_Grellet.pptx" size="2404804" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="2016_Koblenz_HDWG_ID_20160614.pptx" attachment="2016_Koblenz_HDWG_ID_20160614.pptx" attr="" comment="catchment topology, 2nd. - slide 8 corrected" date="1466261565" path="2016_Koblenz_HDWG_ID_20160614.pptx" size="584595" user="IrinaDornblut" version="1"}%

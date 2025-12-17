@@ -1,0 +1,28 @@
+%META:TOPICINFO{author="DavidArctur" date="1433714735" format="1.1" version="1"}%
+%META:TOPICPARENT{name="WebHome"}%
+---+ OGC/WMO Hydrology Domain Working Group
+---++ First 5 years: Meetings 2008 - 2013 
+   * [[AtlantaTc2008][OGC TC Meeting - Atlanta]] - 17 September 2008
+   * [[ValenciaTc2008][OGC TC Meeting - Valencia]] - 4 December 2008
+   * [[AthensTc2009][OGC TC Meeting - Athens]] - 30 March 2009
+   * [[BostonTc2009][OGC TC Meeting - Boston]] - 22 June 2009
+   * [[DarmstadtTc2009][OGC TC Meeting - Darmstadt]] - 29 September 2009
+   * [[MtViewTc2009][OGC TC Meeting - Mountain View]] - 8 December 2009
+   * [[JRCWkShop2010][1st Hydrology DWG Workshop - Ispra]] - 15-18 March 2010
+   * [[SilverSpringTc2010][OGC TC Meeting - Silver Spring]] - 15 June 2010
+   * [[ToulouseTc2010][OGC TC Meeting - Toulouse]] - 22 September 2010
+   * [[ToulouseWorkshop][Hydrology DWG Workshop - Toulouse]] - 21-22 September 2010
+   * [[SydneyTc2010][OGC TC Meeting - Sydney]] - 1 December 2010
+   * [[BonnTc2011][OGC TC Meeting - Bonn]] - 2 March 2011
+   * [[IHEWkShop2011][2nd Hydrology DWG Workshop - Delft]] - 11-14 April 2011
+   * [[TaichungTc2011][OGC TC Meeting - Taichung]] - 15 June 2011
+   * [[BoulderTc2011][OGC TC Meeting - Boulder]] - 19-20 September 2011
+   * [[BoulderTc2011Summit][OGC Oceans/Met/Hydro Water Cycle Summit]] - 21 September 2011
+   * [[BrusselsTc2011][OGC TC Meeting - Brussels]] - 29 November 2011
+   * [[AustinTc2012][OGC TC Meeting - Austin]] - 19 & 21 March 2012
+   * [[ReadingWorkshop2012][3rd Hydrology DWG Workshop 2012 - Reading]] - 25-28 June 2012
+   * [[RedlandsTc2013][OGC TC Meeting - Redlands]] - 16 January 2013
+   * [[QuebecWorkshop2013][4th Hydrology DWG Workshop 2013 - Quebec City]] - 17-21 June 2013
+   * [[FrascatiTc2013][OGC TC Meeting - Frascati]] - 23 September 2013
+
+-- Main.DavidArctur - 07 Jun 2015

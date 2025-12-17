@@ -1,0 +1,15 @@
+%META:TOPICINFO{author="PaulSheahan" comment="save topic" date="1354163231" format="1.1" reprev="2" version="2"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---+ RGS Glossary of terms
+
+This glossary is a list of terms for concept employed in WaterML2 Part 2. The actual term may change over time as we refine terminology, the meaning will be the same. To assist in interpretation it would be reasonable to reference to semantically similar concepts from member organisation systems or standards. References should be prefaced with the source.
+---++ Common
+---+++ Period of application
+
+UsgsHydroML:RatingDate  WDTF:DurationGroup
+---++ Ratings
+---+++ Conversion Table
+
+---++ Gaugings
+
+-- Main.PaulSheahan - 29 Nov 2012

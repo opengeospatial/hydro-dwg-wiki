@@ -1,0 +1,98 @@
+%META:TOPICINFO{author="BoyanBrodaric" comment="reprev" date="1398273121" format="1.1" reprev="6" version="6"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *GW2IE Meeting 17* *-- Wed 23 Apr 2014 -- Conceptual Model*
+---++ *Agenda*
+   * Vienna meeting update
+      * Boyan & Eric
+      * INSPIRE comparison
+   * Conceptual model development
+      * Review metadata & name changes
+      * Flow
+         * see meeting 16 revision notes (page 3) for issues
+         * GW_Flow referencing and GW_WaterBudget data types ( [[GWML2_CM_0-2_Discussion][see comments here]])
+      * Flow system
+
+---++ *Participants*
+   * Click here for the [[http://doodle.com/c9iuua4idgmsgiek][Doodle poll]]
+
+---++ *Results*
+   * See meeting 17 (CM 0.30) revisions [[GWML2-CM-Model][here]]
+   * Hydrogeo unit
+      * removed unitRecharge/DischargeLocation: duplicates same available via unitRecharge/Discharge
+   * Fluid Body
+      * gwBackgroundConstituent: removed aggregate class and replaced with association
+   * Recharge/Discharge Location: removed recharge/discharge unit
+      * to preserve generality: source / destination can be non-units
+      * unnecessary: duplicates reciprocal source/destination relation via inflow/outflow
+   * GW_Flow
+      * removed gwFlowBody from GW_flow and replaced with:
+         * Source/DestinationBody to Inter/IntraFlow to associate flow with a body
+
+---++ *Connection Instructions*
+   * Times:
+| | *17 Mar 2014*  | *03 Apr 2014* | *16 Apr 2014* | *23 Apr 2014* |
+| *NA-Ott* | 08:00  | 08:00  | 08:00  | 08:00  |
+| *NA-WI*  | 07:00  | 07:00  | 07:00  | 07:00  |
+| *EU-Lon*  | 12:00  | 13:00  | 13:00  | 13:00  |
+| *EU-Paris*  | 13:00  | 14:00  | 14:00  | 14:00  |
+| *AU-Mel* | 23:00  | 23:00  | 22:00  | 22:00  |
+| *NZ*  | 01:00  | 01:00  | 00:00  | 00:00  |
+   * *Screen sharing (Webex):*
+      * <strong>**IMPORTANT-- APPLET MUST BE INSTALLED FIRST:**</strong>
+         * go to [[https://pwgsc-nh.webex.com/mw0306ld/mywebex/default.do?siteurl=pwgsc-nh]]
+         * on the left menu click on <b>Support </b>and<b> Downloads</b>
+         * install *Meeting Center Application*
+      * <b>Meeting Topic: </b>GW2IE Telecon
+      * *Meeting Number*: 559 426 555
+      * *Meeting Password*: ogc
+      * *Meeting* *URL*: click below, then enter name, email, password, and click "<b>Join Now"</b>:
+         * https://pwgsc-nh.webex.com/pwgsc-nh/j.php?MTID=m2a48dd6f3d07a508fb4a6027e18155c7
+   * *Teleconference:*
+      * Dial your local number (see table below) and the use the passcode *167731*
+
+| *Line* | *Dial-in #* | *Passcode* |
+| !FreeConferenceCall.com #2 | +1 209-255-1000 | !passcode: 167731 |
+
+| *FreeConferenceCall.com #2* ||
+| *Country* | *Dial-in #* |
+| Australia* | +61 1300 051 796 |
+| Austria | +43 (0) 1 2650551 |
+| Belgium | +32 (0) 4 244 10 75 |
+| Brazil | +55 21 2391-7690 |
+| Bulgaria | +359 (0) 2 437 2631 |
+| Canada*** | +1 559-670-1000 |
+| Croatia | +385 (0) 1 8000 060 |
+| Czech Republic | +420 225 989 155 |
+| Denmark | +45 78 77 25 20 |
+| Finland | +358 (0) 9 74790024 |
+| France | +33 (0) 1 80 14 00 05 |
+| GCC/Arabian Peninsula**** | +973 1656 8350 |
+| Germany | +49 (0) 9772 316000 |
+| Hungary | +36 1 987 6880 |
+| Ireland | +353 (0) 90 646 4160 |
+| Israel | +972 (0) 76-599-0060 |
+| Italy | +39 (0) 011 092 0915 |
+| Japan | +81 (0) 3-5050-5100 |
+| Korea | +82 (0) 70-7917-6590 |
+| Malaysia | +60 (0) 11-1146 0060 |
+| Mexico | +52 (0) 899 274 8400 |
+| Netherlands | +31 (0) 20 322 3050 |
+| Norway | +47 21 93 06 41 |
+| Poland | +48 22 116 85 40 |
+| Portugal | +351 210 051 182 |
+| Romania | +40 (0) 31 780 7050 |
+| Slovenia | +386 (0) 1 828 02 40 |
+| South Africa | +27 (0) 87 825 0150 |
+| Spain | +34 911 19 67 50 |
+| Sweden | +46 (0) 8 124 107 00 |
+| Switzerland | +41 (0) 44 595 90 80 |
+| Turkey | +90 (0) 212 988 1710 |
+| United Kingdom** | +44 (0) 7848 432913 |
+| United States | +1 209-255-1000 |
+*   NOTE Australia: This number is not accessible when calling from outside of Australia.
+
+**  NOTE UK: this is a mobile dial-in number. Please check with your phone provider for mobile calling rates.
+
+<b>***</b> NOTE CANADA: This is a U.S. dial in number.
+
+****This dial-in number is located in Bahrain.

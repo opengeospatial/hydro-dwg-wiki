@@ -1,0 +1,680 @@
+%META:TOPICINFO{author="EricBoisvert" date="1290525950" format="1.1" version="1.3"}%
+%META:TOPICPARENT{name="Call2010-10-05"}%
+---+ SOS result filter and encoding
+
+This page is to explore various encoding of time series is SOS services and their consequence on the query model.
+
+---++Filtering base on result parameters
+
+According to SOS 1.0 spec (OGC 06-009r6, section 6.6), OGC filter can be applied on standard properties of the Observation class.  The SOS capabilities document reports the extent of the filter capabilities in terms of spatial, scalar and ID parameters.  The underlined logic is that SOS is a large collection of atomic Observations or simple (scalar) results.  The level of granularity expected for SOS is limited to the level of an Observation and filtering according to the result is beyond the scope of a core SOS service.
+
+For the GWIE, we wish to push for a use case where we could filter observations based on the result. For example, get all the observation where a water level is greater than 10 m.  SOS 1.0 provide a mechanism to filter by result using ogc:Filter.  The filter expression can target element of the result using XPath.  In GWIE, the proposed encoding for the result is a complex Time Series where several data elements are encoded into a single Observation. Observation::result is an &#8220;open&#8221; parameter that laxes structure where the same information can be encoded using several schemas.  For instance, WaterML considers both strongly typed gml:coverage and/or SWE block encoding.  They both represent the same information but with different structure. 
+
+ The issue arises when a client needs to express a filter on the result.  The formal way to express a filter (at least in WFS) is to use the domain schema to identify the candidate properties to constrain.  For example, a client might want to get all Observation that has a value above a certain threshold (say, 10 m).
+
+The SOS spec says that you should use a filter constrain on the result like this:
+
+<verbatim>
+<?xml version="1.0" encoding="UTF-8"?>
+<sos:GetObservation version="1.0" service="SOS" xmlns:ogc="http://www.opengis.net/ogc" xmlns:sos="http://www.opengis.net/sos/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/1.0 http://schemas.opengis.net/sos/1.0.0/sosGetObservation.xsd">
+	<sos:offering>gwie:offering</sos:offering>
+	<sos:observedProperty>urn:ogc:def:property:OGC:GroundWaterLevel</sos:observedProperty>
+	<sos:result>
+		<ogc:PropertyIsGreaterThan>
+			<ogc:PropertyName>WATER LEVEL ??</ogc:PropertyName>
+			<ogc:Literal>10</ogc:Literal>
+		</ogc:PropertyIsGreaterThan>
+	</sos:result>
+</sos:GetObservation>
+</verbatim>
+In the current WaterML encoding, the XPath would look like this
+
+<verbatim>
+om:result/wml2:TimeSeries/wml2:element/wml2:TimeValuePair/wml2:value/swe:Quantity/swe:value
+</verbatim>
+
+(assuming that om:Observation is the context node).  But how does the client &#8220;know&#8221; this ?. It needs to have access to the schema of the result.  To get this information in SOS, you must perform a DescribeResultModel (or DescribeObservationType if the service uses a subtype of om:Observation, see sec. 10.6) that shall return the W3C XSD schema of the result (06-009r6 sec. 10.7).  The schema of the result in this case is a wml2:TimeSeries and the value (where the water level or any other value would be) is a SWE element in wml2:value (actually, the XSD declares it as xsd:anyType, result constrain is provided as schematron clauses, further complicating the issue).  
+
+Unfortunately, XSD schema is not very useful when it comes to SWE because it is essentially soft typing (not that it is much more useful in general for that sort of thing). The XSD won&#8217;t tell more because the time series is a discrete coverage and the value is &#8220;xsd:anyType&#8221;.  Bottom line, the schemas of the result is not sufficient to scope a filter request.   We could envision that the service could craft a custom XSD where ambiguities are removed, but you would still have to resolver the binding between the swe definition of the property and the encoding. This becomes critical when you have multiple parameters.  If in a time series, we have two parameters + the time stamps, how do we bind parameters A to the swe:Quantity in the time series (ordering ?)
+
+The other option resides in SWE encoding of the phenomena.  SWE allows describing the components present in the record so they could be referenced in a filter query.  Filter normally uses XSD to refer to a property (it&#8217;s structural location in the model), not SWE (which is a dictionary describing the elements that compose of a value, that might be represented using several structures).   I think it is important here to separate the result encoding in the response document from the representation of the phenomenon.   They are two different things.  The SOS response can use different output encoding, which is merely a syntactic artefact, and the request should not be affected by this choice (the user shall not use a different way to request things because he chose a different output and this is getting increasingly true as people start to request things like KML).
+
+SWE Common (OGC 08-084) emphasises the robustness of the semantic of SWE encoding. Req 7 (sec. 6.3.2) requires that data values shall be associated with s clear definition of the property (observedProperty) that the value represents.  This insures that the result can be tied to the phenomenon it describes.
+
+In the Capabilities of the SOS service, each offering provide a list of Offering, each providing one or more observedProperties. Observed properties are often just a reference to some externally declated phenomenon, but it can be made explicit.  In this example from SOS 1.0 (OGC 06-009r6), we can see an explicit description of a composite phenomenon
+
+     <img src="%ATTACHURLPATH%/phenomenon_paring.png" alt="phenomenon_paring.png" width='576' height='290' />
+
+Figure 1: Phenomenon and field pairing
+
+You can also see from the result of the GetObservations (when the result is encoded in SWE) how the phenomenon components are ties to the SWE description of the result.  If we could get this SWE, a client could provide the user with the necessary information to build a result filter.  The portion shown on the GetObservations response is just the SWE block header.  This SWE definition is better than XSD because it provides the uom and a human readable name for the fields.
+
+To achieve the same thing for our IE, here how we should advertise our WaterLevel phenomenon: 
+
+<verbatim>
+<sos:Contents xmlns:gml="http://www.opengis.net/gml" xmlns:sos="http://www.opengis.net/sos/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:swe="http://www.opengis.net/swe/1.0.1" xsi:schemaLocation="http://www.opengis.net/sos/1.0 http://schemas.opengis.net/sos/1.0.0/sosContents.xsd">
+	<sos:ObservationOfferingList>
+		<sos:ObservationOffering>
+			&#8230;
+			<sos:observedProperty>
+			<swe:CompositePhenomenon gml:id="phen.groundwater.level" dimension="2">
+				<gml:name>Groundwater Level</gml:name>
+				<swe:component href="urn:ogc:property:time:iso8601"/>
+				<swe:component href="urn:x-ogc:def:phenomenon:OGC:Depth"/>
+			</swe:CompositePhenomenon>
+			</sos:observedProperty>
+			&#8230;
+		</sos:ObservationOffering>
+	</sos:ObservationOfferingList>
+</sos:Contents>
+</verbatim>
+
+
+Two external references are made to a &#8220;standard&#8221; list of phenomenon found at 
+
+<verbatim>
+https://www.seegrid.csiro.au/subversion/xmml/OGC/branches/SWE_gml2/sweCommon/current/examples/phenomena.xml
+</verbatim>
+
+A Time Position 
+
+<verbatim>
+<swe:Phenomenon gml:id="TimePosition">
+	<gml:description xlink:href="http://sweet.jpl.nasa.gov/ontology/time.owl#Instant">A position on a time scale</gml:description>
+	<gml:identifier codeSpace="urn:x-ogc:tc:arch:doc-rp(05-010)">urn:ogc:property:time:iso8601</gml:identifier>
+	<gml:name>Time Position</gml:name>
+</swe:Phenomenon>
+</verbatim>
+
+And a Depth
+
+<verbatim>
+<swe:Phenomenon gml:id="Depth">
+	<gml:description xlink:href="http://sweet.jpl.nasa.gov/ontology/property.owl#Depth">Linear distance measured vertically downwards from a reference surface</gml:description>
+	<gml:identifier codeSpace="urn:x-ogc:tc:arch:doc-rp(05-010)">urn:x-ogc:def:phenomenon:OGC:Depth</gml:identifier>
+	<gml:name>Depth</gml:name>
+</swe:Phenomenon>
+</verbatim>
+
+Now, how do we get from the phenomenon description to the SWE description of the data structure (which is required to build a query). SOS has a mechanism to explore the SWE field structure using GetResultTemplate (SOS 1 uses GetResult with responseMode="resultTemplate" to achieve the same thing), although the intent is to extract only a portion of the result (using filter).   
+
+The other option is to extract this information directly from the Sensor description (through DescribeSensor).  A sensor can report in the "outputs" section the structure of the output, but since the outputs can contains many outputs, there are no clear ways to link a particular output to a particular observedProperty (a given sensor can potentially have many dectectors, only some of them relevant to the advertised observedProperty).    Furthermore, a single offering could report many sensors (although SOS 2.0 constrains an Offering to have only 1 sensor), further complicating the extraction of this piece of information (what is two sensors report the same observed property with slightly different data structure, etc.).  And the final nail in the coffin is that you are not guaranteed to have SensorML, it could be TML.
+
+We will then concentration of the first options.
+
+Here a SOS 2.0 GetResultTemplate
+
+<verbatim>
+<?xml version="1.0" encoding="UTF-8"?>
+<sos:GetResultTemplate xmlns="http://www.opengis.net/sos/2.0" service="SOS" version="2.0.0" xmlns:sos="http://www.opengis.net/sos/2.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/2.0
+http://schemas.opengis.net/sos/2.0.0/sosGetResultTemplate.xsd">
+	<!--identifier of the observation offering-->
+	<offering xlink:href="http://my.organization.org/sos/offering1" xlink:arcrole="http://www.opengis.net/purpose#identifier"/>
+	<!--identifier of an observed property-->
+	<observedProperty xlink:href="urn:ogc:def:phenomenon:OGC:composite:water_phenomenon" xlink:arcrole="http://www.opengis.net/purpose#identifier"/>
+</sos:GetResultTemplate>
+</verbatim>
+
+And the response
+
+<verbatim>
+<?xml version="1.0" encoding="UTF-8"?>
+<sos:GetResultTemplateResponse xmlns="http://www.opengis.net/sos/2.0" xmlns:sos="http://www.opengis.net/sos/2.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/2.0
+http://schemas.opengis.net/sos/2.0.0/sosGetResultTemplate.xsd">
+	<resultStructure>
+		<swe:DataArray>
+			<swe:elementCount>
+				<swe:Count/>
+			</swe:elementCount>
+			<swe:elementType name="tupleDefinition">
+				<swe:DataRecord>
+					<swe:field name="phenomenonTime">
+						<swe:Time definition="urn:ogc:data:time:iso8601">
+						<swe:uom xlink:href="http://www.52north.org/units.xml#milliseconds"/>
+						</swe:Time>
+					</swe:field>
+					<swe:field name="waterlevel">
+						<swe:Quantity definition="urn:ogc:def:phenomenon:OGC:1.0.30:waterlevel">
+							<swe:uom xlink:href="http://www.52north.org/units.xml#meter"/>
+						</swe:Quantity>
+					</swe:field>
+					<swe:field name="flowrate">
+						<swe:Category definition="urn:ogc:def:phenomenon:OGC:1.0.30:flowrate">
+							<swe:codeSpace xlink:href="http://www.52north.org/codeSpaces/flowrateCategories"/>
+						</swe:Category>
+					</swe:field>
+				</swe:DataRecord>
+			</swe:elementType>
+		</swe:DataArray>
+	</resultStructure>
+	<resultEncoding>
+		<swe:TextEncoding tokenSeparator="," blockSeparator="@@"/>
+	</resultEncoding>
+</sos:GetResultTemplateResponse>
+</verbatim>
+
+The property can be identified by their definition property (they should match the phenomenon URN) but also .  This means that this filter could be used
+
+<verbatim>
+<?xml version="1.0" encoding="UTF-8"?>
+<sos:GetObservation version="1.0" service="SOS" xmlns:ogc="http://www.opengis.net/ogc" xmlns:sos="http://www.opengis.net/sos/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/1.0 http://schemas.opengis.net/sos/1.0.0/sosGetObservation.xsd">
+	<sos:offering>gwie:offering</sos:offering>
+	<sos:observedProperty>urn:ogc:def:property:OGC:GroundWaterLevel</sos:observedProperty>
+	<sos:result>
+		<ogc:PropertyIsGreaterThan>
+			<ogc:PropertyName>urn:x-ogc:def:phenomenon:OGC:Depth</ogc:PropertyName>
+			<ogc:Literal>10</ogc:Literal>
+		</ogc:PropertyIsGreaterThan>
+	</sos:result>
+</sos:GetObservation>
+</verbatim>
+
+As another option, SOS 2.0 examples suggest that the property name should be the *field name* instead of the property urn (from OGC 10-037 examples)
+
+
+Get Result Template Response
+
+<verbatim>
+<sos:GetResultTemplateResponse xmlns="http://www.opengis.net/sos/2.0" xmlns:sos="http://www.opengis.net/sos/2.0" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/2.0
+http://schemas.opengis.net/sos/2.0.0/sosGetResultTemplate.xsd">
+
+
+<!--information about encoding of results-->
+	<resultEncoding>
+			<!--results are encoded as text with token- and blockseperator as specified here-->
+			<swe:TextEncoding tokenSeparator="," blockSeparator="@@"/>
+			
+	</resultEncoding>
+	<!--information about structure of observation results-->
+	<resultStructure>
+	
+		<!-- result is of type swe:DataArray with two elements (phenomenonTime and waterlevel; see SweCommon Data Encoding specification for more information-->
+		<swe:DataArray>
+			<swe:elementCount>
+				<swe:Count/>
+			</swe:elementCount>
+			<swe:elementType name="tupleDefinition">
+				<swe:DataRecord>
+					<swe:field name="phenomenonTime">
+						<swe:Time definition="http://www.opengis.net/sos/2.0/observation/phenomenonTime">
+							<swe:uom code="ms"/>
+						</swe:Time>
+					</swe:field>
+					<swe:field name="waterlevel">
+						<swe:Quantity definition="urn:ogc:def:phenomenon:OGC:water_level">
+							<swe:uom code="cm"/>
+						</swe:Quantity>
+					</swe:field>
+				</swe:DataRecord>
+			</swe:elementType>
+		</swe:DataArray>
+	</resultStructure>	
+</sos:GetResultTemplateResponse>
+</verbatim>
+
+The request they built as an example uses the field name instead of the phenomenon.
+
+<verbatim>
+<sos:GetResult xmlns="http://www.opengis.net/sos/2.0" service="SOS" version="2.0.0" xmlns:sos="http://www.opengis.net/sos/2.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/2.0
+http://schemas.opengis.net/sos/2.0.0/sos.xsd">
+	
+	<!--identifier of an observed property-->
+	<observedProperty>urn:ogc:def:phenomenon:OGC:water_level</observedProperty>
+	
+	<!--identifier of an observed property-->
+	<offering>http://www.my_namespace.org/water_gage_1_observations</offering>
+	
+	<!--optional temporal filter restricting the results which shall be returned-->
+	<temporalFilter>
+		<fes:After>
+			<fes:ValueReference>phenomenonTime</fes:ValueReference>
+			<gml:TimeInstant gml:id="startPosition">
+				<gml:timePosition>2008-03-01T17:44:15.000+00:00</gml:timePosition>
+			</gml:TimeInstant>
+		</fes:After>
+	</temporalFilter>
+</sos:GetResult>
+</verbatim>
+
+NOTE: It is unclear from the examples how the service should identifiy the observation.
+
+Note that SOS 2.0 does not allow Filter directly on the om:result, but rather as an extension
+
+<verbatim>
+<GetObservation>
+	...
+	<extension>
+		<resultFilter>
+			<observedProperty> urn:ogc:def:property:OGC:GroundWaterLevel </observedProperty>
+			<ogc:PropertyIsGreaterThan>
+				<ogc:PropertyName>??</ogc:PropertyName>
+				<ogc:Literal>5</ogc:Literal>
+			</ogc:PropertyIsGreaterThan>		
+		</resultFilter>
+	</extension>
+	...
+</GetObservation>
+</verbatim>
+
+(adapted from pers. Comm.. Christoph Stasch email 2010/7/20)
+
+
+Note that we use the URN of the property as defined in the gml:identifier (this is a gml 3.2 way to identify the guid of the property).
+
+This pattern has several benefits.
+
+   1 provides a way to document and advertise properties that are part of the result set at the phenomenon level.
+   1 Properties are advertised using a conformant OGC approach (no hack)
+   1 Properties are well described (SWE provide a certain level of metadata that XSD does not have)
+   1 Query structure is decouples from the result encoding, which is consistant with pattern of CSW and proposed "stored query" mechanism of WFS (ISO-19142).  The client can rely on a consistent way to get the parameters, whatever the encoding.
+   1 This mechanism can be used by both SOS 1.0 and SOS 2.0 clients, just the access to the SWE encoding is different (catalog for 1.0, GetResultTemplate for 2.0).
+
+One of the major downside is that a property can possibly appear several time in a single composite phenomenon (eg, temperatures taken at two different depths in a single record &#8211; they both are temperatures).  But it if we the field name instead, this problem goes away (assuming the field names are unique)
+
+
+The ideal situation is to have an explicit list of filterable parameters directly in the Offering, but this would require a formal CR to SOS
+
+<verbatim>
+
+<sos:ResultParameters>
+	<sos:Parameter identification="urn:x-ogc:parameter:depth" uom="urn:ogc:def:UCUM:m" type="xs:double">
+		<sos:name xml:lang="fr">Profondeur de la nappe</sos:name>
+		<sos:name xml:lang="eng">Aquifer depth</sos:name>
+	</sos:Parameter>
+	<sos:Parameter>
+identification="urn:ogc:parameter:time" uom=" urn:ogc:property:time:iso8601" type="xs:DateTime">
+		<sos:name xml:lang="fr">Date de la mesure</sos:name>
+		<sos:name xml:lang="eng">Measurement date</sos:name>
+	</sos:Parameter>
+</sos:ResultParameters>
+
+</verbatim>
+
+---+++ Recommendation
+
+Implement the Phenomenon resolution pattern using a crude catalog (static file) and demonstrate.  This will be critical when we try to query geochemistry values.
+
+---++ Result serialization
+
+This section presents various encoding for time series and discuss the pro and con.  If the phenomenon pattern to query result is adopted, there are a complete decoupling between the query and the result.
+
+---++ Current encoding in the Testbed
+
+This document is encoded using gml 3.1.x . It is an early encoding to meet the first deadline and implement some demo tools.  It does not validate with WaterML2.0.
+
+<verbatim>
+<?xml version="1.0" encoding="UTF-8"?>
+<om:ObservationCollection xmlns:gml="http://www.opengis.net/gml" xmlns:om="http://www.opengis.net/om/1.0" xmlns:sa="http://www.opengis.net/sampling/1.0" xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wml2="http://www.wron.net.au/waterml2">
+	<om:member>
+	<wml2:WaterMonitoringObservation>
+		<om:samplingTime>
+			<gml:TimePeriod>
+				<gml:beginPosition>1952-11-06T00:00:00+00:00</gml:beginPosition>
+				<gml:endPosition>1970-12-31T00:00:00+00:00</gml:endPosition>
+			</gml:TimePeriod>
+		</om:samplingTime>
+		<om:procedure xlink:href="urn:ogc:object:Sensor:usgs-gw:USGS-442223088351601"/>
+		<om:observedProperty xlink:href="urn:ogc:def:property:OGC:GroundWaterLevel"/>
+		<om:featureOfInterest>
+		<wml2:WaterObservationPoint gml:id="usgs:USGS-442223088351601">
+		<gml:name codeSpace="urn:ietf:rfc:2141">USGS-442223088351601</gml:name>
+		<gml:name codeSpace="urn:x-ngwd">usgs.gov.gw-wells.USGS-442223088351601</gml:name>
+		<gml:boundedBy>
+		<gml:Envelope srsName="EPSG:4326">
+			<gml:pos srsDimension="2">-88.5878819233537 44.3730391406334</gml:pos>
+			<gml:pos srsDimension="2">-88.5878819233537 44.3730391406334</gml:pos>
+		</gml:Envelope>
+		</gml:boundedBy>
+		<sa:position>
+			<gml:Point srsName="EPSG:4326">
+				<gml:pos>-88.5878819233537 44.3730391406334</gml:pos>
+			</gml:Point>
+		</sa:position>
+		</wml2:WaterObservationPoint>
+		</om:featureOfInterest>
+		<om:result>
+			<wml2:TimeSeries>
+				<wml2:domainExtent>
+					<gml:TimePeriod>
+					<gml:beginPosition>1952-11-06T00:00:00+00:00</gml:beginPosition>
+					<gml:endPosition>1970-12-31T00:00:00+00:00</gml:endPosition>
+					</gml:TimePeriod>
+				</wml2:domainExtent>
+				<wml2:defaultDataType codeSpace="http://usgs.gov/water/">InstVal</wml2:defaultDataType>
+			<wml2:element>
+				<wml2:TimeValuePair>
+					<wml2:time>1960-05-05T00:00:00+00:00</wml2:time>
+					<wml2:value>
+						<swe:Quantity>
+							<swe:uom code="ft"/>
+							<swe:value>7.58</swe:value>
+					</swe:Quantity>
+					</wml2:value>
+				</wml2:TimeValuePair>
+			</wml2:element>
+			<wml2:element>
+				<wml2:TimeValuePair>
+					<wml2:time>1960-08-01T00:00:00+00:00</wml2:time>
+					<wml2:value>
+						<swe:Quantity>
+							<swe:uom code="ft"/>
+							<swe:value>7.89</swe:value>
+						</swe:Quantity>
+					</wml2:value>
+				</wml2:TimeValuePair>
+			</wml2:element>
+		</wml2:TimeSeries>
+	</om:result>
+</wml2:WaterMonitoringObservation>
+</om:member>
+</om:ObservationCollection>
+</verbatim>
+
+---++Validating encoding using coverage time series
+This encoding is GML 3.2 and does validate with the latest version of the WaterML 2.0 schema.
+
+<verbatim>
+<?xml version="1.0" encoding="UTF-8"?>
+<wml2:WaterMonitoringObservation xmlns:swe="http://www.opengis.net/swe/2.0" gml:id="ont.ww.5100001.1" xmlns:md="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:wml2="http://www.wron.net.au/waterml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wron.net.au/waterml2 file:///D:/WaterML20/WaterMLSVN/WaterML2.0/trunk/GeneratedSchema_June_2010/waterml2.xsd">
+	<gml:identifier codeSpace="http://www.ene.gov.on.ca/envision/water/wells.htm">ont.ww.5100001.1</gml:identifier>
+	<om:metadata>
+		<wml2:ObservationMetadata>
+			<md:contact>
+				<md:CI_ResponsibleParty>
+				<md:organisationName>
+				<gco:CharacterString>Ontario Ministry of Environment</gco:CharacterString>
+				</md:organisationName>
+					<md:role>
+						<md:CI_RoleCode codeList="list" codeListValue="url">steward</md:CI_RoleCode>
+					</md:role>
+				</md:CI_ResponsibleParty>
+			</md:contact>
+			<md:dateStamp><gco:Date>1958-07-25</gco:Date></md:dateStamp>
+			<md:identificationInfo xlink:href="urn:OGC:unknow"/>
+			<wml2:intendedSamplingInterval gml:id="ont.ww.5100001.1.smd">
+			<gml:beginPosition>1958-07-25</gml:beginPosition>
+			<gml:endPosition>1957-07-25</gml:endPosition>
+			</wml2:intendedSamplingInterval>
+			<wml2:sampledMedium xlink:href="http://www.opengis.net/def/medium/WaterML2.0/Water"/>
+		</wml2:ObservationMetadata>
+	</om:metadata>
+	<om:phenomenonTime>
+		<gml:TimeInstant gml:id="ont.ww.5100001.1.tm">
+			<gml:timePosition>1958-07-25 00:00:00.0</gml:timePosition>
+		</gml:TimeInstant>
+	</om:phenomenonTime>
+	<om:resultTime>
+		<gml:TimeInstant gml:id="ont.ww.5100001.2.tm">
+			<gml:timePosition>1958-07-25 00:00:00.0</gml:timePosition>
+		</gml:TimeInstant>
+	</om:resultTime>
+	<om:procedure xlink:href="http://www.opengis.net/def/processType/WaterML2.0/ManualMethod"/>
+	<om:observedProperty xlink:href="urn:ogc:def:property:OGC:GroundWaterLevel"/>
+	<om:featureOfInterest xlink:href="http://ngwd-bdnes.cits.nrcan.gc.ca/service/gin/wfs/gin?REQUEST=GetFeature&amp;INFO_FORMAT=text/html&amp;FID=ont.ww.5100001"/>
+	<om:result>
+		<wml2:TimeSeries>
+			<wml2:domainExtent>
+				<gml:TimePeriod gml:id="ont.ww.5100001.1.tp">
+					<gml:beginPosition>1958-07-25 00:00:00.0</gml:beginPosition>
+					<gml:endPosition>1958-07-25 00:00:00.0</gml:endPosition>
+				</gml:TimePeriod>
+			</wml2:domainExtent>
+			<wml2:defaultDataType codeSpace="http://www.bom.gov.au/std/water/xml/">InstVal</wml2:defaultDataType>
+			<wml2:element>
+				<wml2:TimeValuePair>
+					<wml2:time>1958-07-25 00:00:00.0T00:00:00-05:00</wml2:time>
+					<wml2:value>
+						<swe:Quantity>
+							<swe:uom code="m"/>
+							<swe:value>2.1336</swe:value>
+						</swe:Quantity>
+					</wml2:value>
+				</wml2:TimeValuePair>
+			</wml2:element>
+		</wml2:TimeSeries>
+	</om:result>
+</wml2:WaterMonitoringObservation>
+</verbatim>
+
+Note that the FeatureOfInterest is now by reference 
+
+<verbatim>
+<om:featureOfInterest xlink:href="http://ngwd-bdnes.cits.nrcan.gc.ca/service/gin/wfs/gin?REQUEST=GetFeature&amp;INFO_FORMAT=text/html&amp;FID=ont.ww.5100001"/>
+</verbatim>
+
+Because GWML is still GML 3.1.x and wml2:Observation constrains the featureOfInterest to be a om2:SamplingFeature (gwml:WaterWell is a om1:SamplingFeature).  Even if WaterML2.0 reverts to original constrains for FOI (any feature), the problem would remain, because anyFeature is GML 3.2.1 Feature (gwml is 3.1.1).  This is actually an issue because in principle, this document is not schema valid if the client tries to resolve the xlink.
+
+ 
+---++SWE encoding using XML encoding.
+
+<verbatim>
+<?xml version="1.0" encoding="UTF-8"?>
+<wml2:WaterMonitoringObservation xmlns:swe="http://www.opengis.net/swe/2.0" gml:id="ont.ww.5100001.1" xmlns:md="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:wml2="http://www.wron.net.au/waterml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wron.net.au/waterml2 file:///D:/WaterML20/WaterMLSVN/WaterML2.0/trunk/GeneratedSchema_June_2010/waterml2.xsd">
+	<gml:identifier codeSpace="http://www.ene.gov.on.ca/envision/water/wells.htm">ont.ww.5100001.1</gml:identifier>
+	<om:metadata>
+		<wml2:ObservationMetadata>
+			<md:contact>
+				<md:CI_ResponsibleParty>
+				<md:organisationName>
+				<gco:CharacterString>Ontario Ministry of Environment</gco:CharacterString>
+				</md:organisationName>
+					<md:role>
+						<md:CI_RoleCode codeList="list" codeListValue="url">steward</md:CI_RoleCode>
+					</md:role>
+				</md:CI_ResponsibleParty>
+			</md:contact>
+			<md:dateStamp><gco:Date>1958-07-25</gco:Date></md:dateStamp>
+			<md:identificationInfo xlink:href="urn:OGC:unknow"/>
+			<wml2:intendedSamplingInterval gml:id="ont.ww.5100001.1.smd">
+			<gml:beginPosition>1958-07-25</gml:beginPosition>
+			<gml:endPosition>1957-07-25</gml:endPosition>
+			</wml2:intendedSamplingInterval>
+			<wml2:sampledMedium xlink:href="http://www.opengis.net/def/medium/WaterML2.0/Water"/>
+		</wml2:ObservationMetadata>
+	</om:metadata>
+	<om:phenomenonTime>
+		<gml:TimeInstant gml:id="ont.ww.5100001.1.tm">
+			<gml:timePosition>1958-07-25 00:00:00.0</gml:timePosition>
+		</gml:TimeInstant>
+	</om:phenomenonTime>
+	<om:resultTime>
+		<gml:TimeInstant gml:id="ont.ww.5100001.2.tm">
+			<gml:timePosition>1958-07-25 00:00:00.0</gml:timePosition>
+		</gml:TimeInstant>
+	</om:resultTime>
+	<om:procedure xlink:href="http://www.opengis.net/def/processType/WaterML2.0/ManualMethod"/>
+	<om:observedProperty xlink:href="urn:ogc:def:property:OGC:GroundWaterLevel"/>
+	<om:featureOfInterest xlink:href="http://ngwd-bdnes.cits.nrcan.gc.ca/service/gin/wfs/gin?REQUEST=GetFeature&amp;INFO_FORMAT=text/html&amp;FID=ont.ww.5100001"/>
+	<om:result>
+	<swe:DataStream>
+		<swe:elementType name="series_data">
+			<swe:DataRecord>
+				<swe:field name="time">
+					<swe:Time definition="http://www.opengis.net/WaterML2.0/def/sweCommonProfile/time">
+					<gml:name>Time Instant</gml:name>
+					<swe:uom xlink:href="urn:ogc:property:time:iso8601"/>
+					</swe:Time>
+				</swe:field>
+				<swe:field name="waterdepth">
+					<swe:Quantity definition="urn:x-ogc:def:phenomenon:OGC:Depth">
+						<gml:name>Water Depth</gml:name>
+						<swe:uom xlink:href="http://aurora.regenstrief.org/~ucum/ucum-essence.xml#ft"/>
+					</swe:Quantity>
+				</swe:field>
+			</swe:DataRecord>
+		</swe:elementType>
+		<swe:encoding>
+			<swe:XMLEncoding defaultNamespace="http://www.opengis.net/WaterML2.0"/>
+		</swe:encoding>
+		<swe:values>
+			<wml2:series_data>
+				<wml2:time>1960-05-05T00:00:00+00:00</wml2:time>
+				<wml2:waterdepth>7.58</wml2:waterdepth>
+			</wml2:series_data>
+				<wml2:series_data>
+				<wml2:time>1960-08-01T00:00:00+00:00</wml2:time>
+				<wml2:waterdepth>7.89</wml2:waterdepth>
+			</wml2:series_data>
+		</swe:values>
+	</swe:DataStream>
+	</om:result>
+</wml2:WaterMonitoringObservation>
+</verbatim>
+
+The result is made of a DataStream containing 3 blocks. A date structure declaration, an encoding and finally the data.  To avoid repetition, the declaration structure can be externalised
+
+<verbatim>
+	<om:result>
+	<swe:DataStream>
+		<swe:elementType name="series_data" xlink:href="http://some.location.org/datarecords#series_data"/>
+		<swe:encoding>
+			<swe:XMLEncoding defaultNamespace="http://www.opengis.net/WaterML2.0"/>
+		</swe:encoding>
+		<swe:values>
+			<wml2:series_data>
+				<wml2:time>1960-05-05T00:00:00+00:00</wml2:time>
+				<wml2:waterdepth>7.58</wml2:waterdepth>
+			</wml2:series_data>
+			<wml2:series_data>
+				<wml2:time>1960-08-01T00:00:00+00:00</wml2:time>
+				<wml2:waterdepth>7.89</wml2:waterdepth>
+			</wml2:series_data>
+		</swe:values>
+	</swe:DataStream>
+	</om:result>
+</verbatim>
+
+Note that the content of swe:result is not defined in any XSD schema, but yet the document validates.  It's simply because swe:value is of anyType.
+
+---++SWE encoding using Block encoding.
+
+<verbatim>
+<?xml version="1.0" encoding="UTF-8"?>
+<wml2:WaterMonitoringObservation xmlns:swe="http://www.opengis.net/swe/2.0" gml:id="ont.ww.5100001.1" xmlns:md="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:wml2="http://www.wron.net.au/waterml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wron.net.au/waterml2 file:///D:/WaterML20/WaterMLSVN/WaterML2.0/trunk/GeneratedSchema_June_2010/waterml2.xsd">
+    <gml:identifier codeSpace="http://www.ene.gov.on.ca/envision/water/wells.htm">ont.ww.5100001.1</gml:identifier>
+    <om:metadata>
+        <wml2:ObservationMetadata>
+            <md:contact>
+                <md:CI_ResponsibleParty>
+                <md:organisationName>
+                <gco:CharacterString>Ontario Ministry of Environment</gco:CharacterString>
+                </md:organisationName>
+                    <md:role>
+                        <md:CI_RoleCode codeList="list" codeListValue="url">steward</md:CI_RoleCode>
+                    </md:role>
+                </md:CI_ResponsibleParty>
+            </md:contact>
+            <md:dateStamp><gco:Date>1958-07-25</gco:Date></md:dateStamp>
+            <md:identificationInfo xlink:href="urn:OGC:unknow"/>
+            <wml2:intendedSamplingInterval gml:id="ont.ww.5100001.1.smd">
+            <gml:beginPosition>1958-07-25</gml:beginPosition>
+            <gml:endPosition>1957-07-25</gml:endPosition>
+            </wml2:intendedSamplingInterval>
+            <wml2:sampledMedium xlink:href="http://www.opengis.net/def/medium/WaterML2.0/Water"/>
+        </wml2:ObservationMetadata>
+    </om:metadata>
+    <om:phenomenonTime>
+        <gml:TimeInstant gml:id="ont.ww.5100001.1.tm">
+            <gml:timePosition>1958-07-25 00:00:00.0</gml:timePosition>
+        </gml:TimeInstant>
+    </om:phenomenonTime>
+    <om:resultTime>
+        <gml:TimeInstant gml:id="ont.ww.5100001.2.tm">
+            <gml:timePosition>1958-07-25 00:00:00.0</gml:timePosition>
+        </gml:TimeInstant>
+    </om:resultTime>
+    <om:procedure xlink:href="http://www.opengis.net/def/processType/WaterML2.0/ManualMethod"/>
+    <om:observedProperty xlink:href="urn:ogc:def:property:OGC:GroundWaterLevel"/>
+    <om:featureOfInterest xlink:href="http://ngwd-bdnes.cits.nrcan.gc.ca/service/gin/wfs/gin?REQUEST=GetFeature&amp;INFO_FORMAT=text/html&amp;FID=ont.ww.5100001"/>
+    <om:result>
+    <swe:DataStream>
+        <swe:elementType name="series_data" xlink:href="http://some.location.org/datarecords#series_data"/>
+            <swe:DataRecord>
+                <swe:field name="time">
+                    <swe:Time definition="http://www.opengis.net/WaterML2.0/def/sweCommonProfile/time">
+                    <gml:name>Time Instant</gml:name>
+                    <swe:uom xlink:href="urn:ogc:property:time:iso8601"/>
+                    </swe:Time>
+                </swe:field>
+                <swe:field name="waterdepth">
+                    <swe:Quantity definition="urn:x-ogc:def:phenomenon:OGC:Depth">
+                        <gml:name>Water Depth</gml:name>
+                        <swe:uom xlink:href="http://aurora.regenstrief.org/~ucum/ucum-essence.xml#ft"/>
+                    </swe:Quantity>
+                </swe:field>
+            </swe:DataRecord>
+        </swe:elementType>
+        <swe:encoding>
+            <swe:TextEncoding tokenSeparator="," blockSeparator="&#10;"/>
+        </swe:encoding>
+        <swe:values>
+            1960-05-05T00:00:00+00:00,7.58
+            1960-08-01T00:00:00+00:00,7.89
+        </swe:values>
+    </swe:DataStream>
+    </om:result>
+</wml2:WaterMonitoringObservation>
+</verbatim>
+
+There are not significant difference except in the swe:values portion where the data is serialized as CSV text.  The file can be even more compact if the structure definition is defined by reference
+
+<verbatim>
+<?xml version="1.0" encoding="UTF-8"?>
+<wml2:WaterMonitoringObservation xmlns:swe="http://www.opengis.net/swe/2.0" gml:id="ont.ww.5100001.1" xmlns:md="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:wml2="http://www.wron.net.au/waterml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wron.net.au/waterml2 file:///D:/WaterML20/WaterMLSVN/WaterML2.0/trunk/GeneratedSchema_June_2010/waterml2.xsd">
+    <gml:identifier codeSpace="http://www.ene.gov.on.ca/envision/water/wells.htm">ont.ww.5100001.1</gml:identifier>
+    <om:metadata>
+        <wml2:ObservationMetadata>
+            <md:contact>
+                <md:CI_ResponsibleParty>
+                <md:organisationName>
+                <gco:CharacterString>Ontario Ministry of Environment</gco:CharacterString>
+                </md:organisationName>
+                    <md:role>
+                        <md:CI_RoleCode codeList="list" codeListValue="url">steward</md:CI_RoleCode>
+                    </md:role>
+                </md:CI_ResponsibleParty>
+            </md:contact>
+            <md:dateStamp><gco:Date>1958-07-25</gco:Date></md:dateStamp>
+            <md:identificationInfo xlink:href="urn:OGC:unknow"/>
+            <wml2:intendedSamplingInterval gml:id="ont.ww.5100001.1.smd">
+            <gml:beginPosition>1958-07-25</gml:beginPosition>
+            <gml:endPosition>1957-07-25</gml:endPosition>
+            </wml2:intendedSamplingInterval>
+            <wml2:sampledMedium xlink:href="http://www.opengis.net/def/medium/WaterML2.0/Water"/>
+        </wml2:ObservationMetadata>
+    </om:metadata>
+    <om:phenomenonTime>
+        <gml:TimeInstant gml:id="ont.ww.5100001.1.tm">
+            <gml:timePosition>1958-07-25 00:00:00.0</gml:timePosition>
+        </gml:TimeInstant>
+    </om:phenomenonTime>
+    <om:resultTime>
+        <gml:TimeInstant gml:id="ont.ww.5100001.2.tm">
+            <gml:timePosition>1958-07-25 00:00:00.0</gml:timePosition>
+        </gml:TimeInstant>
+    </om:resultTime>
+    <om:procedure xlink:href="http://www.opengis.net/def/processType/WaterML2.0/ManualMethod"/>
+    <om:observedProperty xlink:href="urn:ogc:def:property:OGC:GroundWaterLevel"/>
+    <om:featureOfInterest xlink:href="http://ngwd-bdnes.cits.nrcan.gc.ca/service/gin/wfs/gin?REQUEST=GetFeature&amp;INFO_FORMAT=text/html&amp;FID=ont.ww.5100001"/>
+    <om:result>
+    <swe:DataStream>
+        <swe:elementType name="series_data" xlink:href="http://some.location.org/datarecords#series_data"/>
+
+        <swe:encoding>
+            <swe:TextEncoding tokenSeparator="," blockSeparator="&#10;"/>
+        </swe:encoding>
+        <swe:values>
+            1960-05-05T00:00:00+00:00,7.58
+            1960-08-01T00:00:00+00:00,7.89
+        </swe:values>
+    </swe:DataStream>
+    </om:result>
+</wml2:WaterMonitoringObservation>
+</verbatim>
+
+
+-- Main.EricBoisvert - 06 Oct 2010
+
+
+
+%META:FILEATTACHMENT{name="phenomenon_paring.png" attachment="phenomenon_paring.png" attr="" comment="Phenomenon and field pairing" date="1286385171" path="phenomenon_paring.png" size="34388" stream="phenomenon_paring.png" tmpFilename="/tmp/jx42yfV203" user="Main.EricBoisvert" version="1"}%

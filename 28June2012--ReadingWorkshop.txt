@@ -1,0 +1,89 @@
+%META:TOPICINFO{author="BoyanBrodaric" comment="save topic" date="1347470176" format="1.1" reprev="21" version="21"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *GWIE2 Breakout Session,* *Hydrology DWG Workshop 2012*
+
+This workshop continues the directions outlined in the successful [[12April2011--DelftWorkshop][Delft Workshop]], in which it was agreed to move to a harmonized international GML schema for groundwater data. Since that [[12April2011--DelftWorkshop][Delft Workshop]], significant progress has been made by INSPIRE and OGC/WMO on schemas that include groundwater elements, and the GWML1 schema has been extensively tested in N.America. In this workshop we will review these developments and chart a concrete plan toward an OGC/WMO standard.
+
+---++ *Date and Venue*
+   * <b>Date: </b>28 June 2012
+   * *Time:* 9:00 - 15:30
+   * <b>Where: </b>Reading, U.K.
+   * *Host:* University of Reading, Whiteknights Campus
+   * <b>Room: </b>Conference Room 176 (2nd floor), Harry Pitt Building (#56 in D7 on [[http://www.reading.ac.uk/web/FILES/UoRMap_WhiteknightsCampus_Colour.pdf campus map)]]
+   * *Amenities*: projector, Wi-Fi, Skype
+   * *Hotels:* [[http://www.ibishotel.com/gb/hotel-5431-ibis-reading-centre/index.shtml IBIS]], [[http://www.novotel.com/gb/hotel-5432-novotel-reading-centre/index.shtml Novotel]], [[http://www.mercure.com/gb/hotel-7317-mercure-george-hotel-reading/index.shtml Mercure]] (Reading Center)
+   * <strong>Transportation: </strong>bus #17 from Reading Center to Three Tuns at University entrance
+
+   * *For more venue details consult the* [[ReadingWorkshop2012][HDWG Workshop 2012 page]]
+---++ *Participants*
+   * Boyan Brodaric (GSC, CAN) - _confirmed_
+   * Eric Boisvert (GSC, CAN) - _confirmed_
+   * David Blodgett (USGS, USA) - _confirmed_
+   * John Laxton (BGS, UK) - _confirmed_
+   * Jean Jacques Serrano (BGRM, FR) - _confirmed_
+   * Tomasz Nalecz (PGI, PL) -<i> Skype only</i>
+   * Janusz Michalak (Warsaw U, PL) _-_ _Skype only_
+   * Robert Tomas (JRC, EU) - _confirmed_
+   * Bernhard Wagner (LFU, DE) - _confirmed_
+   * Simon Cox (CSIRO, AU) - _confirmed_
+   * Paul Sheahan (BOM, AU) - _confirmed_
+   * Irina Dornblut (WMO)<i> - confirmed</i>
+   * Rob Atkinson (CSIRO)<i> - confirmed</i>
+---++ *Objectives*
+   * Review state of the art
+   * Determine an approach and its feasibility
+   * Finalize proposal for HDWG/OGC (Interoperability Experiment)
+   * Develop a work plan for next steps
+   * Begin discussion of key aspects
+---++ *Expected Results*
+   * IE proposal to be submitted to HDWG and then OGC
+   * Work plan for next steps
+---++ *Agenda*
+   * *9:00 – 9:10 Welcome and Introductions*
+   * *9:10 – 10:30 Where are we now?*
+      * Reports on the current state of GML-oriented groundwater schema (~15 min each):
+         * GWML1 -<i> Eric Boisvert</i>
+         * INSPIRE - Geology (groundwater) - _Bernhard Wagner_
+         * WMO - HY_Features (groundwater) - _Irina Dornblut_
+         * BOM - BOM Groundwater Info -<i> Paul Sheahan </i>
+         * Discussion
+
+   * *10:30 – 11:00 Break*
+
+   * *11:00 – 12:30 Where are we going?*
+      * Technical discussion for schema harmonization
+         * what are the use-cases?
+         * what are the key elements and where are they?
+         * what are the overlaps and gaps?
+
+   * *12:30 – 13:30 Lunch*
+
+   * *13:30 – 15:00 How do we get there?*
+      * OGC proposal (participants, roles, responsibilities)
+      * Work plan
+
+   * <b>15:00 – 15:30 Report to HDWG </b>(joint with HDWG)
+
+   * *15:30 – 16:00 Break*
+
+   * *16:00 – 17:00 HDWG Closing Session* (joint with HDWG)
+---++ *Resources*
+   * *Groundwater ML1:* [[http://ngwd-bdnes.cits.rncan.gc.ca/gwml/index.aspx?c=2][documentation]] and [[http://www.iwaponline.com/jh/014/jh0140093.htm paper]]
+   * *INSPIRE GE:* [[ http://testbed.ptip.org.pl/INSPIRE_Hydrogeology/INSPIRE_Hydrogeology_Draft_Model_v.2.9.9.eap.zip ][HydrogeologyCore UML model in EAP file (password required)]] and [[http://testbed.ptip.org.pl/INSPIRE_Hydrogeology/INSPIRE_Hydrogeology_Draft_Model_v2.9.9_Documentation.doc][documentation (the same password)]]
+   * *OGC GW-IE2 Draft Activity Plan Proposal:* see attachments below
+---++ *Action Plan*
+   * July 6 2012---circulate 1st draft of proposal
+   * July 31, 2012---finalize proposal
+   * August 2012---submit proposal to OGC
+   * Sept 2012---begin GWIE2
+   * Sept 2013---end GWIE2
+---++ *Meeting Notes*
+   * The notes can be found [[ReadingGwie2012JuneMeeting][ here]]
+   * Presentations are available below:
+      * [[%ATTACHURL%/GWML_status_%282012%29.ppt][GWML_status_(2012).ppt]]: GWML status
+      * [[%ATTACHURL%/GWIE2_-_Australian_Groundwater_data_projects.ppt][GWIE2_-_Australian_Groundwater_data_projects.ppt]]: Australian GWML related activities
+
+%META:FILEATTACHMENT{name="GWML_status_(2012).ppt" attachment="GWML_status_(2012).ppt" attr="" comment="GWML status" date="1340896667" path="GWML status (2012).ppt" size="946688" user="EricBoisvert" version="1"}%
+%META:FILEATTACHMENT{name="GWIE2_-_Australian_Groundwater_data_projects.ppt" attachment="GWIE2_-_Australian_Groundwater_data_projects.ppt" attr="" comment="Australian GWML related activities" date="1341364264" path="D:\Paul\Projects\OGC\2011-12\HDWG workshop\Ground water\GWIE2 - Australian Groundwater data projects.ppt" size="4195840" user="PaulSheahan" version="1"}%
+%META:FILEATTACHMENT{name="GWIE2_Activity_Plan_06July12.doc" attachment="GWIE2_Activity_Plan_06July12.doc" attr="" comment="GWIE2 Draft Proposal" date="1341596292" path="GWIE2_Activity_Plan_06July12.doc" size="200704" user="BoyanBrodaric" version="1"}%
+%META:FILEATTACHMENT{name="GWIE2_Activity_Plan_10Sept12_.doc" attachment="GWIE2_Activity_Plan_10Sept12_.doc" attr="" comment="GWIE2 proposal 10 Sept 2012" date="1347470176" path="GWIE2_Activity_Plan_10Sept12 .doc" size="227328" user="BoyanBrodaric" version="2"}%

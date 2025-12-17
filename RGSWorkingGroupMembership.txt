@@ -1,0 +1,18 @@
+%META:TOPICINFO{author="PaulSheahan" comment="save topic" date="1343903114" format="1.1" reprev="1" version="2"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---+ Ratings Gaugings and Section Working Group Membership
+
+The RGS WG was formed at the <a href="RatingsAndGaugingsWorkshopReading" target="_blank">Reading workshop </a>20-22 June 2012
+
+| <span style="color: slategray;"> __Member__ </span> | <span style="color: slategray;"> __Organisation__ </span> | <span style="color: slategray;"> __Date joined__ </span> |
+| Peter Taylor | CSIRO | 20 June 2012 |
+| Michael Natschke | Kisters,Germany | 20 June 2012 |
+| Mathew Fry | Centre for Ecology andHydrology,UK | 20 June 2012 |
+| Dave Blodgett | United States GeologicalSurvey,USA | 20 June 2012 |
+| David Briar | United States GeologicalSurvey,USA | 20 June 2012 |
+| Stuart Hamilton | AquaticInformatics,Canada | 20 June 2012 |
+| David Valentine | CUASHI,USA | 20 June 2012 |
+| Doug Palmer | CSIRO,Australia | 20 June 2012 |
+| Paul Sheahan | Bureau ofMeteorology,Australia | 20 June 2012 |
+
+-- Main.PaulSheahan - 06 Jul 2012

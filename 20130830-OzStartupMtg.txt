@@ -1,0 +1,46 @@
+%META:TOPICINFO{author="PaulSheahan" comment="reprev" date="1377834529" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="RGSInteropExperiment"}%
+---+ 
+---++ Meeting input documents
+
+Meeting slides - [[%ATTACHURL%/WaterML2.Part2_-_OzStartupMtg.pdf][Wiki page attachment<br />]] [[%ATTACHURL%/RatingsGaugingsIE.docx][Scenario Overview<br />]] [[%ATTACHURL%/RatingsGaugingsIE.docx][IE Overview ]]
+---+++ 
+
+---+++ Links from slides
+
+*WaterML2 - RGS Discussion paper* [[https://portal.opengeospatial.org/files/?artifact_id=54423]]<b><br />IE Time line</b> - [[https://docs.google.com/file/d/0B7dtTd_VTBTZRU05SEdSTUxPaEE/edit][https://docs.google.com/file/d/0B7dtTd_VTBTZRU05SEdSTUxPaEE/edit<br />]]<b style="line-height: 22px;">RGS mailing list join</b><span style="line-height: 22px;">: </span> https://lists.opengeospatial.org/mailman/listinfo/hydro-rgs
+---+ 
+---++ Meeting Invite
+
+Hi,
+
+<span style="line-height: 22px;">As you are aware the Bureau of Meteorology and the CSIRO are participating in the development of WaterML2 Part 2, Ratings Gaugings and Sections. We are working on this activity jointly though the Water Information Research and Development Alliance (WIRADA</span> [[http://www.csiro.au/en/Organisation-Structure/Flagships/Water-for-a-Healthy-Country-Flagship/WIRADA_WFHC_ResearchProfile.aspx][<sup>1</sup>]]<span style="line-height: 22px;">). The development of the standard is occurring through the Open Geospatial Consortium</span> [[http://www.opengeospatial.org/][<sup>2</sup>]]<span style="line-height: 22px;"> Hydrology Domain Working Group</span> [[WebHome][<sup>3</sup>]]<span style="line-height: 22px;">.</span>
+
+<span style="line-height: 22px;">Following on from our preliminary telephone discussion in June, we would like to start the conversations to progress planning for the Interoperability experiment. We would like to invite you to participate in a group telecom where we will update you on activity to date and discuss the experiment, participation and the next steps.</span>
+
+<span style="line-height: 22px;">As you can appreciate we don’t have all the answers yet, but are working towards building clarity and definition in the activity. A significant part of this process is to first understand what the questions are that need to be answered, this first meeting will give opportunity for these questions to come out.</span>
+
+<span style="line-height: 22px;">Attached are two Interoperability experiment overview documents, these document articulate the project objectives at the high level and a useful for project orientation.</span>
+
+<span style="line-height: 22px;">We have set up a poll to assist in determining the most convenient meeting time. Please open the poll, enter your name and let us know your preferences. </span>
+
+The poll can be found at http://doodle.com/f3nw9uhhbbn754dc.
+
+<span style="line-height: 22px;">Thanks and we look forward catching up.</span>
+
+<span style="line-height: 22px;">Paul and Pete.</span>
+
+__Attachments__
+   1 Ratings, gaugings and cross-sections Interoperability Experiment brief
+   1 RGS Interoperability Experiment – Australian scenario overview
+__References__
+   1 [[http://www.csiro.au/en/Organisation-Structure/Flagships/Water-for-a-Healthy-Country-Flagship/WIRADA_WFHC_ResearchProfile.aspx][WIRADA]] – The alliance is now in its second agreement period.
+   1 [[http://www.opengeospatial.org/][Open Geospatial Consortium]] (OGC)
+   1 [[WebHome][Hydrology Domain Working Group]] – (HDWG)
+
+-- Main.PaulSheahan - 30 Aug 2013
+   * [[%ATTACHURL%/WaterML2.Part2_-_OzStartupMtg.pdf][WaterML2.Part2_-_OzStartupMtg.pdf]]: Meeting slides for the OzStartup meeting
+
+%META:FILEATTACHMENT{name="WaterML2.Part2_-_OzStartupMtg.pdf" attachment="WaterML2.Part2_-_OzStartupMtg.pdf" attr="" comment="Meeting slides for the OzStartup meeting" date="1377834207" path="WaterML2.Part2 - OzStartupMtg.pdf" size="330816" user="PaulSheahan" version="1"}%
+%META:FILEATTACHMENT{name="RatingsGaugingsIE.docx" attachment="RatingsGaugingsIE.docx" attr="" comment="" date="1377834277" path="RatingsGaugingsIE.docx" size="135486" user="PaulSheahan" version="1"}%
+%META:FILEATTACHMENT{name="RGS_Interoperability_Experiment_–_Australian_scenario_overview.docx" attachment="RGS_Interoperability_Experiment_–_Australian_scenario_overview.docx" attr="" comment="" date="1377834299" path="RGS Interoperability Experiment – Australian scenario overview.docx" size="90518" user="PaulSheahan" version="1"}%

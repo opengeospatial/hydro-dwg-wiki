@@ -1,0 +1,18 @@
+%META:TOPICINFO{author="WashingtonOtieno" comment="reprev" date="1678289025" format="1.1" reprev="20" version="20"}%
+%MAKETEXT{"This is a subscription service to be automatically notified by e-mail when topics change in this [_1] web. This is a convenient service, so you do not have to come back and check all the time if something has changed. To subscribe, please add a bullet with your [_2] in alphabetical order to this list:" args="*<nop>%WEB%*,%TWIKIWEB%.WikiName"}%
+
+   * %USERSWEB%.BoyanBrodaric: *
+   * %USERSWEB%.DalePercival: *
+   * %USERSWEB%.DavidLemon: *
+   * %USERSWEB%.DavidValentine: *
+   * %USERSWEB%.EricBoisvert: *
+   * %USERSWEB%.KevinStegemoller: *
+   * %USERSWEB%.NateBooth: *
+   * %USERSWEB%.NathanHemenway: *
+   * %USERSWEB%.PeterTaylor: *
+   * %USERSWEB%.WashingtonOtieno: WebHome
+   * Main.TWikiGuest - example@your.company
+
+%INCLUDE{"%TWIKIWEB%.WebChangesAlert"}%
+
+__%MAKETEXT{"Related topics:"}%__ %TWIKIWEB%.WebChangesAlert, %MAINWEB%.%WIKIUSERSTOPIC%, %TWIKIWEB%.TWikiRegistration

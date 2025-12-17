@@ -1,0 +1,56 @@
+%META:TOPICINFO{author="IlyaZaslavsky" date="1245951996" format="1.1" version="1.6"}%
+%META:TOPICPARENT{name="WorkingGroupMeetings"}%
+---++ Meeting details
+
+*Time:*      June 22 2009,	14:00-16:00
+
+*Venue:*    OGC Technical Committee Meeting held at MIT, Boston. 
+
+
+---++ Agenda
+
+
+
+1. Introduction and elections of DWG co-chairs (10 min)
+
+2. Presentations:
+
+        a. Nathaniel Booth (USGS) "USGS Water Data Exchange Services" 
+
+        b. Zichuan Ye, Dean Djokic (ESRI) "What is needed to support an integrated geo-temporal system based on CUAHSI experience"
+
+        c. Boyan Brodaric (Geoconnections - Geological Survey of Canada) "Geospatial Information Interoperability in the Canadian Groundwater Information Network".
+
+        d. David Lemon, Peter Fitch (CSIRO): "The Hydrologists Workbench
+- an application of scientific workflows to hydrology problems"
+
+        e. David Valentine, Ilya Zaslavsky (SDSC and CUAHSI HIS) "Time series management in WaterML 1.1 and CUAHSI Water Data Services"
+
+3. Discussion of the DWG mission and first steps
+
+
+
+
+
+-- Main.LaurentLefort - 22 Jun 2009
+   * [[%ATTACHURL%/1-HydroDWG_200906_intro.ppt][1-HydroDWG_200906_intro.ppt]]: Hydrology DWG Introduction and Agenda
+
+   * [[%ATTACHURL%/2-HydroDWG_200906_USGS_Water_Data_Exchange_Services.ppt][2-HydroDWG_200906_USGS_Water_Data_Exchange_Services.ppt]]: USGS Water Data Exchange Services (Nate Booth)
+
+   * [[%ATTACHURL%/3-HydroDWG_200906_ESRI_Zichuan_Ye.ppt][3-HydroDWG_200906_ESRI_Zichuan_Ye.ppt]]: Supporting geo-temporal systems and CUAHSI services (Zichuan Ye)
+
+   * [[%ATTACHURL%/4-HydroDWG_200906_Groundwater_Brodaric.ppt][4-HydroDWG_200906_Groundwater_Brodaric.ppt]]: Groundwater integration (Boyan Brodaric)
+
+   * [[%ATTACHURL%/5-HydroDWG_200906_Hydrologists_Workbench_CSIRO-Lemon_Fitch.pptx][5-HydroDWG_200906_Hydrologists_Workbench_CSIRO-Lemon_Fitch.pptx]]: Hydrologists workbench (David Lemon, Peter Fitch)
+
+   * [[%ATTACHURL%/6-HydroDWG_200906_timeseries_in_WaterML_Valentine.pptx][6-HydroDWG_200906_timeseries_in_WaterML_Valentine.pptx]]: Time series management in WaterML and Water Data Services (David Valentine). This talk was not presented because of lack of time. 
+
+   * [[%ATTACHURL%/7-HydroDWG_200906_Report.pptx][7-HydroDWG_200906_Report.pptx]]: Hydrology DWG Report at Plenary, June 25
+
+%META:FILEATTACHMENT{name="2-HydroDWG_200906_USGS_Water_Data_Exchange_Services.ppt" attachment="2-HydroDWG_200906_USGS_Water_Data_Exchange_Services.ppt" attr="" comment="USGS Water Data Exchange Services (Nate Booth)" date="1245794501" path="2-HydroDWG_200906_USGS_Water_Data_Exchange_Services.ppt" size="143360" stream="2-HydroDWG_200906_USGS_Water_Data_Exchange_Services.ppt" tmpFilename="/tmp/1L2TFNFIAJ" user="Main.IlyaZaslavsky" version="1"}%
+%META:FILEATTACHMENT{name="1-HydroDWG_200906_intro.ppt" attachment="1-HydroDWG_200906_intro.ppt" attr="" comment="Hydrology DWG Introduction and Agenda" date="1245794571" path="1-HydroDWG_200906_intro.ppt" size="235008" stream="1-HydroDWG_200906_intro.ppt" tmpFilename="/tmp/evZlO5QKaO" user="Main.IlyaZaslavsky" version="1"}%
+%META:FILEATTACHMENT{name="6-HydroDWG_200906_timeseries_in_WaterML_Valentine.pptx" attachment="6-HydroDWG_200906_timeseries_in_WaterML_Valentine.pptx" attr="" comment="Time series management in WaterML and Water Data Services (David Valentine)" date="1245794692" path="6-HydroDWG_200906_timeseries_in_WaterML_Valentine.pptx" size="2610810" stream="6-HydroDWG_200906_timeseries_in_WaterML_Valentine.pptx" tmpFilename="/tmp/Cx6baJvRLS" user="Main.IlyaZaslavsky" version="1"}%
+%META:FILEATTACHMENT{name="3-HydroDWG_200906_ESRI_Zichuan_Ye.ppt" attachment="3-HydroDWG_200906_ESRI_Zichuan_Ye.ppt" attr="" comment="Supporting geo-temporal systems and CUAHSI services (Zichuan Ye)" date="1245794775" path="3-HydroDWG_200906_ESRI_Zichuan_Ye.ppt" size="5421056" stream="3-HydroDWG_200906_ESRI_Zichuan_Ye.ppt" tmpFilename="/tmp/zf5RicuqVW" user="Main.IlyaZaslavsky" version="1"}%
+%META:FILEATTACHMENT{name="5-HydroDWG_200906_Hydrologists_Workbench_CSIRO-Lemon_Fitch.pptx" attachment="5-HydroDWG_200906_Hydrologists_Workbench_CSIRO-Lemon_Fitch.pptx" attr="" comment="Hydrologists workbench (David Lemon, Peter Fitch)" date="1245795316" path="5-HydroDWG_200906_Hydrologists_Workbench_CSIRO-Lemon_Fitch.pptx" size="2181748" stream="5-HydroDWG_200906_Hydrologists_Workbench_CSIRO-Lemon_Fitch.pptx" tmpFilename="/tmp/KY8GQGmA1U" user="Main.IlyaZaslavsky" version="1"}%
+%META:FILEATTACHMENT{name="4-HydroDWG_200906_Groundwater_Brodaric.ppt" attachment="4-HydroDWG_200906_Groundwater_Brodaric.ppt" attr="" comment="Groundwater integration (Boyan Brodaric)" date="1245795415" path="4-HydroDWG_200906_Groundwater_Brodaric.ppt" size="4919808" stream="4-HydroDWG_200906_Groundwater_Brodaric.ppt" tmpFilename="/tmp/WmYFvLcoSV" user="Main.IlyaZaslavsky" version="1"}%
+%META:FILEATTACHMENT{name="7-HydroDWG_200906_Report.pptx" attachment="7-HydroDWG_200906_Report.pptx" attr="" comment="Hydrology DWG Report at Plenary, June 25" date="1245951989" path="7-HydroDWG_200906_Report.pptx" size="153005" stream="7-HydroDWG_200906_Report.pptx" tmpFilename="/tmp/dleNHpdqwk" user="Main.IlyaZaslavsky" version="1"}%

@@ -1,0 +1,20 @@
+%META:TOPICINFO{author="BoyanBrodaric" date="1290025208" format="1.1" version="1.1"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Call 2010-11-24*
+
+---++ Connection Details
+   * dates:  Tues Nov 24, 2010 (N.America), Wed Nov 25 (AU)
+   * times:  5pm (Ottawa), 4pm CT (WI), 7am (AU)
+      * [[http://www.timeanddate.com/worldclock/fixedtime.html?month=9&day=9&year=2010&hour=17&min=0&sec=0&p1=188][CLICK HERE for times and dates for this meeting from around the world]]
+   * phone number: 218-862-1000 (USA)
+   * conference call code: 437712#
+   * webex: 
+
+---++ Agenda
+   * roundtable
+   * final report   
+   * Dec 2010 OGC TC meeting Sydney
+ 
+
+
+---++ Notes

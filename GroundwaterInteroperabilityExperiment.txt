@@ -1,0 +1,94 @@
+%META:TOPICINFO{author="BoyanBrodaric" comment="reprev" date="1305310396" format="1.1" reprev="52" version="52"}%
+%META:TOPICPARENT{name="WebHome"}%
+---+ *Groundwater Interoperability Experiment*
+
+---++ *Description*
+
+This interoperability experiment will advance the development of !WaterML 2.0, test its use with various OGC service standards (SOS, WFS, WMS and CSW), as well as investigate its interaction with GroundwaterML (GWML), in the context of sharing groundwater data between the USA and Canada.
+
+The use of O&M compliant !WaterML 2.0, GWML and OGC web services for data exchange will allow for easier access and interpretation of water data. We expect the IE will result in further development of !WaterML 2.0, including a schema, example instances, and documentation describing the schema. It will also result in a documented evaluation of the compatibility of !WaterML 2.0 with OGC services. In particular, the groundwater datasets contain a large number of locations with a small number of observations at each location, so we expect that the project will discover issues related to data discovery (via catalogs) and delivery (via the possibly high overhead of delivering observations). New and upgraded web services amongst participants are also expected, increasing the overall availability of water data and the interoperability of water information systems, particularly between the USA and Canada. Development of client applications is a secondary concern; the focus of work is testing information models and service delivery mechanisms.
+
+Contacts: Main.BoyanBrodaric and Main.NateBooth
+
+---++ *Meetings*
+
+   * [[Call 2009-11-03]]
+   * [[Call 2009-11-10]]
+   * [[Call 2009-11-18]]
+   * [[Call 2009-11-24]]
+   * [[Call 2009-12-03]]
+   * [[OGC TC 2009-12-08]]
+   * [[AGU 2009-12-16]]
+   * [[Call 2010-01-14]]
+   * [[Call 2010-02-04]]
+   * [[Call 2010-02-25]]
+   * [[OGC TC 2010-03-08]]
+   * [[HDWG Workshop - GW IE 2010-03-15]]
+   * [[Call 2010-03-24]]
+   * [[Call 2010-05-25]]
+   * [[Call 2010-06-28]]
+   * [[Call 2010-09-09]]
+   * [[Call 2010-10-05]]
+   * [[Call 2010-10-19]]
+   * [[Call 2010-11-02]]
+   * [[Call 2010-11-16]]
+   * [[Call 2010-11-24]]
+---++ *Discussions*
+
+   * [[General Approach]]
+   * [[Groundwater ML]]
+   * [[SamplingFeature]]
+   * [[GwIeGetCapabilitiesBestPractices]]
+   * [[GwIeGMLswitchover]]
+   * [[GwIeSOSProfile]]
+   * [[GwIeSosGaps]] Gaps, Issues and recommendations
+
+---++ *Relevant Documents*
+
+   * [[http://www.opengeospatial.org/standards/sos][Sensor Observation Service]] OGC refrence page
+   * [[http://www.opengeospatial.org/standards/om][Observation and Measurements]] OGC reference page
+   * [[http://portal.opengeospatial.org/files/?artifact_id=35888][Specification of the Sensor Service Architecture (SensorSA)]] very detailed architecture document.
+   * [[http://portal.opengeospatial.org/files/?artifact_id=25562][OGC Sensor Web Enablement: Overview and High Level Architecture (OGC 07-165)]]
+   * [[http://portal.opengeospatial.org/files/?artifact_id=34147][OGC OWS-6 Sensor Web Enablement (SWE) Engineering Report]]
+   * [[http://portal.opengeospatial.org/files/?artifact_id=20935&version=1][ 07-003 (2007) Common datatype used for OGC Sensor Web Enablement (SweCommon)]]
+
+---++ *Schemas*
+
+Attached to this page are self-contained schemas to be used to validate WaterML 2.0 until O&M 2.0 and SWE 2.0 and other dependencies are officially published. The latest version of the working shema can be retrieved from https://svn.sdsc.edu/repo/WaterML/WaterML2.0/trunk/GeneratedSchema_June_2010 (you need access right)
+
+---++ *GroundWaterIEPrivate Dicussions*
+   * [[GroundWaterIEPrivate]]
+   * [[ExperimentUseCaseDiscussion]] 
+      * [[SOSLargeCollectionSensorDiscussion]]
+      * [[HTTPPostMethodsDiscussion]]
+      * [[SosTool]]
+      * [[USGSStandardsIssues]]
+
+---++ *Participants*
+   * USGS (United States Geological Survey)
+   * !NRCan (Natural Resources Canada)
+   * CSIRO (Australian Commonwealth Scientific and Industrial Research Organisation )
+   * SCSD/CUAHSI (San Diego Supercomputer Center / Consortium of Universities for the Advancement of Hydrologic Science)
+   * NCSA (National Center for Supercomputing Applications/Illinois State Water Survey, University of Illinois at Urbana-Champaign)
+   * University of Calgary
+   * 34 North
+   * Kisters AG
+
+---++ *Test client application*
+   * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/api_ngwds/en/wmc/gie.html][NRCan client]]
+   * [[http://www.opennrm.org][34 North client]] - Please create a login at http://www.opennrm.org/login in order to see the Groundwater Interoperability Experiment / SOS tools. For further instructions please see [[ClientInstructions34North]]
+   * [[http://kiwis.kisters.de][Kister client]]
+
+---++ *Presentations and Reports*
+
+   * [[%ATTACHURL%/GW_IE_OGC_TC_08Dec09.pdf][GW_IE_OGC_TC_08Dec09.pdf]]: Groundwater Interoperability Experiment status 08Dec09
+
+   * [[%ATTACHURL%/GW_IE_OGC_TC_08Mar10.pdf][GW_IE_OGC_TC_08Mar10.pdf]]: Groundwater Interoperability Experiment status 08Mar10
+
+   * [[%ATTACHURL%/OGC_GWIE_Final_Report_Mar2011.pdf][OGC_GWIE_Final_Report_Mar2011.pdf]]: GWIE 1 final report Mar 2011
+
+%META:FILEATTACHMENT{name="GW_IE_OGC_TC_08Dec09.pdf" attachment="GW_IE_OGC_TC_08Dec09.pdf" attr="" comment="Groundwater Interoperability Experiment status 08Dec09" date="1268935085" path="C:\Documents and Settings\brodaric\My Documents\My Docs\GWP3\Meetings\OGC_Dec09_MountainView\GW_IE_OGC_TC_08Dec09.pdf" size="347000" stream="C:\Documents and Settings\brodaric\My Documents\My Docs\GWP3\Meetings\OGC_Dec09_MountainView\GW_IE_OGC_TC_08Dec09.pdf" tmpFilename="/tmp/PRmsAAyV2e" user="Main.BoyanBrodaric" version="1"}%
+%META:FILEATTACHMENT{name="GW_IE_OGC_TC_08Mar10.pdf" attachment="GW_IE_OGC_TC_08Mar10.pdf" attr="" comment="Groundwater Interoperability Experiment status 08Mar10" date="1268935254" path="C:\Documents and Settings\brodaric\My Documents\My Docs\GWP3\Meetings\OGC_Mar10_Italy\GW_IE_OGC_TC_08Mar10.pdf" size="307171" stream="C:\Documents and Settings\brodaric\My Documents\My Docs\GWP3\Meetings\OGC_Mar10_Italy\GW_IE_OGC_TC_08Mar10.pdf" tmpFilename="/tmp/SEHvMKYr7x" user="Main.BoyanBrodaric" version="1"}%
+%META:FILEATTACHMENT{name="GeneratedSchema_June_2010.zip" attachment="GeneratedSchema_June_2010.zip" attr="" comment="new version with TimePeriod fixed" date="1289231816" path="GeneratedSchema_June_2010.zip" size="1007603" stream="GeneratedSchema_June_2010.zip" tmpFilename="/tmp/GYszNafGPP" user="Main.EricBoisvert" version="1"}%
+%META:FILEATTACHMENT{name="OGC_GWIE_Final_Report_Mar2011.pdf" attachment="OGC_GWIE_Final_Report_Mar2011.pdf" attr="" comment="GWIE 1 Final Report" date="1305310077" path="OGC_GWIE_Final_Report_Mar2011.pdf" size="684089" user="BoyanBrodaric" version="1"}%
+%META:TOPICMOVED{by="DavidValentine" date="1257289685" from="HydrologyDWG.GroundwaterInteroperabilityExperiement" to="HydrologyDWG.GroundwaterInteroperabilityExperiment"}%

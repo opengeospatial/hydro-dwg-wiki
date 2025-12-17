@@ -1,0 +1,15 @@
+%META:TOPICINFO{author="PeterTaylor" date="1337302949" format="1.1" version="1"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---+ Relationship to relevant (feature) models
+---++ HY_Features
+
+HY_Features model has some logical connection points through the related features in the HY_SurfaceWaterBody package: E.g. HY_River, Reach etc. There is also a HY_CrossSection which provides some geometric properties (area) and the reach geometry:
+
+<img alt="HY Features excerpt" height="494" src="http://ars.els-cdn.com/content/image/1-s2.0-S0022169411008742-gr11.jpg" title="HY Features " width="780" />
+
+If sections are included in the scope it would be possible to relate some relevant features here. 
+---++ INSPIRE
+
+INSPIRE is similarly focussed on the network structure and topology, but does identify core featuers that are relevant. E.g. water courses, physical features and man-made features (embankments, fords, dams etc.). All these types of objects are able to carry geometries but specifics are not defined. 
+
+-- Main.PeterTaylor - 18 May 2012

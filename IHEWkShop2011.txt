@@ -1,0 +1,71 @@
+%META:TOPICINFO{author="IlyaZaslavsky" comment="save topic" date="1303315051" format="1.1" reprev="11" version="11"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++ Announcement
+
+*Dates:* 11 - 14 April, 2011
+
+*Venue:* UNESCO-IHE, Delft, The Netherlands
+
+*Purpose:*
+
+This meeting will be the second workshop of the Hydrology Domain Working Group. It is open to any member of the working group.
+
+The kind people at UNESCO-IHE Institute for Water Education in Delft (The Netherlands) have offered to host us in April in the week following EGU and the week before the [[http://hikm.ihe.nl/openwater_eg/][OpenWater Symposium]]. That is, the week starting April 11.
+
+The workshop represents an excellent opportunity for the Hydro DWG to progress the excellent work done so far. In particular, it presents an opportunity to have a gathering for those interested in: !WaterML2.0, Surface Water IE, Forecasting IE, GWML2.0, a Surface Water feature model, standard water vocubularies.
+
+---++ Registration
+
+Please fill out your details (name, organisation, email address) on the Notification of attendance page here: [[http://www.clw.csiro.au/conferences/Hydrology-Domain/][Registration]]
+
+---++ Agenda
+
+| *Date* | *Time* | *Session* | *Presenters* |
+| Monday 11th | 9:30 | Welcome %BR% - Expectations of this meeting %BR% - Update on WMO Relationship %BR% - Update from Bonn TC | David, Ulrich and Ilya |
+| ^ | 10:15 | UNESCO-IHE Presentation- Institute for Water Education | Dr. Yunqing Xuan |
+| ^ | 10:35 | Department of Geoinformatics, University Jena, Germany | Christian Fischer |
+| ^ | 11:00 | _Break_ ||
+| ^ | 11:30 | IE Updates %BR% - Current status and what's next for Surface Water IE %BR% - Current proposal for Forecasting IE | Peter Fitch et al, John Halquist |
+| ^ | 12:30 | _Lunch_ ||
+| ^ | 14:00 - 18:00 | Reference Architecture for Water Information Systems  | OGC  |
+| ^ | 18:00 | Close ||
+| Tuesday 12th | 9:00 - 12:30 | A Model for Surface Water Features  | CSIRO, GRDC  |
+| ^ | 12:30 | _Lunch_ ||
+| ^ | 14:00 - 18:00 | GWML  | Eric and Boyan |
+| ^ | 18:00 | Close ||
+| Wednesday 13th | 9:00 - 17:00 | !WaterML2.0 SWG | Gavin Walker and others |
+| Thursday 14th | 9:00 - 17:00 | Surface Water IE  | Peter Fitch and others |
+| ^ | 10:30 - 16:00 | HydrologicVocabularies  | Rob, Irina, Boyan, I-Lin, Eric, DavidV, Ilya et al |
+ 
+---++ Logistics
+---+++ _Meetings_
+
+The meeting will be held in rooms booked by our hosts here:
+
+*Address: Crommelinplein 1, Delft* <br /><strong>Rooms: C2 and C4 on the 1st floor</strong>
+---++++ _Facilities_
+
+Each room contains:
+   * One desktop computer connected to a normal (not smartboard) projector;
+   * Desks and chairs (both moveable);
+---++++ _Communications_
+
+Unfortunately there is *no* wireless network coverage in the building we will be meeting in (nor is there a phone line). We're currently exploring options.
+
+Wireless coverage is available at the UNESCO-IHE building (where we'll be having lunch)
+---++++ _Teleconference Details_
+
+For those not able to attend we are trying to sort out teleconference options.
+
+Telephone: +1 712 432-3100 Conference Code: 675284 | Host Code: 7938
+
+Web: Details soon
+
+---++++ _Directions_
+
+The following link shows the route from Delft train station to the meeting building http://goo.gl/uFfLy
+---+++ _Hotels_
+
+[[http://hikm.ihe.nl/openwater_eg/index.php/travel-and-hotel-information][Suggestions from our hosts]]
+
+-- Main.DavidLemon - 15 Dec 2010

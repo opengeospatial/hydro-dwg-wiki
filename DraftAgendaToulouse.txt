@@ -1,0 +1,16 @@
+%META:TOPICINFO{author="PeterFitch" date="1281921190" format="1.1" version="1.1"}%
+%META:TOPICPARENT{name="SurfacewaterInteroperabilityExperiment"}%
+---++ Agenda for Toulouse Workshop
+
+---+++ Location and Date
+The location will be Meteo-France (to be confirmed) on the 21 September 2010. More details will follow.
+
+   1. Additional demonstrations and discussion of progress by Uc1 and UC3.
+   1. Discussion of best practice use of WaterML2.0
+   1. Discussion and preliminary evaluation of vocabularies
+   1. Discussion on Merging UC1 and UC3
+
+The agenda items will be allocated times as things firm up over the next few weeks.
+
+
+-- Main.PeterFitch - 16 Aug 2010

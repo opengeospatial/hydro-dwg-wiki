@@ -1,0 +1,22 @@
+%META:TOPICINFO{author="SylvainGrellet" comment="reprev" date="1655988020" format="1.1" reprev="10" version="10"}%
+<h2 id='Meeting_details_at_Charlotte_TC_44_10_45_14_December_44_2018'>Hydrology Domain Working Group</h2>
+---++ Madrid OGC Member Meeting, 13 - 17 June, 2022
+
+Venue: Hotel Meliá Barajas, Madrid, Spain and online.
+
+Time: Monday 13 June 2022, 14:30 - 16:00 UTC [4:30-6:00 pm CEST, 10:30 am-12 pm EDT - US/Eastern]
+
+GoTo meeting details on OGC portal [[https://portal.ogc.org/index.php?m=calendar&a=view&event_id=77105][here]]. Register your attendance [[https://portal.ogc.org/index.php?m=projects&a=view&project_id=301&tab=6][here]].
+
+Link to [[https://portal.ogc.org/meet/?p=agenda][Madrid OGC Member Meeting]]
+<h3 id='A_42Draft_meeting_agenda_42'> *Draft meeting agenda* </h3>
+   1 Report on World Water Quality Alliance (WWQA) and Water Quality Monitoring initial workshop (Tony Boston)
+   1 Water Quality Interoperability Experiment (David Blodgett)
+   1 Observations & Measurements v3 status (Sylvain Grellet): [[%ATTACHURL%/20220613_ObservationMeasurementSample_status_update_Grellet.pptx][20220613_ObservationMeasurementSample_status_update_Grellet.pptx]]
+   1 Sensor Things v2 and Soil Things demo (Hylke van der Schaaf) : [[%ATTACHURL%/STAv2_Update.pptx.pptx][STAv2_Update.pptx.pptx]] &  [[%ATTACHURL%/Domain_Models_in_SensorThings.pdf.pdf][Domain_Models_in_SensorThings.pdf.pdf]]:[[https://portal.ogc.org/index.php?m=projects&a=view&project_id=301&tab=2&artifact_id=101184][<br />]]
+26 May 2022
+
+%META:FILEATTACHMENT{name="2022_June_HydroDWG.pptx" attachment="2022_June_HydroDWG.pptx" attr="" comment="" date="1655126688" path="2022_June_HydroDWG.pptx" size="9791111" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="20220613_ObservationMeasurementSample_status_update_Grellet.pptx" attachment="20220613_ObservationMeasurementSample_status_update_Grellet.pptx" attr="" comment="Observations, measurements and samples client update" date="1655134227" path="20220613_ObservationMeasurementSample_status_update_Grellet.pptx" size="4512938" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="Domain_Models_in_SensorThings.pdf.pdf" attachment="Domain_Models_in_SensorThings.pdf.pdf" attr="" comment="Sensor Things v2 and Soil Things demo" date="1655374381" path="Domain_Models_in_SensorThings.pdf.pdf" size="6728985" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="STAv2_Update.pptx.pptx" attachment="STAv2_Update.pptx.pptx" attr="" comment="SensorThingsv2_Update" date="1655987910" path="STAv2_Update.pptx.pptx" size="3998732" user="SylvainGrellet" version="1"}%

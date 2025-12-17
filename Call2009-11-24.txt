@@ -1,0 +1,27 @@
+%META:TOPICINFO{author="BoyanBrodaric" date="1259160812" format="1.1" version="1.3"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Call 2009-11-24*
+
+---++ Connection details
+      * Tues. 11/24 4PM CT
+      * Ph: 605-990-0111
+      * Code: 437712#
+      * Webex: https://usgs.webex.com/usgs/j.php?ED=128745052&UID=0&PW=63bf7274fe5d5457
+      * password: ogc
+
+---++Agenda
+      * Action items from last call
+      * New business
+
+---++Notes
+      * agreed to use GSC client for Dec 8 milestone
+      * agreed to try to have prototype SOS services running by next meeting Dec 3
+      * agreed to use existing schema to be specified by Eric
+
+---++Action Items
+      * Boyan: ask Eric to send example SOS and WMS requests and results to Nate asap (ideally by Nov 27)
+      * Nate: to arrange for next telecon on Thurs Dec 3 (4pm CT)
+      * Peter: new schema and instance docs still pending
+
+
+-- Main.BoyanBrodaric - 24 Nov 2009

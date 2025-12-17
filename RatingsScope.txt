@@ -1,0 +1,126 @@
+%META:TOPICINFO{author="PaulSheahan" comment="reprev" date="1341563956" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="RatingsUseCases"}%
+   1 *Conversion tables (from and to, rather than stage-discharge)*
+      1 rgs-1
+      1 Handling vocabs as a meta issue
+   1 *Multi-input variables (stage, index velocity -&gt; discharge, cross sectional area)*
+      1 If not included then ensure current version is capable of extension
+      1 How you define the function
+      1 Information on how to use various conversions together to achieve an output -- the workflow or processing information. Chained conversion/transformation. Transfer function.
+      1 Calibration information for development of the function.
+      1 rgs-2
+   1 *Which gaugings were used for which ratings*
+      1 Which werent used and why.
+      1 Critical piece for uncertainty analysis.
+      1 At least need relevant gaugings to the rating curve.
+      1 rgs-3
+   1 *Segments*
+      1 There is a need for modification of meta-elements of the rating model on a piecewise basis.
+      1 Could be modeled as a way of handling changing metadata across a rating
+      1 rgs-4
+      1 rgs-20
+      1 rgs-21
+   1 *Loop ratings; backwater flow*
+      1 Relate the rating to rising limb, steady state, falling limb
+      1 Tidal influence
+      1 Difficult and not useful?
+      1 Technology (i.e. index velocity) has overtaken the issue..
+      1 <a href="○   https://publicwiki.deltares.nl/display/HYMOS/01+Fitting+of+rating+curve" target="_blank">Fitting of ratings curves - reference</a>
+      1 rgs-8
+   1 *Equations*
+      1 free form - MathML
+      1 predetermined form
+      1 Inverse equations
+      1 Provide a high resolution, linear table form of the equation
+         1 rgs-5
+         1 rgs-6
+         1 rgs-7
+      1 Reverse lookup equations
+         1 Just a query for the opposite direction conversion?
+         1 Reverse lookup of point tables was noted to be statistically invalid, however it is very common practice.
+         1 Suggestion that an equation could also optionally include the inverse equation.
+         1 Up to the data provider whether it is exposed
+         1 rgs-9
+   1 *Different family of tables for different purposes*
+      1 Archive / Operational
+      1 Supported through collections
+   1 *What is the primary key?*
+      1 Site / Point / ParameterFrom / ParameterTo
+      1 rgs-10
+   1 *Datum*
+      1 Time series in different datum to rating?
+      1 Majority of cases will be in local datum; rarer to be in a national/ordnance datum
+      1 rgs-11
+   1 *Method of curve development*
+      1 Simple type (code) for the method use
+      1 Reference to more detailed
+   1 *Versions, curve history and shifts DB1 vs DB2 -&gt; hug!*
+      1 Change date for changes against a rating
+      1 Versions can be supplied in a document, but would not be referenced by a period of application.
+      1 USGS techniques in handling ratings. Corrections to raw stage data.
+      1 rgs-12
+   1 *Period of application*
+      1 Transitions (phase) change
+         1 rgs-13
+         1 Method or process for smoothing - common or org. based method vocabulary
+      1 Start and end dates. Make the end date optional for specifying null periods -- need a null reason. Overlap should be checked for?
+      1 rgs-14
+      1 rgs-15
+      1 The use of end dates may be an ongoing discussion !
+   1 *Quality codes*
+      1 general and profiled vocabularies are required
+      1 Quality codes per input/x range and per table point
+      1 rgs-16
+   1 *Limits*
+      1 y range for specifying validated range (within rating), extrapolated range, beyond extrapolation
+      1 In scope
+      1 rgs-20
+   1 *Point interpolation*
+      1 Resolution will be determined by the data provider
+      1 Expanded rating tables should be acceptable to the community
+      1 rgs-5
+      1 rgs-21
+   1 *Cross sections*
+      1 Details of the control feature
+      1 Photographs of control, site photo
+      1 Significant levels (e.g. flood warning levels) zero flow, bank full,
+         1 rgs-5
+         1 rgs-21
+      1 ArcHydro has a model that may be useful
+   1 *Responsible parties*
+   1 *Approval level*
+      1 Lifecycle of development
+      1 Locked down curve once it�s been used
+      1 Approved before data can be archived
+      1 Review cycle, dates of review, random reviews, reviewed on trigger (e.g. legal)
+      1 Need a vocabulary
+      1 Agree in scope
+      1 rgs-22
+   1 *Engineered structures*
+      1 Gates
+      1 Dynamic (gates etc) vs. static structures
+      1 Pipe ratings (urban water)
+      1 3D ratings may be out of scope
+      1 State of the engineered structure (gate position, angle)
+      1 Beaver dams
+      1 Very specific for particular circumstances -- the need for an interoperable format would be minimal
+      1 rgs-23
+   1 *What is the difference between data transfer and methods of applying the data. process / work flow.*
+      1 Does this require a high level statement of delineation between data and data functions(use)
+      1 Chaining, process workflows is likely out of scope
+      1 Link to the product/system/method used to develop the rating
+      1 rgs-24
+   1 *Uncertainty*
+      1 Can an input range be used to communicate various aspects of uncertainty information?
+      1 Providing robust link to the used gaugings with associated metadata <i>should </i>be enough
+      1 Allow extension points, potential to use UncertML and determine if would suit
+      1 Confidence levels for points in rating?
+      1 Gauging deviations
+         1 Kisters has some examples
+      1 rgs-25
+   1 *Provenance*
+      1 Communication of sufficient information to enable the user to manage provenance if they choose to.
+      1 Adherence to standards to ensure credibility of the data. Potentially a filter or query?
+         1 ISO19115 conformance tests
+      1 Hooks to allow sufficient provenance to be inserted. Probably (ideally) by reference.
+-- Main.PaulSheahan - 06 Jul 2012

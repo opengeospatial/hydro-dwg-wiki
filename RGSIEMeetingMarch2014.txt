@@ -1,0 +1,12 @@
+%META:TOPICINFO{author="PeterTaylor" date="1393478819" format="1.1" version="1"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---+ Agenda items for meeting
+   * Status/progress of implementations
+   * Scenarios and scope
+   * Implementation questions
+      * How to handle vocabularies: local vs national vs international
+      * Ordering of conversions in ConversionGroup
+      * How does phasing work? 
+      * Example of rating shifts
+   * Timeline
+-- Main.PeterTaylor - 27 Feb 2014

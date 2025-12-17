@@ -1,0 +1,89 @@
+%META:TOPICINFO{author="EricBoisvert" date="1276800495" format="1.1" version="1.7"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Call 2010-05-25*
+
+---++ Connection Details
+   * dates:  Tues May 25 (N.America), Wed May 26 (AU)
+   * times:  5pm (Ottawa), 4pm CT (WI), 7am (AU) - fixed time here: http://www.timeanddate.com/worldclock/fixedtime.html?day=25&month=5&year=2010&hour=16&min=0&sec=0&p1=142
+   * phone number: 218-862-1000 (USA)
+   * conference call code: 437712#
+   * webex: https://usgs.webex.com/usgs/j.php?ED=134335822 
+
+---++ Agenda
+   * update on services 
+   * update on clients  
+   * update on WaterML 2
+   * update on Surface Water IE and relation to GW IE
+
+---++Action Items
+
+   * Eric will make a stopgap proposal spec for getCap for the IE. %Y%  Done see [[GwIeGetCapabilitiesBestPractices]]
+   * People to experiement with new schema. %Y% Done see [[WaterML20Instances]]
+
+---++Notes
+
+Call 25-May-2010
+
+Attendees:
+GSC: Boyan Brodaric and Eric Boisvert
+USGS: Nate, Tom Kunicki, I-Lin Kuo, Dave Briar
+Calgary: Steve Liang
+CSIRO: Pete Taylor
+
+Services
+(1) USGS
+- AI: USGS to symbolize wells that have vs don't have lithology differently
+-- Need to standup getCapabilities
+-- WFS - 
+-- WMS - symbolize differently for wells that have logs and wells that don't
+
+(2) IL
+- No updates
+
+(3) GSC
+- Ontario ministry of environment - working on standing up example time series.
+
+(4) Calgary 
+- has groundwater well data and will look into standing up WFS and SOS
+
+
+Client
+(1) 34N
+- Comments from GSC for 34N on their client will be sent shortly
+(2) Calgary
+-- Will try client against IE SOS services
+-- AI Nate will send Steve URL for page with service URLs from 
+(3) GSC - no updates
+
+WaterML2
+- weekly meetings since Italy
+- 8 regular participants
+- OGC spec document (UML, schema, examples) will be posted tomorrow for WaterML2v1.0
+- We have a 30 day comment period
+- schema has changed some since one used in IE currently
+- AI: Pete will send URLs to schema once posted
+- AI: test the feature of interest issue
+- AI: Create instance documents for new WaterML2 by 30 days after Silver Spring
+- AI: September timeframe for standing up this version of WaterML2 through SOS
+
+Surface Water IE
+- Gave update which has been defining scope and preparing docs and agreements.  Still on schedule to kick off in June.
+
+SOS2 - getCapabilities
+-- Eric will make a stopgap proposal spec for getCap for the IE.  Done see [[GwIeGetCapabilitiesBestPractices]]
+
+
+Possible IE adds
+- Add common SLD component to allow users to customize rendering of well locations
+- Use new URI scheme for representing site ids at mediation level (proxied to local ids)
+
+Next call - Thursday 28-June @ 5pm Ottawa time
+Please click the following link to view or edit your meeting information, or to start your meeting. 
+
+https://usgs.webex.com/usgs/j.php?ED=139006512&UID=480781792&RT=MiM3 
+
+Teleconference: (218) 862-1000 
+code: 437712# 
+
+
+- focus on instance documents in WaterML2v1.0

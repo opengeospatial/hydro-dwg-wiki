@@ -1,0 +1,24 @@
+%META:TOPICINFO{author="DavidValentine" date="1265324831" format="1.1" version="1.3"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+This topic is Set to private and will require a login.
+
+*ATTACHEMENTS ARE NOT PRIVATE*
+Use the portal for documents:
+   * http://portal.opengeospatial.org/?m=projects&a=view&project_id=336&tab=2
+
+Pages:
+   * GwIeWaterML2
+
+----
+*To Set a Topic to private* 
+   *  clikcing "More topic actions", 
+   * "Edit Settings" 
+   * type
+   * Set ALLOWTOPICVIEW = DavidValentine,PeterTaylor,BoyanBrodaric,NateBooth,DavidLemon,EricBoisvert,IlyaZaslavsky
+ 
+[multiple of 3 spaces] * [space] Set [space] VARIABLENAME [space] = [value] 
+
+-- Main.DavidValentine - 10 Nov 2009
+
+%META:TOPICMOVED{by="DavidValentine" date="1257894426" from="HydrologyDWG.Private" to="HydrologyDWG.GroundWaterIEPrivate"}%
+%META:PREFERENCE{name="ALLOWTOPICVIEW" title="ALLOWTOPICVIEW" type="Set" value="DavidValentine,PeterTaylor,BoyanBrodaric,NateBooth,DavidLemon,EricBoisvert,IlyaZaslavsky"}%

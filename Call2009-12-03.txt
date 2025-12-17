@@ -1,0 +1,26 @@
+%META:TOPICINFO{author="BoyanBrodaric" date="1259881349" format="1.1" reprev="1.3" version="1.3"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Call 2009-12-03*
+
+---++ Connection Details
+   * dates:  Thurs Dec 03 (N.America), Fri Dec 04 (AU)
+   * times:  5pm (Ottawa), 4pm CT (WI), 8am (AU)
+   * phone number: 605-990-0111 (USA)
+   * conference call code: 437712#
+
+---++ Agenda
+   * Action items from last call
+   * Review progress on SOS implementation   (GSC, USGS)
+   * Review progress on CSW implementation  (SDSC)
+   * Review progress on !WaterML schema and instances (CSIRO)
+   * Review presentations for Dec 09: AGU and OGC TC   (All)
+   * Review new participant requests               (All)
+   * Review progress on client implementation  (GSC)
+
+---++Action Items
+   * GSC & USGS send web service URLs to Main.DavidValentine
+   * USGS send web service URLs and notes to Eric by Fri Dec 04, 13:30
+   * Nate & team phone Eric Fri Dec 04 at 13:30
+   * contact potential new participants (Nate, Boyan)
+   * review ppt for OGC TC and AGU
+   * compile questions and comments for Tues Dec 8 AM meeting at OGC TC

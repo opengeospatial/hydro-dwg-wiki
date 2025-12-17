@@ -1,0 +1,124 @@
+%META:TOPICINFO{author="StefanFuest" date="1288193208" format="1.1" reprev="1.6" version="1.6"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++Toulouse Workshop Minutes and Notes
+
+---+++Agenda
+   1. 9am Welcome
+   1. Confirm/adjust agenda
+   1. Review and discussions of best practice use of SOS and O&M for the IE. This work will centre on the best practices discussion paper currently being prepared by Stefan Fuest and his colleagues from Kisters. The objective of this session is to have agreement on the approaches so we can push ahead with the IE. This work is crucial to the success of the IE and WaterML2? .0.
+   1. Additional demonstrations and discussion of progress by UC1 and UC3.
+
+---+++Major Outcomes
+   1. *Procedure* shall be constrained to to a single conceptual process, either a sensor or algorithm. Eg. Daily mean, daily total etc. This avoids combining the sensor and procedure together like WaterLevel/DailyAverage. In this case, the procedure will be DailyAverage, and the observed property will be WaterLevel.
+   1. *FOI* shall be constrained to a sampling feature usually a sampling point in space eg sampling station or point
+   1. *GetCapabilities* is to be viewed as a quick handshake using other queries to further discover sites (GetFeatureOfInterest) etc. eg. FOI is the network. Implicit assumption that further queries on FOI return sampling features. This is what the GWIE have done. See below for a bit more information from Stefan's paper.
+
+The above are consistent with the draft WaterML2.0 specification
+Some consequences of the above are: 
+   * Inability to traverse the processing chain: until we use WaterML2.0
+   * Require more specilaised queries for rating curves, probably from WFS
+
+
+---+++Notes
+Session 1 was a presentation of the paper by Stefan Fuest on a [[http://external.opengis.org/twiki_public/bin/view/HydrologyDWG/SOSUsageAndServerTypeDiscussion][SOS usage profile for the hydrology domain]]. This formed the baseline for discussion an various aspects on the implementation of SOS for the IE.
+
+It was noted that:
+An observation offering in SOS is a logical grouping of observations offered by a service which are related in some way. Further, the relationship should be such that the offering is dense, ie. It is unlikely that a query would result in an empty set.
+
+SOS encourages observation offering to be thought of a layer, for hydrology, a layer would be thematic. It is limited to one procedure per feature of interest for the whole network.
+
+Hydrological monitoring networks typically have many measurement nodes or sampling points. Surface water networks on a national scale may be in the 1000's and groundwater network may be in the 100,000's which leads to the problems with GetCapabilities document sizes.
+
+*Rating Curves*
+The group had a number of discussion on rating curves with the *recommendation* at the moment that:
+   * Rating curves should be part of the metadata, not immediately available through the observation.
+
+*GetCapabilities* from Stefan's paper
+
+|SOS Server Type C (procedure==sensor-type/system) \
+A SOS as intended by the Groundwater IE should use the following structure for the getCapabilities response. Here a procedure is seen as a sensor-type or system. This structure requires additional requests or knowledge to "drill" into the data if you want to do it by sensor instance ||
+| SOS1 | SOS2 | 
+| MYSERVICE 3 \
+(syntax has been reduced to get a better overview) \
+ \
+<verbatim>
+<observationOffering>
+   <sos:procedure xlink:href="DailyMean"/>
+   <sos:procedure xlink:href="RawData"/>
+   <sos:observedProperty xlink:href="urn:ogc:def:property:OGC:GroundWaterLevel"/>
+   <sos:featureOfInterest xlink:href="urn:x-ngwd:feature:OntarioWellNetwork"/>
+</observationOffering>
+</verbatim> \
+If possible, the Network-FOI should provide some spatial extent expressed as a bounding box.\
+\
+| MYSERVICE 3  \
+(syntax has been reduced to get a better overview) \
+ \
+<verbatim>
+<contents>
+</contents>
+<observationOffering>
+      <sos:procedure xlink:href="DailyMean"/>
+      <sos:observableProperty xlink:href="urn:ogc:def:property:OGC:GroundWaterLevel"/>
+      <sos:featureOfInterest xlink:href="urn:x-ngwd:feature:OntarioWellNetwork"/>
+ </observationOffering>
+ <observationOffering>
+      <sos:procedure xlink:href="RawData"/>
+      <sos:observableProperty xlink:href="urn:ogc:def:property:OGC:GroundWaterLevel"/>
+      <sos:featureOfInterest xlink:href="urn:x-ngwd:feature:OntarioWellNetwork"/>
+</observationOffering>
+</verbatim> \
+%RED% (according to current SOS2 proposal all single procedures need to be put into separate observationOfferings; this is a conceptual change &#8211; the purpose and nature of an offering will then change from something like &#8220;MyGroundWaterProgram&#8221; to &#8220;MyGroundWaterProgram-RawData&#8221;, &#8220;MyGroundWaterProgram-MonthlyMean&#8221;)%ENDCOLOR%\
+|
+
+The outcome here then, is that in the GetCapabilities document the FOI will be the network see above (OntarioWellNetwork), and to find sampling features, the SOS getFeatureofInterest is called with a query specification.
+
+*Note*
+We note and accept the sematic inconsistency between the GetCapabilities returning a network as FOI and and the GetFeatueOfInterest returning a sampling point.
+
+*Deficiencies in GetCapabilities*
+The group also concluded that for our SWIE use cases the GetCapabilities document as it stands is pretty much useless. It would be more useful if it was directly query-able along the axes of O&M. For example we are interested in:
+   1. What are the offerings at samplingpoints in a spatial region
+   1. What are the offerings at samplingpoints in a region which have a particular observed property
+   1. What are the offerings at samplingpoints in a region which have a particular observed property, with a particular procedure. 
+
+At this point we are interested in offerings, not necessarily the observations, which once the offering had been identified could be retrieved using the GetObservation call.
+
+---+++Action Items
+   1. Start a discussion with the SOS 2 group to allow multiple procedures per offering. I'm not sure how much of a problem this is given the agreement on how getcapabilites is going to be used.
+   1. There is a need to develop a compendium of standard patterns of access, i.e. how the different OGC standards are to be used as a suite, for each use case,
+WMS, WFS, SOS, CSW etc.
+   1. Work towards a joint use case with the Oceans Meteorological domain working group possibly targeting September TC in Boulder as the presentation point.  
+   1. Update the WaterML2.0 working group as soon as possible on our discussions.
+
+---+++Vocabularies
+Discussion on Vocabulary was held. It was agreed that
+   1. Small Vocabulary is required in the first instance
+   1. Suggestion to use WMO keyword list. This requires someone to look at the applicability of the keyword list. The keyword list as sent to the GRDC by Pierre Kerherve (WMO/CBS) in May 2010 is attached below. It is still a working document and not the final. 	
+
+---+++Interaction with the Oceans Met DWG.
+
+Oceans Met and Hydrology domain working group interaction.
+During the course of the workshop and the following DWG meeting on Wednesday, it became clear that both working groups have much in common and a key question is how do we continue to work together?
+
+Both group recognized that a joint goal is to ensure interoperation across both domain working groups as each focuses on one part of the water cycle. The suggestion form Jeremy Tandy was to look to devlop and work on a joint use case.
+
+The suggetion also is to work towards a joint use case, possibly targeting the Sept TC in Boulder. 
+
+Maybe a beach water quality use case.
+
+USGS and CSIRO to talk about 2 use case which link domains.
+
+Ideally both domain would use a single profile of SOS allowing interoperation. See [[http://external.opengis.org/twiki_public/bin/view/HydrologyDWG/SOSUsageAndServerTypeDiscussion][SOS usage profile for the hydrology domain]] for details.
+
+
+-- Main.PeterFitch - 21 Oct 2010
+   * [[%ATTACHURL%/2010_Toulouse_HydroDWG_Update.ppt][2010_Toulouse_HydroDWG_Update.ppt]]: SWIE Update
+
+   * [[%ATTACHURL%/Hydro_Workshop_WrapUp.ppt][Hydro_Workshop_WrapUp.ppt]]: Workshop WrapUp
+
+   * [[%ATTACHURL%/keywords_fromPierreKerherve_20100412.doc][keywords_fromPierreKerherve_20100412.doc]]: WMO preliminary keyword list
+
+%META:FILEATTACHMENT{name="2010_Toulouse_HydroDWG_Update.ppt" attachment="2010_Toulouse_HydroDWG_Update.ppt" attr="" comment="SWIE Update" date="1287636396" path="2010_Toulouse_HydroDWG_Update.ppt" size="2308096" stream="2010_Toulouse_HydroDWG_Update.ppt" tmpFilename="/tmp/Rn5cERRjBF" user="Main.PeterFitch" version="1"}%
+%META:FILEATTACHMENT{name="Hydro_Workshop_WrapUp.ppt" attachment="Hydro_Workshop_WrapUp.ppt" attr="" comment="Workshop WrapUp" date="1287636456" path="Hydro Workshop WrapUp.ppt" size="601600" stream="Hydro Workshop WrapUp.ppt" tmpFilename="/tmp/mhq5OTiocs" user="Main.PeterFitch" version="1"}%
+%META:FILEATTACHMENT{name="keywords_fromPierreKerherve_20100412.doc" attachment="keywords_fromPierreKerherve_20100412.doc" attr="" comment="WMO preliminary keyword list" date="1287754548" path="keywords_fromPierreKerherve_20100412.doc" size="518144" stream="keywords_fromPierreKerherve_20100412.doc" tmpFilename="/tmp/W6as5uuLq7" user="Main.UlrichLooser" version="1"}%

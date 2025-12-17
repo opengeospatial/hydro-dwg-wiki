@@ -1,0 +1,74 @@
+%META:TOPICINFO{author="EricBoisvert" date="1288812709" format="1.1" version="1.4"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Call 2010-11-02*
+
+---++ Connection Details
+   * dates:  Tues Nov 2, 2010 (N.America), Wed Nov 3 (AU)
+   * times:  5pm (Ottawa), 4pm CT (WI), 7am (AU)
+      * [[http://www.timeanddate.com/worldclock/fixedtime.html?month=9&day=9&year=2010&hour=17&min=0&sec=0&p1=188][CLICK HERE for times and dates for this meeting from around the world]]
+   * phone number: 218-862-1000 (USA)
+   * conference call code: 437712#
+   * webex: 
+
+---++ Agenda
+   * previous meeting action items
+   * update on services 
+   * update on clients  
+   * update on !WaterML 2
+   * update on Surface Water IE
+   * Dec 2010 OGC TC meeting Sydney
+ 
+---++ Previous Action Items
+   * Contact HWG organizers for GW IE time slot at Dec OGC TC Sydney (Brodaric, Booth)---done
+   * Generate technical document for GW IE profile for WFS, SOS, and !WaterML2 (Boisvert, Kuo, Kunicki , Taylor- draft due next meeting)---begun
+   * Review [[http://external.opengis.org/twiki_public/bin/view/HydrologyDWG/GwIeGMLswitchover][GML 3.2 document]], provide feedback and implement (all services providers)---in progress
+   * Review [[http://external.opengis.org/twiki_public/bin/view/HydrologyDWG/GwIeGetCapabilitiesBestPractices][GW IE !GetCapabilities document]] provide feedback and implement (all service providers)---in progress
+   * Review [[http://external.opengis.org/twiki_public/bin/view/HydrologyDWG/GwIeSOSResultFilter][SOS query issues document]] and provide feedback (all services providers)---in progress
+      * e.g. All monitoring stations with level > 10m
+      * part of larger discussion in !WaterML2 and SW IE discussion
+      * gap in the SOS specification
+   * Review IE paper (Brodaric, Booth)---in progress
+      * (1) Use case description
+      * (2) GWIE profile to satisfy the UC
+      * (3) gaps in the standards
+      * (4) change requests based on the gaps
+
+---++ New Action Items 
+   * GSC: send the mediated URLS to all
+   * GSC: setup Twiki page for issues list, and add examples (issue, solution, recommended action) see GwIeSosGaps
+   * GSC: list query implementation as optional requirement in profile (and mark those that are mandatory)
+   * GSC: prototype query implementation
+   * GSC: generate GW IE !WaterML2 schema and post to GW IE Twiki (Done, attached to GroundwaterInteroperabilityExperiment)
+
+   * USGS: notify client providers (Kisters and 34N) to use the mediated services from GSC rather than from 3.2 to 3.1
+   * USGS: to implement new SOS !GetCap
+   * USGS: draft !WaterML 2 specs for GW IE profile
+
+   * ALL: formulate a list of issues, solutions, recommended action for report
+
+
+
+---++ Notes
+
+   * *Participants:* Eric Boisvert, Boyan Brodaric, I-Lin Kuo, Tom Kunicki, Phil Stefanoff, Nate Booth
+
+   * *Services:*
+      * Accommodate GML3.1 to GML3.2
+         * Default response in SOS profile is to be GML3.2
+         * All moving to GML3.2 in order to test WaterML2
+      * Accommodate new SOS getCap nested structure.  Its in the GW IE profile (R3); 
+         * GSC has implemented 
+         * USGS will implement
+      * Look into SOS Query options
+         * Query implementation an optional requirement in profile
+         * GSC will try and implement
+         * USGS will try if time permits
+   * *Final Report:*
+         * will compile a list of issues, solutions, recommended actions
+         * Eric will put up a template on the TWIKI for WaterML2
+         * still need WaterML2 profile for the IE, to consist of basic description plus GW IE specifics such details about TimeSeries model and encoding
+         * GSC to generate GW IE !WaterML2 schema and post to GW IE Twiki 
+   * *Next meeting* 
+      * scheduled November 16, 2010 from 4:00 PM to 5:00 PM
+      * Teleconference: (218) 862-1000 
+      * code: 437712# 

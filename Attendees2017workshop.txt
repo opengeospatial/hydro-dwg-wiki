@@ -1,0 +1,20 @@
+%META:TOPICINFO{author="SylvainGrellet" comment="save topic" date="1497960390" format="1.1" reprev="4" version="13"}%
+%META:TOPICPARENT{name="WorkshopTuscaloosa2017"}%
+---++ Attendees
+
+*For planning purposes please complete the table below:*
+<table align="left" border="1" cellpadding="0" cellspacing="1"> <tbody> <tr> <td>
+---++++++ *Name*
+</td> <td>
+---++++++ *Organization*
+</td> <td>
+---++++++ *Arrival Date*
+</td> <td>
+---++++++ *Departure Date*
+</td> <td>
+---++++++ *Hotel*
+</td> <td>
+---++++++ *Car?*
+</td> <td>
+---++++++ *Group Dinner*
+</td> </tr> <tr> <td>Dave Blodgett</td> <td>USGS</td> <td>Sunday June 18 11pm</td> <td>Saturday June 24 6am</td> <td>Hotel Indigo Sunday - Thursday, America's Best Value Inn at BHM Friday night</td> <td>Yes</td> <td>Yes</td> </tr> <tr> <td>Tony Boston</td> <td>BoM</td> <td>Sunday June 18 6:40 pm</td> <td>Saturday June 24 9am</td> <td>Hotel Indigo Sunday - Friday</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Silvano Pecora</td> <td>ARPAE</td> <td>TBD</td> <td>TBD</td> <td> </td> <td> </td> <td> </td> </tr> <tr> <td>Boyan Brodaric</td> <td>Geological Survey of Canada</td> <td>TBD</td> <td>TBD</td> <td> </td> <td> </td> <td> </td> </tr> <tr> <td>David Maidment</td> <td>University of Texas at Austin</td> <td>TBD</td> <td>TBD</td> <td> </td> <td> </td> <td> </td> </tr> <tr> <td>Sylvain Grellett</td> <td>BRGM</td> <td>Remote</td> <td>Remote</td> <td>Home</td> <td> </td> <td> </td> </tr> <tr> <td>Alistair Ritchie</td> <td>Landcare Research</td> <td>Sunday June 18 11pm</td> <td>Saturday June 24 6am</td> <td>Same as Blodgett</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Tony Castronova</td> <td>CUAHSI</td> <td>Monday June 19 11am</td> <td>Friday June 23 4pm</td> <td>Microtel</td> <td>Yes</td> <td>Yes</td> </tr> <tr> <td>Byron Cochrane</td> <td>LINZ</td> <td>Sun 18 June 21:19</td> <td>Fri 23 June 13:11</td> <td>TBD</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Brent Watson</td> <td>Horizons RC (NZ)</td> <td>15/06/2017</td> <td>Saturday June 24 (Atlanta)</td> <td>Hotel Indigo</td> <td>maybe</td> <td>Yes</td> </tr> </tbody> </table> <br /><br />

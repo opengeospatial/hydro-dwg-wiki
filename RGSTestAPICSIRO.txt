@@ -1,0 +1,60 @@
+%META:TOPICINFO{author="PeterTaylor" comment="save topic" date="1394595975" format="1.1" reprev="5" version="5"}%
+%META:TOPICPARENT{name="ApplicationProgrammingInterfaceDevelopment"}%
+---++ Prototype API @ CSIRO
+
+I've setup a test API with sample data to allow people to see a running service. Details:
+   * There is an auto-documentation endpoint here: http://waterml2.csiro.au/rgs-api/v1/docs
+   * The base page of the API is here: http://waterml2.csiro.au/rgs-api/v1/. You should be able navigate through the links. This data is for a catchment here in Aus.
+   * Username/password is rgs/test for the API.
+Please feel free to send through questions or issues.
+
+---+++ API examples -
+
+<span style="background-color: transparent; line-height: 1.1em;">(Pete's work posted by Paul)</span>
+
+<span style="background-color: transparent;">I've put a up a development version of the API that now supports XML/GML encodings as well as JSON. So you can see some examples of the current schema here too. It's a bit in flux, and the collection types are not yet supported, but the main resources are available. You can select the output type from the GET drop down in the HTML views, which link to the URLs using ?format=xml|json in the URL. This allows easier use in the browser (content types in http headers is the most appropriate way but less convenient for testing). </span>
+
+<span style="background-color: transparent;">The xlinks in the XML are resolvable back into API resources for the main resources. I've incorporated some WDTF vocabs as well for the observed properties (see gaugings example). </span>
+
+*Monitoring point collection*
+   * • HTML: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/]]
+   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/?format=json]]
+*Monitoring point*
+   * • HTML: [[[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009]]
+   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009/?format=json]]
+   * • XML: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009/?format=xml]]
+*Conversion group*
+   * • HTML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/8]]
+   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/8/?format=json]]
+   * • XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/8/?format=xml]]
+*Conversion group collection*
+   * • HTML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/]]
+   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group?format=JSON]]
+   * • XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group?format=XML]]
+*Rating collection*
+   * • HTML: [[http://waterml2.csiro.au/rgs-api/v1/conversion]]
+   * • XML [[http://waterml2.csiro.au/rgs-api/v1/conversion/?format=xml]]
+   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion/?format=json]]
+*Rating table*
+   * • HTML [[http://waterml2.csiro.au/rgs-api/v1/conversion/440]]
+   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion/440/?format=json]]
+   * • XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion/440/?format=xml]]
+*Gauging collection (for specific monitoring point)*
+   * • HTML: [[http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419075]]
+   * • XML: [[http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419075&format=xml]]
+The process has raised some questions about how best to encode collections and how to support discovery, but these are more related to fitting the information model to the API rather than the actual content. There is the start of collections of conversion groups available in XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/?format=xml]], but I'm still working through it. The collections will support filters that relate directly to the specific queries we agree on in the RGS group ( [[RgsApiDesign][http://external.opengis.org/twiki_public/HydrologyDWG/RgsApiDesign]]).
+
+*Query-based requests*
+
+These URLs show how specific queries may be made through the API. These address specific requirements shown in section 3 - Use cases and requirements.
+   * Retrieve ratings for specific monitoring point: [[http://waterml2.csiro.au/rgs-api/v1/conversion/?monitoring-point=419009]]
+   * Retrieve _latest_ rating table for specific monitoring point: [[http://waterml2.csiro.au/rgs-api/v1/conversion/?monitoring-point=419009&latest]]
+   * Retrieve gauging for a monitoring point after specific date: [[http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419009&start-date=2009-02-15]]
+   * Retrieve ID list of all gauging for a monitoring point: [[http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419075&format=xml]]
+   * Fully expanded list of gauging for a monitoring point: [[http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419075&format=xml&expanded]]
+---++ Open questions
+
+(two from Paul's client implementation)
+   * How to get a list of all the available parameter conversions for a site without requesting each table/conversion?
+   * Need to represent identifiers as well as links
+-- Main.PeterTaylor - 10 Dec 2013

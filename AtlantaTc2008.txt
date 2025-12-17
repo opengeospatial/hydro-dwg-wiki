@@ -1,0 +1,12 @@
+%META:TOPICINFO{author="LaurentLefort" date="1245296621" format="1.1" reprev="1.1" version="1.1"}%
+%META:TOPICPARENT{name="WorkingGroupMeetings"}%
+---+ Atlanta TC meeting - 2008-09-17
+
+The presentations done in Atlanta have been attached to this page.
+
+-- Main.LaurentLefort - 18 Jun 2009
+
+%META:FILEATTACHMENT{name="Hydrology_Ad_Hoc_agenda.ppt" attachment="Hydrology_Ad_Hoc_agenda.ppt" attr="" comment="Hydrology DWG/ad-hoc agenda and report (David Arctur)" date="1245295793" path="O:\Projects\Wron2008-2009\Hydro DWG\Atlanta\Hydrology_Ad_Hoc_agenda.ppt" size="203776" stream="O:\Projects\Wron2008-2009\Hydro DWG\Atlanta\Hydrology_Ad_Hoc_agenda.ppt" tmpFilename="/tmp/BKzmfBRhmY" user="Main.LaurentLefort" version="1"}%
+%META:FILEATTACHMENT{name="CUAHSI_Overview.ppt" attachment="CUAHSI_Overview.ppt" attr="" comment="CUAHSI Overview (David Maidment)" date="1245296050" path="O:\Projects\Wron2008-2009\Hydro DWG\Atlanta\CUAHSI_Overview.ppt" size="4536320" stream="O:\Projects\Wron2008-2009\Hydro DWG\Atlanta\CUAHSI_Overview.ppt" tmpFilename="/tmp/awdQJK0Hu8" user="Main.LaurentLefort" version="1"}%
+%META:FILEATTACHMENT{name="Managing_Australian_Water_Information.ppt" attachment="Managing_Australian_Water_Information.ppt" attr="" comment="Managing Australian Water Information (David Lemon and Peter Fitch)" date="1245296270" path="O:\Projects\Wron2008-2009\Hydro DWG\Atlanta\Managing_Australian_Water_Information.ppt" size="4445696" stream="O:\Projects\Wron2008-2009\Hydro DWG\Atlanta\Managing_Australian_Water_Information.ppt" tmpFilename="/tmp/W8mJDA36y8" user="Main.LaurentLefort" version="1"}%
+%META:FILEATTACHMENT{name="Possible_Hydrology_Working_Group.ppt" attachment="Possible_Hydrology_Working_Group.ppt" attr="" comment="Possible Hydrology Working Group (David Maidment)" date="1245296514" path="O:\Projects\Wron2008-2009\Hydro DWG\Atlanta\Possible_Hydrology_Working_Group.ppt" size="6790656" stream="O:\Projects\Wron2008-2009\Hydro DWG\Atlanta\Possible_Hydrology_Working_Group.ppt" tmpFilename="/tmp/SjHi77TIcZ" user="Main.LaurentLefort" version="1"}%

@@ -1,0 +1,72 @@
+%META:TOPICINFO{author="PeterTaylor" date="1403760524" format="1.1" version="1"}%
+%META:TOPICPARENT{name="ApplicationProgrammingInterfaceDevelopment"}%
+---+ Changes to API for discussion
+
+---++ Remove redudancy in responses
+
+Many returned objects repeat properties that are redundant, usually due as a result of a query. For example,
+
+GET http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419009 
+
+returns gaugings with the FOI encoded for every object. 
+
+e.g. 
+<pre>{
+    "count": 325, 
+    "next": "<a href='http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419009&page=2' rel='nofollow'>http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419009&amp;page=2</a>", 
+    "previous": null, 
+    "results": [
+        {
+            "id": 18953, 
+            "phenomenonTime": "2011-04-14T00:00:00", 
+            "featureOfInterest": "<a href='http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009/' rel='nofollow'>http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009/</a>", 
+            "observedPropertyFrom": {
+                "id": "100", 
+                "description": "", 
+                "external_definition": ""
+            }, 
+            "observedPropertyTo": {
+                "id": "141", 
+                "description": "", 
+                "external_definition": "<a href='http://neiivocab.bom.gov.au/std/water/xml/wio0.2/property/wdtf-parameters/WaterCourseDischarge_m3s' rel='nofollow'>http://neiivocab.bom.gov.au/std/water/xml/wio0.2/property/wdtf-parameters/WaterCourseDischarge_m3s</a>"
+            }, 
+            "quality": 12, 
+            "fromValue": "-0.31600", 
+            "toValue": "110.02000"
+        }, </pre>
+
+An improvement would be to more the FOI up one level:
+<verbatim>{
+     "count": 325, 
+     "next": "http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419009&page=2", 
+     "previous": null,
+     "default": {
+       "featureOfInterest": "http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009/"
+      },
+     "results": [
+         {
+             "id": 18953, 
+             "phenomenonTime": "2011-04-14T00:00:00", 
+             "observedPropertyFrom": {
+                 "id": "100", 
+                 "description": "", 
+                 "external_definition": ""
+             }, 
+             "observedPropertyTo": {
+                 "id": "141", 
+                 "description": "", 
+                 "external_definition": "http://neiivocab.bom.gov.au/std/water/xml/wio0.2/property/wdtf-parameters/WaterCourseDischarge_m3s"
+             }, 
+             "quality": 12, 
+             "fromValue": "-0.31600", 
+             "toValue": "110.02000"
+         }, </verbatim>
+
+Here I've included in a "default" object. What exactly can be defaulted obviously depends on the type of objects being returned AND the allowed query parameters.
+
+Do we:
+   1 <span style="background-color: transparent;">Default only if a property is included as a query parameter?</span>
+   1 Default by inspecting the properties in the collection to determine what should be defaulted? 
+Obviously 2 requires more work. With option 1, there will be cases where defaults get missed. E.g. the example above, it would be desirable to default the parameterTo/From combination but we can't guarantee that the collection won't conain multiple paramFrom/To combinations, so the property can't be defaulted. 
+
+-- Main.PeterTaylor - 26 Jun 2014

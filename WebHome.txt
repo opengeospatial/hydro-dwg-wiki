@@ -1,0 +1,112 @@
+%META:TOPICINFO{author="SylvainGrellet" comment="reprev" date="1718745490" format="1.1" reprev="116" version="119"}%
+---+!! Welcome to the Hydrology Domain Working Group
+
+---++ Overview
+
+The ability to easily exchange water information in a timely and useful fashion is becoming increasingly important. Water information in general, is both highly spatial and highly temporal in nature. Water information is also an exemplar of the kinds of environmental information that is required to be shared across organizational and jurisdictional boundaries, which is facilitated by OGC's interoperability standards.
+
+The Hydrology Domain Working Group is a domain working group in the Open Geospatial Consortium (OGC). It brings together interested parties to develop and promote the technology for greatly improving the way in which water information is described and shared. This working group is to be hosted by the OGC and co-chaired by a representative from the World Meteorological Organisations (WMO) ommission for Observation, Infrastructure and Information Systems (INFCOM). The Hydrology Domain Working Group will coordinate efforts with other earth science DWGs (Meteorology, Oceans, etc) through the Earth System Science DWG.
+
+The purpose of the Hydro DWG is to provide a venue and mechanism for seeking technical and institutional solutions to the challenge of describing and exchanging data describing the state and location of water resources, both above and below the ground surface. The path to adoption will be through OGC papers and standards, advanced to ISO where appropriate, and also through the World Meteorological Organizations (WMO) Commission for Observation, Infrastructure and Information Systems (INFCOM), mainly through JET-HYDMON. While WMO Technical Commissions have the recognized mandate to publish and promote standards in this area, OGC contributes to the process with its resources and experience in guiding collaborative development among disparate participants in a rapidly evolving technological environment. It is proposed that the OGC Hydrology DWG will provide a means of developing candidate standards for submission to ISO and for adoption by INFCOM as appropriate.
+
+The Hydro DWG is intended to be a public forum for communication, and both the [[https://lists.opengeospatial.org/mailman/listinfo/hydro.dwg][email list]] and this wiki are open to interested parties.
+
+Please see the current [[%ATTACHURL%/Hydrology_DWG_Charter.doc][Hydro DWG Charter]] and the [[http://portal.opengeospatial.org/index.php?m=projects&a=view&project_id=301&tab=0][home page of the Hydro DWG on the OGC portal]] for further details.
+---++ Published Standards
+   * [[http://www.opengeospatial.org/standards/waterml][OGC® WaterML]]
+   * [[https://portal.opengeospatial.org/files/?artifact_id=57222][WaterML2: Part 1 - Timeseries]]
+   * [[http://docs.opengeospatial.org/is/15-018r2/15-018r2.html][WaterML2: Part 2 - Ratings, Gaugings and Sections]]
+   * [[http://docs.opengeospatial.org/is/14-111r6/14-111r6.html][WaterML2: Part 3 - Surface Hydrology Features (HY_Features)]]
+   * [[http://docs.opengeospatial.org/is/16-032r2/16-032r2.html][WaterML2: Part 4 - GroundWaterML 2 (GWML2)]]
+---++ Resources
+   * HydroDWG
+      * [[https://lists.opengeospatial.org/mailman/listinfo/hydro.dwg][Mailing list]]
+      * [[http://portal.opengeospatial.org/?m=projects&a=view&project_id=301][OGC Portal page]] (login required)
+      * [[HydroDWGWorkPlan][WorkPlan]]
+   * Water ML 2.0 part 1 - time series
+      * [[WaterML2][Presentation]]
+      * [[WaterMLToolsAndTesting][WaterML2 tools and testing support]]
+   * [[WaterML2Part2][WaterML2.0 part 2 - ratings and gaugings]]
+   * INSPIRE documents
+      * [[http://inspire.ec.europa.eu/id/document/tg/d2.9-o&m-swe][Guidelines for the use of Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE]]
+      * [[http://inspire.ec.europa.eu/id/document/tg/download-sos][Technical Guidance for implementing download services using the OGC Sensor Observation Service and ISO 19143 Filter Encoding]]
+   * [[GINsForWMOCHy][GroundWater Information Networks endpoints]]
+      * [[GWML2Vocabularies][vocabularies used by GWML2 endpoints]]
+   * [[surfacewaterendpoints][SurfaceWater Information Networks endpoints]]
+   * OGC blog entry: [[http://www.opengeospatial.org/blog/2879][10 successful years of the Hydrology Domain Working Group]]
+
+<span style='background-color: transparent; color: #339900; font-size: 21.45px;'>Standards Working Groups (SWGs)</span>
+   * [[https://portal.opengeospatial.org/?m=projects&a=view&project_id=470][TimeSeriesML 1.0 - SWG]] (login required)
+   * [[GroundWater SWG]]
+   * [[https://portal.opengeospatial.org/index.php?m=projects&a=view&project_id=494&tab=2&artifact_id=65388][Hydrologic Features SWG]] (login required) [[http://www.opengeospatial.org/projects/groups/hydrofeatswg][Charter]]
+---++ Research Data Alliance Global Water Information IG
+   * [[RDA_GWIIG ]]: Dedicated subsection
+
+<span style='background-color: transparent; color: #339900; font-size: 21.45px;'>Meetings</span>
+
+*First 5 years*: [[HdwgMtgs2008to2013][Meetings 2008 - 2013]]
+
+*Meetings 2014 and later*:
+   * [[ArlingtonTc2014][OGC TC Meeting - Arlington]] - 24-28 March 2014
+   * [[GenevaTc2014][OGC TC Meeting - Geneva]] - 10-14 June 2014
+   * [[NewYorkWorkshop2014][5th Hydrology DWG Workshop 2014 - New York]] - 11-15 August 2014
+   * [[HDWGWorkshopAtHIC2014][Training workshop at 11th International Hydroinformatics Conference]] - Standardization of Water Data Exchange: WaterML 2.0 and Beyond - New York - 16 August 2014
+   * [[BoulderTc2015][OGC TC Meeting - Boulder]] - 3 June 2015
+   * <a href='BoulderTc2015Summit' target='_blank'>OGC Water Data Summit - Boulder TC </a>- 3 June 2015
+   * [[NottinghamTC2015][OGC TC Meeting - Nottingham ]]- 17 September 2015
+   * [[OrleansWorkshop2015][6th Hydrology DWG Workshop 2015 - Orleans]] - 21-25 September 2015
+   * [[SydneyTC2015][OGC TC Meeting - Sydney]] - 2 December 2015
+   * [[WashingtonTC2016][OGC TC Meeting - Washington]] - March 2016
+   * [[WorkshopKoblenz2016][7th Hydrology DWG Workshop 2016 - Koblenz ]]- 13-17 June 2016
+   * [[DublinTC2016][OGC TC Meeting - Dublin]] - June 2016
+   * [[DelftTC2017][OGC TC Meeting - Delft]] - March 2017
+   * [[WorkshopTuscaloosa2017][8th Hydrology DWG Workshop 2017 - Tuscaloosa]] - 20-23 June 2017
+   * [[StJohnsTC2017][OGC TC Meeting - St John's]] - June 2017
+   * [[PalmerstonTC2017][OGC TC Meeting - Palmerston North]] - December 2017
+   * [[OrleansTC2018][OGC TC Meeting - Orleans]] - March 2018
+   * [[StuttgartTC2018][OGC TC Meeting - Stuttgart]] - September 2018
+   * [[WorkshopGeneva2018][9th Hydrology DWG Workshop 2018 - Geneva]] - 17-20 September 2018
+   * [[CharlotteTC2018][OGC TC Meeting - Charlotte]] - December 2018
+   * [[LeuvenTC2019][OGC TC Meeting - Leuven]] - June 2019
+   * [[http://www.digitalearth2019.eu/programme/][Session on HDWG during the ISDE11 - Florence]] - September 2019 - [[%ATTACHURL%/water-data-standards-ISDE11-paper.pdf][conference paper]]
+   * <a href='HydroDWGSeminarJan2021' target='_blank'>HydroDWG Seminar January 2021</a>
+   * <a href='HydroDWGSeminarMarch2021' target='_blank'>HydroDWG Seminar March 2021 - WQ Data</a>
+   * <a href='https://external.ogc.org/twiki_public/HydrologyDWG/HydroDWGSeminarAugust2021' target='_blank'>HydroDWG Seminar August 2021 - Mainstems</a>
+   * <a href='https://external.ogc.org/twiki_public/HydrologyDWG/HydroDWGOGCMemberMeetingDecember2021' target='_blank'>HydroDWG OGC Member Meeting - December 2021</a>
+   * <a href='https://external.ogc.org/twiki_public/HydrologyDWG/HydroDWGOGCMemberMeetingMarch2022' target='_blank'>HydroDWG OGC Member Meeting - March 2022</a>
+   * [[GWML2WorkshopMarch2022][GWML2 Workshop March 2022]]
+   * [[https://external.ogc.org/twiki_public/HydrologyDWG/WaterQualityWorkshopSprint2022][Water Quality Workshop March 2022]]
+   * [[https://external.ogc.org/twiki_public/HydrologyDWG/HydroDWGOGCMemberMeetingJune2022][HydroDWG OGC Member Meeting - June 2022]]
+   * <a href='https://external.ogc.org/twiki_public/HydrologyDWG/HydroDWGOGCMemberMeetingOctober2022' target='_self'>HydroDWG OGC Member Meeting - October 2022</a>
+   * [[https://external.ogc.org/twiki_public/HydrologyDWG/HydroDWGOGCMemberMeetingFebruary2023][HydroDWG OGC Member Meeting - February 2023]]
+   * [[https://external.ogc.org/twiki_public/HydrologyDWG/HdwgSpring2023][HydroDWG Spring 2023 - May 2023]]
+   * [[https://external.ogc.org/twiki_public/HydrologyDWG/HydroDWGOGCMemberMeetingJune2024][HydroDWG Spring 2024 - June 2024]]
+---++ Interoperability Experiments
+   * [[WaterQualityIE][WaterQualityInteroperabilityExperiment]]
+   * GroundwaterInteroperabilityExperiment
+   * GroundwaterInteroperabilityExperiment2
+   * SurfacewaterInteroperabilityExperiment
+   * [[HydrologicForecastingInteroperabilityExperiment]]
+   * [[RGSInteropExperiment][RGS Interoperablity Experiment]]
+   * [[http://www.opengeospatial.org/projects/initiatives/elfie][ELFIE (Environmental Linked Features Interoperability Experiment)]]
+      * [[https://github.com/opengeospatial/ELFIE/wiki][Wiki]] (login required)
+
+---++ <a href='RelatedProjects' target='_blank'>Related Projects</a>
+---++ [[HydroDWGDocuments][Documents from Members]]
+
+---++ <nop>%WEB% Web Utilities
+
+<form action='%SCRIPTURLPATH{"search"}%/%WEB%/'>
+   * <input type="text" name="search" size="22" /> <input type="submit" class="twikiSubmit" value="%MAKETEXT{"Search"}%" /> - [[WebSearchAdvanced][%MAKETEXT{"advanced search"}%]]
+   * WebTopicList - all topics in alphabetical order
+   * WebChanges - recent topic changes in this web
+   * WebNotify - subscribe to an e-mail alert sent when topics change
+   * WebRss, WebAtom - RSS and ATOM news feeds of topic changes
+   * WebStatistics - listing popular topics and top contributors
+   * WebPreferences - preferences of this web
+</form>
+
+%META:FILEATTACHMENT{name="Hydrology_DWG_Charter.doc" attachment="Hydrology_DWG_Charter.doc" attr="" comment="Hydrology DWG Charter (Arctur, Lemon, Maidment, Cox)" date="1265690768" path="08-095r5_Hydrology_Domain_Working_Group_Charter.doc" size="84480" stream="08-095r5_Hydrology_Domain_Working_Group_Charter.doc" tmpFilename="/tmp/r67Bw3IRnM" user="Main.DavidLemon" version="2"}%
+%META:FILEATTACHMENT{name="HDWG_SuiteWaterInformation.pptx" attachment="HDWG_SuiteWaterInformation.pptx" attr="" comment="WMO/OGC Hydrology DWG !WaterML2 Suite" date="1474005908" path="HDWG_SuiteWaterInformation.pptx" size="76866" user="TonyBoston" version="6"}%
+%META:FILEATTACHMENT{name="HDWG_Standards.pptx" attachment="HDWG_Standards.pptx" attr="" comment="WMO/OGC Hydrology DWG standards" date="1498656660" path="HDWG_Standards.pptx" size="2979449" user="TonyBoston" version="2"}%
+%META:FILEATTACHMENT{name="water-data-standards-ISDE11-paper.pdf" attachment="water-data-standards-ISDE11-paper.pdf" attr="" comment="Water data standards by the Hydrology Domain Working Group of WMO and OGC &ndash; from development to implementation and adoption" date="1569579258" path="water-data-standards-ISDE11-paper.pdf" size="354133" user="TonyBoston" version="1"}%

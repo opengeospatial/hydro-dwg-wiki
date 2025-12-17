@@ -1,0 +1,15 @@
+%META:TOPICINFO{author="DavidArctur" comment="reprev" date="1386583592" format="1.1" reprev="4" version="5"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++ Documents from DWG Members
+
+
+
+
+
+-- Main.IlyaZaslavsky - 11 Nov 2009
+
+%META:FILEATTACHMENT{name="EauFrance.pptx" attachment="EauFrance.pptx" attr="" comment="Editable version" date="1253322736" moveby="Main.IlyaZaslavsky" movedto="HydrologyDWG.HydroDWGDocuments.EauFrance.pptx" movedwhen="1257905701" movefrom="HydrologyDWG.WebHome.EauFrance.pptx" path="F:\CUAHSI\EauFrance\EauFrance.pptx" size="391455" stream="F:\CUAHSI\EauFrance\EauFrance.pptx" tmpFilename="/tmp/IUfytavS16" user="Main.EricHersh" version="1"}%
+%META:FILEATTACHMENT{name="SandreWaterWebServices_UTCRWR.pdf" attachment="SandreWaterWebServices_UTCRWR.pdf" attr="" comment="A brief comparison by UT-CRWR of the CUAHSI and Sandre/Eau France water web services." date="1252943458" moveby="Main.IlyaZaslavsky" movedto="HydrologyDWG.HydroDWGDocuments.SandreWaterWebServices_UTCRWR.pdf" movedwhen="1257905745" movefrom="HydrologyDWG.WebHome.SandreWaterWebServices_UTCRWR.pdf" path="SandreWaterWebServices_UTCRWR.pdf" size="371975" stream="SandreWaterWebServices_UTCRWR.pdf" tmpFilename="/tmp/2TrUd49jv5" user="Main.EricHersh" version="1"}%
+%META:FILEATTACHMENT{name="Harmonising_Standards_for_Water_Observation_Data_-_Discussion_Paper.pdf" attachment="Harmonising_Standards_for_Water_Observation_Data_-_Discussion_Paper.pdf" attr="" comment="December 2009 Version" date="1260298828" path="Harmonising_Standards_for_Water_Observation_Data_-_Discussion_Paper.pdf" size="650772" stream="Harmonising_Standards_for_Water_Observation_Data_-_Discussion_Paper.pdf" tmpFilename="/tmp/hzVR9joxpy" user="Main.DavidValentine" version="1"}%
+%META:FILEATTACHMENT{name="swedish_standard_for_watersystem.ppt" attachment="swedish_standard_for_watersystem.ppt" attr="" comment="Presentation of the swedish standard and domain model for water system features" date="1268831751" path="swedish_standard_for_watersystem.ppt" size="3446272" stream="swedish_standard_for_watersystem.ppt" tmpFilename="/tmp/TUzmJeaoZ7" user="Main.JakobNisell" version="1"}%
+%META:FILEATTACHMENT{name="SOS_Profile_For_Hydrology_V1.1.pdf" attachment="SOS_Profile_For_Hydrology_V1.1.pdf" attr="" comment="Developed by Kisters, 52North, BfG for comments. This will be proposed as a Best Practice, to reduce ambiguity in use of SOS for WaterML 2." date="1386583592" path="SOS Profile For Hydrology V1.1.pdf" size="1280593" user="DavidArctur" version="1"}%

@@ -1,0 +1,62 @@
+%META:TOPICINFO{author="BoyanBrodaric" comment="reprev" date="1459280084" format="1.1" reprev="5" version="6"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *GW2IE Meeting #50 / GW SWG Meeting #1 -- Wed 02 March 2016*
+
+---++ *Agenda*
+   * OGC GW SWG
+   * GWML2 Paper
+   * GWML2 Specification
+   * Next meetings
+
+---++ *Notes*
+   * OGC GW SWG
+      * APPROVED! by OGC PC -- GW SWG is official.
+      * OGC TC Meeting Washington DC (Marc 2016):
+         * recommend Sylvain make ad-hoc verbal report re: SWG (*Sylvain*)
+   * GWML2 Paper
+      * Journal:
+         * Out of scope: Nature Geoscience
+         * Possible: !HydroInformatics, Computers & Geosciences, Earth Science Informatics, Environmental Modeling & Software, Int'l Journal of GIScience, Digital Earth
+      * Remaining work:
+         * Section 4: use-case leaders to summarize use-case results in Section 4 (taken from !GW2IE report - Appendix B)
+         * Diagram: Peter to sketch summary diagram and circulate; final drafting tbd
+   * GWML2 Specification
+      * 26 Feb 2016: circulated for internal review
+      * 02 March 2016: comments received and reviewed
+      * Preparation schedule (Ottawa times): SVN to be used for all revisions
+         * Wed 02 March: *Bruce*
+         * Thurs 03 March 2016: *Sylvain*
+         * Fri 04 March 2016: *Eric*
+         * Sat-Sun 05-06 March 2016: *Boyan*
+         * Mon 07 March 2016: *Submit! - Boyan*
+   * Next meetings
+      * 30 March 2016: to review submission progress and discuss paper
+
+---++ *Participants*
+   * Click here for the [[http://doodle.com/poll/szzutg2qw4h78ufg][Doodle Poll]]
+
+---++ *Connection Instructions*
+
+| *Ottawa*  | *Madison* | *London* | *Paris* | *Melbourne* | *Auckland* |
+| 8:00 | 7:00 | 13:00 | 14:00 | 23:59 | +1d 02:00 |
+[[http://www.timeanddate.com/worldclock/meetingdetails.html?year=2016&month=3&day=2&hour=13&min=0&sec=0&p1=142&p2=188&p3=136&p4=195&p5=152&p6=22][Time and Date website: http://www.timeanddate.com/worldclock/meetingdetails.html?year=2016&month=3&day=2&hour=13&min=0&sec=0&p1=142&p2=188&p3=136&p4=195&p5=152&p6=22]]
+
+   * Screen sharing (Webex):
+      * pass: ogc
+      * url: https://pwgsc-nh.webex.com/pwgsc-nh/j.php?MTID=m2fe038bb01e2d7d0f93745de2ba3a76d
+
+   * Teleconference:
+      * Dial local number (see below) and passcode = *616269*
+
+| *Country*  | *Conference Number* |
+| Australia  | +61 (0) 3 8672 0180 |
+| Austria  | +43 (0) 1 2650500 |
+| Belgium  | +32 (0) 3 294 11 60 |
+| Canada  | +1 641-713-3824 |
+| France  | +33 (0) 1 80 14 11 00 |
+| Germany  | +49 (0) 228 5343020 |
+| Italy  | +39 055 464 0570 |
+| Netherlands  | +31 (0) 20 322 3000 |
+| Poland  | +48 22 116 80 20 |
+| United Kingdom  | +44 (0) 330 606 0182 |
+| United States  | +1 760-569-7100 |

@@ -1,0 +1,12 @@
+%META:TOPICINFO{author="DavidLemon" date="1287628771" format="1.1" version="1.10"}%
+%META:TOPICPARENT{name="WebHome"}%
+   * [[AtlantaTc2008][OGC TC, Atlanta GA, 2008-09]]
+   * [[ValenciaTc2008][OGC TC, Valencia Spain, 2008-12]]
+   * [[AthensTc2009][OGC TC, Athens Greece, 2009-03]]
+   * [[BostonTc2009][OGC TC, Boston MA, 2009-06]]
+   * [[DarmstadtTc2009][OGC TC, Darmstadt Germany, 2009-09]]
+   * [[MtViewTc2009][OGC TC, Mountain View, CA, 2009-12]]
+   * [[JRCWkShop2010][Workshop, JRC, Italy, 2010-03]]
+   * [[SilverSpringTc2010][OGC TC, Silver Spring, MD, 2010-06]]
+   * [[Toulouse Tc2010][OGC TC, Toulouse, France, 2010-09]]
+   * [[Sydney Tc2010][OGC TC, Sydney, Australia, 2010-12]]

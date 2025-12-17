@@ -1,0 +1,23 @@
+%META:TOPICINFO{author="SimonCox" date="1267089964" format="1.1" version="1.2"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Hydrology DWG workshop 2010-03-15-18* 
+
+---++ Location and Dates
+   * Where: Ispra, Italy
+   * Host: EU Joint Research Council
+   * Dates:  Mar 15-18, 2010
+
+---++ Agenda
+   * Mar 15, AM-PM:  WaterML 2 design group meeting?
+   * Mar 15, 3-6 PM: Groundwater IE meeting
+   * Mar 16-17 AM-PM:  [[http://external.opengis.org/twiki_public/bin/view/HydrologyDWG/JRCWkShop2010][HWDG Workshop]]
+
+---++ Planning
+   * Participants: HDWG members only
+   * Registration: must be completed before Feb 22, 2010
+   * 
+
+---++ Action Items
+
+
+---++ Notes

@@ -1,0 +1,45 @@
+%META:TOPICINFO{author="SylvainGrellet" comment="reprev" date="1416586160" format="1.1" reprev="11" version="11"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *Groundwater Information Model Comparison*
+---++ Models
+   * <p> *Groundwater ML1:* [[http://ngwd-bdnes.cits.rncan.gc.ca/gwml/index.aspx?c=2][documentation]] and [[http://www.iwaponline.com/jh/014/jh0140093.htm][paper]]</p>
+   * *INSPIRE hydrogeology model:*
+      * *Latest version (3.0rc2) accepted by TWG Geology and publicly available*
+         * Documentation as a part of Data Specification on Geology
+            * PDF: http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_GE_v3.0.pdf
+            * HTML version of UML model: http://inspire.ec.europa.eu/data-model/approved/r4618/html/
+         * UML model
+            * Inspire web site data models section (go here to always check you have the latest version) : http://inspire.ec.europa.eu/index.cfm/pageid/2/list/datamodels
+            * XMI in INSPIRE repository: https://inspire-twg.jrc.ec.europa.eu/svn/inspire-model/branches/public/approved/latest/themes/annexII/geology/IR_HydrogeologyCore.xml
+            * EA and XMI zipped:http://inspire.ec.europa.eu/data-model/approved/r4618/ea+xmi/EAXMI.zip
+            * <span style="background-color: transparent;">XSD in INSPIRE repository: </span><span style="background-color: transparent;">http://inspire.ec.europa.eu/schemas/ge_hg/3.0/HydrogeologyCore.xsd </span>
+      * *Old full version (0.4) rejected by TWG Geology due to it is too complex and presented here as a internal document of GWIE2*
+         * Automatically generated documentation of UML model: http://testbed.ptip.org.pl/GWIE2_INSPIRE/INSPIRE_Hydrogeology_Draft_Outline_v.0.4_Doc.docx
+         * EA version of UML model: http://testbed.ptip.org.pl/GWIE2_INSPIRE/INSPIRE_Hydrogeology_Draft_Outline_v.0.4.EAP
+         * The model also contains Use_Case diagrams worked out by Piotr Wojda. Description of the Use_Case: http://testbed.ptip.org.pl/GWIE2_INSPIRE/UseCase_HydrogeologicalModel_UC.doc
+         * More hydrogeological Use_Cases you can find in INSPIRE Data Specification – Geology (UC06, UC07, UC08, UC09 and UC 10 - pages from 123 to 134) at: http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DS_Geology_v3.0_rc2.pdf
+   * %BLUE%<u>Hydrogeological Map of Bavaria (from Bernhard Wagner)</u>%ENDCOLOR% : [[%ATTACHURL%/20030246_SystemdokumentationV1.0_AnhangB.pdf][20030246_SystemdokumentationV1.0_AnhangB.pdf]]
+   * BRGM / SANDRE
+      * Main SANDRE web site http://www.sandre.eaufrance.fr/
+      * Data model : http://www.sandre.eaufrance.fr/urn.php?urn=urn:sandre:dictionnaire:SAQ::::ressource:2.0:::pdf
+      * ADES web services : <a href="http://www.ades.eaufrance.fr/IMG/pdf/BRGM_RP-59919-FR.pdf" title="blocked::http://www.ades.eaufrance.fr/IMG/pdf/BRGM_RP-59919-FR.pdf">http://www.ades.eaufrance.fr/IMG/pdf/BRGM_RP-59919-FR.pdf</a>
+   * GeoSciML (relevant to Groundwater) http://www.geosciml.org
+   * [[%ATTACHURL%/20030246_SystemdokumentationV1.0_AnhangB.pdf][20030246_SystemdokumentationV1.0_AnhangB.pdf]]<span style="background-color: transparent;">: Model for Hydrogeological Map of Bavaria</span>
+---++ Comparison Before the Modelling Exercise
+   * List of entities and definitions for model comparison:
+      * [[Gwml2EntityList][Original Entity List]]
+      * [[gwml2ConsolFeatureList][Consolidated Entity List]]
+   * Sources:
+      * Boisvert, see attached: [[%ATTACHURL%/Boisvert_summary_of_models_21June12.ppt][GWML1 vs INSPIRE GE (2012-04-16) vs WMO Hydro Features (2012-04-06)]]
+
+<span style="color: #339900; font-size: 21px; line-height: 1.1em; background-color: transparent;">Comparison During the Modelling Exercise</span>
+   * On the Conceptual Model Comparison of GWML2CM _0.28 and INSPIRE datamodels on compatibility: [[%ATTACHURL%/Comparison_INSPIRE_GWML2CM_SG_V2.xlsx%20][Comparison_INSPIRE_GWML2CM.xlsx]] compiled by B. Wagner / S. Grellet - 06 Mai 2014
+   * On the Logical Model : [[%ATTACHURL%/Comparison_INSPIRE_GWML2LM_V5.xlsx][Comparison_INSPIRE_GWML2LM_V5.xlsx]] compiled by B. Wagner / S. Grellet - 21 November 2014
+-- Main.BoyanBrodaric - 26 Oct 2012
+
+%META:FILEATTACHMENT{name="Boisvert_summary_of_models_21June12.ppt" attachment="Boisvert_summary_of_models_21June12.ppt" attr="" comment="Comparison of GWML1, INSPIRE (2012-04-16), WMO (2012-04-06)" date="1351271785" path="Boisvert_summary_of_models_21June12.ppt" size="222208" user="BoyanBrodaric" version="1"}%
+%META:FILEATTACHMENT{name="20030246_SystemdokumentationV1.0_AnhangB.pdf" attachment="20030246_SystemdokumentationV1.0_AnhangB.pdf" attr="" comment="Model for Hydrogeological Map of Bavaria" date="1352210189" path="20030246_SystemdokumentationV1.0_AnhangB.pdf" size="83532" user="EricBoisvert" version="1"}%
+%META:FILEATTACHMENT{name="Comparison_INSPIRE_GWML2CM.xlsx" attachment="Comparison_INSPIRE_GWML2CM.xlsx" attr="" comment="" date="1399021274" path="Comparison INSPIRE_GWML2CM.xlsx" size="15468" user="BernhardWagner" version="1"}%
+%META:FILEATTACHMENT{name="Comparison_INSPIRE_GWML2CM_SG_V1.xlsx" attachment="Comparison_INSPIRE_GWML2CM_SG_V1.xlsx" attr="" comment="Adjustment on columns to enable working on the mapping from both direction GWML2 -> Inspire and vice versa" date="1399361212" path="Comparison INSPIRE_GWML2CM_SG_V1.xlsx" size="35744" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="Comparison_INSPIRE_GWML2CM_SG_V2.xlsx" attachment="Comparison_INSPIRE_GWML2CM_SG_V2.xlsx" attr="" comment="Second version of the mapping. Second cross checking part stopped at line 30. Remaining TODOs are summarized in the Metadata sheet" date="1399361378" path="Comparison INSPIRE_GWML2CM_SG_V2.xlsx" size="27155" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="Comparison_INSPIRE_GWML2LM_V5.xlsx" attachment="Comparison_INSPIRE_GWML2LM_V5.xlsx" attr="" comment="Mapping between GWML2.0 logical model and Inspire" date="1416586066" path="Comparison INSPIRE_GWML2LM_V5.xlsx" size="37909" user="SylvainGrellet" version="1"}%

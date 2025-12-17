@@ -1,0 +1,88 @@
+%META:TOPICINFO{author="BoyanBrodaric" comment="save topic" date="1438270613" format="1.1" reprev="3" version="6"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *GW2IE Meeting 41 -- Thurs 30 July 2015*
+
+---++ *Agenda*
+   * Meetings update:
+      * OGC TC Sept Nottingham:
+         * HDWG session Thurs 17 Sept 2015
+         * SWG proposal: TC Plenary (Thurs 17 Sept 2015)
+   * Server update
+      * Static page active (www.gwml.org)
+      * www.resource.gwml.org to be implemented
+   * Schema update
+      * Logical schema: missing defs
+      * Model issue
+         * Chemical results are modelled as Observations with GW_Constituent as featureOfInterest. But constituent don't have navigable link back to GW_FluidBody, therfore a chemical result cannot point back to FluidBody (unless it goes directly to FluidBody, missing the constituent). Looks like it's SamplingFeature all over again.
+         * GW_UnitFluidProperty and GW_UnitVoidProperty : force 1..1 because association with a missing end does not make sense or 0..1 to follow the blanket rule of all optional ?
+   * Instances update (*All)
+      * namespaces: end char? (/ #)
+   * Report update:
+      * Conceptual / logical model
+      * Requirements / conformance classes
+      * Use-case template
+   * Use-case roundtable
+   * Timeline check
+   * HY_Features groundwater
+
+---++ *Participants*
+   * Click here for the [[http://doodle.com/s57cqeksr2ndgrge][Doodle Poll]]
+
+---++ *Results*
+   * Meetings update:
+      * OGC TC Sept Nottingham:
+         * HDWG session (Thurs 17 Sept 2015, am) -- setup vote to approve GW SWG (*Boyan*)
+         * SWG proposal: TC Plenary (Thurs 17 Sept 2015, pm)
+   * Server update: (*Jessica*)
+      * www.groundwaterml.org: to be implemented asap, re-direct to www.gwml.org
+      * www.resource.gwml.org: to be implemented, long-term
+   * Schema update
+      * Logical schema: missing defs -- deferred until Sept.
+      * Model issue
+         * Chemical result cannot point back to FluidBody: no schema change needed, will use O&M and document in report (*Eric*).
+         * Association classes: 1:1 cardinality at ends, but can refer to unknown entity
+   * Instances update (*All)
+      * namespaces: end char? (/ #): deferred to GW SWG.
+   * Report update:
+      * Conceptual / logical model: draft report ready.
+      * Requirements / conformance classes: to be completed by next meeting.
+      * Use-case template: proposal accepted (as per latest draft report)
+   * Timeline check
+      * Aug 6: 
+         * review complete: sections 1-8 (*Jessica*, *Peter*, others)
+      * Aug 11 (next meeting): 
+         * final draft complete: sections 1-8 (*Boyan*)
+         * draft complete: sections 9-10-A (*Eric*, *Bruce*)
+      * Aug 17:
+         * review complete: sections 9-10-A (*Alex*, *Sylvain*)
+      * Aug 25 (last meeting):
+         * final draft complete: sections 9-10-A (*Eric*, *Bruce*)
+         * final draft complete: section B, use-cases (Leads 1-5: *Eric*, *Sylvain*, *Peter*, *Jessica*, *Sylvain*)
+      * Sept 1:
+         * public release
+   * HY_Features groundwater: to continue mapping for Sept
+
+---++ *Connection Instructions*
+
+| *Ottawa*  | *Madison* | *London* | *Paris* | *Melbourne* | *Auckland* |
+| 8:00 | 7:00 | 13:00 | 14:00 | 22:00 | 23:59 |
+
+   * Screen sharing (Webex):
+      * pass: ogc
+      * url: https://pwgsc-nh.webex.com/pwgsc-nh/j.php?MTID=mc1f39aa86f9d0a69df80c65fe67e4842
+
+   * Teleconference:
+      * Dial local number (see below) and passcode = *616269*
+
+| *Country*  | *Conference Number* |
+| Australia  | +61 (0) 3 8672 0180 |
+| Austria  | +43 (0) 1 2650500 |
+| Belgium  | +32 (0) 3 294 11 60 |
+| Canada  | +1 559-546-1300 |
+| France  | +33 (0) 1 80 14 11 00 |
+| Germany  | +49 (0) 228 5343020 |
+| Italy  | +39 055 464 0570 |
+| Netherlands  | +31 (0) 20 322 3000 |
+| Poland  | +48 22 116 80 20 |
+| United Kingdom  | +44 (0) 330 606 0182 |
+| United States  | +1 760-569-7100 |

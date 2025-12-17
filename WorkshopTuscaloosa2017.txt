@@ -1,0 +1,69 @@
+%META:TOPICINFO{author="TonyBoston" comment="reprev" date="1498246450" format="1.1" reprev="36" version="36"}%
+%META:TOPICPARENT{name="WebHome"}%
+---+ 2017 Hydro DWG Workshop, National Water Center, Tuscaloosa, USA
+   * *When:* 19 - 23 June 2017
+   * *Where:* National Water Center, Tuscaloosa, Alabama, USA
+   * *Purpose:* This meeting will be the Eighth Workshop of the WMO/OGC Hydrology Domain Working Group
+   * *Contact:* Tony Boston (tony.boston@bom.gov.au) or Dave Blodgett (dblodgett@usgs.gov)
+---+ Admin
+---+++++ *Please confirm your attendance, arrival dates etc below.*
+---+++ *[[Attendees2017workshop][List of Attendees]]*
+---+++ *[[Logistics2017workshop][Logistics, accommodation and useful links<br />]]*
+---+++ *GoToMeeting joining details*
+
+<div id="meetingInvitation">
+
+Please join my meeting from your computer, tablet or smartphone. <br /> <a href="https://global.gotomeeting.com/join/191121893" target="_blank"> https://global.gotomeeting.com/join/191121893 </a> <br /> <br /> You can also dial in using your phone. <br /> United States: +1 (786) 535-3119 <br /> <br /> Access Code: 191-121-893 <br /> <br /> More phone numbers <br /> Australia: +61 2 9091 7603 <br /> Austria: +43 1 2530 22500 <br /> Belgium: +32 28 93 7002 <br /> Canada: +1 (647) 497-9373 <br /> Denmark: +45 32 72 03 69 <br /> Finland: +358 923 17 0556 <br /> France: +33 170 950 590 <br /> Germany: +49 692 5736 7300 <br /> Ireland: +353 15 360 756 <br /> Italy: +39 0 230 57 81 80 <br /> Netherlands: +31 207 941 375 <br /> New Zealand: +64 9 913 2226 <br /> Norway: +47 21 93 37 37 <br /> Spain: +34 932 75 1230 <br /> Sweden: +46 853 527 818 <br /> Switzerland: +41 225 4599 60 <br /> United Kingdom: +44 330 221 0097
+
+</div>
+---++ *Draft Agenda (subject to change)*
+
+<table align="left" border="1" cellpadding="0" cellspacing="1" style="width: 1014px; height: 934px;"> <tbody> <tr style="height: 5px;"> <td>
+---++++++ *Time*
+</td> <td>
+---++++++ <b>Session Topic<br /></b>
+</td> <td>
+---++++++ *Discussant*
+</td> </tr> <tr style="height: 5px;"> <td colspan="2"> *Monday 19 June 2017 - Travel and Working Meeting for ELFIE participants* </td> <td> </td> </tr> <tr style="height: 5px;"> <td colspan="2"><b>Tuesday 20 June 2017 - Intro and Updates<br /></b></td> <td> </td> </tr> <tr style="height: 5px;"> <td>10:00</td> <td>Welcome, Introduction, Logistics</td> <td>Co-chair / Local Hosts</td> </tr> <tr style="height: 5px;"> <td> </td> <td>National Water Center introduction</td> <td>Ed Clark / Fernando Salas</td> </tr> <tr style="height: 5px;"> <td> </td> <td>Feedback from WMO - HydroDWG contributions to CHy</td> <td>Silvano Pecora / Tony Boston</td> </tr> <tr style="height: 5px;"> <td>12:30 - 1:30</td> <td>Lunchbreak</td> <td> </td> </tr> <tr style="height: 5px;"> <td>1:30</td> <td> [[http://www.opengeospatial.org/standards/gwml2][GWML2]] update - [[https://portal.opengeospatial.org/files/?artifact_id=74347][Audio]] (70 MB)</td> <td>Eric Boisvert for Boyan Brodaric</td> </tr> <tr style="height: 5px;"> <td>2:30</td> <td> [[%ATTACHURL%/20170620_Inspire_OM_SWE_requirements_Grellet.pptx][Inspire O&M and SWE profile update]] (10') + [[%ATTACHURL%/20170620_QGIS_GDAL_OGR_complex_feature_Grellet_groundwater_monitoring.pptx%20][QGIS GML Application Schema update]] (50') - [[https://portal.opengeospatial.org/files/?artifact_id=74349][Audio]] (88 MB)</td> <td>Sylvain Grellet</td> </tr> <tr style="height: 5px;"> <td>3:30</td> <td>
+[[http://www.opengeospatial.org/projects/groups/hydrofeatswg][HY_Features]] update. [[http://opengeospatial.github.io/HY_Features/HY_Features_primer/HY_Features_Primer.html][<span style="background-color: transparent;">Presentation</span>]] - [[http://opengeospatial.github.io/HY_Features/HTML_HYF/HY_HydroFeature/index.htm][UML 1]] - [[http://opengeospatial.github.io/HY_Features/HTML_HYF/HY_SurfaceHydroFeature/index.htm][UML 2]] - [[http://opengeospatial.github.io/HY_Features/HTML_HYF/HY_HydrometricNetwork/index.htm][UML 2]]
+- [[https://portal.opengeospatial.org/files/?artifact_id=74350][Audio]] (60 MB)</td> <td>Dave Blodgett</td> </tr> <tr style="height: 5px;"> <td colspan="2"> *Wednesday 21 June 2017 - Linked Hydro Features Focus* </td> <td> </td> </tr> <tr style="height: 5px;"> <td>9:00 - 11:00</td> <td>
+
+[[http://www.opengeospatial.org/projects/initiatives/elfie][Environmental Linked Features Interoperability Experiment]](ELFIE)
+
+Update: [[https://www.aspeninstitute.org/publications/internet-of-water/][Internet of Water]], [[https://opengeospatial.github.io/ELFIE/ELFIE_overview.html#/][Kickoff Slides]].
+
+</td> <td>Dave Blodgett</td> </tr> <tr style="height: 5px;"> <td>11:30-12:30</td> <td><a href="http://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=3725" target="_blank">FloodCast</a> Overview
+ - [[%ATTACHURL%/FloodCast_Hydro_DWG_Pres.pptx][Presentation]] [[https://portal.opengeospatial.org/files/?artifact_id=74410][Audio]]</td> <td>Dr. Alaurah Moss, Dr. Siva Selvanathan</td> </tr> <tr style="height: 5px;"> <td>12:30 - 1:30</td> <td>Lunchbreak</td> <td> </td> </tr> <tr style="height: 5px;"> <td>1:30 - 2:30</td> <td>Water Data Services in New Zealand ( [[%ATTACHURL%/lr-20170621-ogchydrodwg-tuscaloosa.pptx][Ritchie Presentation]], ( [[%ATTACHURL%/Hydrological_data_-_Federated_infrastructure_2017_HydroDWG.pptx][Watson Presentation]]) [[https://portal.opengeospatial.org/files/?artifact_id=74412][Audio]]<br />
+( [[%ATTACHURL%/NZWaterExchange.pptx][Follow Up Maidment Presentation]])
+</td> <td>Alistair Ritchie, Brent Watson</td> </tr> <tr style="height: 5px;"> <td>2:30 - 5:00</td> <td>Advances in US Hydrography and Hydro Network Linked Data ( [[%ATTACHURL%/Water_Intelligence_Network_System.pptx][presentation]]) [[https://portal.opengeospatial.org/files/?artifact_id=74411][Audio]]</td> <td>Dave Blodgett</td> </tr> <tr style="height: 5px;"> <td colspan="2"> *Thursday 22 June 2017 - Water Quality / Samples Focus* </td> <td> </td> </tr> <tr style="height: 5px;"> <td>9:00 - 11:00</td> <td>Interoperable Watersheds Network and Sensor Metadata [[%ATTACHURL%/Interoperable_Watersheds_Network_Background_A.pptx][Presentation]] and Discussion</td> <td>Dwane Young and All</td> </tr> <tr style="height: 5px;"> <td>11:00 - 12:30</td> <td>
+
+Review of existing work including: [[http://docs.opengeospatial.org/bp/14-003/14-003.html][WaterML-WQ]] [[https://www.epa.gov/waterdata/storage-and-retrieval-and-water-quality-exchange][WQX]]
+
+[[http://www.aquo.nl/Aquo/uitwisselmodellen/index.htm][Aquo Model]]... ( [[%ATTACHURL%/IHW-Aquo_20170622_EW.PPTX][Presentation]] ) [[https://portal.opengeospatial.org/files/?artifact_id=74387][Audio]] ( [[%ATTACHURL%/AG4-1_Impactmatrix_v1_1_IHW-SIKB_20170504.pdf][Change Management Procedures doc]] )
+</td> <td>
+Edwin Wisse, Informatiehuis Water</td> </tr> <tr style="height: 5px;"> <td>12:30 - 1:30</td> <td>Lunchbreak</td> <td> </td> </tr> <tr style="height: 5px;"> <td>1:30 - 2:30</td> <td>RDA Global Water Information IG activities: Dynamic Data Citation, Water Data Portals ( [[%ATTACHURL%/OGCWorkshop2017_RDA_GWIIG.PPTX][Presentation]] ) [[https://portal.opengeospatial.org/files/?artifact_id=74388][Audio]]</td> <td>Ilya Zaslavsky</td> </tr> <tr style="height: 5px;"> <td>2:30 - 5:00</td> <td>ELFIE use cases discussion</td> <td>All</td> </tr> <tr style="height: 5px;"> <td colspan="2"> *Friday 23 June 2017 - National Water Model (NWM) and Close Out* </td> <td> </td> </tr> <tr style="height: 5px;"> <td>9:00 - 12:30</td> <td>
+
+NWM overview and operational configuration
+
+Summer Institute Student Presentations HDWG Presentations ( [[%ATTACHURL%/HydroDWG_introduction.pptx][Intro]] )( [[%ATTACHURL%/HDWG_ELFIE.pptx][ELFIE]])
+</td> <td>Ed Clark, Summer Institute Students, Tony Boston, David Blodgett.</td> </tr> <tr style="height: 5px;"> <td>12:30 - 1:30</td> <td>Lunchbreak</td> <td> </td> </tr> <tr style="height: 5px;"> <td>1:30 - 4:00</td> <td>Wrap up discussion</td> <td>All</td> </tr> <tr style="height: 5px;"> <td>4:00</td> <td>Close</td> <td> </td> </tr> </tbody> </table> <b><br /></b>
+
+%META:FILEATTACHMENT{name="2017_HydroDWG_Workshop_Intro.pptx" attachment="2017_HydroDWG_Workshop_Intro.pptx" attr="" comment="" date="1497901049" path="2017_HydroDWG_Workshop_Intro.pptx" size="695528" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="BrodaricBoisvert_GWML2-HDWG_20June2017.ppt" attachment="BrodaricBoisvert_GWML2-HDWG_20June2017.ppt" attr="" comment="small update" date="1497979526" path="BrodaricBoisvert_GWML2-HDWG_20June2017.ppt" size="1482752" user="EricBoisvert" version="2"}%
+%META:FILEATTACHMENT{name="CHyHDWGPart1.pptx" attachment="CHyHDWGPart1.pptx" attr="" comment="" date="1497982642" path="CHyHDWGPart1.pptx" size="14513425" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="CHyHDWGPart2.pptx" attachment="CHyHDWGPart2.pptx" attr="" comment="" date="1497982734" path="CHyHDWGPart2.pptx" size="19720803" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="20170620_Inspire_OM_SWE_requirements_Grellet.pptx" attachment="20170620_Inspire_OM_SWE_requirements_Grellet.pptx" attr="" comment="INSPIRE O&M and SWE Requirements/Technical Guidance" date="1498052813" path="20170620_Inspire_OM_SWE_requirements_Grellet.pptx" size="1565521" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="20170620_QGIS_GDAL_OGR_complex_feature_Grellet_groundwater_monitoring.pptx" attachment="20170620_QGIS_GDAL_OGR_complex_feature_Grellet_groundwater_monitoring.pptx" attr="" comment="QGIS / GDAL GML application schema support update : use case on French GIN" date="1498052881" path="20170620_QGIS_GDAL_OGR_complex_feature_Grellet_groundwater_monitoring.pptx" size="3425693" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="FloodCast_Hydro_DWG_Pres.pptx" attachment="FloodCast_Hydro_DWG_Pres.pptx" attr="" comment="" date="1498061334" path="FloodCast_Hydro_DWG_Pres.pptx" size="7014324" user="DavidBlodgett" version="1"}%
+%META:FILEATTACHMENT{name="Water_Intelligence_Network_System.pptx" attachment="Water_Intelligence_Network_System.pptx" attr="" comment="Presentation on USGS hydrography data and data systems plan." date="1498081683" path="Water Intelligence Network System.pptx" size="8017190" user="DavidBlodgett" version="1"}%
+%META:FILEATTACHMENT{name="TexasBridges1.pptx" attachment="TexasBridges1.pptx" attr="" comment="Information about texas bridges presented after FloodCast." date="1498081737" path="TexasBridges1.pptx" size="4145233" user="DavidBlodgett" version="1"}%
+%META:FILEATTACHMENT{name="NZWaterExchange.pptx" attachment="NZWaterExchange.pptx" attr="" comment="Maidment presentation on New Zealand water data exchange success" date="1498081960" path="NZWaterExchange.pptx" size="6675779" user="DavidBlodgett" version="1"}%
+%META:FILEATTACHMENT{name="lr-20170621-ogchydrodwg-tuscaloosa.pptx" attachment="lr-20170621-ogchydrodwg-tuscaloosa.pptx" attr="" comment="Ritchie presentation on Environmental Observation Systems in NZ" date="1498082160" path="lr-20170621-ogchydrodwg-tuscaloosa.pptx" size="8351712" user="DavidBlodgett" version="1"}%
+%META:FILEATTACHMENT{name="Hydrological_data_-_Federated_infrastructure_2017_HydroDWG.pptx" attachment="Hydrological_data_-_Federated_infrastructure_2017_HydroDWG.pptx" attr="" comment="Watson presentation on LAWA and other NZ data networks" date="1498099785" path="Hydrological data - Federated infrastructure 2017 HydroDWG.pptx" size="3720319" user="DavidBlodgett" version="1"}%
+%META:FILEATTACHMENT{name="Interoperable_Watersheds_Network_Background_A.pptx" attachment="Interoperable_Watersheds_Network_Background_A.pptx" attr="" comment="Young presentation on Interoperable Watersheds Network" date="1498146080" path="Interoperable_Watersheds_Network_Background_A.pptx" size="2934148" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="WorkshopDinnerPhoto.jpg" attachment="WorkshopDinnerPhoto.jpg" attr="" comment="" date="1498161562" path="WorkshopDinnerPhoto.jpg" size="132768" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="OGCWorkshop2017_RDA_GWIIG.PPTX" attachment="OGCWorkshop2017_RDA_GWIIG.PPTX" attr="" comment="Research Data Alliance GWIIG" date="1498163908" path="OGCWorkshop2017_RDA GWIIG.PPTX" size="1218465" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="HDWG_ELFIE.pptx" attachment="HDWG_ELFIE.pptx" attr="" comment="ELFIE Closing Presentation with Summer Institute" date="1498227050" path="HDWG ELFIE.pptx" size="6073518" user="DavidBlodgett" version="1"}%
+%META:FILEATTACHMENT{name="HydroDWG_introduction.pptx" attachment="HydroDWG_introduction.pptx" attr="" comment="" date="1498230822" path="HydroDWG_introduction.pptx" size="3316902" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="IHW-Aquo_20170622_EW.PPTX" attachment="IHW-Aquo_20170622_EW.PPTX" attr="" comment="Wisse IHW Aquo Netherlands" date="1498246038" path="IHW-Aquo_20170622_EW.PPTX" size="1793827" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="AG4-1_Impactmatrix_v1_1_IHW-SIKB_20170504.pdf" attachment="AG4-1_Impactmatrix_v1_1_IHW-SIKB_20170504.pdf" attr="" comment="Wisse IHW Aquo Change Management Procedures" date="1498246173" path="AG4-1 Impactmatrix v1_1 IHW-SIKB 20170504.pdf" size="44976" user="TonyBoston" version="1"}%

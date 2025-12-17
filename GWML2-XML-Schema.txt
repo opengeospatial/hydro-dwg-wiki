@@ -1,0 +1,108 @@
+%META:TOPICINFO{author="FrancoisLetourneau" comment="save topic" date="1486574894" format="1.1" reprev="31" version="34"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *GWML2 XML Schema*
+
+---++ *Packages*
+   1 Version 2.0
+      * <a href="http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.0/gwml2.xsd" title="Integrating schema (gwml2.xsd)">Integrating schema (gwml2.xsd)</a>
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.0/gwml2-main.xsd][Main (units / aquifers, fluid bodies, voids)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.0/gwml2-constituent.xsd][Constituent (water quality)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.0/gwml2-flow.xsd][Flow (groundwater flow)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.0/gwml2-well.xsd][Well (water wells, monitoring sites, springs)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.0/gwml2-wellconstruction.xsd][WellConstruction (water well construction)]]
+   1 Version 2.1
+      * <a href="http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.1/gwml2.xsd" title="Integrating schema (gwml2.xsd)">Integrating schema (gwml2.xsd)</a>
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.1/gwml2-main.xsd][Main (units / aquifers, fluid bodies, voids)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.1/gwml2-constituent.xsd][Constituent (water quality)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.1/gwml2-flow.xsd][Flow (groundwater flow)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.1/gwml2-well.xsd][Well (water wells, monitoring sites, springs)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.1/gwml2-wellconstruction.xsd][WellConstruction (water well construction)]]
+   1 Version 2.2
+      * <a href="http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.2/gwml2.xsd" title="Integrating schema (gwml2.xsd)">Integrating schema (gwml2.xsd)</a>
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.2/gwml2-main.xsd][Main (units / aquifers, fluid bodies, voids)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.2/gwml2-constituent.xsd][Constituent (water quality)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.2/gwml2-flow.xsd][Flow (groundwater flow)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.2/gwml2-well.xsd][Well (water wells, monitoring sites, springs)]]
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/2.2/gwml2-wellconstruction.xsd][WellConstruction (water well construction)]]
+---+++ Schematron (and XSLT validation tools generated from them)
+
+Schematron files are located here:
+
+https://xp-dev.com/svn/gwml2/Documents/schematron/
+
+sch file turned into XSLT that generate SVRL (rule test results)
+
+   * [[http://gin.gw-info.net/service/schematron/gen_xslt_gwml/xml-rules.xslt][xml-rules.xslt]] Must be passed by all instances
+   * [[http://gin.gw-info.net/service/schematron/gen_xslt_gwml/gwml2-well.xslt][gwml2-well.xslt]] specific for wells
+   * [[http://gin.gw-info.net/service/schematron/gen_xslt_gwml/gwml2-well-vertical.xslt][gwml2-well-vertical.xslt]] specific for vertical wells
+   * [[http://gin.gw-info.net/service/schematron/gen_xslt_gwml/gwml2-well-gu.xslt][gwml2-well-gu.xslt]] Geologic unit logs
+   * [[http://gin.gw-info.net/service/schematron/gen_xslt_gwml/gwml2-well-em.xslt][gwml2-well-em.xslt]] Earth material logs
+   * [[http://gin.gw-info.net/service/schematron/gen_xslt_gwml/gwml2-construction.xslt][gwml2-construction.xslt]] Well construction
+
+The schemas are validating - July 15th 2014 *FL*
+
+Attached modified version of GWML2 Nucleus schema ( [[%ATTACHURL%/gwml2-nucleus.xsd][gwml2-nucleus.xsd]]) with GW_UnitVoidProperty, GW_UnitFluidProperty and GW_Mixture association classes correctly encoded. -- Main.BruceSimons - 18 Aug 2014
+---+ *Instance documents*
+---++ *Development*
+| *Package* | *Class* | *Developer* |
+| *Nucleus* | GW_AquiferSystem | Eric (NRCan), Bruce (NGIS) ... |
+| | GW_Aquifer | Bruce (FedUni, NGIS), Sylvain (BRGM) |
+| | <span style="line-height: 22px; background-color: transparent;">GW_ManagementArea</span> | Sylvain (BRGM), Alex (GNS) |
+| *Constituent* | GW_ChemicalConstituent | Bruce (FedUni) |
+| *Flow* | GW_WaterBudget | Alex (GNS) in GW_ManagementArea |
+| *Well* | GW_Well | Eric (NRCan), Alex (GNS), Bruce (NGIS, FedUni), Sylvain (BRGM) ... |
+| | GW_MonitoringSite | Sylvain (BRGM), Alex (NZ), ... |
+| *Well Construction* | GW_WellConstruction | Eric (NRCan), Bruce (NGIS, FedUni)... |
+
+---++ *Examples*
+
+Instance documents are located in SVN, : https://xp-dev.com/svn/gwml2/Documents/instance/     examples below might be out of date
+   1 Nucleus package
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/instances/app_ext_zone.xml][Aquifer System]]: based on [[%ATTACHURL%/app_ext_zone.pdf][GIN unit]]. [Main.EricBoisvert - 10 Jun 2014]
+      * [[%ATTACHURL%/BRGM_Aquifer_light.xml][GW_Aquifer]] : based [[http://reseau.eaufrance.fr/geotraitements/bdlisa/files/entite/107AK01.pdf][BDLISA]] [Main.SylvainGrellet - 08 Aug 2014]
+      * [[%ATTACHURL%/BRGM_ManagementArea_light.xml][GW_ManagementArea]] : based on EU Water Framework Directive Ground Water Body [Main.SylvainGrellet - 08 Aug 2014]
+      * <a href="https://xp-dev.com/svn/gwml2/Documents/instance/GW_ManagementArea_GNS_uc2.xml" target="_blank" title="GW_ManagementArea_GNS_uc2.xml">GW_ManagementArea</a> : incl water budget, resembling (ground) water management zone (often congruent with catchments) used in NZ -- Main.AlexKmoch - 02 Jul 2015
+      * [[%ATTACHURL%/GWML2-GW_Aquifer-FedUni.xml][GWML2-GW_Aquifer-FedUni.xml]] : GW_Aquifer example and mapping comments for Federation University database (with other contained features byReference) -- Main.BruceSimons - 03 Sep 2014
+   1 Well package
+      * [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/instances/ab.ww.402557.xml][Water well]] based on [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gin/wfs/gin?REQUEST=GetFeature&INFO_FORMAT=text/html&FID=ab.ww.402557][ab.ww.402557]] ( [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gin/wfs/gin?REQUEST=GetFeature&INFO_FORMAT=text/xml&FID=ab.ww.402557][GWML 1]]) - includes construction. [Main.EricBoisvert - 10 Jun 2014]
+      * <a href="https://xp-dev.com/svn/gwml2/Documents/instance/GW_Well_GNS_uc1.xml" target="_blank" title="GW_Well_GNS_uc1.xml">GW_Well</a> in the Horowhenua area (with geology log) -- Main.AlexKmoch - 02 Jul 2015
+      * [[%ATTACHURL%/BRGM_Well_light.xml][GW_Well]] based on national [[http://www.ades.eaufrance.fr/FichePtEau.aspx?code=01846X0361/P1&type_pt_eau=2][BSS Eau]] [Main.SylvainGrellet - 08 Aug 2014]
+      * [[%ATTACHURL%/GWML2-GW_Well-FedUni.xml][GWML2-GW_Well-FedUni.xml]] - GWML2 GW_Well example and mapping comments for Federation University database (with other contained features byReference) -- Main.BruceSimons - 03 Sep 2014
+      * <a href="https://xp-dev.com/svn/gwml2/Documents/instance/GW_MonitoringSite_GNS_uc1.xml" target="_blank" title="GW_MonitoringSite_GNS_uc1.xml">GW_MonitoringSite</a> monitoring well, NZ -- Main.AlexKmoch -- Main.AlexKmoch - 02 Jul 2015
+      * [[%ATTACHURL%/GWML2-GW_MonitoringSite-FedUni.xml][GWML2-GW_MonitoringSite-FedUni.xml]] : GW_MonitoringSite example and mapping comments for Federation University database (with other contained features byReference) -- Main.BruceSimons - 03 Sep 2014
+      * <a href="https://xp-dev.com/svn/gwml2/Documents/instance/GW_Spring_GNS_uc1.xml" target="_blank" title="GW_Spring_GNS_uc1.xml">GW_Spring</a> Te Waikoropupu Springs (Pupu Springs, NZ) -- Main.AlexKmoch -- Main.AlexKmoch - 02 Jul 2015
+      * [[%ATTACHURL%/GWML2-Spring-FedUni.xml][GWML2-Spring-FedUni.xml]] : GW_Spring example and mapping comments for Federation University database (with other contained features byReference) -- Main.BruceSimons - 03 Sep 2014
+      * [[%ATTACHURL%/GWML2-GeologyLog-FedUni.xml][GWML2-GeologyLog-FedUni.xml]] GW_GeologyLog example and mapping comments for Federation University database (with other contained features byReference) -- Main.BruceSimons - 03 Sep 2014
+      * <p> DataRecord definitions : [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/instances/earthMaterial.xml][EarthMaterial ]]and [[http://ngwd-bdnes.cits.nrcan.gc.ca/service/gwml/schemas/instances/geologicUnit.xm][GeologicUnit]] (According to clause 8.2.1 of OGC 08-094-r1 / SWE Common Data Model)</p>
+   1 Well Construction package
+      * [[%ATTACHURL%/GWML2-Borehole-FedUni.xml][GWML2-Borehole-FedUni.xml]] GWML2 Borehole example and mapping comments for Federation University database (with other contained features byReference) -- Main.BruceSimons - 03 Sep 2014
+   1 Constituent package
+      * [[%ATTACHURL%/GWML2-GW_Constituent-FedUni.xml][GWML2-GW_Constituent-FedUni.xml]] : example and mapping comments for Federation University database (with other contained features byReference) -- Main.BruceSimons - 03 Sep 2014
+   1 Flow package
+      * <a href="https://xp-dev.com/svn/gwml2/Documents/instance/GW_ManagementArea_GNS_uc2.xml" target="_blank" title="GW_WaterBudget in GW_ManagementArea_GNS_uc2.xml">GW_WaterBudget</a> work in progress (includes GW_Recharge example) -- Main.AlexKmoch -- Main.AlexKmoch - 02 Jul 2015
+      * [[%ATTACHURL%/GWML2-GW_InterFlow_FedUni.xml][GWML2-GW_InterFlow_FedUni.xml]]: Example GW_Discharge, GW_Recharge based on January 1993 Lake Murdeduke data, FedUni -- Main.BruceSimons - 08 Aug 2014
+
+   * [[%ATTACHURL%/BRGM_Aquifer_light.xml][BRGM_Aquifer_light.xml]]: Aquifer from national BD LISA (Base de Données des Limites des Systèmes Aquifères) database
+
+   * [[%ATTACHURL%/BRGM_ManagementArea_light.xml][BRGM_ManagementArea_light.xml]]: BRGM GW_ManagementArea based on EU Water Framework Directive Ground Water Body
+
+   * [[%ATTACHURL%/BRGM_Well_light.xml][BRGM_Well_light.xml]]: BRGM from French national BSS (Banque Nationale du Sous-Sol) includes piezometer, construction, link to the Aquifer described above.
+   1 Related Examples
+      * [[%ATTACHURL%/GWML2-OM_Observation-FedUni.xml][GWML2-OM_Observation-FedUni.xml]] : OM_Observation water well example observations and mapping comments for Federation University database (with other contained features byReference) -- Main.BruceSimons - 03 Sep 2014
+      * [[%ATTACHURL%/GWML2-SF_Specimen-FedUni.xml][GWML2-SF_Specimen-FedUni.xml]] : SF_Specimen water well example specimen and mapping comments for Federation University database (with other contained features byReference) -- Main.BruceSimons - 03 Sep 2014
+
+%META:FILEATTACHMENT{name="app_ext_zone.pdf" attachment="app_ext_zone.pdf" attr="" comment="Instance example for Hydrogeologic units" date="1402401228" path="app_ext_zone.pdf" size="204521" user="EricBoisvert" version="1"}%
+%META:FILEATTACHMENT{name="GWML2-GW_InterFlow_FedUni.xml" attachment="GWML2-GW_InterFlow_FedUni.xml" attr="" comment="Example GW_Discharge, GW_Recharge based on January 1993 Lake Murdeduke data, FedUni" date="1407475537" path="GWML2-GW_InterFlow_FedUni.xml" size="6601" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="BRGM_Aquifer_light.xml" attachment="BRGM_Aquifer_light.xml" attr="" comment="Aquifer from national BD LISA (Base de Données des Limites des Systèmes Aquifères) database" date="1407530480" path="BRGM_Aquifer_light.xml" size="3784" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="BRGM_ManagementArea_light.xml" attachment="BRGM_ManagementArea_light.xml" attr="" comment="BRGM GW_ManagementArea based on EU Water Framework Directive Ground Water Body" date="1407530547" path="BRGM_ManagementArea_light.xml" size="1859" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="BRGM_Well_light.xml" attachment="BRGM_Well_light.xml" attr="" comment="BRGM from French national BSS (Banque Nationale du Sous-Sol) includes piezometer, construction, link to the Aquifer described above." date="1407530592" path="BRGM_Well_light.xml" size="8861" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="gwml2-nucleus.xsd" attachment="gwml2-nucleus.xsd" attr="" comment="Revised xsd to fix association classes" date="1408327742" path="gwml2-nucleus.xsd" size="35547" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GWML2-GW_Well-FedUni.xml" attachment="GWML2-GW_Well-FedUni.xml" attr="" comment="GW_Well with other features byReference" date="1409784233" path="GWML2-GW_Well-FedUni.xml" size="24267" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GWML2-Borehole-FedUni.xml" attachment="GWML2-Borehole-FedUni.xml" attr="" comment="FedUni GWML2 Borehole mapping example" date="1409784859" path="GWML2-Borehole-FedUni.xml" size="20008" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GWML2-GW_Aquifer-FedUni.xml" attachment="GWML2-GW_Aquifer-FedUni.xml" attr="" comment="GWML2 GW_Aquifer Federation university mapping" date="1409785048" path="GWML2-GW_Aquifer-FedUni.xml" size="35815" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GWML2-GW_MonitoringSite-FedUni.xml" attachment="GWML2-GW_MonitoringSite-FedUni.xml" attr="" comment="GW_MonitoringSite Federation University example" date="1409785392" path="GWML2-GW_MonitoringSite-FedUni.xml" size="7726" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GWML2-Spring-FedUni.xml" attachment="GWML2-Spring-FedUni.xml" attr="" comment="GW_Spring Federation University example" date="1409785546" path="GWML2-Spring-FedUni.xml" size="7776" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GWML2-GW_Constituent-FedUni.xml" attachment="GWML2-GW_Constituent-FedUni.xml" attr="" comment="GW_Constituent Federation University example" date="1409785858" path="GWML2-GW_Constituent-FedUni.xml" size="11495" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GWML2-GeologyLog-FedUni.xml" attachment="GWML2-GeologyLog-FedUni.xml" attr="" comment="GW_GeologyLog Federation University example (with FoI = GW_Well)" date="1409795477" path="GWML2-GeologyLog-FedUni.xml" size="20968" user="BruceSimons" version="2"}%
+%META:FILEATTACHMENT{name="GWML2-OM_Observation-FedUni.xml" attachment="GWML2-OM_Observation-FedUni.xml" attr="" comment="OM_Observation Federation University borehole observation example" date="1409786117" path="GWML2-OM_Observation-FedUni.xml" size="31232" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GWML2-SF_Specimen-FedUni.xml" attachment="GWML2-SF_Specimen-FedUni.xml" attr="" comment="SF_Specimen Federation university borehole example" date="1409786203" path="GWML2-SF_Specimen-FedUni.xml" size="8409" user="BruceSimons" version="1"}%

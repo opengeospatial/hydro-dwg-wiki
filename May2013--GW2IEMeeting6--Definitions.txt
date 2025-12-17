@@ -1,0 +1,66 @@
+%META:TOPICINFO{author="BoyanBrodaric" comment="reprev" date="1369319884" format="1.1" reprev="5" version="5"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *GW2IE Meeting 6* *-- Thurs 23 May 2013 -- Entity List*
+---++ *Agenda*
+   * Welcome
+   * OGC status update
+      * wiki problems?
+   * Discussion
+      * Report from groups on the definitions for the [[Gwml2ConsolFeatureList][Entity List]]
+      * Plan to conclude defs and begin modeling
+      * Face-to-face meeting?
+   * Next meeting
+      * Tues 18 June 2013
+---++ *Participants*
+   * Click here for the [[http://doodle.com/wsftiz46c4iuhgru][Doodle poll]]
+
+---++ *Connection Instructions*
+   * *Date*: Thurs 23 May 2013
+   * *Time*: 8:00 AM Eastern Daylight Time
+   * *Screen sharing (Webex):*
+      * <strong>**IMPORTANT-- APPLET MUST BE INSTALLED FIRST:**</strong>
+         * go to [[https://pwgsc-nh.webex.com/mw0306ld/mywebex/default.do?siteurl=pwgsc-nh]]
+         * on the left menu click on <b>Support </b>and<b> Downloads</b>
+         * install *Meeting Center Application*
+      * <b>Meeting Topic: </b>GW2IE May meeting
+      * *Meeting Number*: 803 388 928
+      * *Meeting Password*: ogc
+      * *Meeting* *URL*: click below, then enter name, email, password, and click "<b>Join Now"</b>:
+         * https://pwgsc-nh.webex.com/pwgsc-nh/j.php?ED=205653102&UID=0&PW=NODFmYWFhY2Yy&RT=NCMxMQ%3D%3D
+   * *Teleconference:*
+      * Dial your local number (see table below) and the use the passcode *616269*
+---+++ !FreeConferenceCall.com
+| *!FreeConferenceCall.com #1* ||||
+| *Country* | *Conference Number* | *Country* | *Conference Number* |
+| Australia* | +61 1300 558 602 | Japan | +81 (0) 3-5050-5053 |
+| Austria | +43 (0) 1 2650500 | Korea | +82 (0) 70-7917-6500 |
+| Belgium | +32 (0) 3 294 11 60 | Malaysia | +60 (0) 11-1146 0010 |
+| Brazil | +55 21 2391-8188 | Mexico | +52 (0) 899 274 4042 |
+| Bulgaria | +359 (0) 2 437 2540 | Netherlands | +31 (0) 20 322 3000 |
+| Canada*** | +1 559-546-1300 | Norway | +47 56 90 10 20 |
+| Croatia | +385 (0) 21 770 719 | Poland | +48 22 116 80 20 |
+| Czech Republic | +420 225 989 110 | Portugal | +351 210 051 180 |
+| Denmark | +45 78 77 25 22 | Romania | +40 (0) 31 780 7000 |
+| Finland | +358 (0) 9 74790022 | Slovenia | +386 (0) 1 828 02 25 |
+| France | +33 (0) 1 80 14 11 00 | South Africa | +27 (0) 87 825 0100 |
+| GCC/Arabian Peninsula**** | +973 1656 8300 | Spain | +34 911 19 67 00 |
+| Germany | +49 (0) 228 5343020 | Sweden | +46 (0) 8 124 107 04 |
+| Hungary | +36 1 987 6825 | Switzerland | +41 (0) 44 595 90 00 |
+| Ireland | +353 (0) 90 646 4151 | Turkey | +90 (0) 212 988 1703 |
+| Israel | +972 (0) 76-599-0000 | United Kingdom** | +44 (0) 7848 432900 |
+| Italy | +39 (0) 055 464 0570 | United States | +1 760-569-7100 |
+*This number is not accessible when calling from outside of Australia.
+
+**This is a mobile dial-in number. Please check with your phone provider for mobile calling rates.
+
+*** This is a U.S. dial in number.
+---++ Action Items
+
+<div id="ctl00_ContentPlaceHolder1_Div2">
+   * <p>revise entity list proposal, as per meeting discussions</p>
+   * <p>notify !GW2IE members of 1 week voting/comment period</p>
+   * <p>resolve outstanding issues after open period</p>
+   * <p>initiate modeling prior to next meeting</p>
+
+-- Main.BoyanBrodaric - 17 May 2013
+</div>

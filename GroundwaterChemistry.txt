@@ -1,0 +1,16 @@
+%META:TOPICINFO{author="FrancoisLetourneau" comment="save topic" date="1372345954" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="Gwml2FinalFeaturesList"}%
+---+ Groundwater Chemistry
+
+*Definition*: The characterisation of the chemical composition of the groundwater, both natural and man-made.
+
+*Properties*:
+   * general description
+   * analyte
+   * method
+   * value (concentration)
+   * operator (=, &gt;, &lt;)
+   * uncertainty
+   * uncertainty operator (+-, =, &lt;, &gt;)
+   * timestamp
+- Main.FrancoisLetourneau - 27 Jun 2013

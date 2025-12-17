@@ -1,0 +1,66 @@
+%META:TOPICINFO{author="PaulSheahan" comment="save topic" date="1341564723" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="RGSWorkshopRatingsNotes"}%
+---+ Gaugings scope
+
+   1 *Gaugings by themselves or in relation to ratings?*
+      1 A block of all RatingObservations with reference to rating
+      1 A rating contains relevant RatingObservations
+      1 Inline or external block
+   1 *RatingObservations status*
+      1 Included in rating deveopment
+      1 Excluded from rating development
+      1 rgs-27
+   1 *Specific attributes/metadata, e.g.*
+      1 Control conditions, weed growth, ice, etc.
+         1 rgs-29
+      1 Flow, Sediment, Quality, Ecological types as meta types?
+         1 rgs-31
+   1 *Use of instance for identifying specific sensors/devices from a measuring point/location*
+   1 *Definition of rating observations that are relevant to a rating*
+      1 RatingObservations that occur in the rating period of application?
+      1 Out of period RatingObservations that are used?
+      1 rgs-27
+   1 *Generically an x-y result?*
+      1 rgs-33
+   1 *Is the method of creating the gauging in scope? Details of the observations taken to determine the result?*
+      1 rgs-29
+   1 *On site measurement (site visit)*
+      1 rgs-28
+   1 *Handle simulated gaugings (from a model)?*
+      1 Yes, procedure would describe the method of creation.
+      1 rgs-29
+   1 *Synchronisation. E.g. where gauging takes an hour, is it being synced with the stage. Begin and end gauge height.*
+      1 Gauging start and end time
+      1 Gauging application time
+      1 rgs-29
+   1 *Name*
+      1 <span class="WYSIWYG_COLOR" style="color: slategray;">RatingPairs</span>
+      1 __RatingObservations__
+      1 <span class="WYSIWYG_COLOR" style="color: slategray;">GaugeObservations</span>
+      1 <span class="WYSIWYG_COLOR" style="color: slategray;">ControlObservation</span>
+      1 <span class="WYSIWYG_COLOR" style="color: slategray;">Gauging</span>
+   1 *Observers assessment of RatingObservation quality or usability - text description.*
+   1 *Quality*
+      1 Very subjective -- egos get in the way! (Staff completing gaugings assessing their work as good)
+      1 Adherence to organisational standards
+      1 Good measurement of bad conditions?
+      1 Nominal range of uncertainty (0-5, 5-10, 10-15%) & a quality category
+      1 Need to be able to handle future methods for tracking uncertainty (e.g. ADCP estimation)
+   1 *Core required types*
+      1 Stream state, rising, falling, steady
+      1 Begin, end date, Discharge date (applied time)
+      1 Used outside its period of applicablity
+      1 Control conditions (clear, blocked, backwater affected etc.), conditions that are different from
+         1 Could be booleans, yes/no
+      1 Information that assists in deciding if the rating observation should be used in rating
+      1 Gauge height change during gauging
+      1 Aggregation method
+         1 Weighting discharge against the stage change period
+      1 Measurement procedure used
+         1 Volumetric
+         1 A-V, ADCP
+         1 Mechanical meter
+         1 Tracer
+         1 Beer bottle
+      1 How to ensure we know what gaugings are being ????
+-- Main.PaulSheahan - 06 Jul 2012

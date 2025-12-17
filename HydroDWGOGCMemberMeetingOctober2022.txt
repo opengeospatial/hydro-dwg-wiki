@@ -1,0 +1,26 @@
+%META:TOPICINFO{author="SylvainGrellet" comment="reprev" date="1664978659" format="1.1" reprev="4" version="4"}%
+%META:TOPICPARENT{name="WebHome"}%
+<h2 id='Meeting_details_at_Charlotte_TC_44_10_45_14_December_44_2018'>Hydrology Domain Working Group</h2>
+---++ Singapore OGC Member Meeting, 3-7 October, 2022
+
+Venue: virtual -- no on-site meeting
+
+Time: 2022-10-05 : 08:00 - 10:00 AM [EDT - US/Eastern]
+
+GoToMeeting details on OGC portal [[https://portal.ogc.org/index.php?m=calendar&a=view&event_id=78403][here]]. Register your attendance [[https://portal.ogc.org/index.php?m=projects&a=view&project_id=301&tab=6][here]].
+---+++ *Draft meeting agenda*
+
+45 minutes: Modeling framework and river corridors application with HY_Features Engineering Report Presentation
+
+30 minutes: Surface water - Groundwater Feature Relation Discussion
+
+45 minutes: Water Quality IE
+   * [[%ATTACHURL%/HF_RC_ER_HDWG_slides.pptx][HF_RC_ER_HDWG_slides.pptx]]: hydrofabric ER presentation
+
+   * [[%ATTACHURL%/20221005_surface_ground_water_relation_Grellet.pptx][20221005_surface_ground_water_relation_Grellet.pptx]]: Surface Ground Water Feature interaction Data Model
+
+   * [[%ATTACHURL%/20221005_WaterQuality_IE_update_Boston_Grellet_Onda.pptx][20221005_WaterQuality_IE_update_Boston_Grellet_Onda.pptx]]: Water Quality IE status update
+
+%META:FILEATTACHMENT{name="HF_RC_ER_HDWG_slides.pptx" attachment="HF_RC_ER_HDWG_slides.pptx" attr="" comment="hydrofabric ER presentation" date="1664970362" path="HF_RC_ER_HDWG_slides.pptx" size="5473890" user="DavidBlodgett" version="2"}%
+%META:FILEATTACHMENT{name="20221005_surface_ground_water_relation_Grellet.pptx" attachment="20221005_surface_ground_water_relation_Grellet.pptx" attr="" comment="Surface Ground Water Feature interaction Data Model" date="1664978299" path="20221005_surface_ground_water_relation_Grellet.pptx" size="19817539" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="20221005_WaterQuality_IE_update_Boston_Grellet_Onda.pptx" attachment="20221005_WaterQuality_IE_update_Boston_Grellet_Onda.pptx" attr="" comment="Water Quality IE status update" date="1664978659" path="20221005_WaterQuality_IE_update_Boston_Grellet_Onda.pptx" size="3989328" user="SylvainGrellet" version="1"}%

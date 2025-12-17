@@ -1,0 +1,15 @@
+%META:TOPICINFO{author="DavidLemon" comment="reprev" date="1313459567" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++ Meeting details
+
+*Time:* June 15, 2011, 13:00-15:00
+
+*Venue:* OGC Technical Committee Meeting in Taichung. [[http://www.opengeospatial.org/event/1106tc][TC Meeting Info]] [[http://www.opengeospatial.org/event/1106tcagenda][TC Meeting Agenda]]
+
+---++ Agenda
+   1 Chen-Yu Hao - Mobile Water Resource Information Integration Management in Taiwan
+   1 Satoshi Yamaguchi and Tsutomu Ikeda - Building flood forecasting system -a case study in Japan
+   1 Peter Fitch - Boulder Hydrology Summit
+Peter Fitch (CSIRO) has kindly offered to chair the session.
+
+-- Main.DavidLemon - 16 Aug 2011

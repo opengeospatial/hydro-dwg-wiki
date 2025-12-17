@@ -1,0 +1,13 @@
+%META:TOPICINFO{author="KevinStegemoller" date="1760136726" format="1.1" reprev="1" version="2"}%
+%META:TOPICPARENT{name="WorkingGroupMeetings"}%
+---+ Athens TC meeting - 2009-03-31
+
+Athens TC meeting - 2009-03-31
+
+%META:FILEATTACHMENT{name="WISE_OGC_March_2009.pptx" attachment="WISE_OGC_March_2009.pptx" attr="" comment="EEA/WISE (Stefan Jensen)" date="1239173311" path="WISE_OGC_March_2009.pptx" size="3315073" stream="WISE_OGC_March_2009.pptx" tmpFilename="/tmp/lWLjSrdJY3" user="Main.SimonCox" version="1"}%
+%META:FILEATTACHMENT{name="INSPIRE_Hydrography_theme.ppt" attachment="INSPIRE_Hydrography_theme.ppt" attr="" comment="INSPIRE (Andrew Woolf)" date="1239173737" path="INSPIRE_Hydrography_theme.ppt" size="3652096" stream="INSPIRE_Hydrography_theme.ppt" tmpFilename="/tmp/S6URCAlk2G" user="Main.SimonCox" version="1"}%
+%META:FILEATTACHMENT{name="WMOConceptual_modelling.ppt" attachment="WMOConceptual_modelling.ppt" attr="" comment="WMO Conceptual Modelling (Chris Little)" date="1239173795" path="WMOConceptual_modelling.ppt" size="306176" stream="WMOConceptual_modelling.ppt" tmpFilename="/tmp/E5pC1xA8G9" user="Main.SimonCox" version="1"}%
+%META:FILEATTACHMENT{name="WMO_Core_Metadata.ppt" attachment="WMO_Core_Metadata.ppt" attr="" comment="WMO Core Hydrology Metadata (Irina Dornblut)" date="1239173899" path="WMO_Core_Metadata.ppt" size="1992192" stream="WMO_Core_Metadata.ppt" tmpFilename="/tmp/MGabYLsxTy" user="Main.SimonCox" version="1"}%
+%META:FILEATTACHMENT{name="2009_Athens_WaterML_Valentine.ppt" attachment="2009_Athens_WaterML_Valentine.ppt" attr="" comment="CUAHSI/WaterML (Ilya Zaslavsky)" date="1239174335" path="2009_Athens_WaterML_Valentine.ppt" size="6221312" stream="2009_Athens_WaterML_Valentine.ppt" tmpFilename="/tmp/lpulUGhzjd" user="Main.SimonCox" version="1"}%
+%META:FILEATTACHMENT{name="2009_Athens_WDTF-WaterML_Cox.ppt" attachment="2009_Athens_WDTF-WaterML_Cox.ppt" attr="" comment="CSIRO/WDTF/WaterML (Simon Cox)" date="1239174707" path="2009_Athens_WDTF-WaterML_Cox.ppt" size="981504" stream="2009_Athens_WDTF-WaterML_Cox.ppt" tmpFilename="/tmp/dPj50zVJfp" user="Main.SimonCox" version="1"}%
+%META:FILEATTACHMENT{name="2009_Athens_Hydrology_DWG_Report.ppt" attachment="2009_Athens_Hydrology_DWG_Report.ppt" attr="" comment="Hydrology DWG/ad-hoc agenda and report" date="1239174778" path="2009_Athens_Hydrology_DWG_Report.ppt" size="297984" stream="2009_Athens_Hydrology_DWG_Report.ppt" tmpFilename="/tmp/9Z7leGF2oL" user="Main.SimonCox" version="1"}%

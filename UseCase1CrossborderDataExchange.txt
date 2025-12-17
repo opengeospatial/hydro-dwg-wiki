@@ -1,0 +1,72 @@
+%META:TOPICINFO{author="CarstenHeidmann" comment="reprev" date="1304521732" format="1.1" reprev="21" version="22"}%
+%META:TOPICPARENT{name="SurfacewaterInteroperabilityExperiment"}%
+---+++ Description
+
+Test !WaterML2.0 with surface water data by disseminating surface water data from Rhin - Rhein - between Germany & France to all participants using OGC SOS, WFS, WMS web services and !WaterML2.0 encoding. This will additionally demonstrate cross border surface water data interoperability.
+
+---+++ Participants and contact persons
+   * DLZ-IT: German Federal Waterways Engineering and Research Institute (Dietmar Mothes)
+   * IOW-Sandre: International Office for Water - Sandre (Sylvain Grellet)
+   * KISTERS AG (Michael Natschke, Stefan Fuest)
+   * 52north (Arne Bröring, Simon Jirka)
+   * disy Informationssysteme (Carsten Heidmann)
+
+---+++ Contributing countries
+   * France
+   * Germany
+   * The Netherlands (provided through Germany)
+There are no contacts yet to Switzerland. The Netherlands are kept informed (Contact to Martijn van Dijk from Rijkswaterstaat by Carsten Heidmann and Bernd Mörstedt (DLZ-IT)) about the progress of the IE.
+---+++ Resources
+
+Mailing list: https://lists.opengeospatial.org/mailman/listinfo/sw.ie.case1
+---+++ Meetings
+   * [[EuroIETelco20100412][Telco: April 12th, 2010]]
+   * [[EuroIETelco20100630][Telco: June 30th, 2010]]
+   * [[EuroIETelco20100805][Telco: August 5th, 2010]]
+   * [[EuroIETelco20100819][Telco: August 19th, 2010]]
+   * [[EuroIETelco20100902][Telco: September 2nd, 2010]]
+   * Telco: September 16th, 2010
+   * Telco: September 30th, 2010
+   * Telco: October 14th, 2010
+   * Telco: November 10th, 2010
+   * Telco: November 17th, 2010
+   * [[EuroIETelco20101124][Telco: November 24th, 2010]]
+   * [[EuroIETelco20110112][Telco: January 12th, 2011]]
+   * [[EuroIETelco20110215][Telco: February 15th, 2011]]
+   * Upcoming: [[EuroIETelco20110224][Telco: February 24th, 2011]]
+
+---+++ Data Sources
+| *Country* | *Participant* | *Data Source* | *Data Type* |
+| Germany | DLZ-IT | GKINFO | near real time |
+| The Netherlands | DLZ-IT | (GKINFO) | archived data included in GKINFO on a ??? level |
+| France | IOW-Sandre | Banque Hydro+Vigicrue | near real time data |
+ 
+---+++ Technology
+| *Country* | *Participant* | *Software* |
+| Germany | 52°north | SOS server based on 52°north software |
+| Germany | 52°north | web client for !WaterML2.0 datasources |
+| Germany | KISTERS AG | SOS server and client software |
+| Germany | disy Informationssysteme GmbH | CSW implementation |
+---+++ SOS Instances
+
+[[http://sensorweb.demo.52north.org:80/PegelOnlineSOSv2/sos][PEGELONLINE]]
+
+[[http://services.sandre.eaufrance.fr/52nSOSv3/sos?request=GetCapabilities&service=SOS][SANDRE]]
+
+[[http://kiwis.dlz-it.de:8080/KiWIS/KiWIS?service=SOS&request=GetCapabilities&datasource=2][KISTERS]]
+
+[[http://kiwis.dlz-it.de:8080/KiWIS/][Overview page at KISTERS]]
+
+[[http://kiwis.dlz-it.de:8080/KiWIS/][Overview Page at DLZ-IT]]
+---+++ Clients
+
+[[http://sensorweb.demo.52north.org/SOSclient/][52north client]]
+
+[[http://crossborder-ie.disy.net/ThinSweClient2.0][52north client hosted by disy]]
+---+++ Other Discussions
+
+[[UseCase1SOSTermsAndFeatureModel][Usage of the INSPIRE Feature Model in Use Case 1]]
+
+-- Main.CarstenHeidmann - 01 Apr 2010
+
+%META:TOPICMOVED{by="CarstenHeidmann" date="1277886014" from="HydrologyDWG.EuropeanCrossborderExperiment" to="HydrologyDWG.UseCase1CrossborderDataExchange"}%

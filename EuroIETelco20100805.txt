@@ -1,0 +1,28 @@
+%META:TOPICINFO{author="CarstenHeidmann" date="1281078829" format="1.1" version="1.1"}%
+%META:TOPICPARENT{name="UseCase1CrossborderDataExchange"}%
+---+ Use Case 1 Phone Conference: 05/08/2010, 13:00-13:30 (CEST)
+
+---++ Participants
+   * Carsten Heidmann (disy)
+   * Chris Michl (DLZ-IT BMVBS)
+   * Simon Jirka (52°north)
+   * Sylvain Grellet (IOW-Sandre)
+
+---++ Agenda
+   * choice of SOS implementation
+   * roadmap to Toulouse
+
+---++ Results
+   * SOS servers
+      * Simon J.: at the moment there is the choice to use the existing CSIRO implementation as-is or the recent version of the 52°north implementation. 52°north will not provide a SOS version witbh O&M2 and the actual schemas of WaterML2.0 for a variety of reasons
+      * Decision: we will take an iterative approach.
+         * In step 1, we will use the existing implementation of the 52°north SOS, which allows us to set up working instances at IOW Sandre and the Service Center IT quite fast. Additionally, there are a number of existing cleints able to consume this format. 52°north will support IOW Sandre and the Service Center IT in the necessary implementation steps
+         * Step 2 will start when WaterML2.0 becomes more stable, presumably in late fall/early winter. 52°north is planning to adapt the schemas at this time and provide an WaterML2.0 SOS. This step is dependant on mapower and partially funding
+      * Suggestion to WaterML2.0 group: release an intermediate version of WaterML2.0 after Toulouse TC/before Sydney TC
+      * The SOS implementations at the Service Center IT and IOW Sandre will be available at the end of August
+      * Sylvain mentions that there will only be a small number of measurements available in the first version, since the collaboration with the hydrological service is not yet fully functional (Sylvain, please correct if this is not the right description)
+   * WebClient
+      * 52°north is finalizing the WebClient at the moment. It is planned to have a consolidated version available around end of August/begin September. disy will then set up the web client on a public web server. The installation has to be available at its latest on September 10th in order to have suficient time left for testing before the Toulouse TC
+      * the web client uses OSM as background map right now. Simon J. checks if it is possible to use an arbitrary WMS as background map
+      * the use of WFS in the web client is not possible at the moment. It would be a nice feature to have the feature descriptions available as WFS in the client (preferrably an INSPIRE compliant WFS using the INSPIRE Hydrology Data Specification)
+   * next phone conference is on Thursday, August 19th at 14:00 (CEST)

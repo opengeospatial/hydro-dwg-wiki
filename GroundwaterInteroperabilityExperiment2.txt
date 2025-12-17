@@ -1,0 +1,129 @@
+%META:TOPICINFO{author="BoyanBrodaric" comment="save topic" date="1461675892" format="1.1" reprev="60" version="62"}%
+%META:TOPICPARENT{name="WebHome"}%
+---+ *Groundwater Interoperability Experiment* 2 (!GW2IE)
+
+---++ *Description*
+
+The purpose of this interoperability experiment (IE) is to develop an international information model, and GML appication schema, for groundwater data, by harmonizing and extending existing initiatives such as GWML, the INSPIRE Groundwater Model, and others. The IE was conceived during a session at the OGC Hydrology Domain Working Group workshop at Delft, April 12, 2011.
+---++ <strong>Meetings<br /></strong>
+
+   * [[12April2011--DelftWorkshop]]
+   * [[28June2012--ReadingWorkshop]]
+   * [[23Oct2012--Kick-offMeeting][23Oct2012 GW2IE Meeting 1 (Kick-off)]]
+   * [[Nov2012--GWIEMeeting2--UseCases][Nov2012 GW2IE Meeting 2 (Use-cases)]]
+   * [[Dec2012--GW2IEMeeting3--FeatureList][Dec2012 GW2IE Meeting 3 (Feature List)]]
+   * [[Jan2013--GW2IEMeeting4--ModelComparison][Jan2013 GW2IE Meeting 4 (Feature/Entity List)]]
+   * [[Apr2013--GW2IEMeeting5--Definitions][Apr2013 GW2IE Meeting 5 (Entity List)]]
+   * [[May2013--GW2IEMeeting6--Definitions][May2013 GW2IE Meeting 6 (Entity List)]]
+   * [[June2013--GW2IEMeeting7--Modeling][June2013 GW2IE Meeting 7 (Entity List)]]
+   * [[09Dec2013--GW2IEMeeting8][09Dec2013 GW2IE Meeting 8 (Conceptual Model)]]
+   * [[18Dec2013--GW2IEMeeting9][18Dec2013 GW2IE Meeting 9 (Conceptual Model)]]
+   * [[16Jan2014--GW2IEMeeting10][16Jan2014 GW2IE Meeting 10 (Conceptual Model)]]
+   * [[30Jan2014--GW2IEMeeting11][30Jan2014 GW2IE Meeting 11 (Conceptual Model)]]
+   * [[12Feb2014--GW2IEMeeting12][12Feb2014 GW2IE Meeting 12 (Conceptual Model)]]
+   * [[24Feb2014--GW2IEMeeting13][24Feb2014 GW2IE Meeting 13 (Conceptual Model)]]
+   * [[17Mar2014--GW2IEMeeting14][17Mar2014 GW2IE Meeting 14 (Conceptual Model)]]
+   * [[03Apr2014--GW2IEMeeting15][03Apr2014 GW2IE Meeting 15 (Conceptual Model)]]
+   * [[16Apr2014--GW2IEMeeting16][16Apr2014 GW2IE Meeting 16 (Conceptual Model)]]
+   * [[23Apr2014--GW2IEMeeting17][23Apr2014 GW2IE Meeting 17 (Conceptual Model)]]
+   * [[05-08May2014--GW2IEMeeting18][05-08May2014 GW2IE Meeting 18 (In-person)]]
+   * [[10June2014--GW2IEMeeting19][10June2014 GW2IE Meeting 19 (Logical Model)]]
+   * [[25June2014--GW2IEMeeting20][25June2014 GW2IE Meeting 20 (Logical Model)]]
+   * [[07July2014--GW2IEMeeting21][07July2014 GW2IE Meeting 21 (Report)]]
+   * [[23July2014--GW2IEMeeting22][23July2014 GW2IE Meeting 22 (Report)]]
+   * [[30July2014--GW2IEMeeting23][30July2014 GW2IE Meeting 23 (Report)]]
+   * [[01Oct2014--GW2IEMeeting24][01Oct GW2IE Meeting 24 (Report)]]
+   * [[16Oct2014--GW2IEMeeting25][16Oct GW2IE Meeting 25 (Report)]]
+   * [[29Oct2014--GW2IEMeeting26][29Oct GW2IE Meeting 26 (Report)]]
+   * [[12Nov2014--GW2IEMeeting27][12Nov GW2IE Meeting 27 (Report)]]
+   * [[26Nov2014--GW2IEMeeting28][26Nov GW2IE Meeting 28 (Report)]]
+   * [[10Dec2014--GW2IEMeeting29][10Dec GW2IE Meeting 29 (Report)]]
+   * [[29Jan2015--GW2IEMeeting30][29Jan2015 (Thurs) GW2IE Meeting 30]]
+   * [[05Feb2015--GW2IEMeeting31][05Feb2015 (Thurs) GW2IE Meeting 31]]
+   * [[24Feb2015--GW2IEMeeting32][24Feb2015 (Tues) GW2IE Meeting 32]]
+   * [[05Mar2015--GW2IEMeeting33][05Mar2015 (Thurs) GW2IE Meeting 33]]
+   * [[17Mar2015--GW2IEMeeting34][17Mar2015 (Tues) GW2IE Meeting 34]]
+   * [[14Apr2015--GW2IEMeeting35][14Apr2015 (Tues) GW2IE Meeting 35]]
+   * [[28Apr2015--GW2IEMeeting36][28Apr2015 (Tues) GW2IE Meeting 36]]
+   * [[12May2015--GW2IEMeeting37][12May2015 (Tues) GW2IE Meeting 37]]
+   * [[20May2015--GW2IEMeeting38][20May2015 (Wed) GW2IE Meeting 38]]
+   * [[26May2015--GW2IEMeeting38][26May2015 (Tues) GW2IE Meeting 38]] -- *CANCELLED* --
+   * [[09June2015--GW2IEMeeting39][09June2015 (Tues) GW2IE Meeting 39]]
+   * [[14July2015--GW2IEMeeting40][14July2015 (Tues) GW2IE Meeting 40]]
+   * [[30July2015--GW2IEMeeting41][30July2015 (Thurs) GW2IE Meeting 41]]
+   * [[11Aug2015--GW2IEMeeting42][11Aug2015 (Tues) GW2IE Meeting 42]]
+   * [[25Aug2015--GW2IEMeeting43][25Aug2015 (Tues) GW2IE Meeting 43]]
+   * [[23Sept2015--GW2IEMeeting44][23Sept2015 (Wed) GW2IE Meeting 44 -- Orleans in-person]]
+   * [[04Nov2015--GW2IEMeeting45][04Nov2015 (Wed) GW2IE Meeting 45]]
+   * [[18Nov2015--GW2IEMeeting46][18Nov2015 (Wed) GW2IE Meeting 46]]
+   * [[09Dec2015--GW2IEMeeting47][10Dec2015 (Thurs) GW2IE Meeting 47]]
+   * [[27Jan2016--GW2IEMeeting48][27Jan2016 (Wed) GW2IE Meeting 48]]
+   * [[10Feb2016--GW2IEMeeting49][10Feb206 (Wed) GW2IE Meeting 49]]
+   * [[02Mar2016--GW2IEMeeting50][02Mar2016 (Wed) GW2IE Meeting 50]]
+   * [[30Mar2016--GW2IEMeeting51][30Mar2016 (Wed) GW2IE Meeting 51]]
+   * [[13April2016--GW2IEMeeting52][13April2016 (Wed) GW2IE Meeting 52]] -- *CANCELLED*
+   * [[GroundWaterSWG][see GW SWG for next meetings]]
+
+---++ <strong>Presentations<br /></strong>
+   * HDWG Annual Workshop 2014
+   * AGU 2014
+      * [[https://agu.confex.com/agu/fm14/preliminaryview.cgi/Paper30183][Abstract]]
+      * <a href="https://xp-dev.com/svn/gwml2/Documents/AGU_GW2IE_Poster_2014.pptx" target="_blank">Poster</a> - SVN
+      * <a href="https://agu.confex.com/data/handout/agu/fm14/Paper_30183_handout_1556_0.pdf" target="_blank" title="Poster">Poster</a> - AGU ePoster
+   * OGC
+      * <a href="http://external.opengis.org/twiki_public/pub/HydrologyDWG/GroundwaterInteroperabilityExperiment2/2015_Boulder_Presentation_GWML2IE_v2.ppt" title="Presentation">Presentation</a> - !HydroDWG Boulder June 2015
+      * [[%ATTACHURL%/OGC_2015_Sydney_GWML2-SWG.ppt][OGC_2015_Sydney_GWML2-SWG.ppt]] Sydney December 2015
+   * HWRS2015 Hobart December 2015<br />
+      * [[%ATTACHURL%/hwrs2015_GWML2a.pdf][Abstract]] - HWRS 2015 conference
+      * [[%ATTACHURL%/Simons-HWRS-2015.pptx][Simons-HWRS-2015.pptx]]: Powerpoint presentation for HWRS2015
+      * [[%ATTACHURL%/SIMONS-HWRS2015-paper.pdf][SIMONS-HWRS2015-paper.pdf]]: Published paper for HWRS2015
+
+---++ *Deliverables*
+---+++ Documentation
+   * [[%ATTACHURL%/GroundWaterML2_v0.3.1_DRAFT.pdf][GWML2 Specification v0.3.1 (pdf)]]
+   * [[%ATTACHURL%/GroundWaterML2_v0.3.1_DRAFT.pdf][GWML2 Specification v0.3.1 (docx)]]
+   * Related documents can be found... [[https://xp-dev.com/svn/gwml2/Documents/][here]]
+      * including the latest version of the final !GW2IE report
+   * Known Issues (at conclusion of !GW2IE) [[GW2IE_KnownIssues][...here]]
+
+---+++ Use-cases
+   * [[UseCase1][Use Case 1: Commercial]]
+   * [[UseCase2][Use Case 2: Policy]]
+   * [[UseCase3][Use Case 3: Environmental]]
+   * [[UseCase4][Use Case 4: Scientific]]
+   * [[UseCase5][Use Case 5: Technologic]]
+   * [[CrossCuttingUseCaseIssues][Discussion: cross-cutting issues]]
+
+   * [[UseCaseWebServices][Use Case web services]]
+
+---+++ Required Entities and Definitions
+   * [[gwml2FinalFeaturesList][Final Entity List]]
+---+++ Model Comparison
+   * [[GWIE2-Model-Comparison][Model Comparison]]
+---+++ GWML2 Conceptual Model
+   * [[GWML2-CM-Model][Conceptual Model]]
+---+++ GWML2 Logical (GML) Model
+   * [[GWML2-UML-Model][Logical Model Issues]]
+   * LogicalModelRequirements
+   * [[uml_for_gwml2][Setting UML tool for GWML2]]
+---+++ GWML2 XML Schema and Example Documents
+   * [[GWML2-XML-Schema][XML Schema and Example documents]]
+---+++ Implementation
+   * [[UseCase1Implementation][Use Case 1 Implementation]]
+   * [[UseCase2Implementation][Use Case 2 Implementation]]
+   * [[UseCase3Implementation][Use Case 3 Implementation]]
+   * [[UseCase4Implementation][Use Case 4 Implementation]]
+   * [[UseCase5Implementation][Use Case 5 Implementation]]
+
+   * [[UseCaseWebServices][Use Case web services]]
+
+%META:FILEATTACHMENT{name="GW2IE_Activity_Plan.pdf" attachment="GW2IE_Activity_Plan.pdf" attr="" comment="HDWG !GW2IE Activity Plan (v1.2 15Jan13)" date="1358186836" path="GW2IE_Activity_Plan.pdf" size="95792" user="BoyanBrodaric" version="2"}%
+%META:FILEATTACHMENT{name="2013_GW2IE_Observer_Agreement.doc" attachment="2013_GW2IE_Observer_Agreement.doc" attr="" comment="!GW2IE Participant / Observer Agreement" date="1357752926" path="2013 GW2IE_Observer_Agreement.doc" size="31232" user="BoyanBrodaric" version="1"}%
+%META:FILEATTACHMENT{name="GroundWaterML2_v0.3.1_DRAFT.docx" attachment="GroundWaterML2_v0.3.1_DRAFT.docx" attr="" comment="Draft GWML2 Specification v0.3.1 (doc)" date="1407782248" path="GroundWaterML2_v0.3.1_DRAFT.docx" size="722033" user="BoyanBrodaric" version="1"}%
+%META:FILEATTACHMENT{name="GroundWaterML2_v0.3.1_DRAFT.pdf" attachment="GroundWaterML2_v0.3.1_DRAFT.pdf" attr="" comment="Draft GWML2 Specification v0.3.1 (pdf)" date="1407782280" path="GroundWaterML2_v0.3.1_DRAFT.pdf" size="1095252" user="BoyanBrodaric" version="1"}%
+%META:FILEATTACHMENT{name="AGU_GW2IE_Poster_2014.pptx" attachment="AGU_GW2IE_Poster_2014.pptx" attr="" comment="Beginnings of a poster draft for AGU." date="1417026389" path="AGU_GW2IE_Poster_2014.pptx" size="1439924" user="JessicaLucido" version="1"}%
+%META:FILEATTACHMENT{name="2015_Boulder_Presentation_GWML2IE_v2.ppt" attachment="2015_Boulder_Presentation_GWML2IE_v2.ppt" attr="" comment="Presentation to HydroDWG, Boulder Colorado June 2015" date="1435619069" path="2015_Boulder_Presentation_GWML2IE_v2.ppt" size="520704" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="hwrs2015_GWML2a.pdf" attachment="hwrs2015_GWML2a.pdf" attr="" comment="Abstract for HWRS2015" date="1435894852" path="hwrs2015_GWML2a.pdf" size="78637" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="Simons-HWRS-2015.pptx" attachment="Simons-HWRS-2015.pptx" attr="" comment="Powerpoint presentation for HWRS2015" date="1449750413" path="Simons-HWRS-2015.pptx" size="11473865" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="SIMONS-HWRS2015-paper.pdf" attachment="SIMONS-HWRS2015-paper.pdf" attr="" comment="Published paper for HWRS2015" date="1449750874" path="SIMONS-HWRS2015-paper.pdf" size="884362" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="OGC_2015_Sydney_GWML2-SWG.ppt" attachment="OGC_2015_Sydney_GWML2-SWG.ppt" attr="" comment="" date="1449751193" path="OGC_2015_Sydney_GWML2-SWG.ppt" size="399872" user="BruceSimons" version="1"}%

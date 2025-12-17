@@ -1,0 +1,12 @@
+%META:TOPICINFO{author="TonyBoston" comment="reprev" date="1617835643" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="WebHome"}%
+<h2 id='Hydrology_Domain_Working_Group'>Hydrology Domain Working Group</h2> <h2 id='Meeting_details:'>Workshop topic: Implementing GWML2</h2>
+
+Venue: Gotomeeting: TBA
+
+Time: TBA
+<h3 id='A_42Meeting_Agenda_and_Outcomes_42'> *Meeting Agenda and Outcomes* </h3>
+   * WMO and OGC - Working with GWML2
+   * Implementing support for GWML2 - demonstration applications - TBA
+
+-- Main.TonyBoston - 07 Apr 2021

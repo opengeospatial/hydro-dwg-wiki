@@ -1,0 +1,64 @@
+%META:TOPICINFO{author="BruceSimons" comment="save topic" date="1404884974" format="1.1" reprev="5" version="6"}%
+%META:TOPICPARENT{name="GWML2-UML-Model"}%
+---+ Requirements for the GML encoding of the GroundWaterML2.0-Core Logical Model
+---++ Requirements
+
+A draft of the GroundwaterML2.0-Core GML encoding requirements as specified using the OGC template is attached at: [[%ATTACHURL%/GroundWaterML2-Requirements.docx][GroundWaterML2-Requirements.docx]].
+
+These are summarised in the following UML diagram:
+
+<img alt="Requirements-GWML2-Core.jpg" height="770" src="%ATTACHURL%/Requirements-GWML2-Core.jpg" title="Requirements-GWML2-Core.jpg" width="781" />
+
+-- Main.BruceSimons - 07 Jul 2014
+---+++ Defining the Requirements Classes
+
+The *requirements classes* and corresponding <b>conformance classes </b>need to be structured such that a conformant implementation need only implement those classes that are necessary. So for example a service implementation delivering a GW_ManagementArea feature will need to meet its requirement class in addition to those that that class is dependent on. This means it may not need to provide information on the GW_FluidBody (optional in the UML), but will need to provide, in-line or by reference, a GW_HydrogeoUnit (mandatory in the UML). The content of data types such as 'OM_Measurement' and 'MD_Metadata' may also be specified, either as Requirements or Recommendations.
+
+Components that connect to the implementation therefore have a precise specification of the implementation and can develop their application to match.
+---++ Discussion points:
+---++++ What are Requirements vs Recommendations?
+   1 The proposed <b>pattern </b>is:
+      * the use of Terms from a standard GWML2 vocabulary are "Recommendations";
+      * where the data type refers to an observation the "Requirement" is that the result will be one of either a swe:Quantity or a swe:QuantityRange;
+   * What are the requirements classes required "such that a conformant implementation need only implement those classes that are necessary"?
+---++++ What are the Requirements Classes groupings?
+
+The proposed Requirement Classes are to enable the following as independent implementations:
+   * For *GWML2-Core*, Requirement Classes are suggested to enable any of the following to be configured:
+   1 Types of GW_HydrogeoUnit (GW_Basin, GW_AquiferSystem, GW_Aquifer, GW_ConfiningBed);
+   1 GW_HydrogeoVoid (initial suggestion in Vienna was that this should be in-line with GW_HydrogeoUnit, but mandatory association with GW_FluidBody means that it must also be in-line with that, or have independent identity).
+   1 GW_FluidBody, GW_Constituent, GW_BodySurface
+   1 GW_Divide, GW_BodySurface, GW_FlowSystem, GW_Flow
+   1 GW_ManagementArea, GW_HydrogeoUnit
+   * For<b> GWML2-Constituent</b>, Requirement Classes are suggested to enable any of the following to be configured:
+   1 Types of GW_Constituent (GW_BiologicalConstituent, GW_MaterialConstituent, GW_ChemicalConstituent);
+   * For *GWML2-Flow*, Requirement Classes are suggested to enable any of the following to be configured:
+   1 Types of GW_Flow (GW_InterFlow, GW_Discharge, GW_Recharge, GW_IntraFlow);
+   * For *GWML2-Well*, Requirement Classes are suggested to enable any of the following to be configured:
+   1 GW_Well, Borehole, GW_HydrogeoUnit;
+   1 GW_Well
+   1 GW_MonitoringSite
+   1 GW_Spring, GW_HydrogeoUnit
+   * For *GWML2-GeologyLog*, Requirement Classes are suggested to enable any of the following to be configured:
+   1 <span style="background-color: transparent;">GW_GeologyLog, GeologicFeature,</span>
+   * For *GWML2-WellConstruction*, Requirement Classes are suggested to enable any of the following to be configured:
+   1 Borehole, BoreCollar
+   1 Types of WellConstruction (Screen, Filtration, Casing, Sealing), types of ConstructionComponent (ScreenComponent, FiltrationComponent, CasingComponent, SealingComponent), Borehole, BoreCollar
+-- Main.BruceSimons - 07 Jul 2014
+---++++ OM_Measurement result
+
+Do we want to specify that the OM_Measurement:result must be a swe:Quantity or swe:QuantityRange for every OM_Measurement property?
+
+This will require over-riding the O&M requirement that specifies it must be a gml:MeasureType:
+
+<b>http://www.opengis.net/spec/OMXML/2.0/req/measurement/result-measure </b>The XML element om:result SHALL have a value that matches the content model defined by gml:MeasureType.
+
+If we use swe:Quantity and swe:QuantityRange, is it one or the other or both, and do we specifically preclude gml:MeasureType?
+---++ Requirements Documentation
+   * [[%ATTACHURL%/GroundWaterML2-Requirements.docx][GroundWaterML2-Requirements.docx]]: Draft documentation of the GroundWaterML2.0-Core XML encoding requirements, contained within an OGC Implementation Standard template.
+-- Main.BruceSimons - 07 Jul 2014
+
+%META:FILEATTACHMENT{name="GroundWaterML2-Requirements.docx" attachment="GroundWaterML2-Requirements.docx" attr="" comment="Added WaterWell and GeologicLog RC" date="1404734132" path="GroundWaterML2-Requirements.docx" size="488955" user="EricBoisvert" version="3"}%
+%META:FILEATTACHMENT{name="Requirements-GWML2-Core.jpg" attachment="Requirements-GWML2-Core.jpg" attr="" comment="GWML2 core requirement classes UML" date="1404704627" path="Requirements-GWML2-Core.jpg" size="78538" user="BruceSimons" version="2"}%
+%META:FILEATTACHMENT{name="GWML2-Core-Specification_xmi.xml" attachment="GWML2-Core-Specification_xmi.xml" attr="" comment="UML xmi for GWML2-Core requirements classes" date="1403502569" path="GWML2-Core-Specification_xmi.xml" size="132211" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="Requirements-GWML2-Core_stereotypes-only.jpg" attachment="Requirements-GWML2-Core_stereotypes-only.jpg" attr="" comment="responsibilities hidden for clarification" date="1403666977" path="Requirements-GWML2-Core_stereotypes-only.jpg" size="78850" user="BruceSimons" version="1"}%

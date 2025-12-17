@@ -1,0 +1,97 @@
+%META:TOPICINFO{author="BruceSimons" comment="reprev" date="1432185244" format="1.1" reprev="2" version="2"}%
+%META:TOPICPARENT{name="UseCase5Implementation"}%
+---+ Australian National Groundwater Information System (NGIS) to GWML2 Mapping
+---++ Background
+
+This page contains various mappings between the Australian National Groundwater Information System (NGIS) standard, as implemented in the Bureau of Meteorology's database, and GroundWaterML2 (GWML2). The mappings are presented as UML, as annotated instance examples (XML), and as an excel spreadsheet ( [[https://wiki.csiro.au/download/attachments/671386283/NGIS_GWML_Mapping.xlsx?version=1&modificationDate=1412307902717&api=v2][NGIS_GWML_Mapping.xlsx]]). The UML diagrams are based on the methodology outlined at <a href="https://wiki.csiro.au/display/SIRF/ModelMapping" target="_blank">ModelMapping</a>. The actual UML model contains more information than can be shown in the diagrams.
+
+The mappings were appropriate and valid against GWML2.0 as at 1 October 2014. Subsequent changes to GWML2 have not been incorporated into the mappings presented here.
+---++ GWML2:GW_Well
+
+The GWML2 GW_Well is "A shaft or hole sunk, dug or drilled into the Earth to extract water.", which equates to the NGIS NGIS_Bore feature.
+
+The GW_Well feature has associations with its construction components (gwWellConstruction:Borehole), groundwater fluid (gwWellBody:GW_FluidBody), hydrogeological unit (gwWellUnit:GW_HydrogeoUnit) and geology log (gwWellGeology:GW_GeologyLog).
+
+These are all shown as separate mappings here, but some (such as gwWellConstruction:Borehole, gwWellBody:GW_FluidBody, and gwWellGeology:GW_GeologyLog) are likely to be included in-line with the GW_Well feature when deployed.
+
+[[https://wiki.csiro.au/download/attachments/671386283/NGIS-GW_Well-Mapping.jpg?version=1&modificationDate=1412299101057&api=v2][NGIS-GW_Well-Mapping.jpg]] (UML mapping of NGIS_Bore to GW_Well)
+
+[[%ATTACHURL%/GW_Well_NGIS_uc5-mapping.xml][GW_Well_NGIS_uc5-mapping.xml]] (annotated XML instance of GW_Well and Borehole populated from NGIS data)
+
+<h2 id="Mappings:NGIStoGWML2-GWML2:Borehole">GWML2:Borehole</h2>
+
+GWML2 Borehole captures data relating to the construction components of the GW_Well, such as collar, headworks, screens, casings, filters and seals. These components are specified via the bholeConstruction:WellConstruction feature.
+
+Although shown here with a separate UML Mapping and XML instance document, and in a separate application schema in GWML2, it is anticipated that Borehole and WellConstruction will be delivered in-line with GW_Well rather than by reference.
+
+The NGIS UML mapping is shown in two parts for presentation purposes:
+   1 The NGIS_ConstructionLog to GWML2 Borehole mapping ( [[https://wiki.csiro.au/download/attachments/671386283/NGIS-Borehole-Mapping.jpg?version=1&modificationDate=1412299242533&api=v2][NGIS-Borehole-Mapping.jpg]]);
+   1 The NGIS_ConstructionLog to GWML2 WellConstruction components ( [[https://wiki.csiro.au/download/attachments/671386283/NGIS-Borehole_Component-Mapping.jpg?version=1&modificationDate=1412299442463&api=v2][NGIS-Borehole_Component-Mapping.jpg]]);
+An XML instance of GWML2 Borehole with construction components based on the NGIS data is contained in the GW_Well instance example ( [[%ATTACHURL%/GW_FluidBody-NGIS_uc5-mapping.xml][GW_FluidBody-NGIS_uc5-mapping.xml]]).
+<h2 id="Mappings:NGIStoGWML2-GWML2:GW_GeologyLog">GWML2:GW_GeologyLog</h2>
+
+GW_GeologyLog is a "specialization of the OM_Observation class to allow defining the log start end depth for coverages."
+
+For NGIS, two types of GW_GeologyLog are provided:
+   1 A lithology log based on NGIS_LithologyLog ( [[https://wiki.csiro.au/download/attachments/671386283/NGIS_Lithology-GW_GeologyLog-Mapping.jpg?version=1&modificationDate=1412299932217&api=v2][NGIS_Lithology-GW_GeologyLog-Mapping.jpg]]). The result value for the lithology contains the MajorLithCode, MinorLithCode and Description properties;
+   1 A stratigraphy log based on NGIS_BoreholeLog ( [[https://wiki.csiro.au/download/attachments/671386283/NGIS_Stratigraphy-GW_GeologyLog-Mapping.jpg?version=1&modificationDate=1412299932177&api=v2][NGIS_Stratigraphy-GW_GeologyLog-Mapping.jpg]]). The result value for the stratigraphic log is a reference (http-URI) to the appropriate GW_Aquifer unit based on the HGUNumber and the NGIS_BoreholeLog:Description field.
+An instance document containing examples of these is conyained in the GW_Well instance ( [[%ATTACHURL%/GW_FluidBody-NGIS_uc5-mapping.xml][GW_FluidBody-NGIS_uc5-mapping.xml]]).
+
+---++ GWML2:GW_FluidBody
+
+"A distinct body of some fluid (liquid, gas) that fills the voids of a container such as an aquifer, system of aquifers, water well, etc; in hydrogeology this body is usually constituted from groundwater, but the model allows for other types of fillers e.g. petroleum."
+
+For NGIS the GW_FluidBody information is obtained from properties (HGUTransmissivity, HGUHydraulicK, HGUStorage) contained within the NGIS_HydrogeologicUnit table. GW_FluidBody is referenced from both the GW_Well (gwWellBody) and the GW_HydrogeoUnit (gwUnitFluidBody) features. GW_FluidBody could be established as a an independent feature service or contained in-line in both of these features.
+
+The UML NGIS to GWML2 mapping for GW_FluidBody is [[https://wiki.csiro.au/download/attachments/671386283/NGIS-GW_UnitFluid-Mapping.jpg?version=1&modificationDate=1412299932207&api=v2][NGIS-GW_UnitFluid-Mapping.jpg]] and an example instance at [[%ATTACHURL%/GW_FluidBody-NGIS_uc5-mapping.xml][GW_FluidBody-NGIS_uc5-mapping.xml]].
+---++ GWML2:GW_HydrogeoUnit
+
+The GW_HydrogeoUnit is "Any soil or rock unit or zone which by virtue of its hydraulic properties has a distinct influence on the storage or movement of groundwater". In GWML2 it is an abstract feature, that is made concrete by the GW_Aquifer, GW_ConfingBed, GW_AquiferSystem and GW_Basin classes.
+
+Features in NGIS_HydrogeologicUnit will, depending on their properties, map to the GW_Aquifer, GW_ConfiningBed, GW_AquiferSystem or GW_Basin.
+
+It is anticipated that the NGIS WFS will deliver these features as separate features referenced from GW_Well, rather than in-line.
+
+The NGIS to GWML2 UML mappings for common GW_HydrogeoUnit properties is shown at [[https://wiki.csiro.au/download/attachments/671386283/NGIS-HydrogeoUnit_Common-Mapping.jpg?version=1&modificationDate=1412299442470&api=v2][NGIS-HydrogeoUnit_Common-Mapping.jpg]].
+
+An XML instance document, containing instances of all four GW_HydrogeoUnit concrete feature types is at ( [[%ATTACHURL%/GW_HydrogeoUnit_NGIS_uc5-mapping.xml][GW_HydrogeoUnit_NGIS_uc5-mapping.xml]])
+---+++ GWML2:GW_Aquifer
+
+In GWML 2 a GW_Aquifer is "A body of ground that contains, or potentially contains or contained, sufficient saturated permeable material to yield significant quantities of water to wells and springs".
+
+For NGIS this equates to the hydrogeologic unit (HGU) NGIS_HydrogeologicUnit entries where the HGUAquiferType is not equal to "Aquitard".
+
+The UML mapping between NGIS_HydrogeologicUnit and GW_Aquifer is [[https://wiki.csiro.au/download/attachments/671386283/NGIS-GW_Aquifer-Mapping.jpg?version=1&modificationDate=1412299442480&api=v2][NGIS-GW_Aquifer-Mapping.jpg]].
+---+++ GWML2:GW_ConfiningBed
+
+A GW_ConfiningBed is "A layer of rock having very low porosity and in consequence hydraulic conductivity that hampers the movement of water into and out of an aquifer".
+
+For NGIS this is interpreted as a hydrogeologic unit (HGU) NGIS_HydrogeologicUnit entry where the HGUAquiferType is equal to "Aquitard".
+
+The UML mapping between NGIS_HydrogeologicUnit and GW_ConfiningBed is [[https://wiki.csiro.au/download/attachments/671386283/NGIS-GW_ConfiningBed-Mapping.jpg?version=2&modificationDate=1412636696943&api=v2][NGIS-GW_ConfiningBed-Mapping.jpg]]
+---+++ GWML2:GW_AquiferSystem
+
+"Aquifer system - A body of permeable and poorly permeable material that functions regionally as a water-yielding unit; it comprises two or more permeable beds separated at least locally by confining beds that impede groundwater movement but do not greatly affect the regional hydraulic continuity of the system; includes both saturated and unsaturated parts of permeable material."
+
+For NGIS, GW_AquiferSystems are considered to equate with hydrogeologic complex (HGC) and National Aquifer Framework HGC (NafHGC) entries in NGIS_HydrogeologicUnit.
+
+The UML mapping between NGIS_HydrogeologicUnits and GW_AquiferSystems is [[https://wiki.csiro.au/download/attachments/671386283/NGIS_-GW_AquiferSystem-Mapping.jpg?version=1&modificationDate=1412299442437&api=v2][NGIS_-GW_AquiferSystem-Mapping.jpg]].
+---+++ GWML2:GW_Basin
+
+"A large hydrogeologically defined body of ground typically consisting of hydraulically connected hydrogeological units, whose waters are flowing to a common or multiple outlets, and which is delimited by a groundwater divide."
+
+For NGIS, GW_Basins are considered to map to provinces (ProvName) or National Aquifer Framework provences (NafProvName) entries in NGIS_HydrogeologicUnit.
+
+The UML mapping between NGIS_HydrogeologicUnits and GW_Basin is [[https://wiki.csiro.au/download/attachments/671386283/NGIS-GW_Basin-Mapping.jpg?version=1&modificationDate=1412299932197&api=v2][NGIS-GW_Basin-Mapping.jpg.]]
+---++ GWML2:GW_ManagementArea (need to update based on May 2015 changes to GWML2).
+
+"Area of ground identified for groundwater management purposes and can be delineated by human factors such as policy or regulation concerns, as well as hydrogeological or hydrological concerns. Does not necessarily align exactly with hydrogeoogical or hydrological boundaries."
+
+Mapping between the NGIS database and GW_ManagementArea is based on initial NGIS schema and has not been validated using actual NGIS data. The UML for the mapping ( [[https://wiki.csiro.au/download/attachments/671386283/NGIS_ManagementZone.jpg?version=1&modificationDate=1412903564767&api=v2][NGIS_ManagementZone.jpg]]) has been created based on the NGIS online schema. A XML instance document based an anticipated data is at [[https://wiki.csiro.au/download/attachments/671386283/GWML2-GW_ManagementArea-NGIS.xml?version=1&modificationDate=1412307410570&api=v2][GWML2-GW_ManagementArea-NGIS.xml]].
+
+-- Main.BruceSimons - 21 May 2015
+
+%META:FILEATTACHMENT{name="NGIS_GWML_Mapping.xlsx" attachment="NGIS_GWML_Mapping.xlsx" attr="" comment="Mapping between NGIS and GWML2" date="1432170764" path="NGIS_GWML_Mapping.xlsx" size="23877" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GW_FluidBody-NGIS_uc5-mapping.xml" attachment="GW_FluidBody-NGIS_uc5-mapping.xml" attr="" comment="Mapping between NGIS and GWML2 for GW_Fluid" date="1432183814" path="GW_FluidBody-NGIS_uc5-mapping.xml" size="15157" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GW_Well_NGIS_uc5-mapping.xml" attachment="GW_Well_NGIS_uc5-mapping.xml" attr="" comment="Mapping between NGIS and GWML2 for GW_Well and Borehole" date="1432184568" path="GW_Well_NGIS_uc5-mapping.xml" size="160250" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="GW_HydrogeoUnit_NGIS_uc5-mapping.xml" attachment="GW_HydrogeoUnit_NGIS_uc5-mapping.xml" attr="" comment="Mapping between NGIS and GWML2 for GW_HydroGeoUnit" date="1432185106" path="GW_HydrogeoUnit_NGIS_uc5-mapping.xml" size="67736" user="BruceSimons" version="1"}%

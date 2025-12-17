@@ -1,0 +1,30 @@
+%META:TOPICINFO{author="TonyBoston" comment="save topic" date="1505172904" format="1.1" reprev="17" version="17"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++ Hydrology Domain Working Group
+---++ <a name="Meeting_details_at_StJohns_TC"></a> Meeting details at St John's TC
+
+Venue: Fort William, Salon B, Sheraton Hotel Newfoundland, St. Johns, Canada
+
+Time: Wednesday 28 June, 8:50 - 9:45 am (UTC/GMT -2.5)
+
+Link to <a href="http://ogcmeet.org/" target="_blank">St John's TC agenda</a>
+
+*GotoMeeting Joining Details*
+<div id="meetingInvitation">
+
+Earth Science track: Hydro DWG <br /> <br /> Please join my meeting from your computer, tablet or smartphone. <br /> <a href="https://global.gotomeeting.com/join/363167965" target="_blank"> https://global.gotomeeting.com/join/363167965 </a> <br /> <br /> You can also dial in using your phone. <br /> United States: +1 (786) 535-3119 <br /> <br /> Access Code: 363-167-965 <br /> <br /> More phone numbers <br /> Australia: +61 2 9091 7603 <br /> Austria: +43 1 2530 22500 <br /> Belgium: +32 28 93 7002 <br /> Canada: +1 (647) 497-9373 <br /> Denmark: +45 32 72 03 69 <br /> Finland: +358 923 17 0556 <br /> France: +33 170 950 590 <br /> Germany: +49 692 5736 7300 <br /> Ireland: +353 15 360 756 <br /> Italy: +39 0 230 57 81 80 <br /> Netherlands: +31 207 941 375 <br /> New Zealand: +64 9 913 2226 <br /> Norway: +47 21 93 37 37 <br /> Spain: +34 932 75 1230 <br /> Sweden: +46 853 527 818 <br /> Switzerland: +41 225 4599 60 <br /> United Kingdom: +44 330 221 0097
+</div>
+---+ 
+---+ *Draft agenda*
+   1 [[%ATTACHURL%/HydroDWGWorkshopOutcomes.pptx][HydroDWG workshop outcomes]] (Tony Boston)
+   1 <a href="http://opengeospatial.github.io/HY_Features/HY_Features_primer/HY_Features_Primer.html" target="_blank">HY_Features</a> (Dave Blodgett)
+   1 [[%ATTACHURL%/Brodaric_GWML2_HDWG_StJohns_2017.pptx][GroundWaterML2 status update]] (Boyan Brodaric)
+   1 <a href="https://portal.opengeospatial.org/files/?artifact_id=74511" target="_blank">Texas Flood Response System</a> (David Arctur; 90mb ppt linked from OGC TC meeting folder)
+*HydroDWG futures - Some ideas*
+<ol start="1"> <li>Implementation schema for HY_Features</li> <li>More encodings for existing standards, e.g. JSON, RDF</li> <li>Cross domain work to harmonise standards, e.g. borehole in !GWML2 and !GeoSciML or linking: groundwater, geology, soils etc</li> <li>Forecasting IE with Met Oceans group</li> <li>WMO approval for !WaterML2: Parts 3 and 4</li> <li>Implementation of !WaterML2 standards in WMO Hydrological Observing System (WHOS)</li> <li>Data exchange standard for sample based water quality data</li> </ol>
+
+%META:FILEATTACHMENT{name="HydroDWGAgendaStJohns.pptx" attachment="HydroDWGAgendaStJohns.pptx" attr="" comment="" date="1497898310" path="HydroDWGAgendaStJohns.pptx" size="489489" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="2017_St_Johns_attendance_info_slide.pptx" attachment="2017_St_Johns_attendance_info_slide.pptx" attr="" comment="" date="1497898360" path="2017_St_Johns_attendance_info_slide.pptx" size="829426" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="HydroDWGWorkshopOutcomes.pptx" attachment="HydroDWGWorkshopOutcomes.pptx" attr="" comment="" date="1498648663" path="HydroDWGWorkshopOutcomes.pptx" size="585631" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="Brodaric_GWML2_HDWG_StJohns_2017.pdf" attachment="Brodaric_GWML2_HDWG_StJohns_2017.pdf" attr="" comment="GW SWG report" date="1498649712" path="Brodaric_GWML2_HDWG_StJohns_2017.pdf" size="1487095" user="BoyanBrodaric" version="1"}%
+%META:FILEATTACHMENT{name="Brodaric_GWML2_HDWG_StJohns_2017.pptx" attachment="Brodaric_GWML2_HDWG_StJohns_2017.pptx" attr="" comment="GW SWG report ppt" date="1498650470" path="Brodaric_GWML2_HDWG_StJohns_2017.pptx" size="1559054" user="BoyanBrodaric" version="1"}%

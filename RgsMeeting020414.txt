@@ -1,0 +1,51 @@
+%META:TOPICINFO{author="PeterTaylor" date="1398995056" format="1.1" version="3"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---++ Agenda
+
+Questions to cover (from Brian)
+
+1) What "latest" refers to. It's not always possible for to determine the latest rating is.
+
+- Restrict to 'simple ratings'. Algorithm for below threshold; different for above (e.g. backwater in a wier). Potential use for range values. Production vs development data/systems. Return type for cases with multiple conversions, too complex etc. Comes down to how the sites are selected that will be published. Potentially exclude sites that are too complex. 
+
+- Conversion service to process a conversion for heights. 
+
+- 'Source system' in schema. Return for complex conversions.
+
+- Can you return multiple ratings from a get latest? 
+
+- No round tripping of ratings. E.g. identifiers. 
+
+2) "Changed since" API calls
+
+What invalidates a rating model? Change in period/table etc. Could result in large computation and/or returns. Either working with current ratings or need to get the whole group again. 
+
+3) Parameter vocabulary
+
+Start with WDTF, then extend as appropriate. Start with WDTF spreadsheet. 
+
+4) What are the rules for constructing the conversion/rating tables (eg., how many data points should be transmitted). For example, suppose we wanted to exchange a rating that is in the form of an equation, how many points should we use to represent that equation? The RGS item register states: <span style="background-color: transparent;">"Ratings should always have a point table supplied that is expanded at a sufficient Y scale resolution to enable linear interpolation between the supplied points. The creator of the data file will choose the export resolution such that linear interpolation is appropriate."</span>
+
+Could provide a parameter in API for stage spacing, with a default across the whole service. Can override with a call from requester. (1/100 ft default for USGS). 5-10mm. Corresponds to accuracy of a gauge reading. 
+
+5) Confirm the definition of a conversion group. Is it defined as all the objects (rating tables, rating periods, and shifts) that are used to model the conversion from stage to discharge?
+
+Keyed on site-paramFrom-paramTo. 
+
+6) Should calls such as .../rgs-api/v1/conversion/ and .../rgs-api/v1/conversion/C_ID (where C_ID is the conversion ID) return all types of conversions, both ratings and __shifts__
+
+Yes should contain ratings and shifts. Stage-stage conversion used for purposes other than shifts. Do we need to identify them as shifts? Aus create new tables that incorporate all the changes. 
+
+Controlled terms to describe the purpose of the table (e.g. shifts, simple parameter conversion etc.). Starting point? Flow rating, simple/complex (?) conversion (anything else), shift. 
+
+7) Review need and implementation of Conversion Period related API calls
+
+Change in period is a change in rating. 
+
+8) API syntax. There seem to be a few subtle differences emerging between the implementations, I think (e.g., latest vs id=latest)
+
+Plus others..
+
+Queries on monitoring points: need query by ID and Name at least. 
+
+-- Main.PeterTaylor - 30 Apr 2014

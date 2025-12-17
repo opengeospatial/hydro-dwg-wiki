@@ -1,0 +1,19 @@
+%META:TOPICINFO{author="MattFry" comment="reprev" date="1339774461" format="1.1" reprev="1" version="2"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+---++ Member Organisation Objectives
+
+A listing of high level objectives that are the motivation behind trasfering Ratings, Gaugings and River Cross Section data (RGS).
+
+This information is an input to the workshop and will be used in helping to determine the scope of a WaterML 2 RGS implmentation
+
+<b>Bureau of Meteorology, Australia</b><br />Ratings, Gaugings and Sections - high level objectives.
+   1 Interagency transfer of point based ratings information to enable rating inspection and flow calculation.
+   1 Enable the inspection of ratings tables with reference to relevant gaugings and control cross sections.
+   1 Interagency transfer of dated rating system information - period of application for individual rating tables.
+   1 Description of interpolation between rating points and quality of rating points
+      1 Quality used to describe the quality of the derived flow data in conjunction with the level data quality.
+The use of rating shifts is not common practice in Australia, WDTF does not currently accommodate shifts.
+
+-- Main.PaulSheahan - 06 Jun 2012
+
+<b>Centre for Ecology and Hydrology, UK</b><br />All points of interest relate to the transfer of rating information principally as QC info in relation to river flow data (rather than for calculating flows)<br />1. Description of historical quality of rating (time-vaying rating metadata)<br />2. Description of ratings based on structures (majority of stations in UK are structures with theoretical ratings backed up by gaugings)<br />3. Description of complex hybrid ratings which are increasingly common (e.g. velocity-area stage-discharge up to certain stage, then velocity-index using side-looking ADCP for high flows)<br />-- Main.MattFry - 15 Jun 2012

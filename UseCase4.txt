@@ -1,0 +1,74 @@
+%META:TOPICINFO{author="AlexKmoch" comment="save topic" date="1435813288" format="1.1" reprev="12" version="12"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *Use Case 4 -- Scientific*
+---++ Participants
+   * <p>J.Lucido (lead), Dave Blodgett (USGS), [[Main.JanuszMichalak][Janusz Michalak]] (PTIP & Warsaw University), Alex Kmoch (GNS / Z_GIS)</p>
+---++ Discussion Page
+   * For discussion about this use case please add comments to [[GWIE2UC4DiscussionPage][this page]].
+---++ Abstract
+
+This use case involves the delivery of information required to help determine the flow of groundwater within a particular terrain, likely for input into a computational flow modeling software, and model results. It involves the delivery of hydrogeologic and geophysical properties associated with hydrogeologic units (such as key aquifer properties), the delivery of observations related to those units, well characteristics (driller's log), information about the related water bodies and in some cases water use information.
+---++ Objective
+
+%RED%Included in [[GroundwaterInteroperabilityExperiment2][GW2IE]] Use Case<br />%ENDCOLOR%
+
+%BLUE%Full Groundwater Flow Modeling Use Case%ENDCOLOR%
+   * %RED%Delivery of data for use in groundwater flow modeling software (e.g. MODFLOW, FEFLOW or ASPAR)%ENDCOLOR%
+      * %RED%Data necessary for groundwater flow models: (May decide to incorporate only some of these data types)%ENDCOLOR%
+         * %BLUE%Data to complete Soil-Water Balance Model (hydrology & terrestrial info: precipitation, temperature, land cover, land use, evapotransporation, runoff)%ENDCOLOR%
+         * %RED%Water body characteristics & observations%ENDCOLOR% (%BLUE%stream flow%ENDCOLOR%, %RED%gw levels,%ENDCOLOR% %BLUE%sw levels)%ENDCOLOR%
+         * %RED%Water use%ENDCOLOR% (%RED%pumping rates%ENDCOLOR%,%BLUE% diversion schedules%ENDCOLOR%)
+         * %RED%Geophysical analysis (well construction, rock lithology and fractures, permeability and porosity, and water quality)%ENDCOLOR%
+   * %BLUE%Delivery of groundwater flow model output%ENDCOLOR%
+      * %BLUE%Coverage of heads & fluxes%ENDCOLOR%
+      * %BLUE%Time series of flow and/or water level at points (wells & springs)%ENDCOLOR%
+---++ Actors
+   * Groundwater modelers
+   * Hydrogeologists
+---++ Actions
+   * %RED%Discovering, searching, displaying, analyzing and downloading characteristics for all groundwater bodies in a study area%ENDCOLOR%
+   * %RED%Collecting geological, hydrogeological, physical and use/consumption data about each groundwater body%ENDCOLOR%
+   * %BLUE%Completing a soil-water balance%ENDCOLOR%
+   * %BLUE%Completing spatial and temporal analyses%ENDCOLOR%
+   * %BLUE%Calculating heads & fluxes in space and time%ENDCOLOR%
+   * %BLUE%Calculating timeseries of flow or water level at points where data was collected (wells & springs)%ENDCOLOR%
+   * %BLUE%Visualization of gw flow and storage in time and space%ENDCOLOR%
+---++ Entities (Features, Observations, Properties)
+
+Entities depend on type of model and the discretion of modelers and scientists. They include all or a subset of the following
+   * water wells:
+      * _general_: id, source, location, elevation, length, water level, well purpose
+      * _well construction_: drill date, well casing intervals, sealing component intervals, screen intervals
+      * _logs_: depth interval, lithologies, porosity, hydraulic conductivity
+      * _water quantity_: storage, water levels
+   * aquifers:
+      * _general_: name, area,
+      * _geology_: formations, lithologies
+      * _properties_: confinement, media, water storage, sediment thickness, aquifer thickness, porosity, conductivity
+      * _water balance_: aquifer recharge, aquifer discharge
+      * _water use_: yield, usage type
+---++ Web Clients
+
+There are many potential clients for receiving this information including, but not limited to: GSC Client, US NGWMN client, US state or local agency websites
+
+%TABLE{ tableborder="2" tablebordercolor="#D3D3D3" tableframe="below" cellspacing = "2" cellborder="0" tablewidth="100%" valign="baseline" }%<br />
+| *Web Service* | *Input Database* | *Output Schema* | *Implementer* |
+| WMS | wells, aquifers? | N/A | USGS & others? |
+| WFS | hydrogeology & geology | GWML2--wells, aquifers | USGS & others? |
+| SOS | well & aquifer observations | WaterML2 --water levels, storage | USGS & others? |
+| WPS | WFS (GWML2), SOS (WaterML2.) ... WCS (DEM ..) | a basic MODFLOW grid or computed values, e.g. zone budget, DRASTIC vulnerability values? | GNS |
+-- Main.AlexKmoch - 02 Jul 2015
+
+-- Main.BoyanBrodaric - 24 Oct 2012
+
+For discussion about this use case please add comments to [[GWIE2UC4DiscussionPage][this page]]. Documents for discussion are listed below.
+
+-- Main.JanuszMichalak - 20 Nov 2012
+   * [[%ATTACHURL%/UseCaseForFlowModel_Intro.docx][UseCaseForFlowModel_Intro.docx]]: Introduction to [[GroundwaterInteroperabilityExperiment2][GW2IE]] UC4: Scientific -- data for groundwater flow models (initial draft version)
+   * [[%ATTACHURL%/UseCaseforFlowModel_P_Wojda.doc][UseCaseforFlowModel_P_Wojda.doc]]: Hydrogeological data model use case for INSPIRE prepared by Piotr Wojda (start point for development)
+-- Main.JessicaLucido - 20 Nov 2012
+
+-- Main.DavidBlodgett and Main.JessicaLucido - 21 Nov 2012
+
+%META:FILEATTACHMENT{name="UseCaseForFlowModel_Intro.docx" attachment="UseCaseForFlowModel_Intro.docx" attr="" comment="Introduction to GW2IE? UC4: Scientific -- data for groundwater flow models (initial draft version)" date="1353416150" path="UseCaseForFlowModel_Intro.docx" size="288363" user="JessicaLucido" version="1"}%
+%META:FILEATTACHMENT{name="UseCaseforFlowModel_P_Wojda.doc" attachment="UseCaseforFlowModel_P_Wojda.doc" attr="" comment="Hydrogeological data model use case for INSPIRE prepared by Piotr Wojda (start point for development)" date="1353416224" path="UseCaseforFlowModel_P_Wojda.doc" size="137216" user="JessicaLucido" version="1"}%

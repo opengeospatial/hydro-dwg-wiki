@@ -1,0 +1,46 @@
+%META:TOPICINFO{author="IrinaDornblut" comment="reprev" date="1381310363" format="1.1" reprev="18" version="18"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++ Meeting details
+
+*Time*: September 23, 2013, 15:45-18:40 (Mon). [[http://www.timeanddate.com/worldclock/fixedtime.html?msg=HDWG+Session%2C+Monday%2C+September+23%2C+2013&iso=20130923T1545&p1=215&ah=3][Time at other locations]]
+
+*Venue:* OGC Technical Committee Meeting in Frascati, Italy. [[http://www.opengeospatial.org/event/1309tc][TC Meeting Info]] [[http://www.opengeospatial.org/event/1309tcagenda][TC Meeting Agenda]]
+
+*Remote Participants:*
+
+Phone:
+
+!WebEx: instructions will be emailed later
+
+*Presentation template:* [[https://portal.opengeospatial.org/files/?artifact_id=54520]]
+
+---+ Agenda
+---+++ *Monday, 15:45 - 18:40 (Room: E)*
+   1 Introduction, [[%ATTACHURL%/2013_Frascati_HDWG_Agenda.ppt][agenda]], review of the [[%ATTACHURL%/Outcomes_Quebec_Workshop.ppt][Quebec workshop outcomes]] (HDWG co-chairs) (10 min)
+   1 Update on [[%ATTACHURL%/GEOSS_AIP-6_Water_Services_Update.pptx][GEOSS AIP-6 Water Services project]] (David Arctur, 15-30 mins)
+   1 [[%ATTACHURL%/CHISP-1_Summary_and_Outcomes.pptx][CHISP-1 Brief Review]]- Architecture, Achievements and Future Work (summary of ER) (Lew Leinenweber, 15 min)
+      * Possible motion to recommend to the TC to release the ER as a public Engineering Report
+   1 [[%ATTACHURL%/WaterML2.0_Part_1_Survey.ppt][WaterML2.0: Part 1]]: Usage by hydrological organisations and system vendors (Tony Boston, 15 mins)
+   1 [[%ATTACHURL%/Open_source_federated_systems.ppt][Open source solutions]] for federated hydrologic information systems (Silvano Pecora, 15 min)
+   1 Representing physical and semantic environment for flow simulation.in [[%ATTACHURL%/CityGML_Hydrology.ppt][CityGML]] - towards a joint use case (Steve Smyth, 20 mins)
+   1 Ratings, gaugings and cross sections [[%ATTACHURL%/WaterML2_Part2_Interoperability_Experiment.ppt][(WaterML2.0 part 2) Interoperability Experiment]] - status update (David Lemon, 15 mins)
+   1 WaterML -WQ - a [[%ATTACHURL%/Water_Quality_data_transfer.pptx][WaterML2 profile for water quality]], with a water quality vocabulary (Simon Cox, 20 Mins)
+   1 Progress on [[%ATTACHURL%/2013_Frascati_HY_Features_Progress_.ppt][HY_Features]] (Irina Dornblut, 15 min)
+   1 Progress on [[%ATTACHURL%/GRDC_Hydrologic_Metadata_Progress.ppt][WMO (GRDC) Hydrologic Metadata]] (Irina Dornblut, 15 min)
+
+---+++ *Additional water-related sessions and meetings this week:*
+
+-- Main.IlyaZaslavsky - 25 Jul 2013
+
+%META:FILEATTACHMENT{name="2013_Frascati_HDWG_Agenda.ppt" attachment="2013_Frascati_HDWG_Agenda.ppt" attr="" comment="Hydro DWG Agenda" date="1380031704" path="2013_Frascati_HDWG_Agenda.ppt" size="443392" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="Outcomes_Quebec_Workshop.ppt" attachment="Outcomes_Quebec_Workshop.ppt" attr="" comment="2013 Quebec Workshop Outcomes" date="1380031861" path="Outcomes_Quebec_Workshop.ppt" size="2381824" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="GEOSS_AIP-6_Water_Services_Update.pptx" attachment="GEOSS_AIP-6_Water_Services_Update.pptx" attr="" comment="GEOSS AIP-6 Water Services project" date="1380032101" path="GEOSS_AIP-6_Water_Services_Update.pptx" size="13028900" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="CHISP-1_Summary_and_Outcomes.pptx" attachment="CHISP-1_Summary_and_Outcomes.pptx" attr="" comment="CHISP-1 Brief Review" date="1380032281" path="CHISP-1_Summary_and_Outcomes.pptx" size="1025913" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="WaterML2.0_Part_1_Survey.ppt" attachment="WaterML2.0_Part_1_Survey.ppt" attr="" comment="WaterML2.0: Part 1 Survey" date="1380032439" path="WaterML2.0_Part_1_Survey.ppt" size="663040" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="Open_source_federated_systems.ppt" attachment="Open_source_federated_systems.ppt" attr="" comment="Federated hydrologic information systems" date="1380032779" path="Open_source_federated_systems.ppt" size="8668672" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="CityGML_Hydrology.ppt" attachment="CityGML_Hydrology.ppt" attr="" comment="CityGML and hydrological modelling" date="1380033003" path="CityGML_Hydrology.ppt" size="556032" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="WaterML2_Part2_Interoperability_Experiment.ppt" attachment="WaterML2_Part2_Interoperability_Experiment.ppt" attr="" comment="WaterML2.0: Part 2 IE" date="1380033611" path="WaterML2_Part2_Interoperability_Experiment.ppt" size="677376" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="Water_Quality_data_transfer.pptx" attachment="Water_Quality_data_transfer.pptx" attr="" comment="WaterML 2.0 Water Quality" date="1380033715" path="Water_Quality_data_transfer.pptx" size="1221364" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="GRDC_Hydrologic_Metadata_Progress.ppt" attachment="GRDC_Hydrologic_Metadata_Progress.ppt" attr="" comment="WMO (GRDC) Hydrologic Metadata" date="1380033867" path="GRDC_Hydrologic_Metadata_Progress.ppt" size="806400" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="Hydro_DWG_Report_to_TC.ppt" attachment="Hydro_DWG_Report_to_TC.ppt" attr="" comment="Hydro DWG meeting - Plenary Report to TC" date="1380193504" path="Hydro_DWG_Report_to_TC.ppt" size="322560" user="TonyBoston" version="2"}%
+%META:FILEATTACHMENT{name="2013_Frascati_HY_Features_Progress_.ppt" attachment="2013_Frascati_HY_Features_Progress_.ppt" attr="" comment="HY_Features, progress report" date="1381310139" path="2013_Frascati_HY_Features_Progress_.ppt" size="883200" user="IrinaDornblut" version="1"}%

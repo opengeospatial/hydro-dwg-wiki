@@ -1,0 +1,27 @@
+%META:TOPICINFO{author="PaulSheahan" date="1341562854" format="1.1" version="1"}%
+%META:TOPICPARENT{name="RGSWorkshopRatingsNotes"}%
+---+ Ratings Use Cases
+
+Core use cases:
+   1 *Data scrutiny*
+      1 Uncertainty research
+      1 Geomorphic process, cross sections
+      1 Engineer for design purpose (e.g. designing a flood barrier)
+      1 Analysis and assessment of input data streams for hydrologic modeling
+   1 *Retrieve specific curve (using the most up to date curve, or a specific version)*
+      1 Time sensitive (floods, events)
+      1 Inundation modeling (reversing out the stage)
+      1 Emergency services
+      1 A site visit or comparing a gauging point against the curve
+   1 *Full rating history*
+      1 Exchange purposes, to run a transform at any time
+      1 Only includes the active ratings, does not include each development rating version and shift detail.
+   1 *Suspended sediment and load calculations*
+   1 *Transfer between schemas (loss level):*
+      1 Similar schema to similar schema
+      1 Existing schema to OGC schema
+      1 Schema to flat file
+   1 *Research services*
+      1 Point a student towards a service with stage, rating, and associated gaugings.
+
+-- Main.PaulSheahan - 06 Jul 2012

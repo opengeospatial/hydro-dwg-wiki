@@ -1,0 +1,7 @@
+%META:TOPICINFO{author="DavidValentine" comment="" date="1324583815" format="1.1" version="1"}%
+%META:TOPICPARENT{name="WebHome"}%
+We will need to begin to have some goverance of additional common named parameter, if information exchange is to be maintained.
+
+The HDWG will need to decide when a common named parameter get's promoted to an explicit element<br />               &lt;sa:parameter&gt;<br />                  &lt;om:NamedValue&gt;<br />                     &lt;om:name xlink:href="http://kiwis.kisters.de/definitions/catchment" xlink:title="Catchment"/&gt;<br />                     &lt;om:value&gt;<br />                        &lt;CharacterString&gt;Dramselv&lt;/CharacterString&gt;<br />                     &lt;/om:value&gt;<br />                  &lt;/om:NamedValue&gt;<br />               &lt;/sa:parameter&gt;<br /> becomes something like<br />               &lt;wml:catchement codeSpace="http://www.opengis.net/def/waterml/2.0/catchment"&gt;Dramselv&lt;/wml:catchement&gt;
+
+-- Main.DavidValentine - 22 Dec 2011

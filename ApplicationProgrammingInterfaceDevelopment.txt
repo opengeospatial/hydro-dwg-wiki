@@ -1,0 +1,26 @@
+%META:TOPICINFO{author="PeterTaylor" comment="save topic" date="1403760616" format="1.1" reprev="6" version="8"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+<span style="background-color: transparent; color: #339900; font-size: 21px; line-height: 1.1em;">API Development topics</span>
+
+This page holds a collection of links to pages relating to API development.
+
+%TOC{depth="2"}%
+---++ Requirements
+   * <span style="background-color: transparent;"> [[UserRequirements][User Questions]] : </span><span style="background-color: transparent;">Explorers the user questions that the API will support. The questions relate to the API's support of a GUI or programatic interaction</span>
+   * <span style="background-color: transparent;"> [[RgsApiDesign][API requirements]] : A consolidated list of core and desirable requirements for the API design. Based on analysis of the [[UserRequirements][user questions]].</span>
+---++ Implementations
+   * Version 2 of the API. [[RGSAPIChangesForV2][Here is a page discussing]] potential changes. Please review and comment. 
+---+++ CSIRO service
+   * [[RGSTestAPICSIRO][Example API @ CSIRO]]. An example RESTful API encoding WaterML2.0 part 2 example data.
+   * [[RgsAPIQuestions][API questions]]. A page with questions, discussions and suggestions for the current API definition.
+   * [[RgsAPIChangeList][API change list]]. A page describing all recent changes to the API at CSIRO.
+---++ Vocabularies
+
+This section covers what vocabularies are being defined/harmonised within the part 2 model.\
+
+   * [[RgsVocabularies][Page for discussion of vocabularies (scope & harmonisation)]]
+   * [[RGSHandlingVocabsInService][Encoding and querying variable/parameters in the API]]
+
+-- Main.PeterTaylor - 12 Mar 2014
+
+-- Main.PaulSheahan - 25 Oct 2013

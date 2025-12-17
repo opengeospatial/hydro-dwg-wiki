@@ -1,0 +1,44 @@
+%META:TOPICINFO{author="DavidArctur" comment="reprev" date="1433724722" format="1.1" reprev="28" version="28"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++ Meeting details
+
+*Time*: Wednesday, June 3, 13:00-14:45 US MDT / 1900 UTC
+
+(http://www.timeanddate.com/worldclock/fixedtime.html?iso=20150603T13&p1=1243&ah=2)
+
+*Venue:* OGC Technical Committee Meeting in Boulder, CO. [[http://www.opengeospatial.org/event/1506tc][TC Meeting Info]] [[http://www.opengeospatial.org/events/1506tcagenda][TC Meeting Agenda]]
+
+*Presentation template: [[https://portal.opengeospatial.org/files/?artifact_id=63120]]*
+
+*Agenda slides*: [[%ATTACHURL%/2015_Boulder_HDWG_Agenda.ppt][2015_Boulder_HDWG_Agenda.ppt]] (now contains closing plenary motions)
+
+*Link to* <a href="https://portal.opengeospatial.org/index.php?m=projects&a=view&project_id=82&tab=2&artifact_id=62962" target="_blank">Boulder TC meeting folder</a>
+
+---+ Agenda
+   1 HY_Features to Standard / Hydrologic Feature SWG (Irina Dornblut/Rob Atkinson) [ [[https://portal.opengeospatial.org/files/?artifact_id=63858][powerpoint slides]]]
+      * Rob presented current plans to start a HY_Features Standards Working Group (SWG), for a structured way of organizing efforts to finalize HY_Features conceptual model.
+      * This got much discussion in the DWG session, see [[%ATTACHURL%/2015_Boulder_HDWG_Agenda.ppt][closing plenary agenda slides]] for summary.
+   1 Present and future of the U.S. Open Water Data Initiative (David Blodgett) [ [[http://external.opengis.org/twiki_public/pub/HydrologyDWG/BoulderTc2015/HDWG_Boulder_2015_blodgett.ppt][powerpoint slides]]]
+   1 Groundwater IE Progress Report (B. Simons/B.Brodaric) [ [[%ATTACHURL%/2015_Boulder_Presentation_GWML2IE_v2.ppt][2015_Boulder_Presentation_GWML2IE_v2.ppt]]]
+      * Bruce presented this status. The project report is being finalized and is hoped to be ready to publish as a discussion paper by Fall 2015.
+   1 Testbed-11 High Resolution Flood Information Scenario Engineering Report (Eugene Yu) [ [[https://portal.opengeospatial.org/files/?artifact_id=63806][powerpoint slides]]]
+      * This report was moved for e-vote to release as Public Engineering Report.
+   1 !WaterML 2.0 part 2 RESTful API and JSON encoding (Pete Taylor) [ [[%ATTACHURL%/2015_WaterML2-part2-REST-HydroDWG.ppt][2015_WaterML2-part2-REST-HydroDWG.ppt]]] [ [[https://portal.opengeospatial.org/files/?artifact_id=63302&version=1][OGC 15-033 draft document]]]
+      * Pete gave a short presentation on this in the closing plenary, separate from the Hydro DWG report.
+      * There was some discussion due to recent Testbed 11 work on REST and JSON positions by the OGC. Pete’s doc was approved by the TC to be released as a public OGC Discussion Paper.
+   1 Overview of !TimeseriesML SWG plans and progress (James Tomkins) [ [[https://portal.opengeospatial.org/files/?artifact_id=63824][powerpoint slides]]]
+   1 Call for attendance at [[OrleansWorkshop2015][6th Hydrology Workshop, Orleans France]], 21-25 Sept 2015 -- contact Sylvain Grellet!
+In reference to the HY_Features SWG, there was some discussion whether this would be better advanced by an Interoperability Experiment rather than a SWG, which is more constrained in sharing information. Some at the meeting have been unsuccessful in adapting the NHDPlus information model to the HY_Features model, and felt an IE would help develop tested implementations. Irina, Rob & others at the meeting felt the SWG could decide whether to hold an IE, and how to organize it, but wanted the structure of the SWG to help ensure progress. By majority vote of those attending (including remote attendees) the motion to conduct a SWG was passed. The TC plenary then voted to approve it without further discussion. The SWG Charter document will be revised based on this discussion, and re-posted to OGC Pending Docs soon for DWG & TC approval. Those interested in joining the SWG please contact Irina Dornblut and Rob Atkinson.
+---++ National and Global Flood Forecasting -- Water Data Summit
+
+Previous to the Hydro DWG session on 3-June, there was a half-day *Water Data Summit*, with presentations on national and global flood forecasting developments by David Maidment, Jeff Weber (NCAR), myself, and Ethan Davis (Unidata). See wiki page for more info & presentations: [[BoulderTc2015Summit][http://external.opengeospatial.org/twiki_public/HydrologyDWG/BoulderTc2015Summit]]
+---++ 
+
+-- Main.IlyaZaslavsky - 04 Apr 2015
+
+-- Main.DavidArctur - 08 Jun 2015
+
+%META:FILEATTACHMENT{name="2015_Boulder_HDWG_Agenda.ppt" attachment="2015_Boulder_HDWG_Agenda.ppt" attr="" comment="2015 Boulder HydroDWG Agenda" date="1433430271" path="2015_Boulder_HDWG_Agenda.ppt" size="513024" user="DavidArctur" version="8"}%
+%META:FILEATTACHMENT{name="2015_Boulder_Presentation_GWML2IE_v2.ppt" attachment="2015_Boulder_Presentation_GWML2IE_v2.ppt" attr="" comment="GWML2 IE Report" date="1433171878" path="2015_Boulder_Presentation_GWML2IE_v2.ppt" size="520704" user="BruceSimons" version="1"}%
+%META:FILEATTACHMENT{name="2015_WaterML2-part2-REST-HydroDWG.ppt" attachment="2015_WaterML2-part2-REST-HydroDWG.ppt" attr="" comment="Updated PPT with complete motion" date="1433366158" path="2015_WaterML2-part2-REST-HydroDWG.ppt" size="1194496" user="PeterTaylor" version="2"}%
+%META:FILEATTACHMENT{name="HDWG_Boulder_2015_blodgett.ppt" attachment="HDWG_Boulder_2015_blodgett.ppt" attr="" comment="" date="1433349420" path="HDWG_Boulder_2015_blodgett.ppt" size="1153024" user="DavidBlodgett" version="1"}%

@@ -1,0 +1,39 @@
+%META:TOPICINFO{author="EricBoisvert" comment="reprev" date="1447851601" format="1.1" reprev="1" version="4"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ *GW2IE Meeting 46 -- Wed 18 Nov 2015*
+
+---++ *Agenda*
+   * old business
+   * OGC TC prep (Dec, Sydney)
+   * GWML2 specification document (!GW2IE report)
+   * next steps
+
+---++ *Results*
+
+---++ *Participants*
+   * Click here for the [[http://doodle.com/poll/59z4qw96kawg4qzn][Doodle Poll]]
+
+---++ *Connection Instructions*
+
+| *Ottawa*  | *Madison* | *London* | *Paris* | *Melbourne* | *Auckland* |
+| 8:00 | 7:00 | 13:00 | 14:00 | 23:59 | +1d 02:00 |
+
+   * Screen sharing (Webex):
+      * pass: ogc
+      * url: https://pwgsc-nh.webex.com/pwgsc-nh/j.php?MTID=mc15481e6e68dd8cf2370017fb393f1a1
+
+   * Teleconference:
+      * Dial local number (see below) and passcode = *616269*
+
+| *Country*  | *Conference Number* |
+| Australia  | +61 (0) 3 8672 0180 |
+| Austria  | +43 (0) 1 2650500 |
+| Belgium  | +32 (0) 3 294 11 60 |
+| Canada  | +1 559-546-1300 -- new number is +1 614-715-3824 |
+| France  | +33 (0) 1 80 14 11 00 |
+| Germany  | +49 (0) 228 5343020 |
+| Italy  | +39 055 464 0570 |
+| Netherlands  | +31 (0) 20 322 3000 |
+| Poland  | +48 22 116 80 20 |
+| United Kingdom  | +44 (0) 330 606 0182 |
+| United States  | +1 760-569-7100 |

@@ -1,0 +1,25 @@
+%META:TOPICINFO{author="PaulSheahan" comment="reprev" date="1382670833" format="1.1" reprev="4" version="4"}%
+%META:TOPICPARENT{name="WaterML2Part2"}%
+This page caputres details relating to the WaterML2.0 part 2 IE
+---+ Planning
+
+The OGC process to get an IE started is summarised in the following diagram:
+
+<img alt="OGC-process.png" height="272" src="%ATTACHURL%/OGC-process.png" title="OGC-process.png" width="363" />
+
+The activity plan document is the crucial part of the submission. This is currently being worked on and will be posted here.
+   * [[%ATTACHURL%/WaterML2-part2-IE-briefing.pdf][Paper outlining the IE plan]]
+   * [[%ATTACHURL%/RGS_IE_Activity_Plan.docx][Activity plan submitted to OGC]]
+---++ Scenarios
+   * [[RGSIEScenarioPlanning][Scenario planning page]]
+---+ Meetings
+
+20130830 - Oz Startup Meeting [[20130830-OzStartupMtg]]
+---+ 
+
+-- Main.PeterTaylor - 22 Aug 2013
+
+%META:FILEATTACHMENT{name="WaterML2-part2-IE-briefing.pdf" attachment="WaterML2-part2-IE-briefing.pdf" attr="" comment="IE briefing paper" date="1377151967" path="WaterML2-part2-IE-briefing.pdf" size="659432" user="PeterTaylor" version="1"}%
+%META:FILEATTACHMENT{name="ScenarioDiagram.jpg" attachment="ScenarioDiagram.jpg" attr="" comment="" date="1377152219" path="ScenarioDiagram.jpg" size="73252" user="PeterTaylor" version="1"}%
+%META:FILEATTACHMENT{name="OGC-process.png" attachment="OGC-process.png" attr="" comment="" date="1377219954" path="OGC-process.png" size="23249" user="PeterTaylor" version="1"}%
+%META:FILEATTACHMENT{name="RGS_IE_Activity_Plan.docx" attachment="RGS_IE_Activity_Plan.docx" attr="" comment="OGC RGS IE Activity plan" date="1382670423" path="RGS_IE_Activity_Plan.docx" size="312830" user="PaulSheahan" version="1"}%

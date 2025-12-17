@@ -1,0 +1,14 @@
+%META:TOPICINFO{author="PeterTaylor" comment="reprev" date="1395035481" format="1.1" reprev="1" version="2"}%
+%META:TOPICPARENT{name="ApplicationProgrammingInterfaceDevelopment"}%
+This page contains a list of recent changes to the CSIRO API implementation.
+
+*13-04-2014 ~ 10:00 AEST*
+   1 Added the id field to the conversion/rating objects
+   1 Added an ID query to the conversion collections, e.g. <u>http://waterml2.csiro.au/rgs-api/v1/conversion/?id=549,548,547</u>
+   1 Removed the paramFrom/To from the conversionGroup objects as they do not necessarily contain only one type of conversion. The exact defintion of groups needs clarification.
+   1 Added ID to the conversion group objects.
+   1 Added the paramFrom/To codes to the conversion periods, to satisfy the 'give me all available conversions for a site', e.g. <span style="background-color: transparent;">http://waterml2.csiro.au/rgs-api/v1/conversion-group/?monitoring-point=419009 returns the available periods with param codes. </span>
+*17-04-2014 ~ 16:00 AEST*
+   1 Changed quality of table points to be a full string URL. 
+   1 Chaned the paramFrom/To combinations in conversions to be a URL to vocab entry. 
+-- Main.PeterTaylor - 12 Mar 2014

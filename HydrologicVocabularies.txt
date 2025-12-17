@@ -1,0 +1,8 @@
+%META:TOPICINFO{author="UlrichLooser" comment="reprev" date="1303367615" format="1.1" reprev="1" version="2"}%
+%META:TOPICPARENT{name="IHEWkShop2011"}%
+Here is a collection of Powerpoints and links related to the topic of hydrologic vocabularies.
+
+-- Main.IlyaZaslavsky - 20 Apr 2011
+
+%META:FILEATTACHMENT{name="HDWG_vocabularies_session_notes.pptx" attachment="HDWG_vocabularies_session_notes.pptx" attr="" comment="Agenda and notes from the session, April 14" date="1303315428" path="HDWG_vocabularies_session_notes.pptx" size="51459" user="IlyaZaslavsky" version="1"}%
+%META:FILEATTACHMENT{name="Common_Vocabularies_Hydrology.ppt" attachment="Common_Vocabularies_Hydrology.ppt" attr="" comment="Thoughts on Common Vocabulary of Hydrology - Comparison of available online glossaries" date="1303367614" path="Common_Vocabularies_Hydrology.ppt" size="3579904" user="UlrichLooser" version="1"}%

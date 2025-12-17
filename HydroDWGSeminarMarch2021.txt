@@ -1,0 +1,23 @@
+%META:TOPICINFO{author="TonyBoston" comment="reprev" date="1616107372" format="1.1" reprev="13" version="13"}%
+<h2 id='Hydrology_Domain_Working_Group'>Hydrology Domain Working Group</h2> <h2 id='Meeting_details:'>Meeting topic: Water Quality (WQ) Data</h2>
+
+Venue: Gotomeeting: <a href='https://www4.gotomeeting.com/join/211991909' target='_blank'>https://www4.gotomeeting.com/join/211991909</a>
+
+Time: Wednesday 17 March 2021, 7 PM - 8:30 PM UTC [[https://www.timeanddate.com/worldclock/fixedtime.html?msg=HydroDWG+seminar+March+2021&iso=20210317T19&p1=1440&ah=1&am=30][(global time and date)]]
+
+<h3 id='A_42Meeting_Agenda_and_Outcomes_42'> *Meeting Agenda and Outcomes* </h3>
+   * Silvano Pecora (WMO) - WMO long-term ambition: "Water quality is known": [[%ATTACHURL%/HDWG_20210317.pptx][Link to the Presentation]]
+   * Philipp Saile (ICWRGC, GEMS/Water) - In-situ WQ sampling data sharing requirements and use cases
+   * Steve Groom (Plymouth Marine Lab) - Standards/services and tools used by the remote sensing WQ community: the [[https://engage.certo-project.org/data/][CERTO project]]
+   * James Kreft (USGS) and Dwane Young (EPA) - Water Quality Data Sharing - U.S EPA's Water Quality Exchange : [[%ATTACHURL%/WQX_Background.pptx][Link to the Presentation]]
+   * <span style='background-color: transparent;'>Sylvain Grellet (BRGM / INSIDE - environmental information systems research center) - 2 tests to serve French surface water quality DB data : one </span><span style='background-color: transparent;'>using SemanticWeb technologies (see [[%PUBURL%/HydrologyDWG/WorkshopGeneva2018/20180919_water_vocabs_experimentation_on_freshwater_quality_Grellet.pptx][Ninth HydroDWG Workshop presentation]]) </span><span style='background-color: transparent;'>and one </span>[[https://www.ogc.org/standards/sensorthings][OGC SensorThings API]] : [[%ATTACHURL%/20210317_WQ_INSIDE_BRGM_Grellet.pptx][Link to the Presentation]]
+   * Bruce Simons (Federation University) - [[http://docs.opengeospatial.org/bp/14-003/14-003.html][WQ best practice document]] overview and relationship to existing OGC standards : [[%ATTACHURL%/WaterQuality_Simons.pptx][Link to the Presentation]]
+   * General discussion on the way forward/ next steps/ group of experts to progress...
+A recording of the meeting is available here: [[https://portal.ogc.org/files/?artifact_id=96742]] (520 MB)
+
+-- Main !TonyBoston - 31 Jan 2021
+
+%META:FILEATTACHMENT{name="HDWG_20210317.pptx" attachment="HDWG_20210317.pptx" attr="" comment="WMO long-term ambition: %22Water quality is known%22 - Silvano Pecora" date="1616021979" path="HDWG_20210317.pptx" size="18710802" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="20210317_WQ_INSIDE_BRGM_Grellet.pptx" attachment="20210317_WQ_INSIDE_BRGM_Grellet.pptx" attr="" comment="2 tests to serve French surface water quality data - Sylvain Grellet" date="1616057172" path="20210317_WQ_INSIDE_BRGM_Grellet.pptx" size="16445266" user="SylvainGrellet" version="2"}%
+%META:FILEATTACHMENT{name="WaterQuality_Simons.pptx" attachment="WaterQuality_Simons.pptx" attr="" comment="WQ best practice overview and relationship to existing OGC standards - Bruce Simons" date="1616044919" path="WaterQuality_Simons.pptx" size="848720" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="WQX_Background.pptx" attachment="WQX_Background.pptx" attr="" comment="Water Quality Data Sharing - U.S. EPA's WQX - Dwane Young" date="1616106822" path="WQX_Background.pptx" size="3171728" user="TonyBoston" version="1"}%

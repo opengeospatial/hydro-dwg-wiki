@@ -1,0 +1,33 @@
+%META:TOPICINFO{author="UlrichLooser" comment="reprev" date="1403003127" format="1.1" reprev="11" version="12"}%
+%META:TOPICPARENT{name="WebHome"}%
+---++ Meeting details
+
+*Time*: June 11, 2014, 13:00-16:00 [[http://www.timeanddate.com/worldclock/fixedtime.html?msg=HydroDWG+11+June+2014+OGC+TC+Geneva%2C+Switzerland&iso=20140611T13&p1=87&ah=3][CEST UCT +2]] (Wednesday)
+
+*Venue:* OGC Technical Committee Meeting in Geneva, Switzerland. <a href="http://www.opengeospatial.org/event/1406tc" target="_blank">TC Meeting Info</a> <a href="http://www.opengeospatial.org/event/1406tcagenda" target="_blank">TC Meeting Agenda</a>
+
+*Remote Participants:*
+
+Phone:
+
+GotoMeeting Joining Details
+
+1. Please join my meeting, Wed Jun 11th 7:00 AM EDT.<br /><br /><a href="https://www4.gotomeeting.com/join/746531159" target="_blank">https://www4.gotomeeting.com/join/746531159</a><br /><br />2. Use your microphone and speakers (VoIP) - a headset is recommended. Or, call in using your telephone.<br /><br />AT: +43 (0) 7 2088 2169<br />BE: +32 (0) 42 68 0154<br />DK: +45 (0) 89 88 04 29<br />FI: +358 (0) 931 58 4586<br />DE: +49 (0) 811 8899 6930<br />IE: +353 (0) 19 036 185<br />IT: +39 0 294 75 15 35<br />NL: +31 (0) 108 080 114<br />NZ: +64 (0) 9 801 0292<br />NO: +47 21 01 89 06<br />ES: +34 911 23 4170<br />SE: +46 (0) 852 500 288<br />CH: +41 (0) 435 0824 39<br />CA: +1 (647) 497-9373<br />US: +1 (213) 493-0014<br />AU: +61 2 8355 1035<br />FR: +33 (0) 170 950 587<br />GB: +44 (0) 330 221 0096<br />Access Code: 746-531-159  Audio PIN will be displayed upon joining the web session.
+
+<b>Presentation template: </b> [[https://portal.opengeospatial.org/files/?artifact_id=58553]]
+---+ 
+---+ Agenda (preliminary)
+   1 <p>Feedback from the WMO CHy - Uli Looser</p>
+   1 <p>WMO Information System (WIS) and WMO Integrated Global Observing System (WIGOS) - Steve Foreman</p>
+   1 <p>SOS 2.0 Hydrology Profile - update and *motion for release as OGC Best Practice* - Simon Jirka, Michael Utech</p>
+   1 <p>Integration of hydrologic activities with Government Linked Data initiatives - Australian Example - Simon Cox</p>
+   1 <p>OWS-10 CCI Hydro Model Interoperability Engineering Report - update and <b>motion for release as OGC </b> *Engineering Report* - Liping Di</p>
+   1 <p>GEOSS Water Services update: activities related to flood monitoring & prediction - David Arctur</p>
+   1 <p>Water data exchange using standards - towards a suite of standards - Irina Dornblut</p>
+   1 <p>Discussion of HydroDWG workshop and HIC 2014 Tutorial in August 2014 in New York City - All</p>
+
+- Main.UlrichLooser - 07 May 2014
+%META:FILEATTACHMENT{name="2014_June_Geneva_Agenda_HydroDWG.ppt" attachment="2014_June_Geneva_Agenda_HydroDWG.ppt" attr="" comment="HydroDWG Agenda and Feedback" date="1402579989" path="2014_June_Geneva_Agenda_HydroDWG.ppt" size="653312" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="SOS202.020Profile20for20Hydrology1.ppt" attachment="SOS202.020Profile20for20Hydrology1.ppt" attr="" comment="SOS 2.0 Profile For Hydrology" date="1402580045" path="SOS%25202.0%2520Profile%2520for%2520Hydrology[1].ppt" size="1249792" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="HydroDWG_Closing_Plenary.ppt" attachment="HydroDWG_Closing_Plenary.ppt" attr="" comment="HydroDWG Report to Plenary" date="1402580119" path="HydroDWG_Closing_Plenary.ppt" size="436736" user="UlrichLooser" version="1"}%
+%META:FILEATTACHMENT{name="2014_June_11_Geneva_WatERP_Project_v2.pptx" attachment="2014_June_11_Geneva_WatERP_Project_v2.pptx" attr="" comment="Project Overview WatERP" date="1403003127" path="2014_June_11_Geneva_WatERP_Project_v2.pptx" size="3731483" user="UlrichLooser" version="1"}%

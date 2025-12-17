@@ -1,0 +1,66 @@
+%META:TOPICINFO{author="PeterFitch" date="1281919978" format="1.1" version="1.2"}%
+%META:TOPICPARENT{name="SurfacewaterInteroperabilityExperiment"}%
+---++ Telecon 28 July 2pm UTC
+
+---+++ Agenda for the Telecon
+
+   1. Update from Use Case co-ordinators
+   1. Discussion on how to progress Vocabs and Feature model
+   1. Other cross cutting issues
+
+---++++Attendees
+Stefan Fuest, Simon Jirka, Jon Halquist, Peter Gjisbers, Peter Fitch, Sylvain Grellet, Nate Booth, Carsten Heidemann, Mark Wholey, David Valentine, Mateu? from IOW-Sandre
+
+---+++ Notes
+
+---+++ Update on Use Case 1 - Carsten
+UC1 has had its first telecon, although there were some technical (phone!) issues which prevented good discussion. The major issues for the UC at the moment relate to the completion of the WaterML2.0 compatible SOS server. The current situation is that Peter Taylor has modified a version of the 52North SOS server for use but the modifications have been done on an older version of the trunk. This has meant that there are now merging (integration) issues an an associated delay with the codebase. So the current options for the September milestone look to be:
+   1. Use the implementation produced by Peter Taylor
+   1. Use the standard 52North implementation which will serve standard O&M
+
+The UC team are about to setup up a roadmap which should be available soon.
+
+Mailing lists for UC have been setup.
+
+I also jotted doen a note about data availability but I'm not sure what this was about. Carsten can you please update.
+
+---+++ Update on Use Case 2 - Peter G
+The UC plan has been produced and placed on the twiki, but it has been pretty quiet, i.e. not much feedback. Peter G will organise a telecon to solicit additional feedback. As discussed, the UC is backloaded with the majority or work being done towards the end of the IE.
+
+---+++ Update on Use Case 3 - Stefan
+GRDC have provided all data Kisters which has been loaded into a WISKI implementation. Work is now commencing on developing the services necessary to make that data available using WaterML2.0.
+
+Stefan raised concerns about the need to standardise on the use for the various slots in WaterML2.0 such as phenomena, procedure etc. Examples given included the variable use of procedure, where some implementations have used in line descriptions and other use a link or reference to a description in varying different forms. What is required is a best practice on:
+   1. Use of Feature of Interest (FOI)
+   1. Procedure
+   1. Phenomena and phenomena vocabulary
+   1. Feature Catalog
+
+Some discussions have already taken place  as part of the GWIE which provide some guidance on issues.
+
+http://external.opengeospatial.org/twiki_public/bin/view/HydrologyDWG/USGSStandardsIssues
+http://external.opengeospatial.org/twiki_public/bin/view/HydrologyDWG/GwIeGetCapabilitiesBestPractices
+
+Stefan agreed to jot down specific concerns on the twiki, and then the IE will organise some discussion and meeting to resolve. These could be issues that are tackled in Toulouse, although this will be too late for the Sept. milestone.
+
+---+++ Other Issues.
+ 
+   * Nate Booth suggested that the IE quarantine some time for working at the Toulouse TC meeting in September. A quick poll of the telecon attendees confirmed that this would be possible and useful. An agenda will need to be worked out.
+
+
+---+++ Next Meeting
+   * Wed 11 August 2pm UTC
+      
+  
+---+++Actions Summary
+   * Jon Halquist to contact Nate Booth to identify datasets to stand up as part of the use case.
+   * Stefan to list issues related to standardised use of phenomena, procedure etc. within the IE and with WaterML2.0
+   * Peter F to contact Ilya re: working meeting at Toulouse TC.
+   * Peter G to organise UC2 telecon to solicit additional feedback
+
+
+---+++Supplementary Note
+   * Paul the octopus was the star of the world cup, out performing Germany, France, US and Australia! 
+
+
+-- Main.PeterFitch - 02 Aug 2010

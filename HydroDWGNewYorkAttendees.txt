@@ -1,0 +1,85 @@
+%META:TOPICINFO{author="KevinStegemoller" comment="reprev" date="1746713140" format="1.1" reprev="80" version="80"}%
+%META:TOPICPARENT{name="NewYorkWorkshop2014"}%
+<!--WYSI-->
+
+<!--WYG content - do not remove this comment, and never use this identical text in your topics-->
+---++ The agenda is being maintained at : HDWGWorkshopAtHIC2014
+---++ Attendance
+
+Please indicate if you plan to attend the 5-day workshop, the HIC, and also if you'd be available to present at the 1-day training event on Aug 16th. See separate pages for themes and agendas of the workshop and the training event.
+| *Attending HDWG workshop* | *Dates attending* | *Attending HIC* | *Presenting at the Aug 16th training* | *Attending 13 August City Hall visit?* |
+| Paul Sheahan | 13 - 15 (possibly 12th) | Yes | Can do the user / requirements view of WML2 development. Part 1 harmonsiation activity, Part 2 requirements summary and Part 2 IE. - Maybe 30-60 minutes. | Yes |
+| David Arctur | 13 - 16 | Yes | could do segments on 1) GEOSS AIP progress, 2) EarthCube dev on WaterML to/from netCDF | Yes |
+| Ilya Zaslavsky | 11 - 15 | No | ? may need to go to the airport before noon | Yes |
+| Matt Fry | 12 - 15 | Yes | No | Yes |
+| David Blodgett | 11 - 15 | Yes | | No |
+| Stephen Jackson | 11 - 15 | Yes | No | No |
+| Brian Gouge | 11-15 | No | | Yes |
+| Irina Dornblut | 11-16 | No | 30 min on HY_Features | Yes |
+| Tony Boston | 11-16 | Part | | Yes |
+| Michael Natschke | 12-15 | No | | Yes |
+| Sylvain Grellet | 11-12-13 | No | No | Yes. Have my plane at JFK at 7:05 PM .. |
+| Boyan Brodaric | 14-16 | Yes | 30 min on GW IE | |
+| Ulrich Looser | 16 | Yes | | |
+| David Maidment | 11-12-13? | | | Yes |
+| David Valentine | 11-15 | No | | yes |
+| Nate Booth | 13p-15 | No | | Yes |
+| Dave Briar | 11-15 | Yes | | Yes |
+| Becky Schmidt (CSIRO) | 12-13 | Yes | Attending | Yes |
+| Andrew Ernest | 12-13 | No | No | |
+| Nick Car | 12 | No | No | |
+| Tod Dabolt | 11-12 | | | |
+| Ed Clark | 11-15? | | | |
+| Al Rea | 12-14 noon | No | No | Yes |
+| Saurav Kumar | 15 | Yes | | |
+| | | | | |
+| | | | | |
+---++ 
+---++ Lodging
+
+Per Michael Piasecki, our host, The Towers option is not available, unfortunately (3/20/2014). Here are alternative suggestions from Michael:
+
+<a href="http://deals.whotels.com/W-New-York-Hotel-97502/special-offers?PS=PS_aa_NorthNY-Google_W%20Lexington%20Ave_Sitelinks_092810_NAD_FM" target="_blank">W Hotel New York</a> which is our hotel in which we reserved blocks of rooms.
+
+There is also a Days Inn (this is _not_ in Harlem - it is on Broadway on the Upper West Side - subway Line 1) [[http://www.google.com/aclk?sa=l&ai=CbsfivR4rU5fnC-zC6gHE9IH4DJKYk78E0p_wzHTlgqcsCAAQASDJmKILUJOXlMv8_____wFgyYaAgMCk2A-gAa7-uPwDyAEBqgQmT9Ah7gFcwy3NETd8tqpkvP7FbIr_HQaXqVozGf27J-OG-D2tMQyABZBO0gYMEOrg5QQYyvD8LSgHgAe6gccDkAcC&sig=AOD64_3wgpNqrL6G25fpUPuWcs3xAbc8HQ&ctype=50&rct=j&q=days+inn+harlem&ved=0CDQQmxA&adurl=http://www.google.com/maps%3Fdaddr%3D215%2BWest%2B94th%2BStreet,%2BNew%2BYork,%2BNY%2B10025%26ll%3D40.793100,-73.971770%26f%3Dd%26saddr%3D%26iwstate1%3Ddir:to%26fb%3D1%26slad%3D0ALHuxZr0fCBAmmLp5YA7DZriOs8r9ue8FgChB3d3cuZGF5c2lubi5jb20vEp0BaHR0cDovL3d3dy5kYXlzaW5uLmNvbS8_Y2lkPXdoZ19kaV9nZ2xzZW1fYnImd2lkPXBzOmJyX3doZyZ0ZWw9MTgwMDY4MjEwODImMDAyPTIxODkxMjEmMDA0PTE3NzExMDI1ODYmMDA1PTkyOTE0MDIxJjAwNj0zMTMwMDg4OTA2NiYwMDc9U2VhcmNoJjAwOD0mMDI1PWMmMDI2PRofRGF5cyBJbm7CriBIb3RlbHMgLSBEYXlzSW5uLmNvbSIVUGxhbiBBaGVhZCAmIFNhdmUgMTUlKhxKdXN0IEJvb2sgNyBEYXlzIGluIEFkdmFuY2Uh%26geocode%3D1635445890094713855,40793100,-73971770][<br />215 West 94th Street, New York, NY]] &lrm;
+
+[[http://www.daysinn.com/hotels/new-york/new-york/days-inn-hotel-new-york-city-broadway/hotel-overview?partner_id=&hotel_id=15465&group_code=&campaign_code=&propId=DI15465&brand_id=DI&checkout_date=&modify=false&useWRPoints=false&children=0&corporate_id=&ratePlan=BAR&teens=0&affiliate_id=&altPropId=15465&brand_code=BH%2CDI%2CRA%2CBU%2CHJ%2CKG%2CMT%2CSE%2CTL%2CWG%2CWY%2CPX%2CWT%2CWP%2CPN&iata=&childAgeParam=&rate_code=&adults=1&discreteParam=1-0-0-1-0-0-1-0-0-1-0-0&checkin_date=&rooms=1]]
+
+<span style="background-color: transparent;">and then the Aloft Harlem (15-20 minutes’ walk)</span>
+
+[[http://www.starwoodhotels.com/alofthotels/property/area/map.html?propertyID=3353&localeCode=en_US&language=en_US]]
+
+[[http://deals.alofthotels.com/Aloft-Harlem-New-York-Hotel-3353/special-offers?PS=LGEN_AA_DNAD_CGGL_TPRP]]
+
+In my personal experience, there are lots of Airbnb options in NYC. See http://www.airbnb.com
+
+Also see HIC'2014 lodging options: http://hic2014.org/accommodation/
+
+LGA is the closest airport to fly into.
+---++ Meeting location
+
+The workshop will be held at CCNY, at the same location as HIC'2014 . HIC'2014 web site has a lot of helpful info: http://hic2014.org/venue/ .
+
+Building and room: <font color="#993366" face="Calibri" size="3">Steinman Bldg Exhibit Room, 1<sup>st</sup> floor entrance from the Bldg lobby. Steinman Bldg: https://www.google.com/maps/place/The+Grove+School+of+Engineering-Steinman+Building/@40.821525,-73.948041,17z/data=!3m1!4b1!4m2!3m1!1s0x89c2f6652a66a7c7:0x279e7de0ce835b84 </font>
+---++ Communications
+
+We will have WIFI connection in workshop rooms, and should be able to set up webex when needed.
+---++ Lunch options
+   * <font color="#993366" face="Calibri" size="3">the faculty dining room, buffet style lunch for a very reasonable price.</font>
+   * <font color="#993366" face="Calibri" size="3"><font color="#993366" face="Calibri" size="3">Ecuadorian place on Amsterdam: http://www.allmenus.com/ny/new-york/47393-equatoriana-restaurant/menu/ (reservation needed if all of us go there at once)</font></font>
+   * <font color="#993366" face="Calibri" size="3"><font color="#993366" face="Calibri" size="3">Coccola: <font color="#993366" face="Calibri" size="3"> http://www.menupages.com/restaurants/coccola/ (reservation needed if all of us go there at once)</font></font></font>
+   * <font color="#993366" face="Calibri" size="3"><font color="#993366" face="Calibri" size="3"><font color="#993366" face="Calibri" size="3"><font color="#993366" face="Calibri" size="3">General restaurant info: </font></font></font></font> http://www.urbanspoon.com/n/3/235/NYC/Harlem-restaurants
+   * Evening beer: http://www.dinosaurbarbque.com/locations/harlem
+---++ Group dinner
+
+We'll make a reservation once we know the number of participants and schedules.
+---++ When in NYC
+
+Calendar of events in NY: http://www.events12.com/newyork/august/. Also http://www.timeout.com/newyork/things-to-do/new-york-events-in-august
+---++ End of HDWG workshop photo - 15 August 2014
+
+<img src="%ATTACHURLPATH%/HydroDWGNewYorkAttendees-2014-08-15.png" alt="HydroDWGNewYorkAttendees-2014-08-15.png" width='640' height='480' />
+
+Main.IlyaZaslavsky - 25 Oct 2013
+
+%META:FILEATTACHMENT{name="HydroDWGNewYorkAttendees-2014-08-15.png" attachment="HydroDWGNewYorkAttendees-2014-08-15.png" attr="" comment="HydroDWGNewYorkAttendees-2014-08-15" date="1746713085" path="HydroDWGNewYorkAttendees-2014-08-15.png" size="484745" user="KevinStegemoller" version="1"}%

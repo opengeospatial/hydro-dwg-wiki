@@ -1,0 +1,51 @@
+%META:TOPICINFO{author="BoyanBrodaric" date="1261581493" format="1.1" reprev="1.4" version="1.4"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+OGC TC 2009-12-08
+
+---++ Attendees
+   * *NRCan* (CAN): Main.EricBoisvert, Main.BoyanBrodaric
+   * *USGS* (USA): Main.NateBooth, Main.TomKunicki, Main.ILinKuo
+   * *CSIRO* (AU): Main.PeterFitch
+   * *UCSD* (USA): Main.IlyaZaslavsky, Main.DavidValentine
+
+---++Agenda: Groundwater Interoperability Experiment meeting
+   * *Dec 08, 2009, 9am-12pm*
+   * Location: see Greg Bueler on Mon at Registration desk 
+   * Technical disucussions
+      * !WaterML 2
+      * SOS Services and Servers
+      * Clients: display and retrieve time-series and water wells
+   * AGU presentation
+   * Next steps
+
+---++Agenda: Hydrology Domain Working Group meeting (as it relates to the GW IE)
+   * *Dec 08, 2009, 1pm-4pm*
+   * Location: Olympus Mons Tech Talk (CL4)
+      * Groundwater IE presentation and discussion
+      * Other IEs
+      * !WaterML update and technical discussions
+
+---++Notes
+   * *WaterML 2 Design Issues:*
+      * Conceptual model for Sampling and Sampled Features for gr and surface water 
+      * Nested Sampling and Sampled Feature
+      * Content profile to determine what to put in the Sampled and Sampled Feature boxes for gr/water
+      * Some result possibilities: 
+         * !TimeSeries (one sensor, many times, one phenomena type, many values)
+         * Quality (one sensor, one time, many phenomena type, one value)
+         * need conceptual model for consistent results
+
+   * *OGC Web Services Issues:*
+      * use-case for sensor data discovery that is not visual based
+
+   * *Next Milestones:*
+      * March 2010
+         * query using temporal filter, value filter, sampled features  (GSC, USGS)
+         * return WFS results in GWML for wells (USGS)
+         * constrain results model in !WaterML2 schema via schema or usage profile 
+         * complete !WaterML 2 design re: feature-of-interest (sampled/sampling feature)
+      * June 2010
+         * SOS return new results schema
+         * CSW prototype for services as well as sensor metadata (including discovery use-case)
+
+ 

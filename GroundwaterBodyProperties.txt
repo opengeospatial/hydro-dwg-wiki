@@ -1,0 +1,13 @@
+%META:TOPICINFO{author="FrancoisLetourneau" comment="save topic" date="1372349348" format="1.1" reprev="2" version="2"}%
+%META:TOPICPARENT{name="Gwml2FinalFeaturesList"}%
+---+ Groundwater Body Physical Properties
+
+*Definition*: A list of properties that characterize physically the groundwater body
+
+*Properties*:
+   * Temperature
+   * Age
+   * Volume
+   * Conductivity
+   * ...
+-- Main.FrancoisLetourneau - 27 Jun 2013

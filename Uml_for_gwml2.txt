@@ -1,0 +1,35 @@
+%META:TOPICINFO{author="FrancoisLetourneau" comment="reprev" date="1439990982" format="1.1" reprev="7" version="10"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment2"}%
+---+ Configuring Enterprise Architect for the GWML 2 Model
+   1 Using a subversion client, do a SVN Checkout using the following URL
+      1 https://xp-dev.com/svn/gwml2/model
+      1 <b>* It is mandatory*</b> to use this exact path
+   1 If not already done, do a SVN checkout for the following packages
+      1 GeoSciML --&gt; https://www.seegrid.csiro.au/subversion/GeoSciML/tags/3.2.0/model
+      1 HollowWorld --&gt; https://www.seegrid.csiro.au/subversion/HollowWorld/branches/release_4
+      1 ISOTC211 --&gt; https://www.seegrid.csiro.au/mirrors/iso-harmonized-model
+   1 In EA, create a new empty project. In Project viewer, right-click on model, --&gt; Version control --&gt; then Version control Setting. Create new configurations by clicking on the new button.
+      1 In configuration Details – Type, select Subversion. Set the VC Time-Out setting to 150 seconds.
+      1 Type hollowworld in the Unique ID field. Select the path where the hollowworld model resides (at the root of the svn checkout folder). Save and click on the New button.
+      1 Type isotc211 in the Unique ID field. Select the path where the isotc211 model resides (at the root of the svn checkout folder). Save and click on the New button.
+      1 Type geosciml in the UniqueID field. Select the path where the GeoSciML model resides. Save and click on the New button.
+      1 Type gwml in the UniqueID field. Select the path where the gwml model resides (typically, &lt;gwml_root&gt;\model). Save.
+   1 In EA, in Project viewer, right-click on model, --&gt; Package control --&gt; Get Package. For HollowWorld (select file HollowWorld.xml). Do the same for GeoSciML (select file geosciml.xml), For GWML, select GWML2.xml. If you placed your ISO TC211 models files correctly, the get package for isotc211 is done automatically through HollowWorld
+   1 In EA, in Project viewer, right-click on Model, --&gt; Package control --&gt; Get All Latest. In some instance, it was found that a "Get Latest" on each package was required to fully update the model to its latest version. Please verify the the model is up to date before doing any edits.
+   1 Configure correctly EA. See https://www.seegrid.csiro.au/wiki/AppSchemas/ConfiguringUMLToolForHollowWorld#A_5._Configure_the_EA_UI
+   1 Add the Inspire profile (for voidable properties) in the UML Profiles in the Resources pane. Select the file INSPIRE_UMLProfile_D2.5_v3.0.xml (from the hollowWorld location). Same procedure than the previous point.
+   1 You are now ready to edit the model. To do so, right-click on gwml2 and do a check out. You can then check out other packages. When completed, simply do a check in and add some edition notes if required.
+   1 If more details are required, please visit https://www.seegrid.csiro.au/wiki/CGIModel/ConfiguringEnterpriseArchitectForGeoSciML
+-- Main.FrancoisLetourneau - 8 Jul 2014
+
+Updated <br />-- Main.FrancoisLetourneau - 05 Feb 2015
+
+---++ Troubleshooting
+
+*EA throws a QueryDef error when you try to Get Latest or Get All Latest.*
+
+Typically cause by selecting the wrong folder in Version Control Setting. At the initial Get Package, you're asked to select a xmi file. The location of resource are relative to folder selected at Version Control Setting. EA will list all xmi file recursively, but the xmi file still rely on folder selected at configuration.
+
+---++ Resources
+
+Great Resource from INSPIRE https://www.seegrid.csiro.au/wiki/pub/AppSchemas/ConfiguringUMLToolForHollowWorld/INSPIRE_uml_howtopdf__EN_2.0.pdf

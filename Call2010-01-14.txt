@@ -1,0 +1,51 @@
+%META:TOPICINFO{author="BoyanBrodaric" date="1264008018" format="1.1" version="1.5"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Call 2010-01-14*
+
+---++ Connection Details
+   * dates:  Thurs Jan 14 (N.America), Fri Jan 15 (AU)
+   * times:  5pm (Ottawa), 4pm CT (WI), 8am (AU)
+   * phone number: 218-862-1000 (USA)
+   * conference call code: 437712#
+
+---++ Agenda
+   * New members: proposal update, etc.
+   * Technical discussions
+
+---++ Attendees:
+   * Amye Osti, David Osti (34N)
+   * Nate Booth, I-Lin Kuo (USGS)
+   * Boyan Brodaric, Eric Boisvert (GSC)
+   * Peter Taylor (CSIRO)
+   * David Valentine (SDSC/CUAHSI)
+
+---++Notes
+   * Recap from OGC/AGU meeting, plans between now and March
+      * !WaterML2 development design issues discussed:
+      * (1) !FeatureOfInterest - !samplingFeature and !anyFeature
+      * (2) Alternative model for results and how to filter results
+      * (3) having the units be immutable with the results
+
+   * !WaterML2 subgroup should be formed (DONE - Peter T)
+
+   * Services:
+      * WFS service for USGS wells in GWML to be started
+
+   * New IE members:
+      * Observers:
+      * (1) Kisters
+      * (2) University of Calgary group
+      * Participants:
+      * (3) 34N: standing up client application(s) and SOS/WFS services
+      * (4) Illinois group: still working out details
+
+
+---++Action Items
+   * Send SOS urls to 32North (Eric, Nate)
+   * 34 North to setup web client, with data served by GSC and USGS
+   * 34 North and USGS to start on additional services (SOS, WFS)
+   * I-Lin K and Eric B and nathan@34north.com to join schema phone calls and/or email discussions
+
+
+---++Next call: 
+   * 4-Feb-2010 5PM ET 

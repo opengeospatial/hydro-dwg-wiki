@@ -1,0 +1,51 @@
+%META:TOPICINFO{author="BoyanBrodaric" date="1266507988" format="1.1" version="1.6"}%
+%META:TOPICPARENT{name="GroundwaterInteroperabilityExperiment"}%
+---+ *Call 2010-02-04*
+
+---++ Connection Details
+   * dates:  Thurs feb 04 (N.America), Fri Feb 05 (AU)
+   * times:  5pm (Ottawa), 4pm CT (WI), 8am (AU)
+   * phone number: 218-862-1000 (USA)
+   * conference call code: 437712#
+
+---++ Agenda
+   * Status update: 34North client deployment
+   * Status update: !WaterML2 schema progress
+   * Status update: web services progress (all)
+   * !HydroDWG working meeting (Nate) - 3/15@3-6PM Italy time - is there interest?
+
+---++Action Items
+   * David V: send url for page to contain service locations
+   * Nate B: set up Doodle page for Ispra meeting attendance (tentatively 3-6p on Monday, after !WaterML 2 meetings)
+   * Nate B: send invitations for next meeting--2010-02-25 *DONE* http://portal.opengeospatial.org/?m=projects&a=view&project_id=336&tab=2
+   * continue work on client, SOS and WFS services, !WaterMl2
+
+---++Notes
+
+---+++ Status update:
+---++++ 34 North: Client development
+Nathan walked us through client at
+http://www.opennrm.org
+
+We discussed some of the findings he has had regarding services differences, etc.  Listed here:
++ I-Lin has documented some technical differences here that Nathan ran into on 
+http://external.opengeospatial.org/twiki_public/bin/view/HydrologyDWG/HTTPPostMethodsDiscussion
++ REST interface would be useful - right now an intermediate proxy is needed.
++ Number of observations needs to be corrected.
++ units -> needs to deal with different units.
++ time -> need to deal with averaging over time.  USGS has daily values (averaged over a day) - should not express time.
++ Boyan - Additional suggestions: Add WMS layers, and data download
+
+---+++ Web services:
+34N: no progress yet.  Have focussed on client to this point.
+Target March OGC meeting for services.
+
+USGS: Have researched the standards but have yet to stand up a WFS.  
+
+GSC: Improvement of the services underway.
+
+---++++ Schema updates 
+Pete Taylor: not many changes since last call.  Group noted service and schema discussions needed around:
++ getCapabilities -> need to discuss where to store and serve well location summaries as well as what phenomena were measured and when (period of record)
++ Feature of Interest -> see post on IE site (http://external.opengis.org/twiki_public/bin/view/HydrologyDWG/SamplingFeature)
++ TimeSeries

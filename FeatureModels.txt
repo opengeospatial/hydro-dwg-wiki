@@ -1,0 +1,31 @@
+%META:TOPICINFO{author="PeterFitch" date="1277430321" format="1.1" reprev="1.3" version="1.3"}%
+%META:TOPICPARENT{name="SurfacewaterInteroperabilityExperiment"}%
+---+++ Feature Model
+
+This page is for technical discussions on Feature Models to be used as part of the IE.
+
+---++++INSPIRE Hydrography Data Model
+The INSPIRE hydrography data model is an application schema conformant to ISO UML modelling rules to be used as part of INSPIRE. The model consists of three main sub models:
+   * Hydro - Networks: to be used in GIS and modelling
+   * Hydro - Physical Waters: to be used for mapping
+   * Hydro - Reporting: to be used for reporting
+
+As part of the model a number of hydro features are defined. The features are copied from the specification below.
+
+%ATTACHURL%/INSPIREFeatureTypes1.gif
+%ATTACHURL%/INSPIREFeatureTypes2.gif
+
+The proposal is that the Surface Water IE (all use cases) will use the features defined in the D2.8.I.8 INSPIRE Data Specification on Hydrography &#8211; Guidelines (detailed above). This will allow a better cahnce of interoperability across the use cases. Nice aspects of  this model are:
+   * The model has been based on existing standards from ISO and OGC.
+   * The features are general enough not to upset anyone , but specific enough to be useful.
+   * The feature set contains associated terrestrial and other features related to the surface water domain
+Please comment on this page if you suggest a different model.
+
+
+-- Main.PeterFitch - 18 Jun 2010
+   * [[%ATTACHURL%/INSPIRE_DataSpecification_HY_v3.0.pdf][INSPIRE_DataSpecification_HY_v3.0.pdf]]: INSPIRE Hydrography data model
+
+%META:FILEATTACHMENT{name="INSPIRE_DataSpecification_HY_v3.0.pdf" attachment="INSPIRE_DataSpecification_HY_v3.0.pdf" attr="" comment="INSPIRE Hydrography data model" date="1276876284" path="INSPIRE_DataSpecification_HY_v3.0.pdf" size="5901472" stream="INSPIRE_DataSpecification_HY_v3.0.pdf" tmpFilename="/tmp/9y3kxPuZX6" user="Main.PeterFitch" version="1"}%
+%META:FILEATTACHMENT{name="INSPIREFeatureTypes1.tiff" attachment="INSPIREFeatureTypes1.tiff" attr="" comment="INSPIRE Feature Type 1" date="1276883004" path="INSPIREFeatureTypes1.tiff" size="180762" stream="INSPIREFeatureTypes1.tiff" tmpFilename="/tmp/fV9fMuQUAZ" user="Main.PeterFitch" version="1"}%
+%META:FILEATTACHMENT{name="INSPIREFeatureTypes1.gif" attachment="INSPIREFeatureTypes1.gif" attr="" comment="Inspire Features 1" date="1277429930" path="INSPIREFeatureTypes1.gif" size="47643" stream="INSPIREFeatureTypes1.gif" tmpFilename="/tmp/fi7gEx63fX" user="Main.PeterFitch" version="1"}%
+%META:FILEATTACHMENT{name="INSPIREFeatureTypes2.gif" attachment="INSPIREFeatureTypes2.gif" attr="" comment="Inspire Features 2" date="1277430082" path="INSPIREFeatureTypes2.gif" size="52316" stream="INSPIREFeatureTypes2.gif" tmpFilename="/tmp/MGolBLVEPo" user="Main.PeterFitch" version="1"}%

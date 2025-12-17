@@ -1,0 +1,61 @@
+%META:TOPICINFO{author="StefanFuest" date="1272010065" format="1.1" version="1.2"}%
+%META:TOPICPARENT{name="SurfacewaterInteroperabilityExperiment"}%
+---++ Telecon 21 April 2pm UTC
+
+---+++ Agenda for the Telecon
+
+   1. Round table update, identifying any last minute issues.
+   1. Next steps and telecon
+
+---++++Attendees
+Stefan Fuest, Simon Jirka, Ullrich Looser, Carsten Heidemann Sylvain Grellet, David Arctur, Peter Fitch
+
+---+++ Notes
+
+---+++ Uli (GRDC)
+   * Gave the group an update on a discussions with Wolfgang Grabbs with regard to a letter of support for the IE. For WMO to sign the OGC IE letter of support, the template needs to go through WMO legal. The question was also raised on whether or not the participation was covered under the MOU with the WMO. 
+
+WMO would be happy to see a sentence in the workplan stating that this is is undertaken with support from WMO under the terms of the MOU. Uli agreed to do this.
+
+We agreed that we would push ahead whilst this was sorted out so as not to affect the timelines. 
+
+There was also a discussion with David Arctur on this where it was agreed that Uli would approach WMO and ask for a letter of support under the terms of the MOU, which will be included in the documentation pack.
+
+23 April: Peter received that letter this morning.
+ 
+---++++ Carsten 
+Updated the group on discussion with Dietmar ?? from ??.  Carsten also confirmed that disy will provide a metadata cataogue as part of the IE.
+
+---+++ Sylvain
+Nothing to add
+
+---+++Stefan Fuest 
+Kisters given their involvement should be an initiator, all agreed. Stefan is going to check what is their position.
+
+---+++David Arctur
+   * Is going to clarify the position of GRDC re participation of the IE as GRDC operates under WMO auspices and their involvement may be under the MOU with WMO.
+
+   * Suggested that WMO provide a letter of support, see above, which has since been provided.
+
+---+++General Notes
+The documentation will be "locked down" COB 23 April. That is we want to have all text into the document so all parties can read the final document and sign off early next week.
+
+Our new submission date is 27 April 2010.
+
+All initiators need to update the table on the Surface Water IE page once they have checked the workplan. The work plan will not be submitted until approval is given by all initiators.
+
+---+++ Next Meeting
+   * Wed 28 April 9pm UTC
+      
+  
+
+---+++Actions Summary
+   * Uli to insert sentence into workplan stating WMO support for IE
+   * Stefan to find out about Kisters as an initiator
+   * Sylvain and Carsten to ensure last minutes updates are in project plan.
+   * David Arctur to confirm GRDC status as it operates under auspices of WMO.
+   * All initiators to check work plan after 23 April and update table on surface water IE page once done.
+
+
+
+-- Main.PeterFitch - 22 Apr 2010

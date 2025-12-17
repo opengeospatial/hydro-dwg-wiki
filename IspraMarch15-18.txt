@@ -1,0 +1,19 @@
+%META:TOPICINFO{author="PeterFitch" date="1270097731" format="1.1" version="1.2"}%
+%META:TOPICPARENT{name="SurfacewaterInteroperabilityExperiment"}%
+---+++ Ispra Meeting Thursday 18 March.
+
+
+---++++ Agenda for ISPRA SurfaceWater IE Experiment 15 or 18 of March
+   * Introductions
+   * Main aims of IE
+   * Presentation of plans so far
+   * Individual organisation aims
+   * Define process for finalising planning
+   * Next meeting
+
+
+
+-- Main.PeterFitch - 31 Mar 2010
+   * [[%ATTACHURL%/Surface_Water_IE.pptx][Surface_Water_IE.pptx]]: ISPRA Surface water IE Meeting Presentation
+
+%META:FILEATTACHMENT{name="Surface_Water_IE.pptx" attachment="Surface_Water_IE.pptx" attr="" comment="ISPRA Surface water IE Meeting Presentation" date="1270097727" path="Surface Water IE.pptx" size="321327" stream="Surface Water IE.pptx" tmpFilename="/tmp/ZHBqDTdumy" user="Main.PeterFitch" version="1"}%

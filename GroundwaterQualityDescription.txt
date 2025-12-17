@@ -1,0 +1,14 @@
+%META:TOPICINFO{author="FrancoisLetourneau" comment="save topic" date="1372349731" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="Gwml2FinalFeaturesList"}%
+---+ Groundwater Quality Description
+
+*Definition*: A normative quality description is an assesment based upon some guideline edited by a government or a quality standard.
+
+*Properties*:
+   * General description
+   * Salinity
+   * Colour
+   * Odour
+   * Turbidity
+   * ....
+-- Main.FrancoisLetourneau - 27 Jun 2013
