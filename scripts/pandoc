@@ -1,0 +1,1 @@
+docker run -i  --platform linux/amd64 --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex:3.8 $@
