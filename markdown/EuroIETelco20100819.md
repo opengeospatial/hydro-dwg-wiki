@@ -1,0 +1,41 @@
+# Use Case 1 Phone Conference: 19/08/2010, 14:00-14:45 (CEST)
+
+## Participants
+
+- Chris Michl (DLZ-IT BMVBS)
+- Simon Jirka (52°North)
+- Ulrich Loser (GRDC)
+- Stefan Fuest (Kisters)
+- Michael Natschke (Kisters)
+- Sylvain Grellet (IOW-Sandre)
+
+## Agenda
+
+- SOS server - update developers 52°North and Kisters
+- SOS server implemenatation - update DLZ-IT and SANDRE
+- Web Clients (SOS, WMS) - update developers 52°North and Kisters
+- Toulouse TC (who is going, presentation)
+- next telcon
+
+## Results
+
+- Update on SOS server/clients (1-3 in agenda):
+  - Simon J.: SOS server update was run recently for the DLZ-IT implementation; the web client is available in a consolidated version and a WMS is used as a background map; the test application is available at DLZ-IT.
+  - Stefan F./Michael N.: SOS service (implementing O&M 1.0) is available on the TSM plattfrom; Kisters will come up with a test presentation for the TC meeting in Toulouse.
+  - Stefan F. raised the questions of how to address the feature of interest (FOI) in the services; so far no common approach for getting data from the capabilities document using procedure, observed property and FOI is in practise; at this stage all SOS implementation are best practices (-\> see discussion; was main part of the conference).
+- Discussion (arising from update):
+  - Content: How to get data into the SOS (encoding of procedure, observed property and FOI; problem of too big Capabilities documents)?
+  - Agreed on: \* Simon will distribute examples from the PEGELONLINE SOS (capa-bilities document and an O&M document providing waterlevel); they should be further discussed; Simon will contact Arne for further technical detail \* Simon, Stefan and Michael (Sylvain? and Christian might join in) agreed on a telcon to that issue on the coming Tuesday; goal is to find a common approach how to get surface water into the SOS
+- Planning the Toulouse TC (Ulrich gave an update on the time line):
+  - 21\. September: Workshop on <a href="WaterML2" class="wikilink">WaterML2</a>.0 and IE (in depth discussion on surface water feature model, depending on interest ½ or full day, organized by Peter Fitch)
+  - 22\. September: HDWG Meeting (presentation of results IEs, presenta-tions from 52°North and Kisters are planned, Christian and Carsten will give or prepare a used case 1 overview of results, Sylvain will re-port on SANDRE)
+  - Participants from used case 1 in Toulouse; 52°North (Simon), Kisters (Stefan or Michael), SANDRE (Sylvain), Christian and Carsten will join over telcon
+- next phone conference is on Thursday, September 2nd at 12:00 (CEST), agenda: planning Toulouse
+
+-- Main.<a href="ChrisMichl" class="wikilink">ChrisMichl</a> - 20 Aug 2010
+
+- TOPICINFO{author="<a href="ChrisMichl" class="wikilink">ChrisMichl</a>" date="1282319575" format="1.1" reprev="1.1" version="1.1"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="UseCase1CrossborderDataExchange" class="wikilink">UseCase1CrossborderDataExchange</a>"}

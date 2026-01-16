@@ -1,0 +1,163 @@
+<span class="twiki-macro TOC"></span>
+
+## \<span style="background-color: transparent; line-height: 1.1em;"\>Overview\</span\>
+
+In order to design the API/service interface for the RGS IE, there is a need to determine the service calls required. There are a number of way the service interface can be defined including:
+
+- Navigation around the underlying data model
+- Navigation around a domain conceptual model
+- Value added calls the execute commonly required functions
+
+\<span style="background-color: transparent; line-height: 22px;"\>The \</span\> [Activity Plan](%PUBURL%/HydrologyDWG/RGSInteropExperiment/RGS_IE_Activity_Plan.docx)\<span style="background-color: transparent; line-height: 22px;"\> defines 3 use cases:\</span\>
+
+- \<span style="background-color: transparent; line-height: 22px;"\>Delivery of latest rating table \</span\>
+- \<span style="background-color: transparent; line-height: 22px;"\>Exposing rating tables for analysis and educational purposes\</span\>
+- \<span style="background-color: transparent; line-height: 22px;"\>Retrieval of full rating history\</span\>
+
+The service calls implemented will need to support the Activity plan use cases though the interoperability scenarios that we have defined for the experiment : <a href="RGSIEScenarioPlanning" class="wikilink">RGSIEScenarioPlanning</a>.
+
+\<span style="background-color: transparent; line-height: 22px;"\>The IE standardisation objective is around the RGS model rather than the interface. That said, **we have identified that there is a logical follow on body of work to look at standardising interfaces** for \</span\> <a href="WaterML2" class="wikilink">WaterML2</a> \<span style="background-color: transparent; line-height: 22px;"\>, optimised for domain usage. \</span\>
+
+\<span style="background-color: transparent; line-height: 22px;"\>As we are not looking at standardising the interface, the primary purpose of the interfaces defined is to support the IE. Since the IE objectives are related to real work usage of this data, the resulting interfaces should have ongoing relevance to the exchange of RGS data, tho they may be minimally functional.\</span\>
+
+The objective of this page is the list possible user questions that the UI may need to support though a single or multiple requests. The list will then be used to determine the minimal API call requirements.
+
+## User position : I know what I want, give it to me
+
+Assumption :
+
+- \<span style="background-color: transparent; line-height: 22px;"\>Calls are executed against a single montoring site.\</span\>
+- \<span style="background-color: transparent; line-height: 22px;"\>Calls receive 'from' and 'to' paramters in the call string \</span\>
+- \<span style="background-color: transparent; color: \#339900; font-size: 18.88888931274414px; line-height: 1.1em;"\>\<br /\>\</span\>
+
+\<span style="background-color: transparent; color: \#339900; font-size: 18.88888931274414px; line-height: 1.1em;"\>Ratings\</span\>
+
+| Capablity | Must have | Nice to have | Not required |
+|:---|:---|:---|:---|
+| \<span style="background-color: transparent; line-height: 22px;"\>Get: The latest rating\</span\> | yes |  |  |
+| Get: The latest rating and its latest shift | yes |  |  |
+| Get: The conversion periods | yes |  |  |
+| Get: Conversion tables X,X,X,X | yes |  |  |
+| Get: Full conversion system |  | yes |  |
+
+### Gaugings
+
+| Capablity                       | Must have | Nice to have | Not required |
+|:--------------------------------|:----------|:-------------|:-------------|
+| Get: The latest gauging         | yes       |              |              |
+| Get: All Gaugings               |           | yes          |              |
+| Get: All Gaugings (with filter) |           | yes          |              |
+| Get : Gauging X,X,X,X           | yes       |              |              |
+|                                 |           |              |              |
+
+Prefer filter after the fact.
+
+### Sections
+
+| Capablity                          | Must have | Nice to have | Not required |
+|:-----------------------------------|:----------|:-------------|:-------------|
+| Get: All sections                  |           | yes          |              |
+| Get: All sections (with filter)    |           | yes          |              |
+| Get : Section X,X,X,X              | yes       |              |              |
+| Get : The latest section of type X |           | yes          |              |
+|                                    |           |              |              |
+
+### Range Values
+
+| Capablity             | Must have | Nice to have | Not required |
+|:----------------------|:----------|:-------------|:-------------|
+| Get: Range periods    | yes       |              |              |
+| Get: Range table X    | yes       |              |              |
+| Get: All range tables |           | yes          |              |
+|                       |           |              |              |
+|                       |           |              |              |
+
+## User position : I know what is available, I want to know what has changed
+
+### Ratings
+
+| Capablity | Must have | Nice to have | Not required |
+|:---|:---|:---|:---|
+| Ask: \<span style="background-color: transparent; line-height: 22px;"\>What is the latest rating. Has the latest rating changed (since this date)? \</span\> | X |  |  |
+| Ask: \<span style="background-color: transparent; line-height: 22px;"\>What is the latest rating and its latest shift\</span\> | X |  |  |
+| [Ask](AsK): Have there been any changes to the rating periods since I last checked? (since this date) | X |  |  |
+| Ask: \<span style="background-color: transparent; line-height: 22px;"\>Have there been any changes to my list of the rating tables since I last checked? Multiple of the first call. \<br /\>\</span\> | X |  |  |
+|  |  |  |  |
+
+### Gaugings
+
+| Capablity | Must have | Nice to have | Not required |
+|:---|:---|:---|:---|
+| Ask: Has the list of gaugings for rating X changed since date X |  | X (may be tricky) |  |
+| Ask : Have there been any new gaugings since this date? | X |  |  |
+| Ask : Have there been any new gaugings since this date? (with filter e.g. \<span style="background-color: transparent; line-height: 22px;"\>Since date X,\</span\>\<span style="background-color: transparent; line-height: 22px;"\>In stage range X-Y,\</span\>\<span style="background-color: transparent; line-height: 22px;"\>by method )\</span\> |  | X (adds complexity to implement..) | X |
+|  |  |  |  |
+|  |  |  |  |
+
+### Sections
+
+| Capablity | Must have | Nice to have | Not required |
+|:---|:---|:---|:---|
+| Ask: Has there been a new (type X) section since date Y | X |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+### Range Values
+
+| Capablity | Must have | Nice to have | Not required |
+|:---|:---|:---|:---|
+| Ask: Have there been any changes to the range periods since I last checked |  | X |  |
+| Ask: Have there been any changes to my list of the range tables since I last checked |  | X |  |
+|  |  |  |  |
+| Tend to be more static data. For critical use cases it's likely these will be retrieved anyway. |  |  |  |
+|  |  |  |  |
+
+## User position : I want to explore what is available in order to determine what I want
+
+### Ratings
+
+| Capablity | Must have | Nice to have | Not required |
+|:---|:---|:---|:---|
+| Ask : \<span style="background-color: transparent; line-height: 22px;"\>What is the list of From-To combinations that conversions exist \<br /\>\</span\> | X |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+### Gaugings
+
+| Capablity | Must have | Nice to have | Not required |
+|:---|:---|:---|:---|
+| Ask : What is the list of From-To combinations that conversion observations exist for? | X |  |  |
+| \<p\>Ask :\<span style="background-color: transparent; line-height: 22px;"\> When was the last gauging or gaugings after this point? \</span\>\</p\> \<p\>\<span style="background-color: transparent; line-height: 22px;"\>What is the result? Does this form a query to another call? \<br /\>\</span\>\</p\> | X |  |  |
+| \<p\>Ask :\<span style="background-color: transparent; line-height: 22px;"\>Give me a list of gaugings where a filter condition is met. \</span\>\<span style="background-color: transparent; line-height: 22px;"\>e.g.:\</span\>\</p\> \<ul\> \<li\>\<span style="background-color: transparent; line-height: 22px;"\>above 5.34m\</span\>\</li\> \<li\>\<span style="background-color: transparent; line-height: 22px;"\>Deviation \>10%\</span\>\</li\> \<li\>\<span style="background-color: transparent; line-height: 22px;"\>Method = Ice bore\</span\>\</li\> \</ul\>\<p\>Most filters have a work around (do it client side).\</p\> \<p\>Any performance considerations? One site with 6k+ gaugings. Lots with 2000k+, normally 200-800. \</p\> |  | X |  |
+| Ask: Give me a list of gaugings in period X and stage range Y |  | X |  |
+| Ask: Give me a list of gaugings not used in conversion X |  | X |  |
+| \<p\>Ask: What gaugings are used in conversion X\</p\> \<p\>Inclusion/exclusion: Is it for calibration or validation of the rating curve? \</p\> |  | X |  |
+
+### Sections
+
+| Capablity | Must have | Nice to have | Not required |
+|:---|:---|:---|:---|
+| Ask: \<span style="background-color: transparent; line-height: 22px;"\>List of sections, Type X completed in period Y \</span\> |  | X |  |
+| Ask:\<span style="background-color: transparent; line-height: 22px;"\>List cross sections completed in period X \</span\> |  | X |  |
+| Ask :\<span style="background-color: transparent; line-height: 22px;"\>What is the list of section types available \</span\> |  | X |  |
+| What are the identifiers for all the sections? (then follow up with subsequent queries) | X |  |  |
+|  |  |  |  |
+
+### Range Values
+
+| Capablity | Must have | Nice to have | Not required |
+|:---|:---|:---|:---|
+| Ask : What is the list of parameterFrom combinations that range values exist for | X |  |  |
+|  |  |  |  |
+
+-- Main.<a href="PaulSheahan" class="wikilink">PaulSheahan</a> - 25 Oct 2013
+
+- TOPICINFO{author="<a href="PeterTaylor" class="wikilink">PeterTaylor</a>" comment="reprev" date="1383255018" format="1.1" reprev="2" version="4"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="ApplicationProgrammingInterfaceDevelopment" class="wikilink">ApplicationProgrammingInterfaceDevelopment</a>"}

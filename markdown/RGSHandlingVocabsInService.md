@@ -1,0 +1,50 @@
+## Describing and querying variables/phenomena in the API
+
+Following both the discussion of the API and vocabularies, we still need to resolve how the API deals with vocabularies; specifically: how to make a request for a conversion type? E.g. all conversion from stage to something else? Or all conversion from stage to discharge? Or all conversions to discharge?
+
+Some options are outlined here: <http://external.opengis.org/twiki_public/HydrologyDWG/RgsAPIQuestions>. The following samples use a development API and won't resolve publicly, but you get the idea..
+
+Option 3 suggests using a service identifier for querying parameters, but also exposing a parameter/variable description that provides basic metadata for each vocab entry.
+
+So for example, when we request a Conversion object specifically we could do this:
+
+```
+<b>GET&nbsp;http://waterml2.csiro.au:81/rgs-api/v1/conversion/548/</b>
+```
+
+\<pre\>"id": 548, "paramFrom": { "id": "100.00", "description": "", "external_definition": "\<a href='<http://neiivocab.bom.gov.au/std/water/xml/wio0.2/property/wdtf-parameters/WaterCourseLevel_m>' rel='nofollow'\><http://neiivocab.bom.gov.au/std/water/xml/wio0.2/property/wdtf-parameters/WaterCourseLevel_m>\</a\>" }, "paramTo": "\<a href='<http://waterml2.csiro.au:81/rgs-api/v1/variable/141/>' rel='nofollow'\><http://waterml2.csiro.au:81/rgs-api/v1/variable/141/>\</a\>", "conversionperiod_set": \[ "\<a href='<http://waterml2.csiro.au:81/rgs-api/v1/conversion-period/434/>' rel='nofollow'\><http://waterml2.csiro.au:81/rgs-api/v1/conversion-period/434/>\</a\>" \], "monitoringPoint": "\<a href='<http://waterml2.csiro.au:81/rgs-api/v1/monitoring-point/419015/>' rel='nofollow'\><http://waterml2.csiro.au:81/rgs-api/v1/monitoring-point/419015/>\</a\>", "points": \[\</pre\>
+
+There are two options shown here:
+
+1\) (shown above for paramFrom) encode the parameter as an expanded object, with ID, description, and external reference to a vocab service.
+
+2\) (shown above for paramTo) encode the parameter as link to an internal service call, which resolves to:
+
+```
+<b>GET /rgs-api/v1/variable/141/</b>
+```
+
+\<pre\>{ "id": "141", "description": "", "external_definition": "\<a href='<http://neiivocab.bom.gov.au/std/water/xml/wio0.2/property/wdtf-parameters/WaterCourseDischarge_m3s>' rel='nofollow'\><http://neiivocab.bom.gov.au/std/water/xml/wio0.2/property/wdtf-parameters/WaterCourseDischarge_m3s>\</a\>" }\</pre\>
+
+This requires one more API call, but lowers the content of the conversion encoding.
+
+The XML response to a request like this could just be a SKOS encoding that provides seeAlso or whatever other refs/links are required.
+
+This then allows the following calls (get all the stage-discharge conversion for specific MP):
+
+```
+GET http://waterml2.csiro.au:81/rgs-api/v1/conversion/?paramFrom=100.00&paramTo=141&monitoring-point=419015
+```
+
+## Preferences
+
+- \<span style="background-color: transparent;"\>Paul choses option 1. (the blue door) \</span\>
+- \<span style="background-color: transparent;"\>Feel free to drop your choice here..\</span\>
+
+-- Main.<a href="PeterTaylor" class="wikilink">PeterTaylor</a> - 25 Mar 2014
+
+- TOPICINFO{author="<a href="PeterTaylor" class="wikilink">PeterTaylor</a>" date="1395720315" format="1.1" version="2"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="ApplicationProgrammingInterfaceDevelopment" class="wikilink">ApplicationProgrammingInterfaceDevelopment</a>"}

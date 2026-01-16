@@ -1,0 +1,13 @@
+### Current Use Cases
+
+1.  Cross Border Data Exchange Use Case: The user will discover surface water data from cross border or other regions via web map client and then visualize the time-series via web sparklines or charts. Once the data has been inspected and the user is satisfied that the data is of interest, the user will download the data in an appropriate format. **Region 1:** <a href="UseCase1CrossborderDataExchange" class="wikilink">UseCase1CrossborderDataExchange</a>
+2.  Forecasting Use Case: The user will discover and download data suitable for a streamflow forecast. The user will be able to feed a streamflow forecast model with this data, but the modeling itself is not part of the scope of this IE.
+3.  Global Runoff Use Case : The goal for this use case is to provide automated monthly and yearly volume calculations from large rivers discharging to the oceans. Candidate locations for the experiment are from the Global Runoff Data Center (GRDC) database. A website is developed from which users can view station locations participating in the experiment. The locations are found by interrogating a federated catalog of stream gages (gage has phenomena discharge for the time period of interest). Once the map is displayed, users can identify a gage of interest and some basic information is displayed in a popup, the watershed (catchment) is delineated and displayed. The user is presented with two buttons and a start and end date form. The user enters a start and end date and chooses either (1) Monthly volumes or (2) Yearly volumes. Once a button is pressed, the client application requests the daily or instantaneous discharge values (in various units) and the website displays a timeseries of monthly or yearly calculated volumes in both m^3 and cubic feet. The timeseries is displayed in a table and in a graph with the graph showing gaging station information including name, id and basin size.
+
+-- Main.<a href="PeterFitch" class="wikilink">PeterFitch</a> - 18 Jun 2010
+
+- TOPICINFO{author="<a href="CarstenHeidmann" class="wikilink">CarstenHeidmann</a>" date="1277886014" format="1.1" version="1.2"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="SurfacewaterInteroperabilityExperiment" class="wikilink">SurfacewaterInteroperabilityExperiment</a>"}

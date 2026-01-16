@@ -1,0 +1,188 @@
+# Groundwater Interoperability Experiment Gaps and Issues
+
+This page is to collection known gaps in issues met in implementing SOS service for the GWIE (Groundwater Interoperability Experiment). When possible, a solution is proposed and a recommendation to OGC is provided. Some of the issues are restricted to SOS 1.0 and might have been resolved in SOS 2.0 (it will be indicated if it's the case)
+
+## Large collection of feature of interest
+
+Related discussion : <a href="FeatureOfInterestNestedCollection" class="wikilink">FeatureOfInterestNestedCollection</a>
+
+### Issue
+
+The SOS 1 specification demands that the list of feature of interest be explicitly serialized in the <a href="GetCapabilities" class="wikilink">GetCapabilities</a> document. In the current <a href="WaterML" class="wikilink">WaterML</a> model, it has been decided that the feature of interest should be the monitoring station (or any other relevant sampling feature). It is possible that the values in a SOS system is provided by a very large collection of sampling feature and therefore, serializing the complete collection is not practical and impairs the performance of the system.
+
+### Solution
+
+The capabilities document should be allowed to provide a composite feature as feature of interest. The composite feature shall be a gml:<a href="FeatureCollection" class="wikilink">FeatureCollection</a> nesting other gml:<a href="FeatureCollection" class="wikilink">FeatureCollection</a>. The collection would be composed of a list of a list of sub-collections. If the sub-collection contains a reasonable amount of feature of interest, the list would be serialized explicitly. If the list to too large, reference to another list of feature collection would be provided where the client would find the list further partitioned.
+
+The partition logic is up to the server. It can follow a purely geometric partionning (quad-tree) or follow an administrative structure (state/county/city/zip).
+
+### Proposed modification to SOS spec.
+
+Specify that the feature of interest (or the SOS 2.0 related feature) CAN be a feature collection and when it's the case, the client SHALL consider that the feature is actually within this collection, considering that the feature collection can a) have nested feature collection and b) those nested feature collection can be provided by reference. It's then up to the client application to resolve the references and drill into the collection.
+
+The referenced document shall be a `gml:FeatureCollection` with mandatory child elements `gml:description`, `gml:name`, `gml:boundedBy` containing `gml:EnvelopeWithTimePeriod` with `gml:lowerCorner`, `gml:upperCorner`, and at least one `gml:timePosition`. In the example below, the second `gml:name` element is optional, as is the second `gml:timePosition`. When only one `gml:timePosition` is given, that value will be interpreted as the lower temporal bound.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ontario.waterwellnetwork" xsi:schemaLocation="http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/base/gml.xsd">
+   <gml:description>Feature that represents the collection of water well where water level measurements are available</gml:description>
+   <gml:name codeSpace="urn:ietf:rfc:2141">urn:GIN:feature:Ontario:WaterWellNetwork</gml:name>
+   <gml:name codeSpace="http://www.ietf.org/rfc/rfc2616">http://ngwd-bdnes.cits.nrcan.gc.ca:8080/Reference/uri-cgi/feature/Ontario/WaterWellNetwork
+   </gml:name>
+   <gml:boundedBy>
+  <gml:EnvelopeWithTimePeriod srsName="urn:ogc:def:crs:EPSG:4326">
+    <gml:lowerCorner>-95.19 41.6</gml:lowerCorner>
+    <gml:upperCorner>-74.19 56.92</gml:upperCorner>
+    <gml:timePosition frame="#ISO-8601">1899-05-16T00:00:00.0</gml:timePosition>
+    <gml:timePosition frame="#ISO-8601">2009-12-30T00:00:00.0</gml:timePosition>
+  </gml:EnvelopeWithTimePeriod>
+    </gml:boundedBy>
+    <gml:featureMember xlink:href=""/>
+</gml:FeatureCollection>
+```
+
+The required `gml:EnvelopeWithTimePeriod` element provides temporal bounds and approximate spatial bounds. If more precise spatial bounds are desired, they may be provided as follows
+
+## Complex queries on result
+
+Related discussion : <a href="GwIeSOSResultFilter" class="wikilink">GwIeSOSResultFilter</a>
+
+### Issue
+
+Filtering on the result requires the client to have some mechanism to discover the properties that can be filtered. The current approach is to provide the XSD schema of the expected result. This information is not sufficient for many reasons.
+
+- The SOS service can provide the result using multiple option of swe encoding. Since the filtering encoding uses ogc:Filter, it assumes that the target property can be expressed using XPath. This is not the case with SWE.
+- The SOS service can serialize the result using many encoding (XML or Block or gml Coverate or any other GML domain model) for the same observed property. The current specification does not provide a way to tell the client which "schema" it should use to express the filter.
+- Even if the result is expressed in explicit GML XSD (as opposed to SWE), and even if the schema is actually known, the wide usage of polymorphism and substitutions in result model can lead to multiple options (ie, when the result type is advertised with a class that is at the head of substitution tree).
+- observable properties are actually advertised as SWE common which does not have a direct mapping to eventual GML result type (ie, when looking at the swe description of the observed prioperty, we don't explicitly know how this would materialise in the filter expression)
+- SOS 2.0 proposes a mechanism that might adress this problem by providing a <a href="GetResult" class="wikilink">GetResult</a> operation. The problem with <a href="GetResults" class="wikilink">GetResults</a> is that is seems to suggest that the result shall come from a single Observation. In the current version of the SOS 2.0 specification (10-037 2010-09-02) the definition of the <a href="GetResult" class="wikilink">GetResult</a> Response does not provide a way to identify from which observation the result is from, suggesting that this operation is restricted to a single Observation, which does not cover our use case).
+
+Therefore, it is not possible from the current spec to write a filter on the result without having a initiatic knowledge of what the service will support.
+
+### Proposed solution
+
+The client should use the identifier of the property as a proxy for the property to filter, regardless of its actually serialisation in the result.
+
+for example,
+
+\<verbatim­\> \<?xml version="1.0" encoding="UTF-8"?\> \<sos:<a href="GetObservation" class="wikilink">GetObservation</a> version="1.0" service="SOS" xmlns:ogc="<http://www.opengis.net/ogc>" xmlns:sos="<http://www.opengis.net/sos/1.0>" xmlns:xsi="<http://www.w3.org/2001/XMLSchema-instance>" xsi:schemaLocation="<http://www.opengis.net/sos/1.0> <http://schemas.opengis.net/sos/1.0.0/sosGetObservation.xsd>"\> \<sos:offering\>gwie:offering\</sos:offering\> \<sos:observedProperty\><urn:ogc:def:property:OGC:GroundWaterLevel>\</sos:observedProperty\> \<sos:result\> \<ogc:<a href="PropertyIsGreaterThan" class="wikilink">PropertyIsGreaterThan</a>\> \<ogc:<a href="PropertyName" class="wikilink">PropertyName</a>\><urn:x-ogc:def:phenomenon:OGC:Depth>\</ogc:<a href="PropertyName" class="wikilink">PropertyName</a>\> \<ogc:Literal\>10\</ogc:Literal\> \</ogc:<a href="PropertyIsGreaterThan" class="wikilink">PropertyIsGreaterThan</a>\> \</sos:result\> \</sos:<a href="GetObservation" class="wikilink">GetObservation</a>\> \</verbatim\>
+
+The service should have internal mechanism to do what "makes sense" in this particular case. It should also handle the cases when the structure of the value can be complex (range instead of single value) and remove the complexity of writing a filter from the user.
+
+This pattern has several benefits.
+
+1.  provides a way to document and advertise properties that are part of the result set at the phenomenon level.
+2.  Properties are advertised using a conformant OGC approach (no hack)
+3.  Properties are well described (SWE provide a certain level of metadata that XSD does not have)
+4.  Query structure is decouples from the result encoding, which is consistant with pattern of CSW and proposed "stored query" mechanism of WFS (ISO-19142). The client can rely on a consistent way to get the parameters, whatever the encoding.
+5.  This mechanism can be used by both SOS 1.0 and SOS 2.0 clients, just the access to the SWE encoding is different (catalog for 1.0, <a href="GetResultTemplate" class="wikilink">GetResultTemplate</a> for 2.0).
+
+One of the major downside is that a property can possibly appear several time in a single composite phenomenon (eg, temperatures taken at two different depths in a single record – they both are temperatures).
+
+The ideal situation is to have an explicit list of filterable parameters directly in the Offering, but this would require a formal CR to SOS
+
+```
+<sos:ResultParameters>
+  <sos:Parameter identification="urn:x-ogc:parameter:depth" uom="urn:ogc:def:UCUM:m" type="xs:double">
+    <sos:name xml:lang="fr">Profondeur de la nappe</sos:name>
+    <sos:name xml:lang="eng">Aquifer depth</sos:name>
+  </sos:Parameter>
+  <sos:Parameter>
+identification="urn:ogc:parameter:time" uom=" urn:ogc:property:time:iso8601" type="xs:DateTime">
+    <sos:name xml:lang="fr">Date de la mesure</sos:name>
+    <sos:name xml:lang="eng">Measurement date</sos:name>
+  </sos:Parameter>
+</sos:ResultParameters>
+```
+
+### Proposed modification to SOS spec.
+
+Propose that SOS service SHALL take URI references as proxies to property
+
+## Spatial queries
+
+This is a similar situation to the previous issue. To perform a spatial filter, it must be done on the feature of interest. (SOS 1 spec only allows spatial filter in the featureOfInterest parameter). A proper spatial filter requires a PropertyName to identify the geometry property. Again, this cannot be extracted from the schema. The feature of interest of an observation is "anyType", therefore, a client cannot know which geometry to use. Furthermore, it can't be assume that all the feature of interest will be of the same type (and hence all have the same geometry property). Implementation we have seen so far seems to ignore the property name and apply the spatial query in a way that make sense for the service (similar to WFS 1.0.0 KVP BBOX parameter that did not required to explicitly name the geometry property).
+
+One suggested approach was to systematically use the boundedBy property (observation, being feature, should have a boundedBy property).
+
+SOS 2.0 provides a way to overcome this difficulty by providing a Spatial Filtering Profile by exposing a geometry as a parameter of the Observation. They therefore propose a unique name (a HTTP URI) to represent this parameter (<http://www.opengis.net/req/omxml/2.0/data/samplingGeometry>). This approach is very similar to the solution we proposed in the previous case (provide a unique id for a property instead of relying on an xpath). This SOS 2.0 profile requires a contorded way to express the geometry that we find unessary. Just using the URI as the name of the property would have the same effect.
+
+### Proposed solution
+
+Same solution than previous case. Just use the unique reference in lieu of full path to the property.
+
+### Proposed modification to SOS spec.
+
+Propose that SOS service SHALL consider <http://www.opengis.net/req/omxml/2.0/data/samplingGeometry> as a proxy property name for sampling geometry.
+
+## SOS should support request="hits"
+
+WFS can return the **number** of features that would be returned by a request by setting the resultType attribute to "hits". This would be a nice feature to have in SOS as it would allow a client to plan queries geographically and get a reasonnable amount of observation transfered from the server (ie, figure at what zoom level it can start to download the real observations).
+
+### Proposed solution
+
+All SOS operation should have a resultType="hits" attribute that returns the number of element instead of the element themselves
+
+### Proposed modification to SOS spec.
+
+Add a optional parameters resultType to
+
+\* <a href="GetObservation" class="wikilink">GetObservation</a> \* <a href="GetFeatureOfInterest" class="wikilink">GetFeatureOfInterest</a>
+
+The suggestion to have this in SOS 2.0 has already been made for GetFeatureOfInterest, but the suggestion should be expanded to any operation that can return a large list.
+
+## Offering Name non-mandatory
+
+In SOS Spec, the name of the offering is 0..\* while this name is used as a unique identifier required by <a href="GetObservations" class="wikilink">GetObservations</a>. It should be 1..1.
+
+Note: This is fixed in SOS 2.0 (Req 21)
+
+## SOS 1 filter has a typo in the XSD
+
+sos4ogc.xsd (<http://schemas.opengis.net/sos/1.0.0/ogc4sos.xsd>) which provide filter specification has a mispelled "<a href="TM_Overalps" class="wikilink">TM_Overalps</a>" (should be <a href="TM_Overlaps" class="wikilink">TM_Overlaps</a>). This prevents validating queries from the published schemas (unless the mispelled element is used).
+
+This is fixed on SOS 2.0 since it uses officiel FES 2.0
+
+## Cardinality of <a href="GetObservationById" class="wikilink">GetObservationById</a> should be fixed in SOS 2.0
+
+OGC 10-037 Sec. 9.2.1.1, Table 23 states that observation pointer is 1..\*
+
+While the response (9.2.1.2 table 24) limits the response to a single observation
+
+Response should return 0 to as many observations than requested.
+
+On the other hand, the xsd **is** restricted to 1..1
+
+```
+<complexType name="GetObservationByIdResponseType"> 
+               <complexContent> 
+                       <extension base="swes:ExtensibleResponseType"> 
+                               <sequence> 
+                                       <element name="observation"> 
+                                               <complexType> 
+                                                       <sequence> 
+                                                               <element ref="om:OM_Observation"/> 
+                                                       </sequence> 
+                                               </complexType> 
+                                       </element> 
+                               </sequence> 
+                       </extension> 
+               </complexContent> 
+       </complexType> 
+```
+
+### Proposed solution
+
+Correction: The cardinality should either be changed to 1..1 on the request, or changes to 0..\* in the response and adjust schemas accordingly. Our preference is to allow several id to be queries at once to avoid multiple round trip to the server.
+
+### Proposed modification to the specification
+
+Set the cardinality of the Request to 1..\*
+
+-- Main.<a href="EricBoisvert" class="wikilink">EricBoisvert</a> - 03 Nov 2010
+
+- TOPICINFO{author="<a href="EricBoisvert" class="wikilink">EricBoisvert</a>" date="1290625195" format="1.1" version="1.7"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="GroundwaterInteroperabilityExperiment" class="wikilink">GroundwaterInteroperabilityExperiment</a>"}

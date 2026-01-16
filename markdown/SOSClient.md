@@ -1,0 +1,15 @@
+# SOS Client Discussions
+
+## CSIRO client An example of the CSIRO SOS client app can be seen here: <http://www.csiro.au/sensorweb/au.csiro.OgcThinClient/OgcThinClient.html>. This uses GWT and direct parsing of the service responses (currently encoded in plan Observations and Measurements).
+
+## 52North client There is a 52North thin client (<http://52north.org/maven/project-sites/swe/clients/Thin_SWE_Client/index.html>) and a thick client (<http://52north.org/maven/project-sites/swe/clients/Rich_OX_Client/index.html>)
+
+The thin client just supports plotting functions (no maps). Thick client should be able to connect to WMS as well, but don't think it supports WFS.
+
+-- Main.<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a> - 03 Nov 2009
+
+- TOPICINFO{author="<a href="BradLee" class="wikilink">BradLee</a>" date="1271999012" format="1.1" version="1.3"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="GroundwaterInteroperabilityExperiment" class="wikilink">GroundwaterInteroperabilityExperiment</a>"}

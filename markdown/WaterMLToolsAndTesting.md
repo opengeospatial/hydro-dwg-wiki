@@ -1,0 +1,63 @@
+# WaterML 2.0 Tools and Testing Support
+
+<span class="twiki-macro TOC"></span>
+
+## 
+
+## Kisters \<a href="<http://www.waterml2.org/>" target="\_blank"\><a href="WaterML2" class="wikilink">WaterML2</a>.org\</a\>
+
+## WaterML 2.0 Validation Tools
+
+OGC official repository for \<a href="<https://github.com/opengeospatial/ets-waterml20>" target="\_blank"\><a href="WaterML" class="wikilink">WaterML</a> 2.0.1 executable test suite\</a\>
+
+- \<span style="background-color: transparent;"\>GML 3.2.1 uses a schematron validator that can help you configure the schematron testing for the WaterML \</span\>\<span style="background-color: transparent;"\>test. See example here:\</span\>
+  - \<span style="color: blue; text-decoration: underline; background-color: transparent;"\><https://github.com/opengeospatial/ets-gml32/blob/master/src/main/java/org/opengis/cite/iso19136/data/SchematronTests.java>\</span\>
+- \<span style="background-color: transparent;"\>Technical contact: Luis Bermudez, OGC (lbermudez \[at\] opengeospatial \[dot\] org)\</span\>
+
+Various CSIRO tools: see <http://waterml2.csiro.au> (\<span style="background-color: transparent;"\>technical contact: Pete Taylor, CSIRO (peter \[dot\] taylor \[at\] csiro \[dot\] au)\</span\>
+
+- \<span style="background-color: transparent;"\>CSIRO \</span\>\<a href="<http://waterml2.csiro.au/part1-validator/>" target="\_blank"\><a href="WaterML" class="wikilink">WaterML</a> 2.0.2 Part 1 Validation Service\</a\>
+- \<span style="background-color: transparent;"\>CSIRO \</span\>\<a href="<http://waterml2.csiro.au/validator>" target="\_blank"\><a href="WaterML" class="wikilink">WaterML</a> 2.0 Part 2 Validation Service\</a\>
+  - developed to support Ratings & Gaugings Interop Experiment, REST API
+
+CSIRO <a href="WaterML" class="wikilink">WaterML</a> 2.0 Part 1 Validation Service now also hosted under: <http://resources.opengeospatial.org/WaterML2Validation/>
+
+- \<span style="background-color: transparent;"\>Reloaded all the latest schemas from the OGC repository - so if there are any issues with compatibility of the schemas there with the spec I guess these may be a problem.\</span\>
+- \<span style="background-color: transparent;"\>May move to a OGC community github repository for future enhancements and maintenance.\</span\>
+
+## OGC, SWE and WaterML Code Libraries
+
+### GeoPython OWSlib
+
+\<a href="<http://geopython.github.io/OWSLib/>" target="\_blank"\><a href="GeoPython" class="wikilink">GeoPython</a> OWSlib\</a\> - library for many OGC web service standards
+
+- WaterML 1.0, 1.1 included; WaterML 2.0 Part 1 pending merge (04-Mar-2016)
+- [Tutorial on using OWSLib with SOS2.0 and WaterML2.0 with the Bureau of Met SOS service.](http://nbviewer.jupyter.org/github/peterataylor/bom-water-data-service-example/blob/master/bom-water-sos-example.ipynb)
+
+### PyXB
+
+<http://pythonhosted.org/PyXB/> - \<span style="background-color: transparent;"\>a tool to generate classes from schemas\</span\>
+
+- <https://github.com/pabigot/pyxb/tree/next/pyxb/bundles/opengis>
+- <https://github.com/pabigot/pyxb/tree/master/pyxb/bundles/opengis/examples>
+- Technical point of contact: David Valentine, SDSC (valentin \[at\] sdsc \[dot\] edu)
+
+This directory adds many of the Geographic Information Systems XML schemas \<span style="background-color: transparent;"\>from \</span\> <http://www.opengeospatial.org/> \<span style="background-color: transparent;"\> to PyXB as a bundle. \</span\>\<span style="background-color: transparent;"\>There are over 800 schemas in the OpenGIS domain, with extremely complex \</span\>\<span style="background-color: transparent;"\>interrelationships between them. Translating them is a complex activity, \</span\>\<span style="background-color: transparent;"\>and the resulting bindings and archive files require over 100MB of disk \</span\>\<span style="background-color: transparent;"\>space (including the schemas). As such, bindings are no longer provided in \</span\>\<span style="background-color: transparent;"\>the PyXB distribution. \</span\>\<span style="background-color: transparent;"\>You can generate the bindings by setting the <a href="PYXB_ROOT" class="wikilink">PYXB_ROOT</a> environment variable \</span\>\<span style="background-color: transparent;"\>to the root directory of PyXB (the one in which "setup.py" is found), and \</span\>\<span style="background-color: transparent;"\>running:\</span\>
+
+\<span style="background-color: transparent;"\>cd \${<a href="PYXB_ROOT" class="wikilink">PYXB_ROOT</a>}\<br /\>\</span\>\<span style="background-color: transparent;"\>maintainer/genbundles @\<br /\>\</span\>\<span style="background-color: transparent;"\>pyxb/bundles/opengis/scripts/genbind\<br /\>\</span\>\<span style="background-color: transparent;"\>python setup.py install\</span\>
+
+The genbundles invocation will first generate the standard dependencies \<span style="background-color: transparent;"\>including W3C versions of namespaces formerly provided by OpenGIS. Then \</span\>\<span style="background-color: transparent;"\>the opengis genbind script will download the latest set of schema from OpenGIS\</span\>\<span style="background-color: transparent;"\> and translate many of the standards. The final step installs \</span\>\<span style="background-color: transparent;"\>the whole system including the new bindings. The namespaces that are \</span\>\<span style="background-color: transparent;"\>currently supported by PyXB are listed at \</span\> <http://pyxb.sourceforge.net/bundles.html#opengis> \<span style="background-color: transparent;"\>. Additional namespaces \</span\>\<span style="background-color: transparent;"\>can be added by modifying the opengis genbind script to include them, \</span\>\<span style="background-color: transparent;"\>and re-running the script.\</span\>
+
+## Docs and Tutorials
+
+- \<span style="background-color: transparent;"\>CSIRO \</span\>\<a href="<https://www.seegrid.csiro.au/wiki/Siss/SensorObservationService2>" target="\_blank"\>SWE / SOS 2 Tutorial\</a\>
+
+## Previous \<a href="<a href="WaterML" class="wikilink">WaterML</a>.<a href="WebHome" class="wikilink">WebHome</a>" target="\_blank"\><a href="WaterML" class="wikilink">WaterML</a> 2.0 Public Wiki (2012)\</a\>
+
+-- Main.<a href="DavidArctur" class="wikilink">DavidArctur</a> - 04 Mar 2016
+
+- TOPICINFO{author="<a href="DavidBlodgett" class="wikilink">DavidBlodgett</a>" comment="reprev" date="1466149440" format="1.1" reprev="5" version="7"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="WebHome" class="wikilink">WebHome</a>"}

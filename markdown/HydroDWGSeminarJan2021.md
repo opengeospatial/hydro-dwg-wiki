@@ -1,0 +1,28 @@
+## Hydrology Domain Working Group
+
+## Meeting details:
+
+Venue: Gotomeeting: <https://www4.gotomeeting.com/join/718950565>
+
+Time: Wednesday 20 January 2021, \[2 PM - 3:30 PM (US/Eastern)\] [(global time and date)](http://timeanddate.com/worldclock/fixedtime.html?month=01&day=20&year=2021&hour=14&min=00&sec=0&p1=179&sort=0)
+
+### **Meeting Agenda and Outcomes**
+
+- Silvano Pecora: Overview of hydrology activities at WMO
+- WMO Infrastructure Commission (INFCOM) and Expert Team on hydrological monitoring (JET-HYDMON)
+- Discussion of future activities.
+  - Water Quality
+  - Exchange Standards
+  - OGC-API and JSON
+  - Geomorphology and River Geometry
+  - SW/GW
+
+Recording of the meeting is available here: <https://portal.ogc.org/files/?artifact_id=96314>
+
+-- Main.<a href="DavidBlodgett" class="wikilink">DavidBlodgett</a> - 30 Dec 2020
+
+- TOPICINFO{author="<a href="TonyBoston" class="wikilink">TonyBoston</a>" comment="reprev" date="1611276233" format="1.1" reprev="1" version="3"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="WebHome" class="wikilink">WebHome</a>"}

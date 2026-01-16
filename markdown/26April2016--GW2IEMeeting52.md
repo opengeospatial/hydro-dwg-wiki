@@ -1,0 +1,73 @@
+# **<a href="GW2IE" class="wikilink">GW2IE</a> Meeting 52 / GW SWG Meeting \#3 -- Tues 26 April 2016**
+
+## **Agenda**
+
+- OGC GW SWG
+- GWML2 Instances
+- GWML2 Paper
+- Next Steps
+
+## **Notes**
+
+- OGC GW SWG
+  - OGC OAB voted to release the spec for Public Comment, pending completion of changes:
+    1.  URLs / URIs: provide Scott Simmons an xls containing a list of all URLs and URIs used in the spec for review by OGC-NA (Naming Authority)
+        - awaiting OGC review for possible changes to the spec
+    2.  Versions and URLs / URIs: pending OGC-NA review, make consistent throughout, either (1) .../gwml2/2.2/main... or preferably (2) .../gwml/2.2/main...
+    3.  Linked Open Data (9.1.3): clarify requirement: do not exclude URN option and provide authoritative reference or preferably inline definition. (**Eric** before 29 Apr)
+    4.  Conceptual Model: make normative, include: (1) one req class, (2) one conformance class, and (3) state target of the conceptual model is the logical model. (**Eric** before 29 Apr)
+    5.  Association classes (e.g. 9.2.1), voids and fluids: correct typos (e.g. UnitFluidProperties go to hydro unit), and clarify text re: void properties. (**Boyan** before 29 Apr)
+    6.  "Standard": replace "specification" with "standard" throughout doc (**Boyan** before 29 Apr)
+- GWML2 Instances
+  - All svn docs updated (Jessica to confirm), update to various web services in progress
+  - Changes to instance docs possible pending OGC-NA review of urls/uris
+- GWML2 Documentation
+  - draft online documentation in progress (**Francois**)
+- GWML2 Paper
+  - Use-case table inserted, and document re-structured (**Alex and others**)
+  - Diagrams in progress (**Peter, Alex**)
+- Next Steps
+  - Submission: (i) return changed doc to OGC by 29 Apr 2016, (ii) 30 day public comment period, (iii) changes if needed, and (iv) presentation to TC for vote (target: Dublin, June)
+    - confirm with OGC process post-public review (**Boyan**)
+  - Next meeting is 11 May 2016 (Wed)
+
+## **Participants**
+
+- Click here for the [Doodle Poll](http://doodle.com/poll/szzutg2qw4h78ufg)
+
+## **Connection Instructions**
+
+| Ottawa | Madison | London | Paris | Melbourne | Auckland |
+|:-------|:--------|:-------|:------|:----------|:---------|
+| 8:00   | 7:00    | 13:00  | 14:00 | 22:00     | 23:59    |
+
+[Time and Date web site](http://www.timeanddate.com/worldclock/meetingdetails.html?year=2016&month=4&day=13&hour=12&min=0&sec=0&p1=142&p2=188&p3=136&p4=195&p5=152&p6=22)
+
+- Screen sharing (Webex):
+  - pass: ogc
+  - url: <https://pwgsc-nh.webex.com/pwgsc-nh/j.php?MTID=m625ce946cde0845d95d08f63233c3132>
+
+<!-- -->
+
+- Teleconference:
+  - Dial local number (see below) and passcode = **616269**
+
+| Country        | Conference Number     |
+|:---------------|:----------------------|
+| Australia      | +61 (0) 3 8672 0180   |
+| Austria        | +43 (0) 1 2650500     |
+| Belgium        | +32 (0) 3 294 11 60   |
+| Canada         | +1 641-715-3824       |
+| France         | +33 (0) 1 80 14 11 00 |
+| Germany        | +49 (0) 228 5343020   |
+| Italy          | +39 055 464 0570      |
+| Netherlands    | +31 (0) 20 322 3000   |
+| Poland         | +48 22 116 80 20      |
+| United Kingdom | +44 (0) 330 606 0182  |
+| United States  | +1 760-569-7100       |
+
+- TOPICINFO{author="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" comment="save topic" date="1461778320" format="1.1" reprev="5" version="5"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="GroundWaterSWG" class="wikilink">GroundWaterSWG</a>"}

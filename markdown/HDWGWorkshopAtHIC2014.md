@@ -1,0 +1,80 @@
+\<h2 align="center"\>Hydrology Domain Working Group\</h2\> \<h3 align="center"\>of the Open Geospatial Consortium and the World Meteorological Organization\</h3\> \<p align="center"\>August 16, 2014; 9am – 5pm, Shepard Bldg, Room 205\</p\> \<p align="center"\>\<span style="color: \#333333; font-size: 25px; line-height: 1.1em; background-color: transparent;"\>\*Standardization of Water Data Exchange: \</span\>\<span style="color: \#333333; font-size: 25px; line-height: 1.1em; background-color: transparent;"\><a href="WaterML2" class="wikilink">WaterML2</a>.0 and Beyond\*\</span\>\</p\> \<p align="center"\>Workhop at HIC2014 - 11th International Conference on Hydroinformatics\</p\>
+
+This workshop introduces the work of the OGC/WMO Hydrology Domain Working Group (HDWG) to develop standards for water data exchange. Workshop presentations address several key aspects of standardization including: information modeling and encoding of hydrologic and hydrogeologic features; encoding of hydrologic and hydrogeologic observations; development and representation of community vocabularies of water-related terms; and respective web service interfaces. **Intended audience**: hydrology researchers; practitioners; water resource data managers; and information system developers interested in standards-based water data exchange and interoperability.
+
+## Workshop agenda
+
+\| **Time** \|\| **Topic** \| **Presenter(s)** \|
+
+|  |  |  |  |
+|----|----|----|----|
+| 9:00 |  | Welcome and [Introduction](%ATTACHURL%/2014_HDWG_introduction.pptx) | Ilya Zaslavsky, Tony Boston |
+| 9:15 |  | [Hydrology Domain Working Group - a history](%ATTACHURL%/2014-08_HDWG_Tutorial.ppt) | Uli Looser |
+| 9:35 |  | [Web services for hydrological sciences](%ATTACHURL%/dblodgett_webData_intro_2014.pptx) | Dave Blodgett |
+| 10:20 |  | [Overview of hydrology suite of standards](%ATTACHURL%/2014_HIC11_WaterInformationStandards.pptx) | Irina Dornblut |
+| 10:50 |  | \_Break\_ |  |
+| 11:00 |  | [Hydrology profile](%ATTACHURL%/hydro_profile_presentation.pptx) of the OGC Sensor Observation Service | Dave Blodgett |
+| 11:15 |  | [WaterML 2.0 Part 1 Standards](%ATTACHURL%/OGC_HIC_2014_WML2.P1.pptx) | Paul Sheahan |
+| 11:45 |  | WaterML 2.0 Part 1 Services demonstrations | Dave Briar |
+| 12:30 |  | \_Lunch (on your own)\_ |  |
+| 1:30 |  | [Standard representation and encoding of hydrogeologic features](http://gin.gw-info.net/service/ngwds/downloadmanager/file/papers/BrodaricHahmann_1747_DataInterop_HIC2014_ppt.pdf) | Boyan Broderic |
+| 2:00 |  | [WaterML 2.0 Part II - Ratings and Gaugings](%ATTACHURL%/OGC_HIC_2014_WML2.P2.pptx) | Paul Sheahan |
+| 3:00 |  | \_Break\_ |  |
+| 3:15 |  | [Federating regional and national data services](%ATTACHURL%/Arctur-federation_of_data.pptx); GEOSS projects | David Arctur |
+| 4:00 |  | [Hydrological information exchange](%ATTACHURL%/20140817-HIC2014__V3.pptx) to support water management | Gabriel Anzaldi |
+| 4:20 |  | Discussion | All |
+| 5:00 |  | \_Close\_ |  |
+
+## \<span style="color: \#000000; font-size: small; line-height: 22px; background-color: transparent;"\>The workshop is presented by HDWG members who have been leading various group activities, including specification development, interoperability experiments and creation of standard hydrologic data services. The presenters come from several water data management organizations, research universities, and private companies in North America, Europe and Australia.\</span\>
+
+\<span style="background-color: transparent;"\>This one-day workshop follows a 5-day HDWG working meeting. To learn more about HDWG, subscribe to HDWG mailing list, and participate in HDWG work, please visit \</span\> [http://external.opengeospatial.org/twiki_public/HydrologyDWG/WebHome](WebHome)
+
+\<span style="background-color: transparent;"\>-------------------------- \</span\>
+
+#### Additional links:
+
+\[ \<a href="<http://hic2014.org/>" target="\_blank"\>HIC'2014 web site\</a\>\<span style="background-color: transparent;"\> \] \[ \</span\>\<a href="<http://hic2014.org/wp-content/uploads/2013/04/ShortCourse_HDWG.pdf>" target="\_blank"\>Workshop page at HIC'2014\</a\> \]
+
+\<span style="background-color: transparent;"\> -- \</span\> Main.<a href="IlyaZaslavsky" class="wikilink">IlyaZaslavsky</a> \<span style="background-color: transparent;"\> - 15 Aug 2014\</span\>
+
+- TOPICINFO{author="<a href="TonyBoston" class="wikilink">TonyBoston</a>" comment="save topic" date="1452659581" format="1.1" reprev="20" version="21"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="NewYorkWorkshop2014" class="wikilink">NewYorkWorkshop2014</a>"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="OGC_HIC_2014_WML2" class="wikilink">OGC_HIC_2014_WML2</a>.P1.pptx" attachment="<a href="OGC_HIC_2014_WML2" class="wikilink">OGC_HIC_2014_WML2</a>.P1.pptx" attr="" comment="" date="1408141358" path="OGC HIC 2014 WML2.P1.pptx" size="2088006" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="OGC_HIC_2014_WML2" class="wikilink">OGC_HIC_2014_WML2</a>.P2.pptx" attachment="<a href="OGC_HIC_2014_WML2" class="wikilink">OGC_HIC_2014_WML2</a>.P2.pptx" attr="" comment="" date="1408155666" path="OGC HIC 2014 WML2.P2.pptx" size="1414385" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="2014_HDWG_introduction.pptx" attachment="2014_HDWG_introduction.pptx" attr="" comment="Seminar introduction" date="1408190420" path="2014_HDWG_introduction.pptx" size="1283932" user="<a href="IlyaZaslavsky" class="wikilink">IlyaZaslavsky</a>" version="2"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="2014-08_HDWG_Tutorial.ppt" attachment="2014-08_HDWG_Tutorial.ppt" attr="" comment="" date="1408193497" path="2014-08_HDWG_Tutorial.ppt" size="3913728" user="<a href="DavidBlodgett" class="wikilink">DavidBlodgett</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="dblodgett_webData_intro_2014.pptx" attachment="dblodgett_webData_intro_2014.pptx" attr="" comment="" date="1408193595" path="dblodgett_webData_intro_2014.pptx" size="5695629" user="<a href="DavidBlodgett" class="wikilink">DavidBlodgett</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="hydro_profile_presentation.pptx" attachment="hydro_profile_presentation.pptx" attr="" comment="" date="1408193637" path="hydro_profile_presentation.pptx" size="14351446" user="<a href="DavidBlodgett" class="wikilink">DavidBlodgett</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="2014_HIC11_WaterInformationStandards.pptx" attachment="2014_HIC11_WaterInformationStandards.pptx" attr="" comment="Water Information Standards" date="1408193761" path="2014_HIC11_WaterInformationStandards.pptx" size="1492023" user="<a href="TonyBoston" class="wikilink">TonyBoston</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="Arctur-federation_of_data.pptx" attachment="Arctur-federation_of_data.pptx" attr="" comment="" date="1408214662" path="Arctur-federation of data.pptx" size="19956649" user="<a href="DavidArctur" class="wikilink">DavidArctur</a>" version="4"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="20140817-<a href="HIC2014__V3" class="wikilink">HIC2014__V3</a>.pptx" attachment="20140817-<a href="HIC2014__V3" class="wikilink">HIC2014__V3</a>.pptx" attr="" comment="<a href="WaterERP" class="wikilink">WaterERP</a> - Hydrological information exchange" date="1408221258" path="20140817-<a href="HIC2014_" class="wikilink">HIC2014_</a> V3.pptx" size="5033400" user="<a href="TonyBoston" class="wikilink">TonyBoston</a>" version="1"}

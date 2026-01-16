@@ -1,0 +1,37 @@
+## Hydrology Domain Working Group
+
+## \<a name="<a href="Meeting_details_at_Palmerston" class="wikilink">Meeting_details_at_Palmerston</a>"\>\</a\> \<a name="<a href="Meeting_details_at_Palmerston" class="wikilink">Meeting_details_at_Palmerston</a>"\>\</a\>Meeting details at Palmerston North TC
+
+Venue: Palmerston North Convention Centre, 354 Main St, Palmerston North, New Zealand.
+
+NZ Time: 14:45 Monday 4th December, 2017
+
+Link to Palmerston North [TC agenda](http://www.opengeospatial.org/events/1712tcagenda)
+
+**<a href="GotoMeeting" class="wikilink">GotoMeeting</a> Joining Details**
+
+1\. Please join my meeting, Sun Dec 3rd 8:45 PM EST.\<br /\> \<a href="<https://www4.gotomeeting.com/join/783445397>" target="\_blank"\><https://www4.gotomeeting.com/join/783445397>\</a\>\<br /\>\<br /\>2. Use your microphone and speakers (<a href="VoIP" class="wikilink">VoIP</a>) - a headset is recommended. Or, call in using your telephone.\<br /\>US: +1 (224) 501-3412\<br /\>Access Code: 783-445-397 Audio PIN will be displayed upon joining the web session.
+
+IE: +353 15 360 728\<br /\>DE: +49 69 5880 7802 75\<br /\>AU: +61 2 9087 3604\<br /\>NL: +31 207 941 377\<br /\>CA: +1 (647) 497-9350\<br /\>US: +1 (646) 749-3129\<br /\>FI: +358 923 17 0568\<br /\>GB: +44 20 3713 5028\<br /\>BE: +32 28 93 7018\<br /\>ES: +34 932 75 2004\<br /\>NZ: +64 9 280 6302\<br /\>AT: +43 1 2530 22520\<br /\>FR: +33 170 950 594\<br /\>NO: +47 21 93 37 51\<br /\>IT: +39 0 247 92 13 01\<br /\>CH: +41 225 4599 78\<br /\>SE: +46 853 527 836\<br /\>DK: +45 32 72 03 82
+
+# **Draft agenda**
+
+1.  Update on <a href="HY_Features" class="wikilink">HY_Features</a> (Dave Blodgett) [Presentation](%ATTACHURL%/dblodgett_HY_Features.pptx)
+2.  ELFIE progress report (Dave Blodgett, Alistair Ritchie) [Presentation](%ATTACHURL%/dblodgett_ELFIE.pptx)
+3.  Other business (All)
+
+-- Main.<a href="TonyBoston" class="wikilink">TonyBoston</a> - 13 Oct 2017
+
+- TOPICINFO{author="<a href="TonyBoston" class="wikilink">TonyBoston</a>" comment="reprev" date="1512443573" format="1.1" reprev="4" version="4"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="WebHome" class="wikilink">WebHome</a>"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="dblodgett_HY_Features.pptx" attachment="dblodgett_HY_Features.pptx" attr="" comment="<a href="HY_Features" class="wikilink">HY_Features</a> update" date="1512443293" path="dblodgett_HY_Features.pptx" size="6116705" user="<a href="TonyBoston" class="wikilink">TonyBoston</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="dblodgett_ELFIE.pptx" attachment="dblodgett_ELFIE.pptx" attr="" comment="ELFIE update" date="1512443383" path="dblodgett_ELFIE.pptx" size="5009863" user="<a href="TonyBoston" class="wikilink">TonyBoston</a>" version="1"}

@@ -1,0 +1,287 @@
+# Model overview (as of 13 November)
+
+This page describes the current state of the model, and poses some open questions to be address.
+
+The focus to date has been on the description of conversions (rating tables) and associated metadata. Description of gaugings (rating observations) is underway.
+
+The XML encodings are a starting point. No work has been put in to optimising the encoding, it's fully expanded XML element encodings.
+
+## Conversions
+
+The UML for the Conversions model:
+
+\<img alt="Conversions3.png" src="%ATTACHURL%/Conversions3.png" title="Conversions3.png" /\>
+
+#### Description of conversion model
+
+A <a href="ConversionGroup" class="wikilink">ConversionGroup</a> contains 1 or more <a href="ConversionPeriods" class="wikilink">ConversionPeriods</a> that define applicable Conversions within a start/end time. A conversion may be represented using a table or an equation, however a <a href="ConversionTable" class="wikilink">ConversionTable</a> is the mandatory exchange target (this constraint is not shown in the model). Conversions are defined by the parameter (phenomenon - <a href="GF_PropertyType" class="wikilink">GF_PropertyType</a>) they convert from and to, as well as the monitoring point that have been developed for (monitoringPoint relationship).
+
+<a href="ConversionGroups" class="wikilink">ConversionGroups</a> are defined for specific paramTo/paramFrom/<a href="MonitoringPoint" class="wikilink">MonitoringPoint</a> groups.
+
+A Conversion contains metadata relating to its current status, review lifecylce etc. A conversion may be related to its source definition (e.g. an expanded table may be related back to its original equation form), however the equations themselves are not defined in a machine readable form (a formal equation model won't be developed).
+
+A <a href="ConversionTable" class="wikilink">ConversionTable</a> is composed of 1 or more tuples that define the independent and dependent variable values as quantities. The table is an expanded, linearly interpolated table. The granularity of the points is defined by the exporting system, but should be sufficient to re-use the table.
+
+The ability to link from the conversion to the gaugings that were used (or excluded) in development of the table has been discussed, and modeled, it's just not shown.
+
+### XML example
+
+This is a very simple example, not based on actual data. Provided as in example of what the XML of the above model would look like (the schema has been generated from the above model -- example handcoded).
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<wmlrgs:ConversionGroup gml:id="rgs-conversion-ex1">
+  
+  <wmlrgs:monitoringPoint xlink:href="http://www.bom.gov.au/water/mps/id0203023"/>
+  <wmlrgs:fullConversion>false</wmlrgs:fullConversion>
+  <wmlrgs:member>
+    <wmlrgs:ConversionPeriod gml:id="period_1">
+      <!-- The period of application for this conversion segment --> 
+      <wmlrgs:start>
+        <gml:TimeInstant gml:id="start-instant">
+          <gml:timePosition>2012-01-01T00:00:00</gml:timePosition>
+        </gml:TimeInstant>
+      </wmlrgs:start>
+      <wmlrgs:end>
+        <gml:TimeInstant gml:id="end-instant">
+          <gml:timePosition>2012-07-05T00:00:00</gml:timePosition>
+        </gml:TimeInstant>
+      </wmlrgs:end>
+      
+      <!-- A table conversion --> 
+      <wmlrgs:data>
+        <wmlrgs:ConversionTable gml:id="table-conversion-1">
+          
+          <!-- each conversion defines the paramTo and paramFrom as well as the group.
+          This is an open discussion at this point. --> 
+          <wmlrgs:to xlink:href="http://www.bom.gov.au/water/awid/id-676.shtml" xlink:title="river flow"/>
+          <wmlrgs:from xlink:href="http://www.bom.gov.au/water/awid/id-956.shtml" xlink:title="water level"/>
+          <wmlrgs:metadata>
+            <wmlrgs:ConversionMetadata gml:id="conversion-metadata">
+              <wmlrgs:status xlink:href="http://www.opengis.net/def/waterml/2.0/rgs/rating-approval/approved"
+                xlink:title="approved"></wmlrgs:status>
+              <wmlrgs:reviewDate>
+                <gml:TimeInstant gml:id="ts-inst">
+                  <gml:timePosition>2012-02-01T00:00:00</gml:timePosition>
+                </gml:TimeInstant>
+              </wmlrgs:reviewDate>
+              <wmlrgs:versionIdentifier>1.02</wmlrgs:versionIdentifier>
+            </wmlrgs:ConversionMetadata>
+          </wmlrgs:metadata>
+          
+          <!-- default quality for each point in the table --> 
+          <wmlrgs:defaultQuality xlink:href="http://www.opengis.net/def/waterml/2.0/quality/good"/>
+          <wmlrgs:sourceDefinition xlink:href="http://www.opengis.net/def/nil/OGC/0/missing" xlink:title="missing"/>
+          
+          <!-- The X-Y points, renamed to singluar: point -->
+          <!-- This is using full GML element encoding. We can explore more compact versions
+            of the underlying data model for compresssion --> 
+         <wmlrgs:points>
+           <wmlrgs:TableTuple>
+             <wmlrgs:independentVariable>
+               <swe:Quantity>
+                 <swe:uom code="m"/>
+                 <swe:value>1.1</swe:value>
+               </swe:Quantity>
+             </wmlrgs:independentVariable>
+             <wmlrgs:dependentVariable>
+               <swe:Quantity>
+                 <swe:uom code="cumecs"/>
+                 <swe:value>23.2</swe:value>
+               </swe:Quantity>
+             </wmlrgs:dependentVariable>
+           </wmlrgs:TableTuple>
+         </wmlrgs:points>
+         <wmlrgs:points>
+           <wmlrgs:TableTuple>
+             <wmlrgs:independentVariable>
+               <swe:Quantity>
+                 <swe:uom code="m"/>
+                 <swe:value>1.3</swe:value>
+               </swe:Quantity>
+             </wmlrgs:independentVariable>
+             <wmlrgs:dependentVariable>
+               <swe:Quantity>
+                 <swe:uom code="cumecs"/>
+                 <swe:value>26.2</swe:value>
+               </swe:Quantity>
+             </wmlrgs:dependentVariable>
+           </wmlrgs:TableTuple>
+          </wmlrgs:points>
+        </wmlrgs:ConversionTable>
+      </wmlrgs:data>
+    </wmlrgs:ConversionPeriod>
+  </wmlrgs:member>
+ 
+</wmlrgs:ConversionGroup>
+```
+
+## Range values
+
+Range values (as describe here: <http://external.opengis.org/twiki_public/HydrologyDWG/RGSRangeValues>) are used to described data that applies across a range of the independent variable, such as a state or condition.
+
+A draft model is shown here in UML:
+
+\<img alt="<a href="RangeValues" class="wikilink">RangeValues</a>.png" height="515" src="%ATTACHURL%/<a href="RangeValues" class="wikilink">RangeValues</a>.png" title="<a href="RangeValues" class="wikilink">RangeValues</a>.png" width="813" /\>
+
+There is no top level collection class shown here. The period of application defines time bounds for which ranges may be used (may be multiple <a href="RangeDefintions" class="wikilink">RangeDefintions</a> for an application period -- this differs from conversions). A <a href="RangeDefinition" class="wikilink">RangeDefinition</a> is defined according to the independent variable (paramFrom) and associated to a monitoringPoint. The Range is composed of mutliple range entries that have a startValue from which they apply. <a href="RangeEntries" class="wikilink">RangeEntries</a> are valid up to the next <a href="RangeEntry" class="wikilink">RangeEntry</a> startValue. A range entry's value may be a scalar type (e.g. a quantity (mannings N), a category (flood level), free text (descriptive) etc.).
+
+### An XML example
+
+This is based on some of the examples within the range value description page.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<rgs:RangePeriodOfApplication  gml:id="range-value-ex1">
+  
+  <!-- This is a single period of a range value. A top level collection class may be developed
+    to transfer groups of these types, with the possibility of bundling alongside the actual conversions --> 
+  
+  <gml:description> This is a hand crafted example of the range-value concept for WaterML2.0. 
+    It describes flood levels associated with the independent variable (river level) of a 
+    rating table. Based on examples available here: http://external.opengis.org/twiki_public/HydrologyDWG/RGSRangeValues</gml:description>
+  
+  <rgs:start>
+    <gml:TimeInstant gml:id="start-period-1">
+      <gml:timePosition>2012-01-01T00:00:00</gml:timePosition>
+    </gml:TimeInstant>
+  </rgs:start>
+  
+  <rgs:range>
+    <rgs:RangeDefinition gml:id="flood-range">
+      <rgs:endValue uom="m">4.5</rgs:endValue>
+      <rgs:parameterFrom xlink:href="http://www.bom.gov.au/water/awid/id-956.shtml" xlink:title="water level"/>
+      <rgs:monitoringPoint xlink:href="http://www.bom.gov.au/water/monitoring-points/id03023"/>
+      <!-- Should we have a value-type specifier here? E.g. Quantity --> 
+      <rgs:entry>
+        <rgs:RangeEntry>
+          <rgs:startValue uom="m">0.0</rgs:startValue>
+          <rgs:value>
+            <swe:Category>
+              <swe:codeSpace 
+                xlink:href="http://www.bom.gov.au/vic/flood/brochures/flood_warning/February_2001/a4.shtml"/>
+              <swe:value>No flood</swe:value>
+            </swe:Category>
+          </rgs:value>
+        </rgs:RangeEntry>
+      </rgs:entry>
+      <rgs:entry>
+        <rgs:RangeEntry>
+          <rgs:startValue uom="m">1.3</rgs:startValue>
+          <rgs:value>
+            <swe:Category>
+              <swe:codeSpace 
+                xlink:href="http://www.bom.gov.au/vic/flood/brochures/flood_warning/February_2001/a4.shtml"/>
+              <swe:value>Minor</swe:value>
+            </swe:Category>
+          </rgs:value>
+        </rgs:RangeEntry>
+      </rgs:entry>
+      <rgs:entry>
+        <rgs:RangeEntry>
+          <rgs:startValue uom="m">2.2</rgs:startValue>
+          <rgs:value>
+            <swe:Category>
+              <swe:codeSpace 
+                xlink:href="http://www.bom.gov.au/vic/flood/brochures/flood_warning/February_2001/a4.shtml"/>
+              <swe:value>Moderate</swe:value>
+            </swe:Category>
+          </rgs:value>
+        </rgs:RangeEntry>
+      </rgs:entry>
+      <rgs:entry>
+        <rgs:RangeEntry>
+          <rgs:startValue uom="m">3.0</rgs:startValue>
+          <rgs:value>
+            <swe:Category>
+              <swe:codeSpace 
+                xlink:href="http://www.bom.gov.au/vic/flood/brochures/flood_warning/February_2001/a4.shtml"/>
+              <swe:value>Major</swe:value>
+            </swe:Category>
+          </rgs:value>
+        </rgs:RangeEntry>
+      </rgs:entry>
+    </rgs:RangeDefinition>
+  </rgs:range>
+  
+  <rgs:range>
+    <rgs:RangeDefinition gml:id="segment-equation">
+      <gml:description>Range describing the segment equation for sections of the conversion in a free text form.</gml:description>
+      <gml:identifier codeSpace="http://www.opengis.net/def/waterml2.0/part2/range-types/">segment-equation</gml:identifier>
+      
+      <rgs:endValue uom="m">4.5</rgs:endValue>
+      <rgs:parameterFrom xlink:href="http://www.bom.gov.au/water/awid/id-956.shtml" xlink:title="water level"/>
+      <rgs:monitoringPoint xlink:href="http://www.bom.gov.au/water/monitoring-points/id03023"/>
+      
+      <rgs:entry>
+        <rgs:RangeEntry>
+          <rgs:startValue uom="m">0.0</rgs:startValue>
+          <rgs:value>
+            <swe:Text>
+              <swe:value>15.856*(y+0)^2.521</swe:value>
+            </swe:Text>
+          </rgs:value>
+        </rgs:RangeEntry>
+      </rgs:entry>
+      
+      <rgs:entry>
+        <rgs:RangeEntry>
+          <rgs:startValue uom="m">1.3</rgs:startValue>
+          <rgs:value>
+            <swe:Text>
+              <swe:value>17.618(y+0.014)^2.7</swe:value>
+            </swe:Text>
+          </rgs:value>
+        </rgs:RangeEntry>
+      </rgs:entry>
+      
+      <rgs:entry>
+        <rgs:RangeEntry>
+          <rgs:startValue uom="m">2.2</rgs:startValue>
+          <rgs:value>
+            <swe:Text>
+              <swe:value>13.05*(y-0.106)^1.725</swe:value>
+            </swe:Text>
+          </rgs:value>
+        </rgs:RangeEntry>
+      </rgs:entry>
+    
+    </rgs:RangeDefinition>
+  </rgs:range>
+  
+</rgs:RangePeriodOfApplication>
+```
+
+## Open questions for discussion
+
+1.  rgs-38 : Does a coversion always apply to the same <a href="ParamFrom" class="wikilink">ParamFrom</a> /<a href="ParamTo" class="wikilink">ParamTo</a> and Site/<a href="MonitoringPoint" class="wikilink">MonitoringPoint</a>? RGS 36. There was discussion of engineered structures and conversions that are re-used across sites, e.g. flume relationships. How do these get identified? For actual use they would be 'bound' to a site.
+2.  rgs-39 : Need a glossary. What are: Conversions, Ratings, Gaugings and where do they differ? This should refelect in the class naming (that needs some refinement for consistency). Glossary is at : <a href="RGSGlossaryOfTerms" class="wikilink">RGSGlossaryOfTerms</a> -\> [http://external.opengis.org/twiki_public/HydrologyDWG/RGSGlossaryOfTerms](RGSGlossaryOfTerms)
+3.  rgs-40 : Metadata for including/excluding gauging observations as references. Do we need the reason they were excluded/included? Examples of this in practice? We modelled this but not currently shown in the above model.
+4.  rgs-41 :Should we define a vocabulary supporting conversion release status?
+5.  regs-42 : re rgs-7. Is there a need to implement shifts to enable the actual source system representation? Is rgs-7 a free form extension point that would implement a specific data systems information model?
+6.  Add a property domainFeatureType that indicates the type of the feature that the conversion was developed for. E.g. a storage feature, such as reservoir, dam etc.
+7.  \_More to come...\_
+
+-- Main.<a href="PeterTaylor" class="wikilink">PeterTaylor</a> - 12 Nov 2012
+
+- TOPICINFO{author="<a href="PeterTaylor" class="wikilink">PeterTaylor</a>" comment="save topic" date="1355180972" format="1.1" reprev="4" version="6"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="WaterML2Part2" class="wikilink">WaterML2Part2</a>"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="Conversions.png" attachment="Conversions.png" attr="" comment="" date="1352776249" path="Conversions.png" size="77090" user="<a href="PeterTaylor" class="wikilink">PeterTaylor</a>" version="2"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="RangeValues" class="wikilink">RangeValues</a>.png" attachment="<a href="RangeValues" class="wikilink">RangeValues</a>.png" attr="" comment="" date="1352761490" path="<a href="RangeValues" class="wikilink">RangeValues</a>.png" size="41974" user="<a href="PeterTaylor" class="wikilink">PeterTaylor</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="Conversions2.png" attachment="Conversions2.png" attr="" comment="" date="1352776385" path="Conversions2.png" size="77102" user="<a href="PeterTaylor" class="wikilink">PeterTaylor</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="Conversions3.png" attachment="Conversions3.png" attr="" comment="" date="1352845503" path="Conversions3.png" size="82696" user="<a href="PeterTaylor" class="wikilink">PeterTaylor</a>" version="1"}

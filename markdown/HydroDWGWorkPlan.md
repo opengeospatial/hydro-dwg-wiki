@@ -1,0 +1,93 @@
+## Work Plan for Hydrology DWG
+
+**The plan and timeline are very tentative (to frame the discussion at the meeting), version 12/2/2009**
+
+The focus of the group is analyzing and understanding requirements and use cases for hydrologic data integration, development of domain models and standards (where standardization is justified) for data exchange in the areas of hydrology and water resources, and establishment of a community consensus-building process to support adoption and proliferation of the standards. We expect that outcomes of DWG work will match WMO needs and is considered for adoption by WMO, as well as by developers of hydrologic data management software.
+
+#### The main expected outcome is a common model for exchanging hydrologic data, which includes:
+
+1.  An agreed feature model (ie. what are the features of the hydrosphere (from an information perspective) and how are they related.)
+2.  An agreed observation model.
+3.  Agreed vocabularies, endorsed by the community, and by WMO in particular. Agreeing on semantics is a long process, but we should be able to recommend some vocabularies
+
+#### The DWG activities will include:
+
+- Analysis and harmonization of existing commonly used protocols and standards in the domain
+- Interoperability Experiments (IEs) focused on selected sub-domains of water data (e.g. surface water, groundwater, water quality, water use, hydrologic forecasts, realtime data), where teams of DWG members will pilot emerging water data standards and services, specifically addressing the three components above.
+- Participation in GEO Architecture Implementation Pilots (AIPs), focused on broader scenarios within the entire domain and across domains
+- Submission of discussion papers and best practice papers (the latter following IE and AIP experiences)
+- Collaboration with other DWGs, in particular ESS (on modelling), <a href="MetOcean" class="wikilink">MetOcean</a> (on handling gridded data), SWE (on real time data management)
+
+#### Sub-groups:
+
+- Design group: primarily responsible for driving <a href="WaterML" class="wikilink">WaterML</a> 2.0
+- Use case and testbed groups: IEs
+- Ontology/vocabulary task force
+
+#### More about IEs:
+
+We expect (in the timeline below, in particular) that each IE will be about a year long. Different IEs might start with a three to six-month delay from each other. We hope that IE teams will work in collaboration, to ensure that a common model is developed, or that there are justified reasons to diverge. For this, it may be useful to have a workshop of IEs (once we have them going, ie. Summer-Fall 2010). Another possible cross-IE communication is having overlapping members and/or observers.
+
+Another organizational option is to have a single large IE, covering all the sub-domains. We shall discuss the pros and cons at the meeting. The timeline below tentatively includes several IEs.
+
+Each IE is expected to address feature model in its sub-domain (sampling features, features of interest, cluster/aggregate features), the observation model (frequencies, sampling patterns, etc.), vocabularies, and services. IEs focus on informing standards development, while AIPs focus on broader interoperability scenarios in the domain. Therefore, IEs are tightly connected with <a href="WaterML" class="wikilink">WaterML</a> 2 development. A draft <a href="WaterML" class="wikilink">WaterML</a> 2.0 specification, currently being developed in conjunction with the groundwater IE, will be posted on the DWG pages shortly.
+
+#### Timeline
+
+**September 2009**
+
+- Discussion paper on harmonization of water data exchange formats (1st version)
+- IE1 announced
+
+**December 2009**
+
+- Update on the harmonization report
+- Proposed <a href="WaterML" class="wikilink">WaterML</a> 2.0 schema announced
+- IE1 officially launched, IEs 2-3 announced and IE teams formed
+- Work plan and first steps discussed
+
+**March 2010**
+
+- <a href="WaterML" class="wikilink">WaterML</a> 2.0 documentation posted for wider discussion
+- Version 2 of the harmonization Discussion Paper
+- IE2 launched (to be reported 3/11); AIP team formed
+- Ontology task force started (with GRDC, CSIRO, CUAHSI, others)
+- A Hydro DWG workshop focused on work plan, coordination with WMO and other DWGs, next steps forward
+
+**June 2010**
+
+- IE1 preliminary report
+- IE3 launched (or possibly by September 2010)
+
+**September 2010**
+
+- Cross-IE meetings
+- IE1 report
+- IE2 preliminary report
+
+**December 2010**
+
+- IE1 final report, a best practice paper based on the results
+- IE2 and IE3 reports
+
+**March 2011**
+
+- IE2 final report, and a paper
+
+**June 2012**
+
+- IE3 final report, and a paper
+
+**September 2012**
+
+- Results of AIP; technical report
+
+**December 2012**
+
+-- Main.<a href="IlyaZaslavsky" class="wikilink">IlyaZaslavsky</a> - 11 Nov 2009
+
+- TOPICINFO{author="<a href="IlyaZaslavsky" class="wikilink">IlyaZaslavsky</a>" date="1261429577" format="1.1" reprev="1.7" version="1.7"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="WebHome" class="wikilink">WebHome</a>"}

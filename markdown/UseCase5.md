@@ -1,0 +1,52 @@
+# **Use Case 5 -- Technologic**
+
+Discussion page : see <a href="GwIe2UseCase5Discussion" class="wikilink">GwIe2UseCase5Discussion</a>
+
+## Participants
+
+- \<p\>E.Boisvert (GSC Lead), François Létourneau (GSC), B.Brodaric (GSC), M.Lutz (JRC), B.Wagner (GSG), Main.<a href="BruceSimons" class="wikilink">BruceSimons</a> (CSIRO), Main.<a href="SylvainGrellet" class="wikilink">SylvainGrellet</a> (BRGM),Main.<a href="DimitriMeunier" class="wikilink">DimitriMeunier</a> (OIEAU)\</p\>
+
+## Abstract
+
+- Because of various technical and jurisdictional requirements, it is not possible, nor sought, to enforce a single physical model to all agencies managing groundwater related data. The international model developped in this IE is to meet interchange scenarios, not physical implementation. This implies that some sort of translation will happen between the existing models and the international model. The first step to achieve a translation is to identify the mapping between "private" models, those that are used by data providers, and the "public" model, which is used by the larger community.
+
+## Objective
+
+- The objective of this UC is to document mappings between existing model : INSPIRE, GWML and <a href="HY_FEATURE" class="wikilink">HY_FEATURE</a> and the international model. The objective of the UC is not to implement any working system but to identify and document in the most formally possible way how each feature and properties used by UC1 to UC4 can map to the international model. No formalism has been chosen at this point, but it is expected that part of the objective is to also evaluate the mapping methology itself. The deliverable of this UC is a documentation, either as a human readable or machine readable format, that could potentially be used in the further implementation project. The mapping will be evaluation with regard to completeness, complexity , etc.. (parameters to be discussed)
+
+## Actors
+
+- Data providers
+  - INSPIRE GW model (EU)
+  - GWML (Groundwater Information Network)
+  - <a href="HY_Feature" class="wikilink">HY_Feature</a> (WMO)
+
+## Actions
+
+Mostly iterative workflow where each model are analysed. All models are already in UML and already follow OGC modelling practices.
+
+- Identify a mapping documentation method (ISO already propose, RDF / OWL is another possibility)
+- Identify a mapping evaluation method.
+- Flesh each model and map to international model (so, we expect 3 documents)
+
+## Entities (Features, Observations, Properties)
+
+Complete list to be prepared by Use Case working groups. Likely to include:
+
+- Aquifer (including lithologic description and hydrogeologic properties
+- Groundwater Body
+- Water Well, including water level
+
+## Web Clients
+
+- \<p\>N/A\</p\>
+
+-- Main.<a href="EricBoisvert" class="wikilink">EricBoisvert</a> - 22 Nov 2012
+
+-- Main.<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a> - 24 Oct 2012
+
+- TOPICINFO{author="<a href="SylvainGrellet" class="wikilink">SylvainGrellet</a>" comment="reprev" date="1393335467" format="1.1" reprev="12" version="13"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="GroundwaterInteroperabilityExperiment2" class="wikilink">GroundwaterInteroperabilityExperiment2</a>"}

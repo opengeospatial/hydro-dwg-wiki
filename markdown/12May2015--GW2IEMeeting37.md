@@ -1,0 +1,93 @@
+# **<a href="GW2IE" class="wikilink">GW2IE</a> Meeting 37 -- Tues 12 May 2015**
+
+## **Agenda**
+
+- Meetings update
+- Server update
+- GW_ManagementArea update
+- AquiferTest update
+- Report review
+- Use-case roundtable
+
+## **Participants**
+
+- Click here for the [Doodle Poll](http://doodle.com/p88dddaqwnh6vhus)
+
+## **Results**
+
+- Meetings
+  - Next GW2IE May meeting (May 20-22): **please complete [Doodle Poll](http://doodle.com/a43tcx6h4ttdnx9i)**
+  - OGC TC June 2015 Boulder: draft ppt circulated (**Bruce**)
+- Server update
+  - completed: landing page: drafted (**Jessica**)
+  - in progress:
+    - adding landing page to SVN (**Eric**,**Jessica**)
+    - registration of IP (USGS) with domain name (**Jessica**, **Eric**, **Bruce**)
+- GW_ManagementArea
+  - completed: logical model reviewed (**Sylvain**), XML schema updated (**Francois**)
+  - in progress: conformance/requirements classes (**Eric**), instances (**Alex**,**Sylvain**)
+- AquiferTest
+  - completed: review (**Sylvain**)
+  - in progress: report uppdate (**Eric**)
+- Instance examples:
+  - updates underway (**all**)
+  - list of examples to be compiled (**Boyan**)
+  - working web service urls: **please post [here](UseCaseWebServices) (all)**
+- Report
+  - conceptual model diagrams to be updated (**Boyan**)
+  - current edits to be accepted (**Eric**)
+- Implementations
+  - Use-case 1
+    - completed: CSIRO-<a href="BoM" class="wikilink">BoM</a>, Fed-Uni, GNSS
+    - in progress: GSC, BRGM, USGS (added)
+  - Use-case 2
+    - in progress: BRGM, GSG, INSPIRE, GNSS (added)
+  - Use-case 3
+    - in-progress: CSIRO-<a href="BoM" class="wikilink">BoM</a>, Fed-Uni, GNSS
+    - early result: def of groundwater too vague (always just subsurface water?)
+    - early result: gw monitoring site change/usage
+  - Use-case 4
+    - in-progress: USGS, GNSS
+  - Use-case 5
+    - in-progress:
+      - GWML2-INSPIRE mapping (**Sylvain**, **Bernhard**)
+      - GWML2-NGIS mapping (**Bruce**)
+      - GWML2-BRGM maping (**Sylvain**)
+    - methodology:
+      - any mapping format accepted
+      - key results to be documented in report
+
+## **Connection Instructions**
+
+| Ottawa | Madison | London | Paris | Melbourne | Auckland |
+|:-------|:--------|:-------|:------|:----------|:---------|
+| 8:00   | 7:00    | 13:00  | 14:00 | 22:00     | 23:59    |
+
+- Screen sharing (Webex):
+  - pass: ogc
+  - url: <https://pwgsc-nh.webex.com/pwgsc-nh/j.php?MTID=m5167413e98666917ec49a0edeadaacc4>
+
+<!-- -->
+
+- Teleconference:
+  - Dial local number (see below) and passcode = **616269**
+
+| Country        | Conference Number     |
+|:---------------|:----------------------|
+| Australia      | +61 (0) 3 8672 0180   |
+| Austria        | +43 (0) 1 2650500     |
+| Belgium        | +32 (0) 3 294 11 60   |
+| Canada         | +1 559-546-1300       |
+| France         | +33 (0) 1 80 14 11 00 |
+| Germany        | +49 (0) 228 5343020   |
+| Italy          | +39 055 464 0570      |
+| Netherlands    | +31 (0) 20 322 3000   |
+| Poland         | +48 22 116 80 20      |
+| United Kingdom | +44 (0) 330 606 0182  |
+| United States  | +1 760-569-7100       |
+
+- TOPICINFO{author="<a href="BruceSimons" class="wikilink">BruceSimons</a>" comment="reprev" date="1432128350" format="1.1" reprev="4" version="5"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="GroundwaterInteroperabilityExperiment2" class="wikilink">GroundwaterInteroperabilityExperiment2</a>"}

@@ -1,0 +1,125 @@
+## **GWML2 Conceptual Model (GWML2 CM)**
+
+GW2IE identified the need for a conceptual model (GWML2 CM), to guide the design of the logical model and derived encodings (e.g. XML). The conceptual model is fundamentally semantic: it is technology-neutral and strictly concerned with organizing the groundwater domain using a knowledge representation language (UML in this case). Technology-neutral means here that ALL GML concerns, such as links to O&M, WaterML, and GeoSciML, are deferred to the Logical Model. Also, the scope of GWML2 CM is determined by the [Final Entity List](gwml2FinalFeaturesList), which has been in turn is developed from the use-cases.
+
+- The latest version of the conceptual model (in eap):
+  - Available from the SVN site... [here](https://xp-dev.com/svn/gwml2/Documents/GWML2_CM_2.0.eap)
+- Comments on the conceptual model (all versions):
+  - Available... [here](GWML2_CM_0-2_Discussion)
+- Some previous versions of the conceptual model are attached below.
+
+-- Main.<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a> - 21 Nov 2013
+
+- TOPICINFO{author="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" comment="reprev" date="1438289055" format="1.1" reprev="21" version="21"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="GroundwaterInteroperabilityExperiment2" class="wikilink">GroundwaterInteroperabilityExperiment2</a>"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.2.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.2.pdf" attr="" comment="GWML2 CM 0.2 Documentation" date="1385077890" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.2.pdf" size="196059" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.2.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.2.eap" attr="" comment="GWML2 CM 0.2 EAP file" date="1385077936" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.2.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.21.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.21.eap" attr="" comment="GWML2 CM 0.21 EAP -- meeting \#8 revisions (08 Dec 2013)" date="1386613267" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.21.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="3"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.21_meeting8_revisions.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.21_meeting8_revisions.pdf" attr="" comment="GWML2 CM 0.21 pdf -- meeting \#8 revisions (08 Dec 2013)" date="1387392134" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.21_meeting8_revisions.pdf" size="26474" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.22.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.22.eap" attr="" comment="GWML2 CM 0.22 EAP -- meeting \#9 revisions (18 Dec 2013)" date="1387401749" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.22.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="2"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.22_meeting9_revisions.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.22_meeting9_revisions.pdf" attr="" comment="GWML2 CM 0.22 pdf -- meeting \#9 revisions (18 Dec 2013)" date="1387392212" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.22_meeting9_revisions.pdf" size="25449" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.23.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.23.eap" attr="" comment="GWML2 CM 0.23 EAP -- meeting \#10 revisions (16 Jan 2014)" date="1390249497" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.23.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="2"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.23_meeting10_revisions.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.23_meeting10_revisions.pdf" attr="" comment="GWML2 CM 0.23 pdf -- meeting \#10 revisions (16 Jan 2014)" date="1390249525" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.23_meeting10_revisions.pdf" size="15601" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="2"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.24.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.24.eap" attr="" comment="GWML2 CM 0.24 EAP -- meeting \#11 revisions (30 Jan 2014)" date="1391102699" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.24.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.24_meeting11_revisions.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.24_meeting11_revisions.pdf" attr="" comment="GWML2 CM 0.24 pdf -- meeting \#11 revisions (30 Jan 2014)" date="1391102723" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.24_meeting11_revisions.pdf" size="15978" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.25.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.25.eap" attr="" comment="GWML2 CM 0.25 EAP -- meeting \#12 revisions (12 Feb 2014)" date="1392237637" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.25.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.25_meeting12_revisions.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.25_meeting12_revisions.pdf" attr="" comment="GWML2 CM 0.25 pdf -- meeting \#12 revisions (12 Feb 2014)" date="1392237660" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.25_meeting12_revisions.pdf" size="16217" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.26.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.26.eap" attr="" comment="GWML2 CM 0.26 EAP -- meeting \#13 revisions (24 Feb 2014)" date="1393255224" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.26.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.26_meeting13_revisions.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.26_meeting13_revisions.pdf" attr="" comment="GWML2 CM 0.26 pdf -- meeting \#13 revisions (24 Feb 2014)" date="1393255271" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.26_meeting13_revisions.pdf" size="25917" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.27.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.27.eap" attr="" comment="GWML2 CM 0.27 EAP -- meeting \#14 revisions (17 Mar 2014)" date="1395066326" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.27.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.27_meeting14_revisions.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.27_meeting14_revisions.pdf" attr="" comment="GWML2 CM 0.27 pdf -- meeting \#14 revisions (17 Mar 2014)" date="1395066408" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.27_meeting14_revisions.pdf" size="16489" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.28.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.28.eap" attr="" comment="GWML2 CM 0.28 EAP -- meeting \#15 revisions (03 Apr 2014)" date="1396629393" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.281.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="2"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.28_meeting15_revisions.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.28_meeting15_revisions.pdf" attr="" comment="GWML2 CM 0.28 pdf -- meeting \#15 revisions (03 Apr 2014)" date="1397666982" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.28_meeting15_revisions.pdf" size="16800" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29.eap" attr="" comment="GWML2 CM 0.29 EAP -- meeting \#16 revisions (16 Apr 2014)" date="1397667061" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29_meeting16_revisions.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29_meeting16_revisions.pdf" attr="" comment="GWML2 CM 0.29 pdf -- meeting \#16 revisions (16 Apr 2014)" date="1397746088" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29_meeting16_revisions.pdf" size="39454" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="2"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29a.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29a.eap" attr="" comment="Minor revisions to version 29 to add name, description and metadata properties and standardise naming" date="1397746279" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29b.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="2"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29a_tidying.jpg" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29a_tidying.jpg" attr="" comment="Image showing changes and note describing changes" date="1397703757" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.29a_tidying.jpg" size="80310" user="<a href="BruceSimons" class="wikilink">BruceSimons</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.30.eap" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.30.eap" attr="" comment="GWML2 CM 0.30 EAP -- meeting \#17 revisions (23 Apr 2014)" date="1398271816" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.30.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.30_meeting17_revisions.pdf" attachment="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.30_meeting17_revisions.pdf" attr="" comment="GWML2 CM 0.30 pdf -- meeting \#17 revisions (23 Apr 2014)" date="1398271848" path="<a href="GWML2_CM_0" class="wikilink">GWML2_CM_0</a>.30_meeting17_revisions.pdf" size="28215" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_1" class="wikilink">GWML2_CM_1</a>.0.eap" attachment="<a href="GWML2_CM_1" class="wikilink">GWML2_CM_1</a>.0.eap" attr="" comment="GWML2 CM 1.0 EAP -- meeting \#18 results (05-09 May 2014)" date="1401222166" path="<a href="GWML2_CM_1" class="wikilink">GWML2_CM_1</a>.0.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_1" class="wikilink">GWML2_CM_1</a>.0.pdf" attachment="<a href="GWML2_CM_1" class="wikilink">GWML2_CM_1</a>.0.pdf" attr="" comment="GWML2 CM 1.0 pdf -- meeting \#18 results (05-09 May 2014)" date="1401222222" path="<a href="GWML2_CM_1" class="wikilink">GWML2_CM_1</a>.0.pdf" size="43608" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GWML2_CM_1" class="wikilink">GWML2_CM_1</a>.3.eap" attachment="<a href="GWML2_CM_1" class="wikilink">GWML2_CM_1</a>.3.eap" attr="" comment="GWML2 CM 1.3 EAP -- meeting \#19 results (10 June 2014)" date="1402414550" path="<a href="GWML2_CM_1" class="wikilink">GWML2_CM_1</a>.3.eap" size="2818048" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}

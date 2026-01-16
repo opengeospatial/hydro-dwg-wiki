@@ -1,0 +1,89 @@
+# **<a href="GW2IE" class="wikilink">GW2IE</a> Meeting 5** **-- Tues 30 April 2013 -- Entity List**
+
+## **Agenda**
+
+- Welcome
+- OGC status update
+  - New members: Maciej Rossa, PASI
+- Discussion
+  - Update on the definitions for the [Entity List](Gwml2ConsolFeatureList)
+- Next meeting
+  - Thurs 23 May 2013
+
+## **Participants**
+
+- Click here for the [Doodle poll](http://doodle.com/wsftiz46c4iuhgru)
+
+## **Connection Instructions**
+
+- **Date**: Tues 30 Apr 2013
+- **Time**: 8:00 AM Eastern Daylight Time
+- **Screen sharing (Webex):**
+  - **\***IMPORTANT-- APPLET MUST BE INSTALLED FIRST:\*****
+    - go to <https://pwgsc-nh.webex.com/mw0306ld/mywebex/default.do?siteurl=pwgsc-nh>
+    - on the left menu click on **Support**and **Downloads**
+    - install **Meeting Center Application**
+  - **Meeting Topic:**<a href="GW2IE" class="wikilink">GW2IE</a> April meeting
+  - **Meeting Number**: 800 918 063
+  - **Meeting Password**: ogc
+  - **Meeting** **URL**: click below, then enter name, email, password, and click "**Join Now"**:
+    - <https://pwgsc-nh.webex.com/pwgsc-nh/j.php?ED=203189577&UID=0&PW=NOGQ3Y2RkM2Zh&RT=NCMxMQ%3D%3D>
+- **Teleconference:**
+  - Dial your local number (see table below) and the use the passcode **616269**
+
+### FreeConferenceCall.com
+
+\| **FreeConferenceCall.com \#1** \|\|\|\|
+
+| Country | Conference Number | Country | Conference Number |
+|:---|:---|:---|:---|
+| Australia\* | +61 1300 558 602 | Japan | +81 (0) 3-5050-5053 |
+| Austria | +43 (0) 1 2650500 | Korea | +82 (0) 70-7917-6500 |
+| Belgium | +32 (0) 3 294 11 60 | Malaysia | +60 (0) 11-1146 0010 |
+| Brazil | +55 21 2391-8188 | Mexico | +52 (0) 899 274 4042 |
+| Bulgaria | +359 (0) 2 437 2540 | Netherlands | +31 (0) 20 322 3000 |
+| Canada**\*** | +1 559-546-1300 | Norway | +47 56 90 10 20 |
+| Croatia | +385 (0) 21 770 719 | Poland | +48 22 116 80 20 |
+| Czech Republic | +420 225 989 110 | Portugal | +351 210 051 180 |
+| Denmark | +45 78 77 25 22 | Romania | +40 (0) 31 780 7000 |
+| Finland | +358 (0) 9 74790022 | Slovenia | +386 (0) 1 828 02 25 |
+| France | +33 (0) 1 80 14 11 00 | South Africa | +27 (0) 87 825 0100 |
+| GCC/Arabian Peninsula****\*** \| +973 1656 8300 \| Spain \| +34 911 19 67 00 \| \| Germany \| +49 (0) 228 5343020 \| Sweden \| +46 (0) 8 124 107 04 \| \| Hungary \| +36 1 987 6825 \| Switzerland \| +41 (0) 44 595 90 00 \| \| Ireland \| +353 (0) 90 646 4151 \| Turkey \| +90 (0) 212 988 1703 \| \| Israel \| +972 (0) 76-599-0000 \| United Kingdom\*** | +44 (0) 7848 432900 |  |  |
+| Italy | +39 (0) 055 464 0570 | United States | +1 760-569-7100 |
+
+\*This number is not accessible when calling from outside of Australia.
+
+\*\*This is a mobile dial-in number. Please check with your phone provider for mobile calling rates.
+
+**\*** This is a U.S. dial in number. \<div id="ctl00_ContentPlaceHolder1_Div2"\>
+
+## **Action Plan**
+
+- \<p\>a poll will issued re: preferences for a face-to-face meeting. Some possibilities include:\</p\>
+  - \<p\>OGC Frascati (23-27 Sept 2013)\</p\>
+  - \<p\>GSA Denver (27-30 Oct 2013)\</p\>
+- \<p\>next steps: the focus of activity will be to reach agreement on the definitions for the May meeting\</p\>
+  - \<p\>the entity list will be partitioned thematicaly, and each partition will be led by an individual (tbd)\</p\>
+  - \<p\>results and as much discussion as possbile to be recorded on the wiki\</p\>
+
+## **Meeting Notes**
+
+- \<p\>see action plan above\</p\>
+- \<p\>the following entities are ruled out-of-scope, for this version:\</p\>
+  - \<p\>Well Construction Elements\</p\>
+  - \<p\>Pump\</p\>
+- \<p\>the following are ruled in scope, but might utilize other packages (e.g. GeoSciML) in modeling:\</p\>
+  - \<p\>Water Well\</p\>
+  - \<p\>Well Log\</p\>
+
+-- Main.<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a> - 29 Apr 2013 \</div\>
+
+- TOPICINFO{author="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" comment="save topic" date="1367522223" format="1.1" reprev="5" version="5"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="GroundwaterInteroperabilityExperiment2" class="wikilink">GroundwaterInteroperabilityExperiment2</a>"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="GW2IE_Definitions_status_26Apr2013" class="wikilink">GW2IE_Definitions_status_26Apr2013</a>.pdf" attachment="<a href="GW2IE_Definitions_status_26Apr2013" class="wikilink">GW2IE_Definitions_status_26Apr2013</a>.pdf" attr="" comment="<a href="GW2IE" class="wikilink">GW2IE</a> Status 26Apr2013 -- definitions" date="1367322767" path="<a href="GW2IE_Definitions_status_26Apr2013" class="wikilink">GW2IE_Definitions_status_26Apr2013</a>.pdf" size="7914" user="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" version="1"}

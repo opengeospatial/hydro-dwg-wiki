@@ -1,0 +1,37 @@
+# Use Case 1 Phone Conference: 15/02/2011, 15:00-15:30 (CET)
+
+## Participants
+
+- Carsten Heidmann (disy)
+- Simon Jirka (52°north)
+- Sylvain Grellet (IOW-Sandre)
+- Jens Wilhelmy (<a href="BfG" class="wikilink">BfG</a> - German Federal Institute of Hydrology)
+- Uli Looser (GRDC)
+
+## Agenda
+
+- updates from the participants
+- Preparation for Bonn TC
+- Next phone conference
+
+## Results
+
+- updates from the participants
+  - Simon J.: working on SOS client (stability, performance, GUI changes)
+  - Uli L.: finalizing agenda for Hydrology Workshop
+- Preparation for Bonn TC
+  - no major updates since Sydney
+  - mainly consolidation of existing work
+  - Carsten prepares draft slides for Hydrology DWG presentation
+  - Carsten asks Ilya to change time slot from 20min to 10min
+- Next meetings
+  - Bonn TC: February 28th - March 3rd;
+    - Hydrology DWG meeting on March 2nd 9:00 - 12:00 (CET)
+    - <a href="WaterML" class="wikilink">WaterML</a> SWG on March 1st 13:00 - 14:00 (CET)
+  - Hydrology DWG workshop: April 11th - April 14th in Delft: Registration open on <http://www.clw.csiro.au/conferences/Hydrology-Domain/>
+- next phone conference is on Wednesday, February 24th at 14:00 (CET)
+- TOPICINFO{author="<a href="CarstenHeidmann" class="wikilink">CarstenHeidmann</a>" date="1298276476" format="1.1" version="1.1"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="UseCase1CrossborderDataExchange" class="wikilink">UseCase1CrossborderDataExchange</a>"}

@@ -1,0 +1,34 @@
+# Use Case 1 Phone Conference: 24/11/2010, 16:00-16:30 (CEST)
+
+## Participants
+
+- Carsten Heidmann (disy)
+- Chris Michl (DLZ-IT BMVBS)
+- Simon Jirka (52°north)
+- Sylvain Grellet (IOW-Sandre)
+- Uli Looser (GRDC)
+- Stefan Fuest (KISTERS)
+
+## Agenda
+
+- updates from the participants
+- presentation for Sydney
+
+## Results
+
+- updates from the participants
+  - Sylvain: working together with the national hydrological agency on the inclusion of further data
+  - Simon J.: work on 52north server and client is ongoing but not very much visible on the surface, timeline for SOS Type C with <a href="WaterML2" class="wikilink">WaterML2</a>.0 is Bonn TC meeting in February
+  - Stefan F.: updates on development on GRDC instance but not propagated further; waiting for further development of <a href="WaterML2" class="wikilink">WaterML2</a>.0 (probably after Sydney meeting)
+- presentation for Sydney
+  - proposal from Chris is ok, additions will come from Simon J. (status of 52north implementations) and Stefan F. (KISTERS implementations)
+  - Chris and Carsten will discuss how the slides will be presented in Sydney during SF IE telco on November 25th with Peter F.
+- remarks
+  - Uli mentions the publication of a hydrological glossary on the GRDC website and will send a link to the list
+  - Simon J. asks to contribute to the SOS2.0 **now** (deadline for comments is December 1st)
+- next phone conference is on Wednesday, December 8th at 16:00 (CET)
+- TOPICINFO{author="<a href="CarstenHeidmann" class="wikilink">CarstenHeidmann</a>" date="1290614133" format="1.1" version="1.1"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="UseCase1CrossborderDataExchange" class="wikilink">UseCase1CrossborderDataExchange</a>"}

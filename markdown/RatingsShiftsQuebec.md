@@ -1,0 +1,159 @@
+# Stage and Time r\<span style="line-height: 1.1em;"\>ating shifts - concept investigation \</span\>
+
+### 
+
+### USGS calculation of flow
+
+The calculation of flow is primarily based on the common approach of passing the time series record though a 'flow rating', the applicable rating table may change over the period of record – a family of rating tables.The trigger for changing rating tables can be due to many things, primarily a physical change on site has caused a change in the level/flow relationship.
+
+In the period between rating changes there is often a need to 'tweak' the rating relationship by small amounts. There may be one or many tweaks of the relationship applied in the course of the ratings application period. There is a need to interpolate the tweaking between tweak definition points.
+
+Tweaking is equivalent to the release of a new rating table with very minor change and a phased change between the rating tables.
+
+A tweak definition may result from a single gauging observation that deviates from the existing rating more than the allowed amount.
+
+In practice the tweaking is implemented by adjusting the incoming stage record rather that adjusting the rating. The process is to adjust the observed river level (called shifting) to the effective river level. \_\_Thus a rating shift is not a shift on the rating, it is a shift on the gage data before being passed through the rating\_\_.
+
+The diagram below illustrates how a rating table is connected to a family of shift tables, the rating may have zero or many shift tables.
+
+\<img alt="<a href="Ratings_and_Shifts_" class="wikilink">Ratings_and_Shifts_</a>-\_relationship.jpg" height="750" src="%ATTACHURL%/<a href="Ratings_and_Shifts_" class="wikilink">Ratings_and_Shifts_</a>-\_relationship.jpg" title="<a href="Ratings_and_Shifts_" class="wikilink">Ratings_and_Shifts_</a>-\_relationship.jpg" width="1064" /\>
+
+### Flow calculation process
+
+| Step | Action |
+|:---|:---|
+| 1\. Raw gage height |  |
+|  | Datum and quality correction |
+| 2\. Computed gage height |  |
+|  | Determine gage height adjustment (stage shift) to be applied to the computed gage height |
+| 3\. Effective stage - shifted gage height |  |
+|  | Look up flow rating |
+| 4\. Computed flow |  |
+
+%RED%- Need input on best practice USGS shift terminology<span class="twiki-macro ENDCOLOR"></span>
+
+The diagram below shows how the effective stage is calulated using the raw gage reading and the stage shift tables.
+
+\<img alt="<a href="Shift_interpolation" class="wikilink">Shift_interpolation</a>.jpg" height="761" src="%ATTACHURL%/<a href="Shift_interpolation" class="wikilink">Shift_interpolation</a>.jpg" title="<a href="Shift_interpolation" class="wikilink">Shift_interpolation</a>.jpg" width="1163" /\>
+
+#### WMO shift documentation excerpts
+
+#### \<span style="color: \#000000; font-size: small; line-height: 22px;"\>Taken from : \</span\>\<span style="color: \#000000; font-size: small; line-height: 22px;"\>WMO Manual on stream gauging - Volume II Computation of discharge - Rating shifts\</span\>
+
+###### Shift adjustments varied by time only
+
+\_"The simplest way to vary shift adjustments between discharge measurements is by time interpolation. Time-varied shifts are usually used for periods when stage does not change very much, and the shifting control is affected by a gradual change due to scour or fill. For example, such a condition might be caused by gradual accumulation of falling leaves on a section control."\_
+
+###### shift adjustments varied by stage only
+
+\_"The use of a stage-varied-shift adjustment is equivalent to drawing a new numbered rating curve and may be preferable for temporary rating changes. The shift-variation diagrams shown in Figure II.6.3 are typical stage-only diagrams, as escribed in a previous section. They are applied over a period of time by manually or automatically determining the shift for each stage value for which discharge is computed during the specified time period."\_
+
+###### WMO documentation of applying stage and time shifts
+
+%BLACK%"The interpolation procedure is described in the following step-by-step example:<span class="twiki-macro ENDCOLOR"></span>
+
+\<span class="<a href="WYSIWYG_COLOR" class="wikilink">WYSIWYG_COLOR</a>" style="color: black;"\> \_(a) Two shift curves, numbered 001 and 002 for example, are defined graphically for use at dates and times, t\<sub\>1 \</sub\> and t\<sub\>2\</sub\>, respectively;\_ \</span\>
+
+\<span class="<a href="WYSIWYG_COLOR" class="wikilink">WYSIWYG_COLOR</a>" style="color: black;"\> \_(b) An interpolated shift, S\<sub\>n\</sub\>, is required for unit value, G\<sub\>n\</sub\>, at an intermediate date and time, t\<sub\>n\</sub\>;\_ \</span\>
+
+\<span class="<a href="WYSIWYG_COLOR" class="wikilink">WYSIWYG_COLOR</a>" style="color: black;"\> \_(c) The electronic processing system computes the shifts, S\<sub\>1\</sub\> and S\<sub\>2\</sub\>, corresponding to the unit\_ \</span\>
+
+\<span class="<a href="WYSIWYG_COLOR" class="wikilink">WYSIWYG_COLOR</a>" style="color: black;"\> \_value, G\<sub\>n\</sub\>, from each of the shift curves, 001 and 002, respectively;\_ \</span\>
+
+\<span class="<a href="WYSIWYG_COLOR" class="wikilink">WYSIWYG_COLOR</a>" style="color: black;"\> \_(d) The electronic processing system performs an un-weighted, linear time interpolation of shifts\_ \</span\>
+
+\<span class="<a href="WYSIWYG_COLOR" class="wikilink">WYSIWYG_COLOR</a>" style="color: black;"\> \_S\<sub\>1\</sub\> at time t\<sub\>1\</sub\>, and S\<sub\>2\</sub\> at time t\<sub\>2\</sub\>, to obtain the shift, S\<sub\>n\</sub\>, at time t\<sub\>n\</sub\>;\_ \</span\>
+
+\<span class="<a href="WYSIWYG_COLOR" class="wikilink">WYSIWYG_COLOR</a>" style="color: black;"\> \_(e) The same interpolation procedure is used to estimate shifts for all other unit values resulting between times, t\<sub\>1\</sub\> and t\<sub\>2\</sub\>."\_ \</span\>
+
+#### Consideration of WMO doco
+
+After reading thoght the WMO doco, I am confident that the method described above is a compund of both the stage and time shift methods. Either method could be implmented in its own right or both methods implmented together thought a single mechanisim.I propose that the method coumented be implmented in the model.
+
+#### \<span style="line-height: 1.1em;"\><a href="WaterML2" class="wikilink">WaterML2</a>.P2 implications\</span\>
+
+There are there are several option on implementing the shift paradigm. The options change the location of the computation complexity of determining the shift applied. The complexity could be located at the data providers end or the data receivers end. The rules for determining the 'shift' amount are complex, there is a risk that if the calculation of the shift is passed onto the client, then the rules will not be well understood or correctly applied.
+
+The numbers in the below optins refer to the data steps in the table Flow calculation process
+
+##### \<span style="line-height: 1.5em;"\>Option 1: Provide calculated shift\</span\>
+
+Supply a WML2 time series of 3 and the rating tables.
+
+##### \<span style="color: \#339900; font-size: 15.454545021057129px; line-height: 1.1em;"\>Option 2: Receiver calculated shift\</span\>
+
+Supply a WML2 time series of 2 and the rating tables and shifts to enable calculation of 3
+
+##### Option 3: Provide shifted tables
+
+Supply rating tables with stage shifts applied, the user time interpolates between the tables. This is a pragmatic, low complexity approach suggest by Stu. It is acknowldged that the final number will not be teh same as usign the documented approach by may be adequate. Further investigation is required.
+
+### Useful references
+
+###### WMO
+
+A useful reference is the WMO manual of stream gauging 1044 Vol II section 6.11.1 <http://www.wmo.int/pages/prog/hwrp/publications/stream_gauging/1044_Vol_II_en.pdf>
+
+A \<a href="<http://external.opengis.org/twiki_public/pub/HydrologyDWG/RatingsShiftsQuebec/WMO_Manual_on_stream_gauging_-_Computation_of_discharge_-_Rating_shifts.pdf>" target="\_blank"\>excerpt of the rating shift component\</a\> of the document is attached to this \<span style="line-height: 22px;"\>page.\</span\>
+
+###### USGS
+
+U.S. Geological Survey, Techniques of Water-Resources Investigations, Book 3, Chapter A13 <http://pubs.usgs.gov/twri/twri3-a13/>
+
+<http://wwwrcamnl.wr.usgs.gov/sws/SWTraining/RatingsWeb/Shift_by_stage.proc.pdf>
+
+[http://wwwrcamnl.wr.usgs.gov/sws/SWTraining/RatingsWeb/Index.html\<br /\>](http://wwwrcamnl.wr.usgs.gov/sws/SWTraining/RatingsWeb/Index.html) [\<span style="color: blue; line-height: 1.5em;"\>http://wwwrcamnl.wr.usgs.gov/sws/SWTraining/RatingsWeb/RatingShifts/ShiftsDevelopment.swf\</span\>](http://wwwrcamnl.wr.usgs.gov/sws/SWTraining/RatingsWeb/RatingShifts/ShiftsDevelopment.swf)
+
+[Section 1](http://pubs.usgs.gov/twri/twri3-a13/pdf/twri_3-A13_a.pdf) \<span style="line-height: 1.5em;"\>Abstract, \</span\>\<span style="line-height: 1.5em;"\>Introduction\</span\>\<span style="line-height: 1.5em;"\>, Field data requirements\</span\>\<span style="line-height: 1.5em;"\>, Datum and gage-height corrections\</span\>\<span style="line-height: 1.5em;"\>, List of discharge measurements\</span\>\<span style="line-height: 1.5em;"\>, Discharge ratings [TWIKI copy](%ATTACHURL%/Computation_of_Continuous_Records_of_Streamflow_a.pdf)\</span\>
+
+[Section 2](http://pubs.usgs.gov/twri/twri3-a13/pdf/twri_3-A13_b.pdf) \<span style="line-height: 1.5em;"\>Manual computation of gage-height record, \</span\>\<span style="line-height: 1.5em;"\>Computation of discharge record [TWIKI copy](%ATTACHURL%/Computation_of_Continuous_Records_of_Streamflow_b.pdf)\</span\>
+
+[Section 3](http://pubs.usgs.gov/twri/twri3-a13/pdf/twri_3-A13_c.pdf) \<span style="line-height: 1.5em;"\>Computation of discharge record (cont'd) \</span\>\<span style="line-height: 1.5em;"\>Station analysis, \</span\>\<span style="line-height: 1.5em;"\>Progress documentation, \</span\>\<span style="line-height: 1.5em;"\>Quality assurance, \</span\>\<span style="line-height: 1.5em;"\>References cited, \</span\>\<span style="line-height: 1.5em;"\>Glossary [TWIKI copy](%ATTACHURL%/Computation_of_Continuous_Records_of_Streamflow_c.pdf)\</span\>
+
+-- Main.<a href="PaulSheahan" class="wikilink">PaulSheahan</a> - 20 Jun 2013
+
+- TOPICINFO{author="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" comment="save topic" date="1385074670" format="1.1" reprev="8" version="8"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="RatingShifts" class="wikilink">RatingShifts</a>"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="IMG_1059" class="wikilink">IMG_1059</a>.JPG" attachment="<a href="IMG_1059" class="wikilink">IMG_1059</a>.JPG" attr="" comment="" date="1371760266" path="<a href="IMG_1059" class="wikilink">IMG_1059</a>.JPG" size="1838345" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="IMG_1060" class="wikilink">IMG_1060</a>.JPG" attachment="<a href="IMG_1060" class="wikilink">IMG_1060</a>.JPG" attr="" comment="" date="1371760287" path="<a href="IMG_1060" class="wikilink">IMG_1060</a>.JPG" size="1713834" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="IMG_1055" class="wikilink">IMG_1055</a>.JPG" attachment="<a href="IMG_1055" class="wikilink">IMG_1055</a>.JPG" attr="" comment="" date="1371760319" path="<a href="IMG_1055" class="wikilink">IMG_1055</a>.JPG" size="1855677" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="Computation_of_Continuous_Records_of_Streamflow_a" class="wikilink">Computation_of_Continuous_Records_of_Streamflow_a</a>.pdf" attachment="<a href="Computation_of_Continuous_Records_of_Streamflow_a" class="wikilink">Computation_of_Continuous_Records_of_Streamflow_a</a>.pdf" attr="" comment="" date="1371826325" path="Computation of Continuous Records of <a href="Streamflow_a" class="wikilink">Streamflow_a</a>.pdf" size="2436896" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="Computation_of_Continuous_Records_of_Streamflow_b" class="wikilink">Computation_of_Continuous_Records_of_Streamflow_b</a>.pdf" attachment="<a href="Computation_of_Continuous_Records_of_Streamflow_b" class="wikilink">Computation_of_Continuous_Records_of_Streamflow_b</a>.pdf" attr="" comment="" date="1371826345" path="Computation of Continuous Records of <a href="Streamflow_b" class="wikilink">Streamflow_b</a>.pdf" size="2228358" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="Computation_of_Continuous_Records_of_Streamflow_c" class="wikilink">Computation_of_Continuous_Records_of_Streamflow_c</a>.pdf" attachment="<a href="Computation_of_Continuous_Records_of_Streamflow_c" class="wikilink">Computation_of_Continuous_Records_of_Streamflow_c</a>.pdf" attr="" comment="" date="1371826371" path="Computation of Continuous Records of <a href="Streamflow_c" class="wikilink">Streamflow_c</a>.pdf" size="1635091" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="Shift_interpolation" class="wikilink">Shift_interpolation</a>.jpg" attachment="<a href="Shift_interpolation" class="wikilink">Shift_interpolation</a>.jpg" attr="" comment="USGS use of shift tables to determine effective stage." date="1372055699" path="Shift interpolation.jpg" size="103442" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="Ratings_and_Shifts_" class="wikilink">Ratings_and_Shifts_</a>-\_relationship.jpg" attachment="<a href="Ratings_and_Shifts_" class="wikilink">Ratings_and_Shifts_</a>-\_relationship.jpg" attr="" comment="Ratings - relationship to shift tables" date="1372058279" path="Ratings and Shifts - relationship.jpg" size="102466" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="WMO_Manual_on_stream_gauging_" class="wikilink">WMO_Manual_on_stream_gauging_</a>-\_Computation_of_discharge\_-\_Rating_shifts.pdf" attachment="<a href="WMO_Manual_on_stream_gauging_" class="wikilink">WMO_Manual_on_stream_gauging_</a>-\_Computation_of_discharge\_-\_Rating_shifts.pdf" attr="" comment="WMO Manual on stream gauging - Computation of discharge - Rating shifts.pdf" date="1379547251" path="WMO Manual on stream gauging - Computation of discharge - Rating shifts.pdf" size="7062820" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="Ratings_and_Shifts" class="wikilink">Ratings_and_Shifts</a>.vsd" attachment="<a href="Ratings_and_Shifts" class="wikilink">Ratings_and_Shifts</a>.vsd" attr="" comment="Visio file of diagram" date="1379632897" path="Ratings and Shifts.vsd" size="1600512" user="<a href="PaulSheahan" class="wikilink">PaulSheahan</a>" version="1"}

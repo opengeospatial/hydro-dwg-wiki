@@ -1,0 +1,71 @@
+## Hydrology Domain Working Group
+
+## Meeting details
+
+**Venue: Nottingham TC hosted by British Geological Survey**
+
+**Time**: Thursday 17 September, 10:15-12 (UTC/GMT +1)
+
+Thu, Sep 17, 2015 7:15 PM - 9:00 PM AEST \<div data-bind="text: joinInstructions" id="meeting-start-instructions"\>Please join my meeting from your computer, tablet or smartphone.\</div\>
+
+<https://global.gotomeeting.com/join/734624485> \<br /\> \<br /\> **You can also dial in using your phone.** \<div data-bind="foreach: primarynumber" id="pstn-numbers-list"\>United States : +1 (646) 749-3129\</div\>
+
+\<br /\>Access Code: 734-624-485
+
+**More phone numbers** \<div data-bind="foreach: secondarynumbers" id="pstn-secondary-list"\>Australia : +61 2 8355 1020\<br /\> Austria : +43 (0) 7 2088 1047\<br /\> Belgium : +32 (0) 28 08 4368\<br /\> Canada : +1 (647) 497-9353\<br /\> Denmark : +45 (0) 69 91 89 28\<br /\> Finland : +358 (0) 942 59 7850\<br /\> France : +33 (0) 170 950 594\<br /\> Germany : +49 (0) 692 5736 7317\<br /\> Ireland : +353 (0) 15 360 728\<br /\> Italy : +39 0 247 92 13 01\<br /\> Netherlands : +31 (0) 208 080 219\<br /\> New Zealand : +64 9 280 6302\<br /\> Norway : +47 75 80 32 07\<br /\> Spain : +34 911 82 9906\<br /\> Sweden : +46 (0) 852 500 186\<br /\> Switzerland : +41 (0) 435 0167 13\<br /\> United Kingdom : +44 (0) 330 221 0088\</div\>
+
+Link to [Nottingham TC agenda](http://www.opengeospatial.org/events/1509tcagenda)
+
+# **Agenda**
+
+# \<font face="Times New Roman,serif" size="3"\>\<font color="#1F497D" face="Calibri,sans-serif" size="2"\>1. Ground\<font color="#1F497D"\>w\</font\>ater\<font color="#1F497D"\> 2\</font\> Interoperability Experiment update (Boyan Brodaric) \[ [Presentatio\<font color="#1F497D"\>n\]\</font\>](%ATTACHURL%/Brodaric_GW2IE_NottOrleans_HDWG2015.ppt)\</font\>\</font\>
+
+\<font face="Times New Roman,serif" size="3"\>\<font color="#1F497D" face="Calibri,sans-serif" size="2"\>a. Summary of report\</font\>\</font\>
+
+\<font face="Times New Roman,serif" size="3"\>\<font color="#1F497D" face="Calibri,sans-serif" size="2"\>b. Motion/vote to approve a groundwater SWG\<br /\>\</font\>\</font\>
+
+\<font face="Times New Roman,serif" size="3"\>\<font color="#1F497D" face="Calibri,sans-serif" size="2"\>c. Motion/vote to publicly release the <a href="GW2IE" class="wikilink">GW2IE</a> report -- expected at Orleans HDWG Annual workshop\</font\>\</font\>
+
+\<font face="Times New Roman,serif" size="3"\>\<font color="#1F497D" face="Calibri,sans-serif" size="2"\>2. Hydrologic Features SWG\<br /\>\</font\>\</font\>
+
+\<font face="Times New Roman,serif" size="3"\>\<font color="#1F497D" face="Calibri,sans-serif" size="2"\>a. Introduction to the SWG (Irina Dornblut) \[ [Presentation](%ATTACHURL%/slides4Nottingham_HYFSWG.pptx)\]\<br /\>\</font\>\</font\>
+
+\<font face="Times New Roman,serif" size="3"\>\<font color="#1F497D" face="Calibri,sans-serif" size="2"\>b. <a href="HY_Features" class="wikilink">HY_Features</a> Part 3 - OWL encoding: rhyme and reason (Rob Atkinson) \[ [Presentation](%ATTACHURL%/2015_Nottingham_Presentation_RA.ppt)\]\<br /\>\</font\>\</font\>
+
+\<font face="Times New Roman,serif" size="3"\>\<font color="#1F497D" face="Calibri,sans-serif" size="2"\>3. Water Standards Interoperability Experiment (Joan Masó) \[ [Presentation](%ATTACHURL%/Water_Standards_Interoperability_Experiment.ppt)\]\</font\>\</font\>
+
+\<font face="Times New Roman,serif" size="3"\>\<font color="#1F497D" face="Calibri,sans-serif" size="2"\>a. Draft [Activity Plan](%ATTACHURL%/WSIE_Activity_Plan_52N_CREAF_v0.2.doc)\</font\>\</font\>
+
+\<font face="Times New Roman,serif" size="3"\>\<font color="#1F497D" face="Calibri,sans-serif" size="2"\>Summary report to Nottingham OGC TC Plenary \[ [Presentation](%ATTACHURL%/2015_Nottingham_Closing_Plenary_Report_HydroDWG.ppt)\]\<br /\>\</font\>\</font\>
+
+-- Main.<a href="TonyBoston" class="wikilink">TonyBoston</a> - 16 Sep 2015
+
+- TOPICINFO{author="<a href="TonyBoston" class="wikilink">TonyBoston</a>" comment="save topic" date="1442821761" format="1.1" reprev="10" version="10"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="WebHome" class="wikilink">WebHome</a>"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="slides4Nottingham_HYFSWG.pptx" attachment="slides4Nottingham_HYFSWG.pptx" attr="" comment="Hydrologic Features SWG introduction" date="1442309891" path="slides4Nottingham_HYFSWG.pptx" size="241700" user="<a href="TonyBoston" class="wikilink">TonyBoston</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="2015_Nottingham_Presentation_RA.ppt" attachment="2015_Nottingham_Presentation_RA.ppt" attr="" comment="<a href="HY_Features" class="wikilink">HY_Features</a> Part 3 - OWL encoding" date="1442415940" path="2015_Nottingham_Presentation_RA.ppt" size="612864" user="<a href="TonyBoston" class="wikilink">TonyBoston</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="Brodaric_GW2IE_NottOrleans_HDWG2015" class="wikilink">Brodaric_GW2IE_NottOrleans_HDWG2015</a>.ppt" attachment="<a href="Brodaric_GW2IE_NottOrleans_HDWG2015" class="wikilink">Brodaric_GW2IE_NottOrleans_HDWG2015</a>.ppt" attr="" comment="<a href="GroundWater" class="wikilink">GroundWater</a> 2 Interoperability Experiment update" date="1442416188" path="<a href="Brodaric_GW2IE_NottOrleans_HDWG2015" class="wikilink">Brodaric_GW2IE_NottOrleans_HDWG2015</a>.ppt" size="1255936" user="<a href="TonyBoston" class="wikilink">TonyBoston</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="Water_Standards_Interoperability_Experiment" class="wikilink">Water_Standards_Interoperability_Experiment</a>.ppt" attachment="<a href="Water_Standards_Interoperability_Experiment" class="wikilink">Water_Standards_Interoperability_Experiment</a>.ppt" attr="" comment="Proposed Water Standards Interoperability Experiment" date="1442480711" path="<a href="Water_Standards_Interoperability_Experiment" class="wikilink">Water_Standards_Interoperability_Experiment</a>.ppt" size="651776" user="<a href="TonyBoston" class="wikilink">TonyBoston</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="<a href="WSIE_Activity_Plan_52N_CREAF_v0" class="wikilink">WSIE_Activity_Plan_52N_CREAF_v0</a>.2.doc" attachment="<a href="WSIE_Activity_Plan_52N_CREAF_v0" class="wikilink">WSIE_Activity_Plan_52N_CREAF_v0</a>.2.doc" attr="" comment="Proposed Water Standards Interoperability Experiment description" date="1442492442" path="<a href="WSIE_Activity_Plan_52N_CREAF" class="wikilink">WSIE_Activity_Plan_52N_CREAF</a> v0.2.doc" size="140288" user="<a href="TonyBoston" class="wikilink">TonyBoston</a>" version="1"}
+
+<!-- -->
+
+- FILEATTACHMENT{name="2015_Nottingham_Closing_Plenary_Report_HydroDWG.ppt" attachment="2015_Nottingham_Closing_Plenary_Report_HydroDWG.ppt" attr="" comment="HDWG closing plenary slides" date="1442821695" path="2015_Nottingham_Closing_Plenary_Report_HydroDWG.ppt" size="488448" user="<a href="TonyBoston" class="wikilink">TonyBoston</a>" version="1"}

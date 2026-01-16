@@ -1,0 +1,78 @@
+# **<a href="GW2IE" class="wikilink">GW2IE</a> Meeting 53 / GW SWG Meeting \#4 -- Wed 11 May 2016**
+
+## **Agenda**
+
+- OGC GW SWG
+- GWML2 Documentation
+- GWML2 Instances
+- GWML2 Paper
+- Next meetings
+
+## **Notes**
+
+- OGC GW SWG
+  - revision (16-032r1) submitted to OGC: all changes made
+    - posted to OGC pending docs and SVN
+  - OGC-NA review still pending
+  - public comment period to start ASAP
+    - upon issue of Press Release (draft coming this week)
+    - assured timing not be a factor re: Dublin
+  - Dublin meeting
+    - vote (to have vote) can proceed in Dublin, possibly pending minor changes
+    - short presentation (10 min) required in Dublin prior to vote
+    - Boyan, Eric, Sylvain and Bruce to be present in Dublin
+    - no formal GW SWG session will be scheduled
+    - will provide GWML2 update in HDWG session, if session added to agenda (not currently scheduled)
+- GWML2 Documentation
+  - Done. Small cosmetic changes pending (**Francois**)
+    - To access... [click here](https://xp-dev.com/svn/gwml2/documentation/index.htm)
+    - URL = <https://xp-dev.com/svn/gwml2/documentation/index.htm>
+  - Added link to GW SWG main wiki page
+- GWML2 Instances
+  - svn / web service updates: target completion date = Dublin meeting (20 June 2016)
+  - qa check to be made after updates
+- GWML2 Paper
+  - diagrams pending (**Peter**)
+  - to be tackled by **Boyan** ~end-May / early-June
+- Next meetings
+  - 08 June meeting to be re-scheduled for post-public review deadline
+    - Please complete doodle poll for the June meeting [..click here](http://doodle.com/poll/xxrgp9nt3r3g2ruh)
+  - doodle poll to be circulated once public review timeline known
+
+## **Participants**
+
+- Click here for the [Doodle Poll](http://doodle.com/poll/szzutg2qw4h78ufg)
+
+## **Connection Instructions**
+
+| Ottawa | Madison | London | Paris | Melbourne | Auckland |
+|:-------|:--------|:-------|:------|:----------|:---------|
+| 8:00   | 7:00    | 13:00  | 14:00 | 22:00     | 23:59    |
+
+[Time and Date website: http://www.timeanddate.com/worldclock/meetingdetails.html?year=2016&month=5&day=11&hour=12&min=0&sec=0&p1=142&p2=188&p3=136&p4=195&p5=152&p6=22](http://www.timeanddate.com/worldclock/meetingdetails.html?year=2016&month=5&day=11&hour=12&min=0&sec=0&p1=142&p2=188&p3=136&p4=195&p5=152&p6=22)
+
+- Screen sharing (Webex):
+  - pass: ogc
+  - url: <https://pwgsc-nh.webex.com/pwgsc-nh/j.php?MTID=mfc8f239c6707ca4ff9209afb7e1e2180>
+- Teleconference:
+  - Dial local number (see below) and passcode = **616269**
+
+| Country        | Conference Number     |
+|:---------------|:----------------------|
+| Australia      | +61 (0) 3 8672 0180   |
+| Austria        | +43 (0) 1 2650500     |
+| Belgium        | +32 (0) 3 294 11 60   |
+| Canada         | +1 641-715-3824       |
+| France         | +33 (0) 1 80 14 11 00 |
+| Germany        | +49 (0) 228 5343020   |
+| Italy          | +39 055 464 0570      |
+| Netherlands    | +31 (0) 20 322 3000   |
+| Poland         | +48 22 116 80 20      |
+| United Kingdom | +44 (0) 330 606 0182  |
+| United States  | +1 760-569-7100       |
+
+- TOPICINFO{author="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" comment="save topic" date="1463586176" format="1.1" reprev="7" version="9"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="GroundwaterInteroperabilityExperiment2" class="wikilink">GroundwaterInteroperabilityExperiment2</a>"}

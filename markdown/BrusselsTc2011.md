@@ -1,0 +1,47 @@
+## Meeting details
+
+## \<span style="color: \#000000; line-height: normal; font-size: small;"\>Time: November 29, 2011, 15:00-18:00. Room: Pollux\</span\>
+
+Time at other locations: [timeanddate.com](%20http://www.timeanddate.com/worldclock/fixedtime.html?msg=Hydroloy+DWG+Meeting+in+Brussels&iso=20111129T15&p1=48&ah=3%20)
+
+**Venue:** OGC Technical Committee Meeting in Brussels. [TC Meeting Info](http://www.opengeospatial.org/event/1111tc) [TC Meeting Agenda](http://www.opengeospatial.org/event/1111tcagenda)
+
+**Remote Participants:**
+
+Phone: 1 760 569 7100 passcode: 616269;
+
+WebEx: see instructions at <https://portal.opengeospatial.org/?m=calendar&a=view&event_category=&event_id=23758>
+
+**Presentation template:**<https://portal.opengeospatial.org/files/?artifact_id=46515>
+
+# Tentative Agenda
+
+1.  Introduction (HDWG co-chairs), 5 min
+2.  Report from the Water Cycle Summit, and NSF EarthCube initiative (Ilya Zaslavsky, UCSD), 10 min
+3.  Sharing output data of flood forecast (Satoshi Yamaguchi, Hitachi), 15 min
+4.  Presentation of the Ebro River Basin WaterML 2.0 Operational Use Case (Catherine Chomat, Inclam), 20 min
+5.  EC contribution to building Global EO Data Set in the GEO context (Vojko Bratina, European Commission), 15 min
+6.  FP7 EnviroGRIDS project: exchanging data and hydrological model results using webservices (Ann van Griensven, UNESCO-IHE), 20 min
+7.  FP7 Project GEOWOW - GEOSS interoperability for Weather, Ocean and Water (Uli Looser, GRDC), 20 min
+8.  Proposal GEOWOW Hydrology/Sensor Web Testbed (Simon Jirka, 52North), 20 min
+9.  Status updates (Michael Natschke, Kisters; Uli Looser, GRDC; Sylvain Grellet, OIEAU), 40 min
+    - Surface Water IE - demos
+    - <a href="WaterML2" class="wikilink">WaterML2</a>
+    - Hydro Feature Model
+    - Forecasting IE
+10. Discussion and next steps
+
+### **Additional sessions of interest this week:**
+
+- ESS session (Room: Castor; Wednesday 10:00-12:00)
+- MetOcean DWG session (Room: Castor; Monday 14:00-17:00; Thursday 11:00-12:00)
+- GeoSemantics DWG (Room: Pollux, Monday 14:00-17:00)
+- Workflow DWG (Room: Neptune, Tuesday 8:00-10:00)
+
+-- Main.<a href="IlyaZaslavsky" class="wikilink">IlyaZaslavsky</a> - 26 Oct 2011
+
+- TOPICINFO{author="<a href="IlyaZaslavsky" class="wikilink">IlyaZaslavsky</a>" comment="reprev" date="1322488404" format="1.1" reprev="7" version="8"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="WebHome" class="wikilink">WebHome</a>"}

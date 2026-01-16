@@ -1,0 +1,49 @@
+# **GW SWG Meeting \#8**
+
+# **MS-Teams**
+
+## Tues 04 May 2021, 8:00-10:00 (Ottawa time)
+
+## **Participants**
+
+- **GW SWG:** B.Brodaric, D.Blodgett, E.Boisvert, P.Dahlhaus, S.Grellet, A. Macleod, B.Simons, H. Julien, J. Kreft, F. Letourneau, A. Kmoch
+- **HDWG:** T.Boston, S. Pecora
+
+## **Agenda**
+
+- News and Roundtable
+- GWML2 Workshop
+- New work
+
+## **Notes**
+
+1.  News
+    - GWML2 v2.2.1 public release Jan 2021
+    - GWML2 adoption by WMO early 2021
+2.  GWML Workshop
+    - Agreed for Oct (tbd), possibly joint with WMO meeting
+    - To include: GWML2 introduction, WMO context, and use-cases and implementations
+3.  New Work
+    - Develop encoding(s) in JSON family
+    - TBD: JSON, JSON-LD, GeoJSON, GWML2-Lite profile
+
+## **Action Items**
+
+1.  GWML2 Workshop
+    - Circulate draft agenda for input (Boyan)
+    - Review and revise service endpoints (All)
+      - <https://external.ogc.org/twiki_public/HydrologyDWG/GINsForWMOCHy>
+2.  New Work
+    - Plan joint meeting with GeoScience DWG (Boyan)
+      - JSON and/or JSON-LD development
+      - homework: pros and cons of above
+    - Next meetings in June and Sept, then ~monthly
+      - June meeting at time of OGC TC, but not necessarily part of program
+
+-- Main.<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a> - 04 May 2021
+
+- TOPICINFO{author="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" comment="reprev" date="1620153879" format="1.1" reprev="1" version="2"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="GroundWaterSWG" class="wikilink">GroundWaterSWG</a>"}

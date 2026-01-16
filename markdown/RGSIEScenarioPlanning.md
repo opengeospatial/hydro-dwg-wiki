@@ -1,0 +1,56 @@
+This page sets out the scenarios for the RGS IE.
+
+## Scenario Summary
+
+<span class="twiki-macro EDITTABLE"></span>
+
+| Scenario | Actor | Provider | Ratings | Gaugings | Sections | Range Values |
+|:---|:---|:---|:---|:---|:---|:---|
+| 1 | Bureau retrieving data from | DPIPWE \<br /\>New South Wales Office of Water | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> |  |  |
+| 2 | MDBA accessing the latest rating from | New South Wales Office of Water | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> |  |
+| 3 | Public web analysis tool accessing all ratings | DPIPWE \<br /\>\<span style="background-color: transparent; line-height: 22px;"\>New South Wales Office of Water\</span\> | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> |
+| 4 | USGS Exchange with | NWS \<br /\>Core of Engine | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> |  | possibly |
+| 5 | UK Publication - assessment of rating quality | CEH | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> |  | \<img alt="" height="35" src="<http://www.mozambique-gas-summit.com/wp-content/uploads/2012/12/big-tick-green.jpg>" width="36" /\> |
+| 6 |  |  |  |  |  |  |
+
+## Australian Scenario
+
+There is an Australian based scenrio currently being planned. This involves exchange between four water agencies: the Bureau of Meteorology, NSW Office of Water, Tas DPIPWE and MDBA. The basic structure of data flow will be something like this:
+
+\<img alt="<a href="ScenarioDiagram" class="wikilink">ScenarioDiagram</a>.jpg" height="563" src="%PUBURL%/<a href="HydrologyDWG" class="wikilink">HydrologyDWG</a>/<a href="RGSInteropExperiment" class="wikilink">RGSInteropExperiment</a>/<a href="ScenarioDiagram" class="wikilink">ScenarioDiagram</a>.jpg" title="<a href="ScenarioDiagram" class="wikilink">ScenarioDiagram</a>.jpg" width="1000" /\>
+
+The setup will require water agencies to expose services that encode the <a href="WaterML2" class="wikilink">WaterML2</a>.0 part 2 model. Given the software being used is common across a number of agencies, we should be able to leverage test implementations in different scenarios.
+
+## US Scenario
+
+Dave Briar, Dave Blodgett..
+
+## UK Scenario
+
+Matt Fry.
+
+A UK-wide dataset of annual flood peaks at gauging stations forms the basis for most flood estimation in the UK, using regionalisation methods (pooling of flood frequency curves from similar sites). Users of this data should assess the quality of data from individual stations before using them in anger.
+
+Currently this can only be done through looking at static images of ratings and gaugings, plus the use of a number of different statistics (maximum gauged stage / flow, stage / flow at which bank is overtopped, derivation methods for parts of the rating, proportion of flood peak record that is above maximum gauged flow, or out of bank), many of which can be attributed to a range of the rating.
+
+Whilst an objective rating quality may not be possible, it should be possible to use the information availabe on ratings and gaugings, plus these other "range value" related statistics, to allow a more detailed understanding of an individual rating, and to allow this to be explored interactively.
+
+This would rely on an improved data model and a more comprehensive interface to the gaugings and ratings information.
+
+Currently this dataset is maintained as a single dataset (with some effort) but a standard could allow different organisations to provide their own data in a distributed system, but still allowing these analyses to be undertaken.
+
+Examples of current static pages:
+
+<http://www.environment-agency.gov.uk/hiflows/station.aspx?45001>
+
+<http://www.environment-agency.gov.uk/hiflows/apr.aspx?45001_rating>
+
+<http://www.environment-agency.gov.uk/hiflows/apr.aspx?45001_amax>
+
+-- Main.<a href="PeterTaylor" class="wikilink">PeterTaylor</a> - 23 Aug 2013
+
+- TOPICINFO{author="<a href="KevinStegemoller" class="wikilink">KevinStegemoller</a>" comment="reprev" date="1383753958" format="1.1" reprev="5" version="5"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="RGSInteropExperiment" class="wikilink">RGSInteropExperiment</a>"}

@@ -1,0 +1,87 @@
+# **Hydrology DWG workshop 2010-03-15-18**
+
+## Location and Dates
+
+- **Where:** Ispra, Italy
+- **Host:** EU Joint Research Council
+- **Dates:** Mar 15-18, 2010
+- **Rooms:** tbd
+
+## Agenda
+
+- **Mar 15, AM-PM:** WaterML 2 design group meeting?
+- **Mar 15, 3-6 PM:** Groundwater IE meeting
+  - WaterML 2 status update
+  - Web Services update
+  - Clients update
+- **Mar 16-17 AM-PM:** [HWDG Workshop](http://external.opengis.org/twiki_public/bin/view/HydrologyDWG/JRCWkShop2010)
+
+## Planning
+
+- **Participants:** HDWG members only
+- **HDWG Workshop registration:** must be completed before Feb 22, 2010... [click here to register](https://jrc-meeting-registration.jrc.ec.europa.eu/)
+- **GW IE Meeting registration:** to express your interest in participating Mar 15, 3-6 PM... [click here to register](http://www.doodle.com/6ufht6nbw7235tu4)
+
+## Notes on the GE IE discussion
+
+- **<a href="WaterML" class="wikilink">WaterML</a> 2**
+
+<!-- -->
+
+- **Timelines**
+  - June 14 deadline (OGC TC meeting) for WaterML2 beta
+  - To be available to GW IE ~4 weeks before
+
+<!-- -->
+
+- **Timeseries**
+  - Need instruction from P.Tayor on how to vary precision of date/time datatype in result (e.g. just day, month, other range, etc.)
+  - Agreed to remove 'Anyscalar' datatype as result of timeseries observation, and create subclasses for different scalar types
+
+<!-- -->
+
+- **Sampling/sampled feature**
+  - Issue: cannot uniquely link an observation to a particular sampled feature, because the intermediary sampling feature can be linked to multiple sampled features---tbd by the design group
+  - Encoding of the feature: should it be by reference or in line?
+    - tentative decision: do both within IE as part of the experiment. Inline (current) for June and both for December. URIs for the link to be a WFS call.
+  - WaterML 2 featureOfInterest will be a samplingFeature
+  - Should depth features such as water well screens be samplingFeature?
+  - We might need to add a singled value time series.
+  - Need to add accuracy code to result data structure
+  - If we are to stand up a catalog, we need <a href="WaterML2" class="wikilink">WaterML2</a> to be able to express the kind of result types
+
+<!-- -->
+
+- **Other**
+- Services
+  - What all needs to be in place?
+
+<!-- -->
+
+- getCapabilities?
+  - Need to make a change request. Pete Taylor will look at and distribute.
+
+<!-- -->
+
+- describeSensor?
+  - boyan and eric will draw up conceptual model of sensor, sampling feature, sampled feature, method (procedure)
+
+<!-- -->
+
+- specimen and filters
+  - issues with sos re: specimen model of O&M
+
+<!-- -->
+
+- R&D: Look at describeObservation.
+
+<!-- -->
+
+- Clients
+  - Focussed testing from June to December.
+  - Need to come up with client test (edge) cases. (Nate)
+- TOPICINFO{author="<a href="BoyanBrodaric" class="wikilink">BoyanBrodaric</a>" date="1269463798" format="1.1" reprev="1.5" version="1.5"}
+
+<!-- -->
+
+- TOPICPARENT{name="<a href="GroundwaterInteroperabilityExperiment" class="wikilink">GroundwaterInteroperabilityExperiment</a>"}
