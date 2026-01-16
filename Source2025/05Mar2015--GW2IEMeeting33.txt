@@ -23,7 +23,7 @@
 Present: Bruce, Jessica, Alex and Eric
    * USGS to check how it can accomodate different domain names to access their server. (Jessica)
    * Pump and Test: GW_AquiferTest is most favoured name and changed has been made to UML
-   * Since Modular spec demands that requirement class matches a package, the GW_AquiferTest will be moved to its own package (Eric, François)
+   * Since Modular spec demands that requirement class matches a package, the GW_AquiferTest will be moved to its own package (Eric, FranÃ§ois)
    * Eric to start writing requirement and conformant class for Pump and Test
    * Management area posponed to next meeting since Sylvain and Berhard were absent)
    * Use case: Bruce working on UC1. Accepted to share his GeoNetwork configuration files so we can benefit from his experience on how to use GeoServer.

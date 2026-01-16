@@ -310,9 +310,9 @@ Do we wish to be prescriptive with the swe:DataRecord content?
 
 ---++ Reducing GeologyLog encoding
 
-There is an issue with the ‘verbosity’ of the GroundWaterML2 Geology Log encoding that we should think about ways to reduce.
+There is an issue with the â€˜verbosityâ€™ of the GroundWaterML2 Geology Log encoding that we should think about ways to reduce.
 
-The issue is that with the way I have encoded it, there is 25+ lines for each depth element in the log. With the NGIS data, we have 3 observations for each depth element (Major lithology e.g. ‘Clay’, minor lithology e.g. ‘Sand’, lithology description e.g. ‘sandy clay’). Given there may also be multiple drillers and geologists logs, delivering the downhole geology creates significant XML and associated performance issues.
+The issue is that with the way I have encoded it, there is 25+ lines for each depth element in the log. With the NGIS data, we have 3 observations for each depth element (Major lithology e.g. â€˜Clayâ€™, minor lithology e.g. â€˜Sandâ€™, lithology description e.g. â€˜sandy clayâ€™). Given there may also be multiple drillers and geologists logs, delivering the downhole geology creates significant XML and associated performance issues.
 
 This is an encoding of one depth element for one lithology from one log:
 <verbatim><gwml20w:element>
@@ -343,11 +343,11 @@ This is an encoding of one depth element for one lithology from one log:
   </gwml20w:LogValue>
 </gwml20w:element></verbatim>
 
-Assuming we don’t accept ‘non-standard’ solutions (e.g. point to a NetCDF version of the logs) I’ve proposed four options that come to my mind for reducing the load.
+Assuming we donâ€™t accept â€˜non-standardâ€™ solutions (e.g. point to a NetCDF version of the logs) Iâ€™ve proposed four options that come to my mind for reducing the load.
 
 ---+++ 1. WaterML2 metadata header approach:
 
-One option is to follow the WaterML2 example (which is currently being converted to the generic TimeSeriesML), but I’m not sure we can pack much into the metadata header anyway, perhaps just the uom:
+One option is to follow the WaterML2 example (which is currently being converted to the generic TimeSeriesML), but Iâ€™m not sure we can pack much into the metadata header anyway, perhaps just the uom:
 <verbatim><gwml2ow:defaultElementMetadata>  
   <gwml20w:DefaultDepthMeasurementMetadata> 
     <gwml20w:uom code="m" xlink:href=" [[http://qudt.org/vocab/unit#Meter][http://qudt.org/vocab/unit#Meter]]" xlink:title="metre"/>
@@ -422,7 +422,7 @@ Option 3 may also allow combining the various lithologies at any particular inte
        </gwml20w:LogValue>
 </gwml20w:element>       </verbatim>
 
-I’m not sure how valid these approaches are, whether there are better options or whether we want to try to change at this late stage (although the aim of an experiment is to find out what works and what doesn’t, and I don’t think the current pattern works).
+Iâ€™m not sure how valid these approaches are, whether there are better options or whether we want to try to change at this late stage (although the aim of an experiment is to find out what works and what doesnâ€™t, and I donâ€™t think the current pattern works).
 
 -- Main.BruceSimons - 16 Mar 2015
 

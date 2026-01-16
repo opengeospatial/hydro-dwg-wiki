@@ -32,7 +32,7 @@ Eric Boisvert (Geological Survey of Canada) - [[%ATTACHURL%/eric_boisvert_2_intr
 
 David Blodgett, Ben Sperl & Candice Hopkins (United States Geological Survey) - [[%ATTACHURL%/david_blodgett_candice_hopkins_gwml2_workshop_presentation_0.pdf][Presentation]]
 
-Grellet Sylvain (Bureau de recherches géologiques et minières, France) - [[%ATTACHURL%/grellet_sylvain_some_gwml2_implementations_in_europe_s_grellet_final_0.pdf][Presentation]]
+Grellet Sylvain (Bureau de recherches gÃ©ologiques et miniÃ¨res, France) - [[%ATTACHURL%/grellet_sylvain_some_gwml2_implementations_in_europe_s_grellet_final_0.pdf][Presentation]]
 
 Andrew MacLeod, Bruce Simons & Peter Dahlhaus (Federation University Australia) - [[%ATTACHURL%/alexander_kmoch_wmo-ogc_gwml2_workshop_kmoch_nz_0.pdf][Presentation]]
 

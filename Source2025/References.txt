@@ -27,7 +27,7 @@ USGS : Here is the most recent information on the USGS HydroML schemas related t
 
 BOM WDTF [[ftp://ftp.bom.gov.au/anon/home/water/WDTF/release-wdtf-package-v1.0.2.zip][download package]]<br />http://www.bom.gov.au/water/regulations/wdtf/index.shtml
 
-   * WMO Manual on Stream Gauging, Volume II – Computation of Discharge, WMO-No. 1044. 2010
+   * WMO Manual on Stream Gauging, Volume II â€“ Computation of Discharge, WMO-No. 1044. 2010
    * WMO Guide to Hydrological Practices, Volume I.
    * USGS - DISCHARGE RATINGS AT GAGING STATIONS <a href="http://pubs.usgs.gov/twri/twri3-a10/pdf/twri_3-A10_a.pdf" title="http://pubs.usgs.gov/twri/twri3-a10/pdf/twri_3-A10_a.pdf">http://pubs.usgs.gov/twri/twri3-a10/pdf/twri_3-A10_a.pdf</a>
    * NOAA- SHEF format: http://www.weather.gov/directives/sym/pd01009044curr.pdf USGS
@@ -49,7 +49,7 @@ Here are citations to a couple of recent papers on hydrometric uncertainty. Ulti
    * <span style="line-height: 1.5em;">Beven, K., Buytaert, W., & Smith, L. A. (2012). On virtual observatories and modelled realities (or why discharge must be treated as a virtual variable). Hydrological Processes, 26(12), 1905-1908. </span>
    * <span style="line-height: 1.5em;">Beven, K., & Westerberg, I. (2011). On red herrings and real herrings: disinformation and information in hydrological inference. Hydrological Processes, 25(10), 1676-1680. </span>
    * <span style="line-height: 1.5em;">G. Di Baldassarre and A. Montanari (2009)<span style="font-size: 11px;">, </span>Uncertainty in river discharge observations: a quantitative analysis. Hydrology and Earth System Sciences. </span>
-   * <span style="line-height: 1.5em;">José-Luis Guerrero, Ida K. Westerberg, Sven Halldin, Chong-Yu Xu, Lars-Christer Lundin, Temporal variability in stage–discharge relationships, Journal of Hydrology, Volumes 446–447, 26 June 2012, Pages 90-102, ISSN 0022-1694, 10.1016/j.jhydrol.2012.04.031</span>
+   * <span style="line-height: 1.5em;">JosÃ©-Luis Guerrero, Ida K. Westerberg, Sven Halldin, Chong-Yu Xu, Lars-Christer Lundin, Temporal variability in stageâ€“discharge relationships, Journal of Hydrology, Volumes 446â€“447, 26 June 2012, Pages 90-102, ISSN 0022-1694, 10.1016/j.jhydrol.2012.04.031</span>
    * <span style="line-height: 1.5em;">Tomkins, Kerrie M. "Uncertainty in streamflow rating curves: methods, controls and consequences." <i>Hydrological Processes</i> (2012). (this is a CSIRO paper. I'm looking into using this as a case study for RGS encodings). </span>
 -- Main.PeterTaylor - 08 Jun 2012
 

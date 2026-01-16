@@ -36,7 +36,7 @@ To enable Workshop Participants to follow the TC Plenary, the Workshop will star
 | *10:00* | *Break* | | |
 | 10:30 | GWIE2, Model development and discussion | Boyan Brodaric | 2 hrs |
 | *12:30* | *Lunch* | | |
-| 13:30 | Welcome message from directors of INRS-ETE and Geological Survey of Canada (Québec division) | Yves Bégin, Yves Michaud | 10 min |
+| 13:30 | Welcome message from directors of INRS-ETE and Geological Survey of Canada (QuÃ©bec division) | Yves BÃ©gin, Yves Michaud | 10 min |
 | 13:40 | Current developments at the Centre for Ecology and Hydrology (UK) | Matt Fry | 30 min |
 | 14:15 | SOS Profile Presentation and Discussion | Michael Utech | 50 min |
 | *15:00* | *Break* | | |
@@ -62,7 +62,7 @@ To enable Workshop Participants to follow the TC Plenary, the Workshop will star
 | *11:00* | *Break* | | |
 | 11:30 | WaterML 2.0 Part 2 (RGS) Discussion | | 1 hr |
 | *12:30* | *Lunch* | | |
-| 13:30 | Hydro-informatics of watershed hydrology at INRS – Development framework and examples of data processing, editing, display, and transfer algorithms implemented in our software | Alain N. Rousseau, Alain Royer and Sebastien Tremblay (INRS) | 1 hr |
+| 13:30 | Hydro-informatics of watershed hydrology at INRS â€“ Development framework and examples of data processing, editing, display, and transfer algorithms implemented in our software | Alain N. Rousseau, Alain Royer and Sebastien Tremblay (INRS) | 1 hr |
 | 14:30 | WaterML 2.0 Part 2 (RGS) Discussion | Paul Sheahan, Pete Taylor | 30 min |
 | *15:00* | *Break* | | |
 | 15:30 | Separation of concerns, RiverML, WaterML2 Part 2, GWML and HY_Features | All | 2hrs |
@@ -85,7 +85,7 @@ To enable Workshop Participants to follow the TC Plenary, the Workshop will star
 
 GSC/INRS Quebec office location: <br /><img alt="plan_quebec_2009_upd.png" height="465" src="https://www.seegrid.csiro.au/wiki/pub/CGIModel/QuebecF2F2009/plan_quebec_2009_upd.png" width="638" />
 
-The meeting will be held in [[http://www.inrs.ca/english/homepage][INRS]] (Institut National de la Recherche Scientifique) building which host GSC-Quebec offices. GSC-Québec is located at <a href="http://maps.google.ca/maps?f=q&hl=fr&geocode=&q=490+de+la+couronne,quebec&sll=46.812754,-71.215223&sspn=0.510335,0.884399&g=quebec&ie=UTF8&ll=46.813094,-71.224355&spn=0.003987,0.010986&z=17" target="_top">490 de la Couronne, in downtown Quebec City</a>.
+The meeting will be held in [[http://www.inrs.ca/english/homepage][INRS]] (Institut National de la Recherche Scientifique) building which host GSC-Quebec offices. GSC-QuÃ©bec is located at <a href="http://maps.google.ca/maps?f=q&hl=fr&geocode=&q=490+de+la+couronne,quebec&sll=46.812754,-71.215223&sspn=0.510335,0.884399&g=quebec&ie=UTF8&ll=46.813094,-71.224355&spn=0.003987,0.010986&z=17" target="_top">490 de la Couronne, in downtown Quebec City</a>.
 ---+++ Accessing the building
    * The Workshop will start at 10:00 on Monday 17th, other days at 08:00 or 09:00 (see agenda).
    * A badge will be waiting for you at the front desk.
@@ -97,9 +97,9 @@ We will have wifi connection in workshop rooms (#2417 and #2422 on second floor)
 
 ---+++ Getting to Quebec City
 
-Quebec City (YQB) <a href="http://www.aeroportdequebec.com/" target="_top">Jean Lesage International airport</a> is relatively small therefore, direct international flights often goes through Montréal, QC (YUL), Toronto ON (YYZ) or Newark (EWR, NJ,USA) and other surrounding hubs and then you get a short leg to Quebec City. You might want to consider going to Montréal and then use a shuttle to Quebec City (2h30 trip) for about 110 C$ (roundtrip). The service is offered 5 times a day by <a href="http://www.orleansexpress.com/corpo/service_aeroportuaire.aspx" target="_top">Orléans Express</a> from Montréal Pierre-Elliot-Trudeau International Airport to Quebec City downtown, just a few blocks from GSC office.
+Quebec City (YQB) <a href="http://www.aeroportdequebec.com/" target="_top">Jean Lesage International airport</a> is relatively small therefore, direct international flights often goes through MontrÃ©al, QC (YUL), Toronto ON (YYZ) or Newark (EWR, NJ,USA) and other surrounding hubs and then you get a short leg to Quebec City. You might want to consider going to MontrÃ©al and then use a shuttle to Quebec City (2h30 trip) for about 110 C$ (roundtrip). The service is offered 5 times a day by <a href="http://www.orleansexpress.com/corpo/service_aeroportuaire.aspx" target="_top">OrlÃ©ans Express</a> from MontrÃ©al Pierre-Elliot-Trudeau International Airport to Quebec City downtown, just a few blocks from GSC office.
 
-You might want to rent a car in Montréal and drive to Quebec City. The only problem is getting through Montréal traffic if you are unlucky enough to arrive during rush hour. The airport is at the west end on Montréal Island, and you must cross the whole city to head east.
+You might want to rent a car in MontrÃ©al and drive to Quebec City. The only problem is getting through MontrÃ©al traffic if you are unlucky enough to arrive during rush hour. The airport is at the west end on MontrÃ©al Island, and you must cross the whole city to head east.
 
 There are 2 major highways to get to Quebec City
 
@@ -109,13 +109,13 @@ When entering Quebec City, A40 will become A440 (Autoroute Charest). Just to con
 
 Autoroute 20, on the south shore of the St-Lawrence River. This means you must cross either a bridge or a tunnel to get on the south shore and then go east to Quebec. You will arrive to Quebec by crossing the Pierre Laporte bridge through A73 Nord to cross the river back to the north shore. A few kilometres after the bridge, at the foot of a long hill, you can connect on A440 Est (Autoroute Charest). Just follow A440 Est (East). The road will narrow gradually to become Boulevard Charest which will lead you downtown, just to the doorstep of one of the hotels.
 
-None of these are very scenic, just bland strips of asphalt. If you have some time, you could try <a href="http://www.lecheminduroy.com/en/index.php" target="_top">Chemin du Roy</a> (King’s road), on the north shore which follows the first road built during the french regime . It goes through a series small charming villages along the St-Lawrence river.
+None of these are very scenic, just bland strips of asphalt. If you have some time, you could try <a href="http://www.lecheminduroy.com/en/index.php" target="_top">Chemin du Roy</a> (Kingâ€™s road), on the north shore which follows the first road built during the french regime . It goes through a series small charming villages along the St-Lawrence river.
 
 ---+++ Accommodation
 
 There are many hotels within walking distance of the office and Quebec is relatively affordable.
 
-Hotel Pur (<a href="http://www.hotelpur.com/" target="_top">http://www.hotelpur.com</a>). “Seductively stylish and sleek", as they advertise. Rooms are black and white with minimalist design.
+Hotel Pur (<a href="http://www.hotelpur.com/" target="_top">http://www.hotelpur.com</a>). â€œSeductively stylish and sleek", as they advertise. Rooms are black and white with minimalist design.
 
 Best Western, just across the street (<a href="http://www.hotelquebec.com/" target="_top">http://www.hotelquebec.com/</a>)
 
@@ -125,7 +125,7 @@ Royal Palace (<a href="http://www.hotelsjaro.com/index-en.aspx" target="_top">ht
 ---++ 
 ---++ Group dinner Thursday evening at 19:30
 
-We've booked at <a href="http://maps.google.ca/maps?q=620+Rue+Saint-Joseph+Est,+Qu%C3%A9bec&hl=fr&ie=UTF8&ll=46.815157,-71.221662&spn=0.004295,0.009645&sll=46.815181,-71.221636&layer=c&cbp=13,302.71,,0,0.17&cbll=46.815206,-71.221517&hnear=620+Rue+Saint-Joseph+Est,+Qu%C3%A9bec,+G1K+3B8&t=m&z=17&panoid=gILOZmFm34HLP0NEaLlU9Q" target="_blank">Les Bossus</a>, 620 Rue Saint-Joseph Est, Québec, for the dinner on Thursday at 19:30.
+We've booked at <a href="http://maps.google.ca/maps?q=620+Rue+Saint-Joseph+Est,+Qu%C3%A9bec&hl=fr&ie=UTF8&ll=46.815157,-71.221662&spn=0.004295,0.009645&sll=46.815181,-71.221636&layer=c&cbp=13,302.71,,0,0.17&cbll=46.815206,-71.221517&hnear=620+Rue+Saint-Joseph+Est,+Qu%C3%A9bec,+G1K+3B8&t=m&z=17&panoid=gILOZmFm34HLP0NEaLlU9Q" target="_blank">Les Bossus</a>, 620 Rue Saint-Joseph Est, QuÃ©bec, for the dinner on Thursday at 19:30.
 
 -- Main.UlrichLooser - 04 Apr 2013
 
@@ -135,8 +135,8 @@ We've booked at <a href="http://maps.google.ca/maps?q=620+Rue+Saint-Joseph+Est,+
    * [[%ATTACHURL%/DataOperationsandManagement.ppt][DataOperationsandManagement.ppt]]: WMO Commission for Hydrology - Data Operations and Management
    * 
 
-   * HDWG_at_Québec_pub.JPG: <br />
-     <img alt="HDWG_at_Québec_pub.JPG" height="480" src="%ATTACHURLPATH%/HDWG_at_Québec_pub.JPG" width="640" />
+   * HDWG_at_QuÃ©bec_pub.JPG: <br />
+     <img alt="HDWG_at_QuÃ©bec_pub.JPG" height="480" src="%ATTACHURLPATH%/HDWG_at_QuÃ©bec_pub.JPG" width="640" />
 
    * WSKL.JPG: <br />
      <img src="%ATTACHURLPATH%/WSKL.JPG" alt="WSKL.JPG" width='1024' height='714' />
@@ -146,7 +146,7 @@ We've booked at <a href="http://maps.google.ca/maps?q=620+Rue+Saint-Joseph+Est,+
 %META:FILEATTACHMENT{name="OGC_RiverML_Presentation.pptx" attachment="OGC_RiverML_Presentation.pptx" attr="" comment="" date="1371494510" path="OGC RiverML Presentation.pptx" size="8549553" user="DavidArctur" version="2"}%
 %META:FILEATTACHMENT{name="GEOSS_Water_Services_HDWG-v2.pptx" attachment="GEOSS_Water_Services_HDWG-v2.pptx" attr="" comment="" date="1371451284" path="GEOSS_Water_Services_HDWG-v2.pptx" size="16991518" user="DavidArctur" version="1"}%
 %META:FILEATTACHMENT{name="DataOperationsandManagement.ppt" attachment="DataOperationsandManagement.ppt" attr="" comment="WMO Commission for Hydrology - Data Operations and Management" date="1371478306" path="DataOperationsandManagement.ppt" size="715776" user="TonyBoston" version="1"}%
-%META:FILEATTACHMENT{name="HDWG_at_Québec_pub.JPG" attachment="HDWG_at_Québec_pub.JPG" attr="h" comment="" date="1371539492" path="HDWG at Québec pub.JPG" size="129869" user="DavidArctur" version="2"}%
+%META:FILEATTACHMENT{name="HDWG_at_QuÃ©bec_pub.JPG" attachment="HDWG_at_QuÃ©bec_pub.JPG" attr="h" comment="" date="1371539492" path="HDWG at QuÃ©bec pub.JPG" size="129869" user="DavidArctur" version="2"}%
 %META:FILEATTACHMENT{name="Ver2_WMO-OGC_HydroDWG-Workshop_Agenda.ppt" attachment="Ver2_WMO-OGC_HydroDWG-Workshop_Agenda.ppt" attr="" comment="Agenda updated (Tuesday)" date="1371551099" path="Ver2 WMO-OGC HydroDWG-Workshop_Agenda.ppt" size="1273344" user="UlrichLooser" version="1"}%
 %META:FILEATTACHMENT{name="HDWG_Quebec_Catchments.ppt" attachment="HDWG_Quebec_Catchments.ppt" attr="" comment="HY_Features, Catchment Concept" date="1371646411" path="HDWG_Quebec_Catchments.ppt" size="1256448" user="EricBoisvert" version="1"}%
 %META:FILEATTACHMENT{name="AHGF_HY_Features_Final.ppt" attachment="AHGF_HY_Features_Final.ppt" attr="" comment="Geofabric and HY_Features" date="1371646712" path="AHGF_HY_Features Final.ppt" size="12797440" user="EricBoisvert" version="1"}%

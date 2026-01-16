@@ -57,8 +57,8 @@ The overview of the main entities necessary for this Use case. For the detailed 
 | WFS | hydrogeological characteristics | GWML2 (WFD) | |
 | CSW | Metadata | Metdadata schema (WFD) | |
 | WFS-SOS ? | chemical monitoring data | O&M ? GWML2 (WFD) | |
-| WFS–SOS ? | physical monitoring data | O&M ? GWML2 (WFD) | |
-| WFS–SOS ? | biological monitoring data ? | O&M ? GWML2 (WFD) | |
+| WFSâ€“SOS ? | physical monitoring data | O&M ? GWML2 (WFD) | |
+| WFSâ€“SOS ? | biological monitoring data ? | O&M ? GWML2 (WFD) | |
 | WFS ? | Final reporting data set | WFD delivery format | |
 -- Main.AlexKmoch - 02 Jul 2015
 

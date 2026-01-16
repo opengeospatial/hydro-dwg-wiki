@@ -20,7 +20,7 @@ The RGSWG came together at Reading over 20-22 June 2012. The intensive was a lau
 
 Decisions relating to the business of the RGSWG can be made at any scheduled RGSWG meeting. There are no minimum quorum requirements, as the objective is to enable business to process with minimum delays. In voting for decisions, each organisation in the RGSWG has one vote.
 
-Decisions are recorded in the [[https://docs.google.com/spreadsheet/ccc?key=0ArdtTd_VTBTZdGVCZnM3czk1c1NzbVBONWd6Z3dyZHc][RGS Activity Register]]. Once decisions are registered members are advised of the decision via the email group, there is a two week review period following a decision to enable members not present at decision making meeting to comment. After the review period decisions will have their status updated to ‘approved’ or ‘declined’.
+Decisions are recorded in the [[https://docs.google.com/spreadsheet/ccc?key=0ArdtTd_VTBTZdGVCZnM3czk1c1NzbVBONWd6Z3dyZHc][RGS Activity Register]]. Once decisions are registered members are advised of the decision via the email group, there is a two week review period following a decision to enable members not present at decision making meeting to comment. After the review period decisions will have their status updated to â€˜approvedâ€™ or â€˜declinedâ€™.
 
 Review of existing, approved, decisions is a new decision.
 ---++ Membership

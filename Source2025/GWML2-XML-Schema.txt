@@ -82,7 +82,7 @@ Instance documents are located in SVN, : https://xp-dev.com/svn/gwml2/Documents/
       * <a href="https://xp-dev.com/svn/gwml2/Documents/instance/GW_ManagementArea_GNS_uc2.xml" target="_blank" title="GW_WaterBudget in GW_ManagementArea_GNS_uc2.xml">GW_WaterBudget</a> work in progress (includes GW_Recharge example) -- Main.AlexKmoch -- Main.AlexKmoch - 02 Jul 2015
       * [[%ATTACHURL%/GWML2-GW_InterFlow_FedUni.xml][GWML2-GW_InterFlow_FedUni.xml]]: Example GW_Discharge, GW_Recharge based on January 1993 Lake Murdeduke data, FedUni -- Main.BruceSimons - 08 Aug 2014
 
-   * [[%ATTACHURL%/BRGM_Aquifer_light.xml][BRGM_Aquifer_light.xml]]: Aquifer from national BD LISA (Base de Données des Limites des Systèmes Aquifères) database
+   * [[%ATTACHURL%/BRGM_Aquifer_light.xml][BRGM_Aquifer_light.xml]]: Aquifer from national BD LISA (Base de DonnÃ©es des Limites des SystÃ¨mes AquifÃ¨res) database
 
    * [[%ATTACHURL%/BRGM_ManagementArea_light.xml][BRGM_ManagementArea_light.xml]]: BRGM GW_ManagementArea based on EU Water Framework Directive Ground Water Body
 
@@ -93,7 +93,7 @@ Instance documents are located in SVN, : https://xp-dev.com/svn/gwml2/Documents/
 
 %META:FILEATTACHMENT{name="app_ext_zone.pdf" attachment="app_ext_zone.pdf" attr="" comment="Instance example for Hydrogeologic units" date="1402401228" path="app_ext_zone.pdf" size="204521" user="EricBoisvert" version="1"}%
 %META:FILEATTACHMENT{name="GWML2-GW_InterFlow_FedUni.xml" attachment="GWML2-GW_InterFlow_FedUni.xml" attr="" comment="Example GW_Discharge, GW_Recharge based on January 1993 Lake Murdeduke data, FedUni" date="1407475537" path="GWML2-GW_InterFlow_FedUni.xml" size="6601" user="BruceSimons" version="1"}%
-%META:FILEATTACHMENT{name="BRGM_Aquifer_light.xml" attachment="BRGM_Aquifer_light.xml" attr="" comment="Aquifer from national BD LISA (Base de Données des Limites des Systèmes Aquifères) database" date="1407530480" path="BRGM_Aquifer_light.xml" size="3784" user="SylvainGrellet" version="1"}%
+%META:FILEATTACHMENT{name="BRGM_Aquifer_light.xml" attachment="BRGM_Aquifer_light.xml" attr="" comment="Aquifer from national BD LISA (Base de DonnÃ©es des Limites des SystÃ¨mes AquifÃ¨res) database" date="1407530480" path="BRGM_Aquifer_light.xml" size="3784" user="SylvainGrellet" version="1"}%
 %META:FILEATTACHMENT{name="BRGM_ManagementArea_light.xml" attachment="BRGM_ManagementArea_light.xml" attr="" comment="BRGM GW_ManagementArea based on EU Water Framework Directive Ground Water Body" date="1407530547" path="BRGM_ManagementArea_light.xml" size="1859" user="SylvainGrellet" version="1"}%
 %META:FILEATTACHMENT{name="BRGM_Well_light.xml" attachment="BRGM_Well_light.xml" attr="" comment="BRGM from French national BSS (Banque Nationale du Sous-Sol) includes piezometer, construction, link to the Aquifer described above." date="1407530592" path="BRGM_Well_light.xml" size="8861" user="SylvainGrellet" version="1"}%
 %META:FILEATTACHMENT{name="gwml2-nucleus.xsd" attachment="gwml2-nucleus.xsd" attr="" comment="Revised xsd to fix association classes" date="1408327742" path="gwml2-nucleus.xsd" size="35547" user="BruceSimons" version="1"}%

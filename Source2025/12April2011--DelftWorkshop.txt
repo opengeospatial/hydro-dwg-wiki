@@ -17,16 +17,16 @@
    * meeting notes posted here
    * action plan
 ---++ *Agenda*
-   * *14:00 – 15:30 gw schema status and agency needs*
-   * 14:00 – 14:15 Eric Boisvert GWML
-   * 14:15 – 14:30 Simon Cox / Gavin Walker AU GW
-   * 14:30 – 14:45 Tomasz Nalecz INSPIRE GW
-   * 14:45 – 15:00 Nate Booth USGS GW
-   * 15:00 – 15:15 Rob Atkinson GW and HY
+   * *14:00 â€“ 15:30 gw schema status and agency needs*
+   * 14:00 â€“ 14:15 Eric Boisvert GWML
+   * 14:15 â€“ 14:30 Simon Cox / Gavin Walker AU GW
+   * 14:30 â€“ 14:45 Tomasz Nalecz INSPIRE GW
+   * 14:45 â€“ 15:00 Nate Booth USGS GW
+   * 15:00 â€“ 15:15 Rob Atkinson GW and HY
    * 15:15 - 15:30 Boyan Brodaric GW and HY
-   * *15:30 – 16:00 break*
-   * *16:00 – 17:00 issues: gaps and challenges*
-   * *17:00 – 18:00 next steps: if, what, and when?*
+   * *15:30 â€“ 16:00 break*
+   * *16:00 â€“ 17:00 issues: gaps and challenges*
+   * *17:00 â€“ 18:00 next steps: if, what, and when?*
 ---++ *Action Plan*
 
 Develop !GroundWater Interoperability Experiment 2:

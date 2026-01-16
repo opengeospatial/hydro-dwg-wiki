@@ -10,9 +10,9 @@
       1 Calibration information for development of the function.
       1 rgs-2
    1 *Which gaugings were used for which ratings*
-      1 Which werent used and why.
+      1 Which werenÂ’t used and why.
       1 Critical piece for uncertainty analysis.
-      1 At least need relevant gaugings to the rating curve.
+      1 At least need Â“relevantÂ” gaugings to the rating curve.
       1 rgs-3
    1 *Segments*
       1 There is a need for modification of meta-elements of the rating model on a piecewise basis.
@@ -25,7 +25,7 @@
       1 Tidal influence
       1 Difficult and not useful?
       1 Technology (i.e. index velocity) has overtaken the issue..
-      1 <a href="○   https://publicwiki.deltares.nl/display/HYMOS/01+Fitting+of+rating+curve" target="_blank">Fitting of ratings curves - reference</a>
+      1 <a href="â—‹   https://publicwiki.deltares.nl/display/HYMOS/01+Fitting+of+rating+curve" target="_blank">Fitting of ratings curves - reference</a>
       1 rgs-8
    1 *Equations*
       1 free form - MathML
@@ -90,7 +90,7 @@
    1 *Responsible parties*
    1 *Approval level*
       1 Lifecycle of development
-      1 Locked down curve once it�s been used
+      1 Locked down curve once it’s been used
       1 Approved before data can be archived
       1 Review cycle, dates of review, random reviews, reviewed on trigger (e.g. legal)
       1 Need a vocabulary

@@ -27,7 +27,7 @@ What thematic categories of hydrogeological data are needed for groundwater flow
 
 We may divide them to few groups:<br />1.   For spatial model of modeled system (aquifer system).<br />2.   Data about spatial distribution of hydraulic parameters.<br />3.   Data describing state of the system (piezometric state of groundwater bodies).<br />4.   Data about natural and human made impact on groundwater bodies (surface water levels, recharge from ground surface, quantities of extracted water by wells etc.).
 
-Almost all hydrogeological data are required for groundwater flow models. Also data from other domains (geology, hydrology/hydrography) are essential.<br />In consequence if we make assumption that ìonly ëobservedí data will be required from the standard data model separate use caseî *this use case (UC4 Scientific ñ groundwater flow models) is completely unnecessary*. All these data are mentioned in the other use cases. Especially as " 'interpolated' or 'modeled' data" cannot be taken into consideration.
+Almost all hydrogeological data are required for groundwater flow models. Also data from other domains (geology, hydrology/hydrography) are essential.<br />In consequence if we make assumption that ‚Äúonly ‚Äòobserved‚Äô data will be required from the standard data model separate use case‚Äù *this use case (UC4 Scientific ‚Äì groundwater flow models) is completely unnecessary*. All these data are mentioned in the other use cases. Especially as " 'interpolated' or 'modeled' data" cannot be taken into consideration.
 
 -- Main.JanuszMichalak - 22 Nov 2012
 

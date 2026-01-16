@@ -39,8 +39,8 @@ This workshop continues the directions outlined in the successful [[12April2011-
    * IE proposal to be submitted to HDWG and then OGC
    * Work plan for next steps
 ---++ *Agenda*
-   * *9:00 – 9:10 Welcome and Introductions*
-   * *9:10 – 10:30 Where are we now?*
+   * *9:00 â€“ 9:10 Welcome and Introductions*
+   * *9:10 â€“ 10:30 Where are we now?*
       * Reports on the current state of GML-oriented groundwater schema (~15 min each):
          * GWML1 -<i> Eric Boisvert</i>
          * INSPIRE - Geology (groundwater) - _Bernhard Wagner_
@@ -48,25 +48,25 @@ This workshop continues the directions outlined in the successful [[12April2011-
          * BOM - BOM Groundwater Info -<i> Paul Sheahan </i>
          * Discussion
 
-   * *10:30 – 11:00 Break*
+   * *10:30 â€“ 11:00 Break*
 
-   * *11:00 – 12:30 Where are we going?*
+   * *11:00 â€“ 12:30 Where are we going?*
       * Technical discussion for schema harmonization
          * what are the use-cases?
          * what are the key elements and where are they?
          * what are the overlaps and gaps?
 
-   * *12:30 – 13:30 Lunch*
+   * *12:30 â€“ 13:30 Lunch*
 
-   * *13:30 – 15:00 How do we get there?*
+   * *13:30 â€“ 15:00 How do we get there?*
       * OGC proposal (participants, roles, responsibilities)
       * Work plan
 
-   * <b>15:00 – 15:30 Report to HDWG </b>(joint with HDWG)
+   * <b>15:00 â€“ 15:30 Report to HDWG </b>(joint with HDWG)
 
-   * *15:30 – 16:00 Break*
+   * *15:30 â€“ 16:00 Break*
 
-   * *16:00 – 17:00 HDWG Closing Session* (joint with HDWG)
+   * *16:00 â€“ 17:00 HDWG Closing Session* (joint with HDWG)
 ---++ *Resources*
    * *Groundwater ML1:* [[http://ngwd-bdnes.cits.rncan.gc.ca/gwml/index.aspx?c=2][documentation]] and [[http://www.iwaponline.com/jh/014/jh0140093.htm paper]]
    * *INSPIRE GE:* [[ http://testbed.ptip.org.pl/INSPIRE_Hydrogeology/INSPIRE_Hydrogeology_Draft_Model_v.2.9.9.eap.zip ][HydrogeologyCore UML model in EAP file (password required)]] and [[http://testbed.ptip.org.pl/INSPIRE_Hydrogeology/INSPIRE_Hydrogeology_Draft_Model_v2.9.9_Documentation.doc][documentation (the same password)]]

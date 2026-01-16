@@ -2,7 +2,7 @@
 <h2 id='Meeting_details_at_Charlotte_TC_44_10_45_14_December_44_2018'>Hydrology Domain Working Group</h2>
 ---++ Madrid OGC Member Meeting, 13 - 17 June, 2022
 
-Venue: Hotel Meli· Barajas, Madrid, Spain and online.
+Venue: Hotel Meli√° Barajas, Madrid, Spain and online.
 
 Time: Monday 13 June 2022, 14:30 - 16:00 UTC [4:30-6:00 pm CEST, 10:30 am-12 pm EDT - US/Eastern]
 

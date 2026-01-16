@@ -6,7 +6,7 @@ There are a couple of things that needs to be set in the way we encode OM_Observ
 There are two cases when we use OM_Observation as values
    1 <span style="background-color: transparent;">When using relatedObservation on any sub types of SF_SamplingFeature </span>
    1 <span style="background-color: transparent;"> Using a specific property (such as GW_FluidBody/gwBodyVolume) </span>
-OM_Observation has a mandatory featureOfInterest that is supposed to point back to the feature that is the ìbearer of the propertyî. <span style="background-color: transparent;">In case 2) , the bearer of the property is obviously the feature having this property, so technically, we should constrain featureOfInterest to link back to that feature</span>
+OM_Observation has a mandatory featureOfInterest that is supposed to point back to the feature that is the ‚Äúbearer of the property‚Äù. <span style="background-color: transparent;">In case 2) , the bearer of the property is obviously the feature having this property, so technically, we should constrain featureOfInterest to link back to that feature</span>
 
 Eg: we should technically have this
 
@@ -15,12 +15,12 @@ Eg: we should technically have this
 Issues: (Question in red)
 ---++ Cases where the bearer of property is not a feature
 
-(GW_WaterBudget for instance, is a Type, not a Feature), so we canít use featureOfInterest to link it back
+(GW_WaterBudget for instance, is a Type, not a Feature), so we can‚Äôt use featureOfInterest to link it back
 
 %RED%In this case, we should point back to the refers to this Type ? In case of WaterBudget, who does ?%ENDCOLOR%
 ---++ Same Observation shared by multiple properties
 
-nothing prevents more than one property to point to the same Observation (by reference), which becomes a problem for the featureOfInterest (foi is 1..1). It can be done schematically even if does not make sense logically. <span style="background-color: transparent;">%RED%Should we have a clause that says%ENDCOLOR% ì<span>OM_Observation that are values of explicit properties will use featureOfInterest to identify the legitimate bearer of properties.  Reference to OM_Observation from an explicit property when the property bearer is not the owner is invalid</span>î (s%RED%hould it be invalid ?, or can it have another meaning%ENDCOLOR%)</span>
+nothing prevents more than one property to point to the same Observation (by reference), which becomes a problem for the featureOfInterest (foi is 1..1). It can be done schematically even if does not make sense logically. <span style="background-color: transparent;">%RED%Should we have a clause that says%ENDCOLOR% ‚Äú<span>OM_Observation that are values of explicit properties will use featureOfInterest to identify the legitimate bearer of properties.  Reference to OM_Observation from an explicit property when the property bearer is not the owner is invalid</span>‚Äù (s%RED%hould it be invalid ?, or can it have another meaning%ENDCOLOR%)</span>
 ---++ ObservedProperty
 
 OM_Observation also has an observedProperty. Technically, this should be a reference to the property (the property type, not a specific instance of the property) this observation is about. We have several options (%RED%which one should we use%ENDCOLOR%)

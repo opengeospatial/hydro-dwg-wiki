@@ -5,7 +5,7 @@
 %TOC%
 ---+++ *Get rating periods*
 
-Q: I guess we need to discuss how ìrating/conversion groupsî will be defined. For the IE are we only dealing with stage-discharge rating groups? I assume we want to return a collection of conversionPeriods?
+Q: I guess we need to discuss how ‚Äúrating/conversion groups‚Äù will be defined. For the IE are we only dealing with stage-discharge rating groups? I assume we want to return a collection of conversionPeriods?
 
 <u>Discussion: </u>
 ---+++ *Get rating table X, Y, Z*
@@ -33,12 +33,12 @@ Q: Seems like we should be returning a Boolean value. Maybe we should reword the
 <u>Discussion:</u>Yes this could be a boolean. We discussed this a bit earlier. The idea behind returning a dates was to try and avoid two calls, as the subsequent call from 'has this changed' could often be when did this change? But perhaps not..
 ---+++ *Has the rating period changed since this date?*
 
-Q: Iím a little confused as to what this does.
+Q: I‚Äôm a little confused as to what this does.
 
 <u>Discussion:</u> I think Paul added this one with the intention of checking if the applicable period for a rating has changed. Not sure if this applies to a change in all the periods or a change of an individual rating period?
 ---+++ *Have these ratings X, Y, Z changed since this date?*
 
-Q: I think weíre missing rating IDs in parameters?
+Q: I think we‚Äôre missing rating IDs in parameters?
 
 <u>Discussion:</u> Yes we were, but they are in there now. Still haven't implemented this query yet.
 

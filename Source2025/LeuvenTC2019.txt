@@ -12,9 +12,9 @@ Link to [[http://ogcmeet.org/#about][Leuven TC meeting details]]
 
 1. Quick report on status of each each WaterML2 standard: 5-10 min + short discussion.  
 
-–Will submit some change requests to HY_Features based on experience using the spec.
+â€“Will submit some change requests to HY_Features based on experience using the spec.
 
-–GWML2 is on track to WMO adoption this winter.
+â€“GWML2 is on track to WMO adoption this winter.
 
 <span style="background-color: transparent;">2. Report on WMO submission process + next steps.</span>  
 
@@ -22,13 +22,13 @@ Link to [[http://ogcmeet.org/#about][Leuven TC meeting details]]
 
 <span style="background-color: transparent;">3. Planning for HDWG group annual meeting in Florence.</span>   
 
-–Will hold remote mixed participation sessions instead of a face to face annual meeting.
+â€“Will hold remote mixed participation sessions instead of a face to face annual meeting.
 
 <span style="background-color: transparent;">4. Discussion of potential HDWG future work.</span>  
 
-–Need to continue work on publishing feature models as simple OWL ontologies.
+â€“Need to continue work on publishing feature models as simple OWL ontologies.
 
-–Interest in pushing forward on shared environmental domain query building blocks for OGC API
+â€“Interest in pushing forward on shared environmental domain query building blocks for OGC API
 
 *GotoMeeting Recording: https://transcripts.gotomeeting.com/#/s/d48169db72745432c72a9192b499cf678b4f0293fd93e4f13e8e5a90eb3a4864*
 

@@ -33,6 +33,6 @@
       * <span style="background-color: transparent;">US NWS (15 hr forecast, every 3 hr); ECMWF (10-15 days, every 12 hr)</span>
 <p dir="ltr"><img alt="NFIE coverage map.png" height="252px;" src="https://lh5.googleusercontent.com/3FkGqfIBwZA3O5AwCvMdY01T3S434l2sQZnFbo3SO2ZW0YRMhifbkn2hzCkfq07ksVIfX05AvYGbsuJtnyf_OmP_ZpBb7FaxQIPZ9BlysJdm88fngambFCVL9FJ9hxyr4jrh6S8" width="662px;" /></p>
 ---+++ <br /><br />This approach is being adapted for probabilistic global forecasts
-<h3 dir="ltr"><img alt="GFIE-Magdalena.png" height="371px;" src="https://lh4.googleusercontent.com/0B0d1BoOEa9OGFEcVZXgumt8dHF-clSK2s3x2rB7YtP-eiVG2hPa_MXdNhjOV3u-6zw9cjUnaI2CWmfAoa-iDWT-JJ_HmDXS9x5IPOHdaPo0kdurgPmSsLLXUgcT0pYCxKTafeo" width="575px;" /></h3> <p dir="ltr"> *Come and learn how we’re doing this.* </p>
+<h3 dir="ltr"><img alt="GFIE-Magdalena.png" height="371px;" src="https://lh4.googleusercontent.com/0B0d1BoOEa9OGFEcVZXgumt8dHF-clSK2s3x2rB7YtP-eiVG2hPa_MXdNhjOV3u-6zw9cjUnaI2CWmfAoa-iDWT-JJ_HmDXS9x5IPOHdaPo0kdurgPmSsLLXUgcT0pYCxKTafeo" width="575px;" /></h3> <p dir="ltr"> *Come and learn how weâ€™re doing this.* </p>
 
 -- Main.DavidArctur - 07 Jun 2015

@@ -35,7 +35,7 @@
 ---++ *Comments*
    * The 3 choices in the Doodle Poll (and proposal) for encoding multiple aquifer properties are:
       * A. One observation per value, location associated with observation:
-         * pros: simple, metadata can differ per value (procedure, time,…)
+         * pros: simple, metadata can differ per value (procedure, time,â€¦)
          * cons: verbose when metadata repeated.
       * B. One observation per many values, location associated with value:
          * pros: not verbose, metadata stated once for many values

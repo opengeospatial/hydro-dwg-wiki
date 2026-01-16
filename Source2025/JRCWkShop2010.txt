@@ -56,7 +56,7 @@ Changes to your registration can be made through the JRC website [[https://jrc-m
 _Accommodation_
 
 Through the registration website you can also book a hotel room, if needed. The hotel will be automatically notified.
-The cost of the single room in Hotel Europa is 55¤/night, breakfast included. If you need to cancel, you can update the hotel booking until 07/03/2010.
+The cost of the single room in Hotel Europa is 55Â¤/night, breakfast included. If you need to cancel, you can update the hotel booking until 07/03/2010.
  
 _Transportation_
 
@@ -65,7 +65,7 @@ Unfortunately all attendees will be responsible for their own transport. JRC rec
 _Workshop Dinner_
 
 A social dinner has been organised at Hotel Europa on March 16th. 
-The cost of the dinner is 30¤/person.
+The cost of the dinner is 30Â¤/person.
 Confirmation of your attendance can be done through the website.
 
 -- Main.DavidLemon - 14 Jan 2010

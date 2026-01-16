@@ -13,7 +13,7 @@ Press Release: http://www.opengeospatial.org/event/1109omh
 
 3) [[https://portal.opengeospatial.org/files/?artifact_id=45964][Hydro DWG Intro: purpose, activities and use cases]] (Ulrich Looser, Peter Fitch, Ilya Zaslavsky) 9:50-10:15
 
-4)  [[https://portal.opengeospatial.org/files/?artifact_id=45900][MetOcean DWG Intro: purpose, activities and use cases]] (Marie-Françoise Voidrot, Frédéric Guillaud) 10:15-10:40
+4)  [[https://portal.opengeospatial.org/files/?artifact_id=45900][MetOcean DWG Intro: purpose, activities and use cases]] (Marie-FranÃ§oise Voidrot, FrÃ©dÃ©ric Guillaud) 10:15-10:40
 
 tea break (10:40-10:50)
 

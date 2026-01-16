@@ -48,9 +48,9 @@ None of these relations or entities are more central than others -- they form a 
 
 The "seed" CM 0.2 in my view is a very good basis for the model so I think a good job was done. Therefore just a few remarks to some points in the following:
    1 GW_HydrogeoVoid: since GW_Porosity is a defined property of GW_HydrogeoUnit, the void space available for the groundwater body in my view would be defined by the GW_HydrogeoUnit and its geometry. It seems to me that the association between GW_Body and GW_HydrogeoUnit would be consistent enough to define the available void space. *(Discussed 18/12/13)*
-   1 Associations between GW_Body and GW_HydrogeoUnit (figure 1, 3): in my view it is the core association of the model since it defines the relations between the two main domains rock and groundwater. In the INSPIRE model we defined this association through an association between GW_Body and GW_AquiferSystem (1:1) i.e. "the aquifer system is a collection of aquifers and aquitards ñ "communicating vessels", that are filled or can be filled with water", where we have a 1:n-relation between the GW_AquiferSystem and GW_HydrogeoUnit. I would like to suggest discussion of this type of modeling the associations:
+   1 Associations between GW_Body and GW_HydrogeoUnit (figure 1, 3): in my view it is the core association of the model since it defines the relations between the two main domains rock and groundwater. In the INSPIRE model we defined this association through an association between GW_Body and GW_AquiferSystem (1:1) i.e. "the aquifer system is a collection of aquifers and aquitards ‚Äì "communicating vessels", that are filled or can be filled with water", where we have a 1:n-relation between the GW_AquiferSystem and GW_HydrogeoUnit. I would like to suggest discussion of this type of modeling the associations:
                                                                    GW_HydrogeoUnit (n) &lt;-----&gt; (1) GW_AquiferSystem (1) &lt;------&gt; (1) GW_Body *(see below)*
-<ol start="3"> <li>page13, definition GW_AquiferSystem: "a body of materialÖ separated at least locally by confining beds that impede groundwater movementÖ" Even if this will often be the case, in the modeling sense I think this is a set of hydrogeological units that form a common hydrologic system. Therefore my suggestion is to skip this condition of confining beds in the definition of the GW_AquiferSystem. *(Discussed 9/12/13)* </li> <li>In the INSPIRE-model we defined the HydrogeochemicalRockType as a property of the HydrogeologicalUnit, indicating the main chemical properties the GW_Body will show due to the rock-water interactions (e.g. calcitic, sulfatic etc.). I suggest to include this to the GW_HydrogeoProperty.</li> </ol>
+<ol start="3"> <li>page13, definition GW_AquiferSystem: "a body of material‚Ä¶ separated at least locally by confining beds that impede groundwater movement‚Ä¶" Even if this will often be the case, in the modeling sense I think this is a set of hydrogeological units that form a common hydrologic system. Therefore my suggestion is to skip this condition of confining beds in the definition of the GW_AquiferSystem. *(Discussed 9/12/13)* </li> <li>In the INSPIRE-model we defined the HydrogeochemicalRockType as a property of the HydrogeologicalUnit, indicating the main chemical properties the GW_Body will show due to the rock-water interactions (e.g. calcitic, sulfatic etc.). I suggest to include this to the GW_HydrogeoProperty.</li> </ol>
 
 Bernhard Wagner - 03 Dec 2013
 
@@ -209,27 +209,27 @@ Any reason for having GW_Porosity as a separate class rather than just having th
 
 Just some comments for your next meeting.
 
-Comments: general ñ very complicated and detailed. Still trying to wrap our heads around the void, fluid body and HGU. The information in groundwater fluid body is generally derived from numbers that are derived themselves and has huge errors associated with it.
+Comments: general ‚Äì very complicated and detailed. Still trying to wrap our heads around the void, fluid body and HGU. The information in groundwater fluid body is generally derived from numbers that are derived themselves and has huge errors associated with it.
 
 *GW_FluidBody*
 
 -         Groundwaterbody shape and volume will require assumptions on how the volume was calculated, the method to determine the groundwater level surface.
 
--         gwBodyAge ñ again the method used to determine this (carbon dating etc), the age range, the accuracy and the date
+-         gwBodyAge ‚Äì again the method used to determine this (carbon dating etc), the age range, the accuracy and the date
 
--         gwBodyFlow ñ not entirely sure what this relates to. Is it a flow net or direction, or flow volume (discharge/ recharge body), flow rate (m/s), velocity?
+-         gwBodyFlow ‚Äì not entirely sure what this relates to. Is it a flow net or direction, or flow volume (discharge/ recharge body), flow rate (m/s), velocity?
 
--         gwBodyQuality ñ assume points to a vocab and we could populate the vocab based on beneficial use criteria
+-         gwBodyQuality ‚Äì assume points to a vocab and we could populate the vocab based on beneficial use criteria
 
--         gwBodyCondition ñ we don't have a vocab of our own at this stage. Probably wouldn't use INSPIRE without consultation
+-         gwBodyCondition ‚Äì we don't have a vocab of our own at this stage. Probably wouldn't use INSPIRE without consultation
 
 *GW_unitFluidProperty*
 
--         gwStorativity ñ as mentioned earlier, we believe this should be called StorageProperties which is more inclusive. Storativity related to confined aquifers. Storgae properties is inclusive of specific storage, specific yield and storativity.
+-         gwStorativity ‚Äì as mentioned earlier, we believe this should be called StorageProperties which is more inclusive. Storativity related to confined aquifers. Storgae properties is inclusive of specific storage, specific yield and storativity.
 
 -         As above, with all properties (hydraulic conductivity, transmissivity and storage) requires metadata and could include published ranges or calculations.
 
--         gwYield ñ the definition relates to a management property rather than fluid property. Sustainable yield/ safe yield etc relates to the groundwater management of volume/year. This is generally an arbitrary number based on politics and community issues. We think this should be related to a pump test and would include the pump test method including time etc.
+-         gwYield ‚Äì the definition relates to a management property rather than fluid property. Sustainable yield/ safe yield etc relates to the groundwater management of volume/year. This is generally an arbitrary number based on politics and community issues. We think this should be related to a pump test and would include the pump test method including time etc.
 
 *gwFlowSystem relationships*
 
@@ -237,16 +237,16 @@ what is the difference between the gwBodyFlow and the gw_FlowProcess?
 
 What is the difference between the recharge feature and the recharge location and how they function?
 
-Discharge/ recharge feature ñ assume it includes type of feature and type of recharge (diffuse, point source etc), source of water for recharge (irrigation, rainfall, surface water feature)
+Discharge/ recharge feature ‚Äì assume it includes type of feature and type of recharge (diffuse, point source etc), source of water for recharge (irrigation, rainfall, surface water feature)
 
 Eloise & Jill
 ---++++ Response to BoM comments:
 
 *gwBodyFlow and th gw_FlowProcess:*
 
-GW_FluidBody:gwBodyFlow is defined as ìFlow details for the gw body.î It has data type GW_Flow
+GW_FluidBody:gwBodyFlow is defined as ‚ÄúFlow details for the gw body.‚Äù It has data type GW_Flow
 
-GW_Flow:gwFlowBody is defined as ìThe body of water that is flowing.î It has data type GW_FluidBody.
+GW_Flow:gwFlowBody is defined as ‚ÄúThe body of water that is flowing.‚Äù It has data type GW_FluidBody.
 
 It looks like a circular dependency between these two that needs sorting, possibly deleting GW_FluidBody:gwBodyFlow is required.
 
@@ -254,7 +254,7 @@ Gw_FlowProcess examples are: evapotranspiration, evaporation, transpiration, run
 
 *recharge feature and the recharge location:*
 
-GW_RechargeLocation:gwRechargeFeature is defined as ìPhysical feature where the recharge occurs.î I assume this will be some feature (swamp, sinkhole,...) where the GW_HydrogeoUnit is re-charged.
+GW_RechargeLocation:gwRechargeFeature is defined as ‚ÄúPhysical feature where the recharge occurs.‚Äù I assume this will be some feature (swamp, sinkhole,...) where the GW_HydrogeoUnit is re-charged.
 
 *Discharge/ recharge feature*
 
@@ -283,7 +283,7 @@ In relation to Bruce's comment on gwInFlowLocation and gwOutFlowLocation... page
 -- Main.BoyanBrodaric - 24 Feb 2014
    * <span style="background-color: transparent;">"Easy part"</span>
 
-gwBodyNaturalContext attributes initially refers to Natural background (Natural GroundWaterBaseline - Fond gÈochimique des aquifËres). For a given GW_ChemicalConstituent measured in a GW_FluidBody, in order to manage the GW_FluidBody quality, we need to better understand what causes the presence of the ChemicalConstituent.
+gwBodyNaturalContext attributes initially refers to Natural background (Natural GroundWaterBaseline - Fond g√©ochimique des aquif√®res). For a given GW_ChemicalConstituent measured in a GW_FluidBody, in order to manage the GW_FluidBody quality, we need to better understand what causes the presence of the ChemicalConstituent.
 
 One approach is : theoretically Natural background can be estimated for each GW_FluidBody, GW_ChemicalConstituent by GW_ChemicalConstituent based on the GL_EarthMaterial of the GW_HydrogeoUnit.
 

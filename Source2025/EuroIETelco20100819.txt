@@ -4,16 +4,16 @@
 
 ---++ Participants
    * Chris Michl (DLZ-IT BMVBS)
-   * Simon Jirka (52캮orth) 
+   * Simon Jirka (52째North) 
    * Ulrich Loser (GRDC)
    * Stefan Fuest (Kisters)
    * Michael Natschke (Kisters)
    * Sylvain Grellet (IOW-Sandre) 
 
 ---++ Agenda
-   * SOS server - update developers 52캮orth and Kisters
+   * SOS server - update developers 52째North and Kisters
    * SOS server implemenatation - update DLZ-IT and SANDRE
-   * Web Clients (SOS, WMS) - update developers 52캮orth and Kisters
+   * Web Clients (SOS, WMS) - update developers 52째North and Kisters
    * Toulouse TC (who is going, presentation)
    * next telcon
 
@@ -29,8 +29,8 @@
         * Simon, Stefan and Michael (Sylvain? and Christian might join in) agreed on a telcon to that issue on the coming Tuesday; goal is to find a common approach how to get surface water into the SOS
    * Planning the Toulouse TC (Ulrich gave an update on the time line):
       * 21. September: Workshop on WaterML2.0 and IE (in depth discussion on surface water feature model, depending on interest &#189; or full day, organized by Peter Fitch)
-      * 22. September: HDWG Meeting (presentation of results IEs, presenta-tions from 52캮orth and Kisters are planned, Christian and Carsten will give or prepare a used case 1 overview of results, Sylvain will re-port on SANDRE)
-      * Participants from used case 1 in Toulouse; 52캮orth (Simon), Kisters (Stefan or Michael), SANDRE (Sylvain), Christian and Carsten will join over telcon
+      * 22. September: HDWG Meeting (presentation of results IEs, presenta-tions from 52째North and Kisters are planned, Christian and Carsten will give or prepare a used case 1 overview of results, Sylvain will re-port on SANDRE)
+      * Participants from used case 1 in Toulouse; 52째North (Simon), Kisters (Stefan or Michael), SANDRE (Sylvain), Christian and Carsten will join over telcon
    * next phone conference is on Thursday, September 2nd at 12:00 (CEST), agenda: planning Toulouse 
 
 

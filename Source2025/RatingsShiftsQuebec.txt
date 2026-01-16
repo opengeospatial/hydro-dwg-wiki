@@ -4,7 +4,7 @@
 ---+++ 
 ---+++ USGS calculation of flow
 
-The calculation of flow is primarily based on the common approach of passing the time series record though a 'flow rating', the applicable rating table may change over the period of record – a family of rating tables.The trigger for changing rating tables can be due to many things, primarily a physical change on site has caused a change in the level/flow relationship.
+The calculation of flow is primarily based on the common approach of passing the time series record though a 'flow rating', the applicable rating table may change over the period of record â€“ a family of rating tables.The trigger for changing rating tables can be due to many things, primarily a physical change on site has caused a change in the level/flow relationship.
 
 In the period between rating changes there is often a need to 'tweak' the rating relationship by small amounts. There may be one or many tweaks of the relationship applied in the course of the ratings application period. There is a need to interpolate the tweaking between tweak definition points.
 

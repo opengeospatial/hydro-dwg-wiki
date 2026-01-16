@@ -35,7 +35,7 @@ Link to [[http://www.opengeospatial.org/events/1509tcagenda][Nottingham TC agend
 
 <font face="Times New Roman,serif" size="3"><font color="#1F497D" face="Calibri,sans-serif" size="2">b. HY_Features Part 3 - OWL encoding: rhyme and reason (Rob Atkinson) [ [[%ATTACHURL%/2015_Nottingham_Presentation_RA.ppt][Presentation]]]<br /></font></font>
 
-<font face="Times New Roman,serif" size="3"><font color="#1F497D" face="Calibri,sans-serif" size="2">3. Water Standards Interoperability Experiment (Joan Masó) [ [[%ATTACHURL%/Water_Standards_Interoperability_Experiment.ppt][Presentation]]]</font></font>
+<font face="Times New Roman,serif" size="3"><font color="#1F497D" face="Calibri,sans-serif" size="2">3. Water Standards Interoperability Experiment (Joan MasÃ³) [ [[%ATTACHURL%/Water_Standards_Interoperability_Experiment.ppt][Presentation]]]</font></font>
 
 <font face="Times New Roman,serif" size="3"><font color="#1F497D" face="Calibri,sans-serif" size="2">a. Draft [[%ATTACHURL%/WSIE_Activity_Plan_52N_CREAF_v0.2.doc][Activity Plan]]</font></font>
 

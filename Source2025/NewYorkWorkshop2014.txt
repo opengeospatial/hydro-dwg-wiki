@@ -13,7 +13,7 @@
 | 14:30 | Suite of Standards for Water Information | Irina Dornblut | 30 min |
 | 15:00 | <span style="color: #228b22;">Break</span> |||
 | 15:30 | _HDWG vision discussion: where we are, what is next, general plans, projects to leverage and groups to connect with_ | David Maidment | 1.5 hr |
-| 17:00 | Observable properties ontology – alignment and usability. [[%ATTACHURL%/HDWG-Cox-vocabulary.pptx][Presentation]] | Simon Cox (remotely) | 30 min |
+| 17:00 | Observable properties ontology â€“ alignment and usability. [[%ATTACHURL%/HDWG-Cox-vocabulary.pptx][Presentation]] | Simon Cox (remotely) | 30 min |
 | 17:30 | Close | | |
 | | |||
 | *%RED%August 12%ENDCOLOR%* | *%RED%Tuesday: water quality, large-scale water data sharing projects and experiences%ENDCOLOR%* |||
@@ -92,7 +92,7 @@ Please read about logistics and confirm attendance on [[HydroDWGNewYorkAttendees
 -- Main.IlyaZaslavsky - 25 Oct 2013
 ---++ Remote Access details
 
-<span style="background-color: transparent;">Below is the information needed for today’s seminar as requested.</span>
+<span style="background-color: transparent;">Below is the information needed for todayâ€™s seminar as requested.</span>
 
 Browser plugin : http://bluejeans.com/downloads
 
@@ -108,7 +108,7 @@ To join via Room System:<br />Video Conferencing System: bjn.vc -or- 199.48.152.
 %META:FILEATTACHMENT{name="RiverML_Harmonization_August_2014.pdf" attachment="RiverML_Harmonization_August_2014.pdf" attr="" comment="Hydraulic Language Harmonization and Description of RiverML 0.2" date="1407707877" path="RiverML_Harmonization_August_2014.pdf" size="4199434" user="StephenJackson" version="1"}%
 %META:FILEATTACHMENT{name="HDWG-workshop-WMO-feedback.pptx" attachment="HDWG-workshop-WMO-feedback.pptx" attr="" comment="WMO feedback" date="1407776052" path="HDWG-workshop-WMO-feedback.pptx" size="5331185" user="TonyBoston" version="1"}%
 %META:FILEATTACHMENT{name="2014_HDWG_NY_WaterSuites.pptx" attachment="2014_HDWG_NY_WaterSuites.pptx" attr="" comment="towards a suite of standards for water information" date="1407779634" path="2014_HDWG_NY_WaterSuites.pptx" size="736564" user="IrinaDornblut" version="2"}%
-%META:FILEATTACHMENT{name="HDWG-Cox-vocabulary.pptx" attachment="HDWG-Cox-vocabulary.pptx" attr="" comment="Observable properties ontology – alignment and usability" date="1407855324" path="HDWG-Cox-vocabulary.pptx" size="3333038" user="TonyBoston" version="1"}%
+%META:FILEATTACHMENT{name="HDWG-Cox-vocabulary.pptx" attachment="HDWG-Cox-vocabulary.pptx" attr="" comment="Observable properties ontology â€“ alignment and usability" date="1407855324" path="HDWG-Cox-vocabulary.pptx" size="3333038" user="TonyBoston" version="1"}%
 %META:FILEATTACHMENT{name="HWDG14Aug.pdf" attachment="HWDG14Aug.pdf" attr="" comment="World Water Online - David Maidment" date="1407859525" path="HWDG14Aug.pdf" size="7100278" user="IlyaZaslavsky" version="1"}%
 %META:FILEATTACHMENT{name="Hydro_Interoperability_Initiatives_-_CHISP,_Testbed_10_and_Testbed_11_(planned)_-_draft_v1.pptx" attachment="Hydro_Interoperability_Initiatives_-_CHISP,_Testbed_10_and_Testbed_11_(planned)_-_draft_v1.pptx" attr="" comment="Hydro Interoperability Initiatives - CHISP, Testbed 10 and Plans for Testbed 11" date="1407865297" path="Hydro Interoperability Initiatives - CHISP, Testbed 10 and Testbed 11 (planned) - draft v1.pptx" size="10537166" user="LewisLeinenweber" version="2"}%
 %META:FILEATTACHMENT{name="TimeSeriesML_HydroDWG20140811.pptx" attachment="TimeSeriesML_HydroDWG20140811.pptx" attr="" comment="" date="1408024796" path="TimeSeriesML_HydroDWG20140811.pptx" size="928111" user="TonyBoston" version="2"}%

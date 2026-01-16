@@ -109,7 +109,7 @@ manual program codes, specific implementations necessary</td> <td valign="top" w
 
 </td> </tr> <tr> <td valign="top" width="59">
 
-…
+â€¦
 </td> <td valign="top" width="73">
 
 </td> <td valign="top" width="108"> </td> <td valign="top" width="140"> </td> <td valign="top" width="88"> </td> </tr> </tbody> </table> -- Main.BoyanBrodaric - 26 Oct 2012

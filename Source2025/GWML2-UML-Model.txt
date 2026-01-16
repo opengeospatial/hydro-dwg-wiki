@@ -188,7 +188,7 @@ Following up on the screen dimensions question. In our national database (NWIS) 
       * <i>RESOLVED: Changed to DataType = swe:Quantity (based on externalDiameter discussion 2014-07-07 [BS 2014-08-07]<br /></i>
 -- Main.EricBoisvert - 09 Jun 2014
 
-OK, one more problem in the logs. We are supposed to override CV_ElementValuePair "à la WaterML 2.0" and replace it with out LogValue (which remove the geometry and replaces it with fromDepth/toDepth).
+OK, one more problem in the logs. We are supposed to override CV_ElementValuePair "Ã  la WaterML 2.0" and replace it with out LogValue (which remove the geometry and replaces it with fromDepth/toDepth).
 
 <verbatim>
 <gww:GW_GeologyLog gml:id="ab.ww.402557.log.1">
@@ -385,7 +385,7 @@ In order for data providers who may not be able to meet these mandatory requirem
 <img alt="GW_ManagementArea.jpg" height="229" src="%ATTACHURL%/GW_ManagementArea.jpg" title="GW_ManagementArea.jpg" width="293" />
 ---++++ The Issue
 
-The logical model cardinalities represent the conceptual requirements "and these would be used as constraints (say, schematron) for data exchange scenarios: ‘your submitted data is not acceptable as it does not include values for the following properties: …’ (Main.AlistairRitchie 2014).
+The logical model cardinalities represent the conceptual requirements "and these would be used as constraints (say, schematron) for data exchange scenarios: â€˜your submitted data is not acceptable as it does not include values for the following properties: â€¦â€™ (Main.AlistairRitchie 2014).
 
 However, it does not meet the use case where the end-user may just be interested in a single property, such as the name of the GW_Aquifer or the management area licence. Using the current GWML2 implementation all mandatory properties, including those which are voidable, will need to be returned, which substantially increases the volume of XML being delivered. This may be inappropriate for some applications, such as mobile devices.
 
@@ -552,14 +552,14 @@ Here is what is modelled in the French Water Information System
 | <span>Date de l'essai</span> | <span>Well test date</span> | <span>phenomenonTime</span> |
 | <span>Heure de l'essai</span> | <span>Well test time</span> | ^ |
 | <span>Coefficient d'emmagasinement (s) du pompage d'essai</span> | <span>Well test storage capacity measured</span> | <span>observedProperty</span> |
-| <span>Débit critique</span> | <span>critical yield</span> | <span>observedProperty</span> |
-| <span>Débit maximum exploitable</span> | <span>maximum yield</span> | <span>observedProperty</span> |
-| <span>Débit spécifique</span> | <span>specific yield</span> | <span>observedProperty</span> |
-| <span>Durée de l'essai</span> | <span>well test duration</span> | <span>resultTime (or deducted from)</span> |
-| <span>Méthode d'interprétation du pompage d'essai [[file:///D:/Documents/grellets/Travail/OGC/HydroDWG/GW2IE/GWML2/WellTest/GWML2_WellTest_proposal_draft2.docx#_ftn1][&#91;1&#93;]]</span> | <span>welltest interpretation method</span> | <span>Procedure</span> |
+| <span>DÃ©bit critique</span> | <span>critical yield</span> | <span>observedProperty</span> |
+| <span>DÃ©bit maximum exploitable</span> | <span>maximum yield</span> | <span>observedProperty</span> |
+| <span>DÃ©bit spÃ©cifique</span> | <span>specific yield</span> | <span>observedProperty</span> |
+| <span>DurÃ©e de l'essai</span> | <span>well test duration</span> | <span>resultTime (or deducted from)</span> |
+| <span>MÃ©thode d'interprÃ©tation du pompage d'essai [[file:///D:/Documents/grellets/Travail/OGC/HydroDWG/GW2IE/GWML2/WellTest/GWML2_WellTest_proposal_draft2.docx#_ftn1][&#91;1&#93;]]</span> | <span>welltest interpretation method</span> | <span>Procedure</span> |
 | <span>Rabattement</span> | <span>Drawdown</span> | <span>observedProperty</span> |
 | <span>Rapport d'essai sur le pompage d'essai</span> | <span>well test report</span> | <span>URL to the report in KVP via parameter ?</span> |
-| <span>Transmissivité (T) du pompage d'essai</span> | <span>well test measured transmivity</span> | <span>observedProperty</span> |
+| <span>TransmissivitÃ© (T) du pompage d'essai</span> | <span>well test measured transmivity</span> | <span>observedProperty</span> |
 All : please add your domain need.
 <hr align="left" size="1" width="33%"></hr>
 

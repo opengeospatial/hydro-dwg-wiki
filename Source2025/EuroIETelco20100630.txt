@@ -4,7 +4,7 @@
 
 ---++ Participants
    * Chris Michl (DLZ-IT BMVBS)
-   * Arne Bröring (52°north)
+   * Arne BrÃ¶ring (52Â°north)
    * Michael Natschke (KISTERS)
    * Sylvain Grellet (IOW-Sandre)
    * Mathieu Kazmierski (IOW-Sandre)
@@ -14,13 +14,13 @@
    * status report participants
 
 ---++ Results
-   * SOS-Server implementation 52°north:
+   * SOS-Server implementation 52Â°north:
       * coordination with CSIRO work in progress
       * meeting with Pete Taylor during Silver Springs TC
       * planned reintegration of CSIRO code extensions end of July/start August
       * integration of Hibernate
       * it is possible to write own DAOs (data access objects) in order to use a custom database model or an existing service
-   * SOS-Webclient implementation 52°north:
+   * SOS-Webclient implementation 52Â°north:
       * depends on finalized WaterML2.0 schemas
    * SOS-Implementation in WISKI
       * done: mapping of SOS calls to WISKI API
@@ -32,7 +32,7 @@
       * Mailing list for Use Case 1 has been requested
    * IOW-Sandre
       * national database has been converted to O&M2.0
-      * next step: deployment of 52°north SOS server
+      * next step: deployment of 52Â°north SOS server
       * interested in DAO creation
       * waiting for CSIRO code to be available
    * regular phone conference

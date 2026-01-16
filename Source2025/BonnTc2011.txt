@@ -36,7 +36,7 @@ Get it from [[http://portal.opengeospatial.org/index.php?m=projects&a=view&proje
 
 3.	Service interfaces for the IE [9:50-10:25]
 
-	* Arne Bröring (52North), Christoph Stasch (Uni Münster): SOS 2.0 update; extending SOS to large data and number of offerings [20min]
+	* Arne BrÃ¶ring (52North), Christoph Stasch (Uni MÃ¼nster): SOS 2.0 update; extending SOS to large data and number of offerings [20min]
 	
 	* Uwe Voges (con terra !GmbH): CS3.0 status report [15min] 
 

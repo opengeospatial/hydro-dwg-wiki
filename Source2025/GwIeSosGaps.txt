@@ -73,7 +73,7 @@ The client should use the identifier of the property as a proxy for the property
 
 for example, 
 
-<verbatim­>
+<verbatimÂ­>
 <?xml version="1.0" encoding="UTF-8"?>
 <sos:GetObservation version="1.0" service="SOS" xmlns:ogc="http://www.opengis.net/ogc" xmlns:sos="http://www.opengis.net/sos/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/1.0 http://schemas.opengis.net/sos/1.0.0/sosGetObservation.xsd">
    <sos:offering>gwie:offering</sos:offering>

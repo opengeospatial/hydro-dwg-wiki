@@ -4,7 +4,7 @@
 
 Discussion page : see GwIe2UseCase5Discussion
 ---++ Participants
-   * <p>E.Boisvert (GSC Lead), François Létourneau (GSC), B.Brodaric (GSC), M.Lutz (JRC), B.Wagner (GSG), Main.BruceSimons (CSIRO), Main.SylvainGrellet (BRGM),Main.DimitriMeunier (OIEAU)</p>
+   * <p>E.Boisvert (GSC Lead), FranÃ§ois LÃ©tourneau (GSC), B.Brodaric (GSC), M.Lutz (JRC), B.Wagner (GSG), Main.BruceSimons (CSIRO), Main.SylvainGrellet (BRGM),Main.DimitriMeunier (OIEAU)</p>
 ---++ Abstract
    * Because of various technical and jurisdictional requirements, it is not possible, nor sought, to enforce a single physical model to all agencies managing groundwater related data. The international model developped in this IE is to meet interchange scenarios, not physical implementation. This implies that some sort of translation will happen between the existing models and the international model. The first step to achieve a translation is to identify the mapping between "private" models, those that are used by data providers, and the "public" model, which is used by the larger community.
 ---++ Objective

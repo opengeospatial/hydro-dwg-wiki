@@ -25,8 +25,8 @@ As mentionned on the [[WebHome][homepage of the HydroDWG twiki]], the group is i
    * Linked data in hydrology
       * OGC - ELFIE: [[http://www.opengeospatial.org/projects/initiatives/elfie][inititive + how-to joining repo]] and [[https://github.com//opengeospatial/ELFIE][github (private) repo]]
 ---++ Meetings
-   * 20180321 : Berlin P11 (joint with OGC TC in Orléans) : [[https://www.rd-alliance.org/ig-global-water-information-rda-11th-plenary-meeting][GWIIG meeting agenda]]
-   * 20170919-21: Montréal P10: [[https://www.rd-alliance.org/ig-global-water-information-rda-10th-plenary-meeting][GWIIG meeting agenda]]
+   * 20180321 : Berlin P11 (joint with OGC TC in OrlÃ©ans) : [[https://www.rd-alliance.org/ig-global-water-information-rda-11th-plenary-meeting][GWIIG meeting agenda]]
+   * 20170919-21: MontrÃ©al P10: [[https://www.rd-alliance.org/ig-global-water-information-rda-10th-plenary-meeting][GWIIG meeting agenda]]
    * 20170612: [[%ATTACHURL%/RDA_Global_Water_Information_IG_2017_June.pptx][Gothenburg Chair's meeting]]
    * 20160915-17: Denver P8
    * 20160301: Tokyo P7 inaugural meeting :

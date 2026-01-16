@@ -72,7 +72,7 @@ Peter - regarding reference point for the level measurement - USGS stores and re
 -- Main.NateBooth - 13 Nov 2009
 
 About vertical reference point. I found there is a North American Vertical Datum of 1988 (EPSG:5703), you can check the definition here: http://www.epsg-registry.org/
-BTW: The reference point is Pointe-au-Père, near Rimouski, Québec !
+BTW: The reference point is Pointe-au-PÃ¨re, near Rimouski, QuÃ©bec !
 
 -- Main.EricBoisvert - 24 Nov 2009
 
@@ -80,7 +80,7 @@ The use case has both !TimeRange and Specific time.  SOS has multiple ways to re
 
 
      <img src="%ATTACHURLPATH%/sostemporal.png" alt="sostemporal.png" width='675' height='438' />
-   * overview of possible temporal relationships between existing and given (updated) sensor description with necessary actions on existing description (OGC 09_001 OpenGIS® SWE Service Model Implementation Standard, Johannes Echterhoff ed. In prep) *Note that this figure was in context of "sensor update" in the original document*
+   * overview of possible temporal relationships between existing and given (updated) sensor description with necessary actions on existing description (OGC 09_001 OpenGISÂ® SWE Service Model Implementation Standard, Johannes Echterhoff ed. In prep) *Note that this figure was in context of "sensor update" in the original document*
 ): <br />
 
 Do we have to implement them all ?

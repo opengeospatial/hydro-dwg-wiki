@@ -44,9 +44,9 @@ Groundwater flow equation as a basis of numerical modeling is one of most import
 
                                              <img alt="BoundaryProblem" height="212" src="%ATTACHURL%/image2.png" width="319" />
 
-Schematic relations between main components of fundamental conceptual model of hydrogeological system.<br /> Explanation:<br /> _R'_ ñ boundary of system ñ set of boundary points <i>r'(x',y',z') </i>[belonging to]<i> R'</i> ñ ground surface, confined bed surface, bottoms of surface waters, screens of wells (as an internal boundaries), etc,<br /> _M'_ ñ interior of system ñ set of interior points <i>m'(x",y",z")) </i>[belonging to] _M'_ ñ physical space of groundwater flow ñ a composition of aquifer and aquitards,<br /> _P'_ ñ exterior (surroundings) ñ set of points <i>p'(x,y,z) ) </i>[belonging to]<i> P'</i> ñ surroundings of hydrogeological system,<br /> _c1, c2, c3, c4_ ñ impacts of surroundings on interior of hydrogeological system ñ discharging by surface waters, recharging by infiltration, water abstraction and injection by wells, water exchange between two systems, etc.
+Schematic relations between main components of fundamental conceptual model of hydrogeological system.<br /> Explanation:<br /> _R'_ ‚Äì boundary of system ‚Äì set of boundary points <i>r'(x',y',z') </i>[belonging to]<i> R'</i> ‚Äì ground surface, confined bed surface, bottoms of surface waters, screens of wells (as an internal boundaries), etc,<br /> _M'_ ‚Äì interior of system ‚Äì set of interior points <i>m'(x",y",z")) </i>[belonging to] _M'_ ‚Äì physical space of groundwater flow ‚Äì a composition of aquifer and aquitards,<br /> _P'_ ‚Äì exterior (surroundings) ‚Äì set of points <i>p'(x,y,z) ) </i>[belonging to]<i> P'</i> ‚Äì surroundings of hydrogeological system,<br /> _c1, c2, c3, c4_ ‚Äì impacts of surroundings on interior of hydrogeological system ‚Äì discharging by surface waters, recharging by infiltration, water abstraction and injection by wells, water exchange between two systems, etc.
 
-Such a point of view allows unambiguously determine:<br />ñ what impacts on what,<br />ñ character of impact,<br /> ñ what is a effect (result) and what is a reason (cause).
+Such a point of view allows unambiguously determine:<br />‚Äì what impacts on what,<br />‚Äì character of impact,<br /> ‚Äì what is a effect (result) and what is a reason (cause).
 
 It all should be clearly expressed in data model for GWML.
 
@@ -66,7 +66,7 @@ xxx
 ---
 ---+++++ <a name="Topic4"></a><b>Topic 4: International Glossary of Hydrogeology</b>
 
-There is no International Glossary of Hydrogeology as it is in hydrology (_International Glossary_ of _Hydrology_ <em>). </em>As I know the most complete and exhaustive glossary of hydrogeology is ìHydrogeological Dictionaryî (in Polish: S&#x142;ownik Hydrogeologiczny): http://www.mos.gov.pl/g2/kategoriaPliki/2009_04/d6e1baf4ccc946e5c1f7cac62c532e96.pdf. It contains 1425 terms in five languages (Polish, English, French German and Russian) but definitions and explanations are in Polish only.
+There is no International Glossary of Hydrogeology as it is in hydrology (_International Glossary_ of _Hydrology_ <em>). </em>As I know the most complete and exhaustive glossary of hydrogeology is ‚ÄúHydrogeological Dictionary‚Äù (in Polish: S&#x142;ownik Hydrogeologiczny): http://www.mos.gov.pl/g2/kategoriaPliki/2009_04/d6e1baf4ccc946e5c1f7cac62c532e96.pdf. It contains 1425 terms in five languages (Polish, English, French German and Russian) but definitions and explanations are in Polish only.
 ---
 
 ---
@@ -104,9 +104,9 @@ Approximate rate between typical conductivity of aqifer and aqutard is about 100
 
 (source: http://www.psh.gov.pl/plik/id,6091.pdf : J. Michalak et al., 2011, page 86)
 
-T<sup>B</sup><sub>P</sub> ñ horizontal transmissivity of cuboidal fragment of aquifer,
+T<sup>B</sup><sub>P</sub> ‚Äì horizontal transmissivity of cuboidal fragment of aquifer,
 
-T<sup>B</sup><sub>Z</sub> ñ vertical transmissivity of cuboidal fragment of aquitard, in case B (on the right) T<sup>B</sup><sub>Z</sub> is equal to T<sup>B</sup><sub>P</sub>.
+T<sup>B</sup><sub>Z</sub> ‚Äì vertical transmissivity of cuboidal fragment of aquitard, in case B (on the right) T<sup>B</sup><sub>Z</sub> is equal to T<sup>B</sup><sub>P</sub>.
 
 In case A (on the left) T<sup>B</sup><sub>P</sub> of aquifer is 10 000 times greater than T<sup>B</sup><sub>Z</sub> of aquitard but this case is rather theoretical and case B is fully realistic.
 ---
@@ -124,7 +124,7 @@ HydrologicRole is a very interesting conception, but in my understanding "role" 
 
 By the way: Association class cannot be implemented in XML directly. It must be substituted by kind proxy (broker) class, as it is often done in GeoSciML.
 
-I propose to return to Ñtraditionalî conception as it is on image below:
+I propose to return to ‚Äûtraditional‚Äù conception as it is on image below:
 
 <img alt="HydrogeologicUnit" height="432" src="%ATTACHURL%/HydrogeologicUnit.png" width="595" />
 
@@ -216,7 +216,7 @@ xxx
 ---
 ---+++++ *<a name="Topic10"></a>Topic 10:* *Relation between GWML and GeoSciML (more strictly, relation between HydrogeologicUnit and GeologicUnit)*
 
-In GeoSciML GeologicUnit is a parent class for all underground units: *GeologicUnit*, AllostratigraphicUnit, AlterationUnit, ArtificialGround, BiostratigraphicUnit, ChronostratigraphicUnit, DeformationUnit, ExcavationUnit, *GeophysicalUnit*, LithodemicUnit, LithogeneticUnit, LithologicUnit, LithostratigraphicUnit, LithotectonicUnit, MagnetostratigraphicUnit, MassMovementUnit, Pedoderm, PedostratigraphicUnit, PolarityChronostratigraphicUnit, also <b>in GWML: HydrogeologicUnit </b>.<br /><br />In consequence every object of type HydrogeologicUnit (as an instance of class) is also of (sub-) type GeologicUnit. In this case object of type HydrogeologicUnit we can see as an object of type GeologicUnit with attribute ìgeologicUnitType = HydrogeologicUnit î and with additional hydrogeological properties.<br />Class GeologicUnit is not abstract, it can be instantiated. So direct object of this type can exist (with attribute ìgeologicUnitType = GeologicUnit î. In this case boundaries of object of type HydrogeologicUnit can be different then of type GeologicUnit. We have two types of object: with attribute ìgeologicUnitType = HydrogeologicUnit î and with attribute ìgeologicUnitType = GeologicUnit ".<br /><br />I think it is inconsistency concerning the GeologicUnit concept (and class) in GeoSciML and we must deal with it in GWML. I see the same problem with GeophysicalUnit but in INSPIRE model for subtheme Geophysics is independent from subtheme Geology and in consequence from GeoSciML.<br /><br />This inheritance has also inconveniences in practical application: overloading by properties not needed for hydrogeology (quotation from EricBoisvert e-mail):
+In GeoSciML GeologicUnit is a parent class for all underground units: *GeologicUnit*, AllostratigraphicUnit, AlterationUnit, ArtificialGround, BiostratigraphicUnit, ChronostratigraphicUnit, DeformationUnit, ExcavationUnit, *GeophysicalUnit*, LithodemicUnit, LithogeneticUnit, LithologicUnit, LithostratigraphicUnit, LithotectonicUnit, MagnetostratigraphicUnit, MassMovementUnit, Pedoderm, PedostratigraphicUnit, PolarityChronostratigraphicUnit, also <b>in GWML: HydrogeologicUnit </b>.<br /><br />In consequence every object of type HydrogeologicUnit (as an instance of class) is also of (sub-) type GeologicUnit. In this case object of type HydrogeologicUnit we can see as an object of type GeologicUnit with attribute ‚ÄúgeologicUnitType = HydrogeologicUnit ‚Äù and with additional hydrogeological properties.<br />Class GeologicUnit is not abstract, it can be instantiated. So direct object of this type can exist (with attribute ‚ÄúgeologicUnitType = GeologicUnit ‚Äù. In this case boundaries of object of type HydrogeologicUnit can be different then of type GeologicUnit. We have two types of object: with attribute ‚ÄúgeologicUnitType = HydrogeologicUnit ‚Äù and with attribute ‚ÄúgeologicUnitType = GeologicUnit ".<br /><br />I think it is inconsistency concerning the GeologicUnit concept (and class) in GeoSciML and we must deal with it in GWML. I see the same problem with GeophysicalUnit but in INSPIRE model for subtheme Geophysics is independent from subtheme Geology and in consequence from GeoSciML.<br /><br />This inheritance has also inconveniences in practical application: overloading by properties not needed for hydrogeology (quotation from EricBoisvert e-mail):
 <verbatim><?xml version="1.0" encoding="UTF-8"?>
  <gsmlgu:GeologicUnit gml:id="xtest" xmlns:xlink="http://www.w3.org/1999/xlink" 
  xmlns:gml="http://www.opengis.net/gml/3.2" 
@@ -254,7 +254,7 @@ To summarize depicted above, I think relation between both classes in form of as
 
 ---
 
-&gt; In this case boundaries of object of type HydrogeologicUnit can be different then of type GeologicUnit. We have two types of object: with attribute ìgeologicUnitType = HydrogeologicUnit î and with attribute ìgeologicUnitType = GeologicUnit ".
+&gt; In this case boundaries of object of type HydrogeologicUnit can be different then of type GeologicUnit. We have two types of object: with attribute ‚ÄúgeologicUnitType = HydrogeologicUnit ‚Äù and with attribute ‚ÄúgeologicUnitType = GeologicUnit ".
 
 They are two different units (subdividing the same stack of rock). To be honest, I don't understand why "GeologicUnit" is in the enum. It probably means "unclassified" or "generic". What I would expect to see is a HydrogeologicUnit geologicUnitType="HydrogeologicUnit" (at this point it seems redundant because we only have 1 subtype, but we could have more) and a GeologicUnit geologicUnitType="LithostratigraphicUnit". They are two distinct units (or to be more precise, two distinct way to subdivide the same stack of rock).
 
@@ -286,7 +286,7 @@ Custom property blocks can be substituted to accomodate specific usage or requir
 -- Main.EricBoisvert - 06 Feb 2013
 ---
 
-GeoSciML4 - it is very good news. Now, GeologicUnit looks very similar to _GeologicFeature_ class. I see it is going in good direction. (I hope we will have ìEarthUnitî or ìGeoscientificUnitî in this palace in GeoSciML5.)
+GeoSciML4 - it is very good news. Now, GeologicUnit looks very similar to _GeologicFeature_ class. I see it is going in good direction. (I hope we will have ‚ÄúEarthUnit‚Äù or ‚ÄúGeoscientificUnit‚Äù in this palace in GeoSciML5.)
 
 _&gt;To be honest, I don't understand why "GeologicUnit" is in the enum._
 
@@ -312,7 +312,7 @@ Yeah - it should not be there. it should be "InformalGeologicUnit" or something 
 -- Main.EricBoisvert - 08 Feb 2013
 ---
 
-<i>&gt;It also allows management of "informal" units.<br /> </i>What exactly means ÑInformalGeologicUnitî? It is not clear for me.<br /> Should GeologicUnit be still non-abstract (instantiated)?<br /> What version of GeoSciML will be base for GWML3?
+<i>&gt;It also allows management of "informal" units.<br /> </i>What exactly means ‚ÄûInformalGeologicUnit‚Äù? It is not clear for me.<br /> Should GeologicUnit be still non-abstract (instantiated)?<br /> What version of GeoSciML will be base for GWML3?
 
 -- Main.JanuszMichalak - 11 Feb 2013
 
@@ -329,7 +329,7 @@ GeoSciML 4, since GeoSciML 4 will be an OGC standard and we want to make a OGC s
 
 More questions:
 
-What means in this case ìformal classification systemî? Can we define it in GWML2 specification? Taxonomy of Hydrogeological Units (aquifer, aquitard, aquiclude) is based on value of hydraulic conductivity (k) (see: Topic 7). It is similar to concentration of gold. Somebody else can assume different threshold values. Is it still formal classification system?
+What means in this case ‚Äúformal classification system‚Äù? Can we define it in GWML2 specification? Taxonomy of Hydrogeological Units (aquifer, aquitard, aquiclude) is based on value of hydraulic conductivity (k) (see: Topic 7). It is similar to concentration of gold. Somebody else can assume different threshold values. Is it still formal classification system?
 
 Can we know more about GeoSciML4? For example, time table of development or initial assumptions.
 

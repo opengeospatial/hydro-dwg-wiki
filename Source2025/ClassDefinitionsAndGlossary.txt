@@ -17,7 +17,7 @@ I agree with this. It would be good to revisit the naming, especially before we 
 ---++ WMO glossary
 
 I've pulled out a number of relevant definitions from [[http://library.wmo.int/opac/index.php?lvl=notice_display&id=7394][WMO's glossary of hydrology]]. These appear to be largely harmonised with the relevant ISO standards.
-   * <strong>rating curve </strong>syn. <strong>rating table </strong>(see also hysteresis (in stage–discharge relation), stage–discharge relation) - 1172. _Curve showing the relation between stage and discharge of a stream at a hydrometric station. (TR)_
+   * <strong>rating curve </strong>syn. <strong>rating table </strong>(see also hysteresis (in stageâ€“discharge relation), stageâ€“discharge relation) - 1172. _Curve showing the relation between stage and discharge of a stream at a hydrometric station. (TR)_
    * *stream gauging.* _Set of operations for determining the discharge in a watercourse for an observed stage._
    * <strong>gauging section </strong>syn. <strong>measuring section </strong>see also *gauging station.* _Cross-section of an open channel in which measurements of depth and/or velocity are made. (ISO 772)_
    * <strong>gauging station </strong>see also *gauging section.* _Location on a stream where measurements of water level and/or discharge are made systematically._
@@ -27,7 +27,7 @@ I've pulled out a number of relevant definitions from [[http://library.wmo.int/o
    * *hydrological observing station.* _Place where hydrological observations or climatological observations for hydrological observations purposes are made._
    * *hydrometric station.* _Station at which data on water in rivers, lakes or reservoirs are obtained on one or more of the following elements: stage, streamflow, sediment transport and deposition, water temperature and other physical properties of water, characteristics of ice cover and chemical properties of water._
    * <strong>water level </strong>syn. <b>stage.</b><i>Elevation of the free water surface of a water body relative to a datum level.</i>
-   * <p> *1173 rating curve shift*. <span style="background-color: transparent; line-height: 22px;">Change in the stage–discharge relation.</span></p>
+   * <p> *1173 rating curve shift*. <span style="background-color: transparent; line-height: 22px;">Change in the stageâ€“discharge relation.</span></p>
 ---++ ISO 772
    * <b>1.41 stream gauging: </b>all of the operations necessary for the measurement of discharge.
    * <b>1.92 rating: </b>relation between discharge and other variables, or the taking of observations and making of calculations needed to establish the relation.

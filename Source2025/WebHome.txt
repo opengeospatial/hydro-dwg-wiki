@@ -13,7 +13,7 @@ The Hydro DWG is intended to be a public forum for communication, and both the [
 
 Please see the current [[%ATTACHURL%/Hydrology_DWG_Charter.doc][Hydro DWG Charter]] and the [[http://portal.opengeospatial.org/index.php?m=projects&a=view&project_id=301&tab=0][home page of the Hydro DWG on the OGC portal]] for further details.
 ---++ Published Standards
-   * [[http://www.opengeospatial.org/standards/waterml][OGC® WaterML]]
+   * [[http://www.opengeospatial.org/standards/waterml][OGCÂ® WaterML]]
    * [[https://portal.opengeospatial.org/files/?artifact_id=57222][WaterML2: Part 1 - Timeseries]]
    * [[http://docs.opengeospatial.org/is/15-018r2/15-018r2.html][WaterML2: Part 2 - Ratings, Gaugings and Sections]]
    * [[http://docs.opengeospatial.org/is/14-111r6/14-111r6.html][WaterML2: Part 3 - Surface Hydrology Features (HY_Features)]]

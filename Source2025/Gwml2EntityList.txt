@@ -353,7 +353,7 @@ N/A</td> <td width="188">
 
 N/A</td> <td width="518">
 
-A wet underground layer of water-bearing permeable rock or unconsolidated materials (gravel, sand, silt, or clay) from which groundwater can be usefully extracted using a water well. It can be zone of fractures related to Geologic Structure – a part of geological formation.<br />Description: An underground geological formation able to store and yield water. Groundwater body flows through aquifers.&#xFEFF;</td> </tr> <tr> <td>
+A wet underground layer of water-bearing permeable rock or unconsolidated materials (gravel, sand, silt, or clay) from which groundwater can be usefully extracted using a water well. It can be zone of fractures related to Geologic Structure â€“ a part of geological formation.<br />Description: An underground geological formation able to store and yield water. Groundwater body flows through aquifers.&#xFEFF;</td> </tr> <tr> <td>
 
 </td> <td width="56">
 
@@ -391,7 +391,7 @@ Indicates if aquifer is the main useful aquifer in the aquifer system</td> </tr>
 
 QuantityValue <br />(voidable)&#xFEFF;</td> <td width="518">
 
-DRASTIC index value or interval of values determining the potential degree of aquifer risk arising from the geological structure, hydrogeological conditions and the existence of real or potential source of contamination.<br />Description: A single value should be used if it is determined directly from the DRASTIC method. If attribute data comes from another data source which is expressed by categorized items, for example: low, moderate or high, interval should be used expressed by lowest and highest value of category. EXAMPLE: ‘Moderate’&#xFEFF; means interval from 101 to 140.</td> </tr> <tr> <td>
+DRASTIC index value or interval of values determining the potential degree of aquifer risk arising from the geological structure, hydrogeological conditions and the existence of real or potential source of contamination.<br />Description: A single value should be used if it is determined directly from the DRASTIC method. If attribute data comes from another data source which is expressed by categorized items, for example: low, moderate or high, interval should be used expressed by lowest and highest value of category. EXAMPLE: â€˜Moderateâ€™&#xFEFF; means interval from 101 to 140.</td> </tr> <tr> <td>
 
 </td> <td width="56">
 
@@ -809,7 +809,7 @@ N/A
 HG_Geometry<br />(union)
 </td> <td width="518">
 
--- Definition –<br />Common data union for geometry of feature.<br />-- Note --<br />In GML application it is realised by choice element.<br />XML Schema choice element allows only one of the elements contained in the &lt;choice&gt; declaration to be present within the containing element.
+-- Definition â€“<br />Common data union for geometry of feature.<br />-- Note --<br />In GML application it is realised by choice element.<br />XML Schema choice element allows only one of the elements contained in the &lt;choice&gt; declaration to be present within the containing element.
 </td> </tr> <tr> <td>
 
 </td> <td width="56">

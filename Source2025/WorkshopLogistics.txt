@@ -8,7 +8,7 @@ Or try your favourite accommodation booking portal such as <a href="http://www.b
 
 ---++ Meeting Location
 
-The workshop will be held at the "Bundesanstalt für Gewässerkunde" (BfG), Federal Institute of Hydrology.
+The workshop will be held at the "Bundesanstalt fÃ¼r GewÃ¤sserkunde" (BfG), Federal Institute of Hydrology.
 
 Street address is: <a href="https://www.google.de/maps/place/Bundesanstalt+f%C3%BCr+Gew%C3%A4sserkunde/@50.3534874,7.5973599,17z/data=!4m2!3m1!1s0x0000000000000000:0x3e4b7cf1d45cbb5c?hl=en" target="_blank">Am Mainzer Tor 1, 56068 Koblenz</a>, Conference rooms on second floor.
 
@@ -34,4 +34,4 @@ Koblenz offers <a href="https://www.tripadvisor.com/Attractions-g187391-Activiti
 
 ---++ Group Dinner
 
-A Group Dinner sponsored by the Federal Institute of Hydrology (BfG) is scheduled for Thursday 16 June 2016 at 18:45. The location will be the <a href="http://www.saubar-koblenz.de" target="_blank">Restaurant "SauBar"</a> at <a href="https://www.google.com/maps/place/M%C3%BCnzstra%C3%9Fe+16A,+56068+Koblenz,+Deutschland/@50.362279,7.595494,16z/data=!4m5!3m4!1s0x47be7cba7d8368af:0x947a9ea420accfd3!8m2!3d50.36156!4d7.59534?hl=de" target="_blank">Münzstraße 16A </a>. -- Main.UlrichLooser - 04 Mar 2016
+A Group Dinner sponsored by the Federal Institute of Hydrology (BfG) is scheduled for Thursday 16 June 2016 at 18:45. The location will be the <a href="http://www.saubar-koblenz.de" target="_blank">Restaurant "SauBar"</a> at <a href="https://www.google.com/maps/place/M%C3%BCnzstra%C3%9Fe+16A,+56068+Koblenz,+Deutschland/@50.362279,7.595494,16z/data=!4m5!3m4!1s0x47be7cba7d8368af:0x947a9ea420accfd3!8m2!3d50.36156!4d7.59534?hl=de" target="_blank">MÃ¼nzstraÃŸe 16A </a>. -- Main.UlrichLooser - 04 Mar 2016

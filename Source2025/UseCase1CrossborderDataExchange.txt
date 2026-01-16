@@ -8,14 +8,14 @@ Test !WaterML2.0 with surface water data by disseminating surface water data fro
    * DLZ-IT: German Federal Waterways Engineering and Research Institute (Dietmar Mothes)
    * IOW-Sandre: International Office for Water - Sandre (Sylvain Grellet)
    * KISTERS AG (Michael Natschke, Stefan Fuest)
-   * 52north (Arne Bröring, Simon Jirka)
+   * 52north (Arne BrÃ¶ring, Simon Jirka)
    * disy Informationssysteme (Carsten Heidmann)
 
 ---+++ Contributing countries
    * France
    * Germany
    * The Netherlands (provided through Germany)
-There are no contacts yet to Switzerland. The Netherlands are kept informed (Contact to Martijn van Dijk from Rijkswaterstaat by Carsten Heidmann and Bernd Mörstedt (DLZ-IT)) about the progress of the IE.
+There are no contacts yet to Switzerland. The Netherlands are kept informed (Contact to Martijn van Dijk from Rijkswaterstaat by Carsten Heidmann and Bernd MÃ¶rstedt (DLZ-IT)) about the progress of the IE.
 ---+++ Resources
 
 Mailing list: https://lists.opengeospatial.org/mailman/listinfo/sw.ie.case1
@@ -43,8 +43,8 @@ Mailing list: https://lists.opengeospatial.org/mailman/listinfo/sw.ie.case1
  
 ---+++ Technology
 | *Country* | *Participant* | *Software* |
-| Germany | 52°north | SOS server based on 52°north software |
-| Germany | 52°north | web client for !WaterML2.0 datasources |
+| Germany | 52Â°north | SOS server based on 52Â°north software |
+| Germany | 52Â°north | web client for !WaterML2.0 datasources |
 | Germany | KISTERS AG | SOS server and client software |
 | Germany | disy Informationssysteme GmbH | CSW implementation |
 ---+++ SOS Instances

@@ -33,7 +33,7 @@ Is this way off mark?
 
 -- Main.BruceSimons - 18 Nov 2012
 
-Does this UC presuppose that all those service uses the same schema (OGCG GW schema) - _à la_ OneGeology - or do we need to consider integration of heterogenous schemas ? In the latter case, we need an extra component (an a big one). What you are listing is a case of stitching different data types into a single application. In a sense, it's not different from UC1 to UC4 (just one more application). What I understood of UC5 was different data source (but the same type - ie, water level) each having different schemas / vocabularies ( two or more WFS providing water wells exposing different schemas). Therefore, this UC could be a component of any/all of the other UC. I think we should have a agenda item about this on the next telecon.
+Does this UC presuppose that all those service uses the same schema (OGCG GW schema) - _Ã  la_ OneGeology - or do we need to consider integration of heterogenous schemas ? In the latter case, we need an extra component (an a big one). What you are listing is a case of stitching different data types into a single application. In a sense, it's not different from UC1 to UC4 (just one more application). What I understood of UC5 was different data source (but the same type - ie, water level) each having different schemas / vocabularies ( two or more WFS providing water wells exposing different schemas). Therefore, this UC could be a component of any/all of the other UC. I think we should have a agenda item about this on the next telecon.
 
 -- Main.EricBoisvert - 19 Nov 2012
 

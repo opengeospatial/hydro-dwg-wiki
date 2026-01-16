@@ -4,7 +4,7 @@
 
 ---++ Participants
    * Carsten Heidmann (disy)
-   * Simon Jirka (52°north)
+   * Simon Jirka (52Â°north)
    * Sylvain Grellet (IOW-Sandre)
    * Jens Wilhelmy (BfG - German Federal Institute of Hydrology)
    * Uli Looser (GRDC)

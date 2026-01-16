@@ -49,7 +49,7 @@ HydroML : RatingDate - a list of dates when a rating is in effect
 
 Uses a list of start dates and the tables that apply.
 
-HydroML exports are considered to be stateless. If GRSat data is returned with a change then the data is written back to NWIS. Does not implement a ‘check out’ system for rating editing.
+HydroML exports are considered to be stateless. If GRSat data is returned with a change then the data is written back to NWIS. Does not implement a â€˜check outâ€™ system for rating editing.
 
 Shift Curves:
 

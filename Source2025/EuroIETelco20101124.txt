@@ -5,7 +5,7 @@
 ---++ Participants
    * Carsten Heidmann (disy)
    * Chris Michl (DLZ-IT BMVBS)
-   * Simon Jirka (52°north)
+   * Simon Jirka (52Â°north)
    * Sylvain Grellet (IOW-Sandre)
    * Uli Looser (GRDC)
    * Stefan Fuest (KISTERS)

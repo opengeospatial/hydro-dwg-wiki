@@ -9,7 +9,7 @@
       1 HollowWorld --&gt; https://www.seegrid.csiro.au/subversion/HollowWorld/branches/release_4
       1 ISOTC211 --&gt; https://www.seegrid.csiro.au/mirrors/iso-harmonized-model
    1 In EA, create a new empty project. In Project viewer, right-click on model, --&gt; Version control --&gt; then Version control Setting. Create new configurations by clicking on the new button.
-      1 In configuration Details – Type, select Subversion. Set the VC Time-Out setting to 150 seconds.
+      1 In configuration Details â€“ Type, select Subversion. Set the VC Time-Out setting to 150 seconds.
       1 Type hollowworld in the Unique ID field. Select the path where the hollowworld model resides (at the root of the svn checkout folder). Save and click on the New button.
       1 Type isotc211 in the Unique ID field. Select the path where the isotc211 model resides (at the root of the svn checkout folder). Save and click on the New button.
       1 Type geosciml in the UniqueID field. Select the path where the GeoSciML model resides. Save and click on the New button.

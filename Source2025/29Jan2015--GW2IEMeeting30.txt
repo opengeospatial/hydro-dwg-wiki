@@ -3,7 +3,7 @@
 ---+ *GW2IE Meeting 30 -- Thurs 29 Jan 2015*
 ---++ *Agenda*
    * Face-to-face meeting
-      * OGC Boulder (June), <a href="OrleansWorkshop2015" title="HDWG Orléans workshop">HDWG Orelans</a> (Sept), none?
+      * OGC Boulder (June), <a href="OrleansWorkshop2015" title="HDWG OrlÃ©ans workshop">HDWG Orelans</a> (Sept), none?
       * Any decision made on this during the meeting? -- Main.BruceSimons - 01 Feb 2015
    * AGU 2015
       * report

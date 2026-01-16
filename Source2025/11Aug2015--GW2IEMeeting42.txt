@@ -52,7 +52,7 @@
    * P 19: ANS: full name---removed
    * P 21: URL for requirement tests---replace with reference to Annex A (requirements)
    * P 65: missing dependency (!AquiferTest---WaterML2)---not needed
-   * P75: missing def: bholeCoreInterval: GM_Envelope[0…*]---done
+   * P75: missing def: bholeCoreInterval: GM_Envelope[0â€¦*]---done
    * P78, 85: missing def: casingSlit association---to be supplied (*Eric*)--done
    * P78, 85: missing def: casingLeft association---to be supplied (*Eric*)--done
    * P 98: References:---to be supplied (*Francois*)

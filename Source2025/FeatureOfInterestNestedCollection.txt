@@ -19,7 +19,7 @@ This example is a nested collection based on administrative units.
                         <gml:upperCorner>56.92 -74.19</gml:upperCorner> 
                 </gml:Envelope> 
         </gml:boundedBy> 
-  <gml:description>The features of interest are provided in a nested collection of features based on their administrative unit.  The top most level is state or province and it will further split into district/counties or townships, town or comté, municipalités.  For very dense collection, it can be sub divided into neighbourhoud or even arbitrary units.
+  <gml:description>The features of interest are provided in a nested collection of features based on their administrative unit.  The top most level is state or province and it will further split into district/counties or townships, town or comtÃ©, municipalitÃ©s.  For very dense collection, it can be sub divided into neighbourhoud or even arbitrary units.
  <gml:name codeSpace="urn:x-gwie:featureCollection:nesting">Administrative units</gml:name>
         <gml:featureMember> 
                 <gml:FeatureCollection gml:id="Ont"> 
@@ -111,7 +111,7 @@ This example is a nested collection based on administrative units.
         </gml:featureMember> 
         <gml:featureMember> 
                 <gml:FeatureCollection gml:id="Que"> 
-                        <gml:name>Province de Québec, Canada</gml:name>
+                        <gml:name>Province de QuÃ©bec, Canada</gml:name>
                         <gml:boundedBy> 
                                 <gml:Envelope srsName="urn:ogc:def:crs:EPSG:4326"> 
                                         <gml:lowerCorner>44.91 -79.73</gml:lowerCorner> 

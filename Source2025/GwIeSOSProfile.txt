@@ -448,10 +448,10 @@ We're experimenting with a !GetProfile service that may prove to have interestin
 
 ---+ References
 
-   * Broering A., Stasch C. , Echterhoff , J., eds,  2010, OGC® SOS 2.0 Interface Standard, Open Geospatial Consortium, OGC 10-037, version 2.0, 124 pages
+   * Broering A., Stasch C. , Echterhoff , J., eds,  2010, OGCÂ® SOS 2.0 Interface Standard, Open Geospatial Consortium, OGC 10-037, version 2.0, 124 pages
    * Cox, S. 2010a, OGC Identifiers &#8211; the case for http URIs, Open Geospatial Consortium, OGC 10-124, version 2.0,  12 pp.
    * Cox, S. 2010b, Observations and Measurements - XML Implementation,Open Geospatial Consortium, OGC 10-025, version 2.0,  77 pp.
-   * Taylor, P.  ed. 2010 , OGC® !WaterML2.0: An O&M profile for water observations data, Open Geospatial Consortium, OGC 10-126, version 0.1.0, 83 pages.
+   * Taylor, P.  ed. 2010 , OGCÂ® !WaterML2.0: An O&M profile for water observations data, Open Geospatial Consortium, OGC 10-126, version 0.1.0, 83 pages.
 
 
 -- Main.EricBoisvert - 19 Oct 2010

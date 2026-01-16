@@ -17,31 +17,31 @@ Please feel free to send through questions or issues.
 <span style="background-color: transparent;">The xlinks in the XML are resolvable back into API resources for the main resources. I've incorporated some WDTF vocabs as well for the observed properties (see gaugings example). </span>
 
 *Monitoring point collection*
-   * • HTML: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/]]
-   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/?format=json]]
+   * â€¢ HTML: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/]]
+   * â€¢ JSON: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/?format=json]]
 *Monitoring point*
-   * • HTML: [[[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009]]
-   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009/?format=json]]
-   * • XML: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009/?format=xml]]
+   * â€¢ HTML: [[[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009]]
+   * â€¢ JSON: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009/?format=json]]
+   * â€¢ XML: [[http://waterml2.csiro.au/rgs-api/v1/monitoring-point/419009/?format=xml]]
 *Conversion group*
-   * • HTML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/8]]
-   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/8/?format=json]]
-   * • XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/8/?format=xml]]
+   * â€¢ HTML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/8]]
+   * â€¢ JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/8/?format=json]]
+   * â€¢ XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/8/?format=xml]]
 *Conversion group collection*
-   * • HTML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/]]
-   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group?format=JSON]]
-   * • XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group?format=XML]]
+   * â€¢ HTML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/]]
+   * â€¢ JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group?format=JSON]]
+   * â€¢ XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group?format=XML]]
 *Rating collection*
-   * • HTML: [[http://waterml2.csiro.au/rgs-api/v1/conversion]]
-   * • XML [[http://waterml2.csiro.au/rgs-api/v1/conversion/?format=xml]]
-   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion/?format=json]]
+   * â€¢ HTML: [[http://waterml2.csiro.au/rgs-api/v1/conversion]]
+   * â€¢ XML [[http://waterml2.csiro.au/rgs-api/v1/conversion/?format=xml]]
+   * â€¢ JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion/?format=json]]
 *Rating table*
-   * • HTML [[http://waterml2.csiro.au/rgs-api/v1/conversion/440]]
-   * • JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion/440/?format=json]]
-   * • XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion/440/?format=xml]]
+   * â€¢ HTML [[http://waterml2.csiro.au/rgs-api/v1/conversion/440]]
+   * â€¢ JSON: [[http://waterml2.csiro.au/rgs-api/v1/conversion/440/?format=json]]
+   * â€¢ XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion/440/?format=xml]]
 *Gauging collection (for specific monitoring point)*
-   * • HTML: [[http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419075]]
-   * • XML: [[http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419075&format=xml]]
+   * â€¢ HTML: [[http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419075]]
+   * â€¢ XML: [[http://waterml2.csiro.au/rgs-api/v1/gauging/?monitoring-point=419075&format=xml]]
 The process has raised some questions about how best to encode collections and how to support discovery, but these are more related to fitting the information model to the API rather than the actual content. There is the start of collections of conversion groups available in XML: [[http://waterml2.csiro.au/rgs-api/v1/conversion-group/?format=xml]], but I'm still working through it. The collections will support filters that relate directly to the specific queries we agree on in the RGS group ( [[RgsApiDesign][http://external.opengis.org/twiki_public/HydrologyDWG/RgsApiDesign]]).
 
 *Query-based requests*

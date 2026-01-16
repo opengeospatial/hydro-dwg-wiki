@@ -17,7 +17,7 @@
          * Automatically generated documentation of UML model: http://testbed.ptip.org.pl/GWIE2_INSPIRE/INSPIRE_Hydrogeology_Draft_Outline_v.0.4_Doc.docx
          * EA version of UML model: http://testbed.ptip.org.pl/GWIE2_INSPIRE/INSPIRE_Hydrogeology_Draft_Outline_v.0.4.EAP
          * The model also contains Use_Case diagrams worked out by Piotr Wojda. Description of the Use_Case: http://testbed.ptip.org.pl/GWIE2_INSPIRE/UseCase_HydrogeologicalModel_UC.doc
-         * More hydrogeological Use_Cases you can find in INSPIRE Data Specification – Geology (UC06, UC07, UC08, UC09 and UC 10 - pages from 123 to 134) at: http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DS_Geology_v3.0_rc2.pdf
+         * More hydrogeological Use_Cases you can find in INSPIRE Data Specification â€“ Geology (UC06, UC07, UC08, UC09 and UC 10 - pages from 123 to 134) at: http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DS_Geology_v3.0_rc2.pdf
    * %BLUE%<u>Hydrogeological Map of Bavaria (from Bernhard Wagner)</u>%ENDCOLOR% : [[%ATTACHURL%/20030246_SystemdokumentationV1.0_AnhangB.pdf][20030246_SystemdokumentationV1.0_AnhangB.pdf]]
    * BRGM / SANDRE
       * Main SANDRE web site http://www.sandre.eaufrance.fr/
